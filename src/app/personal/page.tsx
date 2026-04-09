@@ -75,7 +75,7 @@ export default function PersonalPage() {
       <div className="bg-green-700 px-4 pt-6 pb-6">
         <div className="max-w-2xl mx-auto">
           <Link href="/" className="text-green-200 text-sm mb-2 block">← Back</Link>
-          <h1 className="font-display font-700 text-white text-2xl">Personal Finance</h1>
+          <h1 className="font-display font-bold text-white text-2xl">Personal Finance</h1>
           <p className="text-green-100 text-sm mt-1">Tax, SASSA, UIF, PAYE, and everyday money</p>
         </div>
       </div>
@@ -87,7 +87,7 @@ export default function PersonalPage() {
         <section id="sassa">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">🏛️</span>
-            <h2 className="font-display font-600 text-xl text-sand-900">SASSA Grants</h2>
+            <h2 className="font-display font-semibold text-xl text-sand-900">SASSA Grants</h2>
           </div>
 
           <div className="alert-green mb-4">
@@ -99,8 +99,8 @@ export default function PersonalPage() {
           <div className="grid grid-cols-2 gap-2 mb-5">
             {grants.map(g => (
               <div key={g.name} className="card p-3">
-                <p className="font-600 text-sm text-sand-900 leading-tight">{g.name}</p>
-                <p className="text-green-600 font-700 text-base mt-1">{g.amount}</p>
+                <p className="font-semibold text-sm text-sand-900 leading-tight">{g.name}</p>
+                <p className="text-green-600 font-bold text-base mt-1">{g.amount}</p>
                 <p className="text-xs text-sand-500 mt-1 leading-snug">{g.who}</p>
               </div>
             ))}
@@ -121,7 +121,7 @@ export default function PersonalPage() {
         <section id="tax">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">💰</span>
-            <h2 className="font-display font-600 text-xl text-sand-900">Income Tax (SARS)</h2>
+            <h2 className="font-display font-semibold text-xl text-sand-900">Income Tax (SARS)</h2>
           </div>
 
           <div className="alert-blue mb-4">
@@ -134,16 +134,16 @@ export default function PersonalPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-sand-100">
-                  <th className="text-left p-3 text-xs font-600 text-sand-600">Annual Income</th>
-                  <th className="text-left p-3 text-xs font-600 text-sand-600">Tax Rate</th>
-                  <th className="text-left p-3 text-xs font-600 text-sand-600 hidden sm:table-cell">What it means</th>
+                  <th className="text-left p-3 text-xs font-semibold text-sand-600">Annual Income</th>
+                  <th className="text-left p-3 text-xs font-semibold text-sand-600">Tax Rate</th>
+                  <th className="text-left p-3 text-xs font-semibold text-sand-600 hidden sm:table-cell">What it means</th>
                 </tr>
               </thead>
               <tbody>
                 {brackets.map((b, i) => (
                   <tr key={i} className={`border-t border-sand-100 ${i === 0 ? 'bg-green-50' : ''}`}>
-                    <td className="p-3 text-sand-900 font-500 text-xs">{b.range}</td>
-                    <td className={`p-3 font-700 text-xs ${i === 0 ? 'text-green-600' : 'text-sand-900'}`}>{b.rate}</td>
+                    <td className="p-3 text-sand-900 font-medium text-xs">{b.range}</td>
+                    <td className={`p-3 font-bold text-xs ${i === 0 ? 'text-green-600' : 'text-sand-900'}`}>{b.rate}</td>
                     <td className="p-3 text-sand-500 text-xs hidden sm:table-cell">{b.note}</td>
                   </tr>
                 ))}
@@ -167,7 +167,7 @@ export default function PersonalPage() {
         <section id="uif">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">📋</span>
-            <h2 className="font-display font-600 text-xl text-sand-900">UIF — Unemployment Insurance</h2>
+            <h2 className="font-display font-semibold text-xl text-sand-900">UIF — Unemployment Insurance</h2>
           </div>
 
           <div className="alert-green mb-4">
@@ -176,7 +176,7 @@ export default function PersonalPage() {
           </div>
 
           <div className="card mb-4">
-            <p className="font-600 text-sm mb-2">How much will I receive?</p>
+            <p className="font-semibold text-sm mb-2">How much will I receive?</p>
             <p className="text-sm text-sand-600 leading-relaxed">
               UIF pays approximately <strong>38–58% of your salary</strong>, for 1 day for every 4 days you worked,
               up to a maximum of 365 days. The higher your salary, the lower the percentage — UIF is designed
@@ -194,7 +194,7 @@ export default function PersonalPage() {
         <section id="paye">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">💼</span>
-            <h2 className="font-display font-600 text-xl text-sand-900">PAYE — Pay As You Earn</h2>
+            <h2 className="font-display font-semibold text-xl text-sand-900">PAYE — Pay As You Earn</h2>
           </div>
 
           <div className="alert-blue mb-4">
@@ -203,27 +203,27 @@ export default function PersonalPage() {
           </div>
 
           <div className="card mb-4">
-            <p className="font-600 text-sm mb-3">What does PAYE look like on your payslip?</p>
+            <p className="font-semibold text-sm mb-3">What does PAYE look like on your payslip?</p>
             <div className="bg-sand-50 rounded-xl p-4 font-mono text-sm space-y-1">
-              <div className="flex justify-between"><span className="text-sand-600">Gross salary</span><span className="font-600">R15,000</span></div>
+              <div className="flex justify-between"><span className="text-sand-600">Gross salary</span><span className="font-semibold">R15,000</span></div>
               <div className="flex justify-between text-red-500"><span>− PAYE (income tax)</span><span>− R1,485</span></div>
               <div className="flex justify-between text-red-500"><span>− UIF (1%)</span><span>− R150</span></div>
-              <div className="border-t border-sand-200 mt-2 pt-2 flex justify-between"><span className="font-600 text-green-700">Take-home pay</span><span className="font-700 text-green-700">R13,365</span></div>
+              <div className="border-t border-sand-200 mt-2 pt-2 flex justify-between"><span className="font-semibold text-green-700">Take-home pay</span><span className="font-bold text-green-700">R13,365</span></div>
             </div>
           </div>
 
           <div className="card space-y-3">
             <div className="flex gap-3">
               <span className="step-number bg-green-500 w-7 h-7 text-xs">1</span>
-              <div><p className="font-600 text-sm">Give your employer your tax number</p><p className="text-xs text-sand-500 mt-0.5">When you start a new job, give your SARS income tax number to your employer. No number yet? Register free at efiling.sars.gov.za.</p></div>
+              <div><p className="font-semibold text-sm">Give your employer your tax number</p><p className="text-xs text-sand-500 mt-0.5">When you start a new job, give your SARS income tax number to your employer. No number yet? Register free at efiling.sars.gov.za.</p></div>
             </div>
             <div className="flex gap-3">
               <span className="step-number bg-green-500 w-7 h-7 text-xs">2</span>
-              <div><p className="font-600 text-sm">Your employer deducts PAYE each month</p><p className="text-xs text-sand-500 mt-0.5">They calculate how much tax you owe for the year, divide by 12, and deduct it from your monthly salary.</p></div>
+              <div><p className="font-semibold text-sm">Your employer deducts PAYE each month</p><p className="text-xs text-sand-500 mt-0.5">They calculate how much tax you owe for the year, divide by 12, and deduct it from your monthly salary.</p></div>
             </div>
             <div className="flex gap-3">
               <span className="step-number bg-green-500 w-7 h-7 text-xs">3</span>
-              <div><p className="font-600 text-sm">Get your IRP5 at year end</p><p className="text-xs text-sand-500 mt-0.5">Your employer gives you an IRP5 showing total income earned and tax paid. Use this to file your annual tax return — SARS may owe you a refund!</p></div>
+              <div><p className="font-semibold text-sm">Get your IRP5 at year end</p><p className="text-xs text-sand-500 mt-0.5">Your employer gives you an IRP5 showing total income earned and tax paid. Use this to file your annual tax return — SARS may owe you a refund!</p></div>
             </div>
           </div>
 
@@ -240,7 +240,7 @@ export default function PersonalPage() {
         <section id="budget">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">📊</span>
-            <h2 className="font-display font-600 text-xl text-sand-900">Budgeting Basics</h2>
+            <h2 className="font-display font-semibold text-xl text-sand-900">Budgeting Basics</h2>
           </div>
 
           <div className="alert-green mb-4">
@@ -257,10 +257,10 @@ export default function PersonalPage() {
             ].map(r => (
               <div key={r.pct} className="card flex items-center gap-4">
                 <div className={`${r.color} rounded-xl w-12 h-12 flex items-center justify-center flex-shrink-0`}>
-                  <span className="text-white font-700 text-sm">{r.pct}</span>
+                  <span className="text-white font-bold text-sm">{r.pct}</span>
                 </div>
                 <div>
-                  <p className="font-600 text-sm">{r.label}</p>
+                  <p className="font-semibold text-sm">{r.label}</p>
                   <p className="text-xs text-sand-500 mt-0.5">{r.examples}</p>
                 </div>
               </div>
@@ -278,7 +278,7 @@ export default function PersonalPage() {
         <section id="docs">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">🪪</span>
-            <h2 className="font-display font-600 text-xl text-sand-900">Essential SA Documents</h2>
+            <h2 className="font-display font-semibold text-xl text-sand-900">Essential SA Documents</h2>
           </div>
 
           <div className="space-y-3">
@@ -292,7 +292,7 @@ export default function PersonalPage() {
                 <div className="flex gap-3">
                   <span className="text-2xl flex-shrink-0">{d.icon}</span>
                   <div>
-                    <p className="font-600 text-sm text-sand-900">{d.title}</p>
+                    <p className="font-semibold text-sm text-sand-900">{d.title}</p>
                     <p className="text-xs text-sand-500 mt-1 leading-relaxed">{d.how}</p>
                     {d.link && (
                       <a href={d.link.url} target="_blank" rel="noopener noreferrer" className="text-xs text-green-600 hover:underline mt-1 block">

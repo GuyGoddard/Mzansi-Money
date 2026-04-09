@@ -9,7 +9,7 @@ function ResultRow({ label, value, highlight }: { label: string; value: string; 
   return (
     <div className={`p-3 rounded-xl ${highlight ? 'bg-green-100' : 'bg-white'}`}>
       <p className="text-xs text-sand-500">{label}</p>
-      <p className={`font-display font-700 text-base mt-0.5 ${highlight ? 'text-green-700' : 'text-sand-900'}`}>{value}</p>
+      <p className={`font-display font-bold text-base mt-0.5 ${highlight ? 'text-green-700' : 'text-sand-900'}`}>{value}</p>
     </div>
   )
 }
@@ -42,16 +42,16 @@ function TaxCalc() {
       </div>
 
       <div>
-        <label className="block text-sm font-500 text-sand-700 mb-1">Annual income (R)</label>
+        <label className="block text-sm font-medium text-sand-700 mb-1">Annual income (R)</label>
         <input className="input-field" type="number" placeholder="e.g. 240 000" value={income}
           onChange={e => setIncome(e.target.value)} onKeyDown={e => e.key === 'Enter' && calc()} />
       </div>
       <div>
-        <label className="block text-sm font-500 text-sand-700 mb-1">Your age</label>
+        <label className="block text-sm font-medium text-sand-700 mb-1">Your age</label>
         <div className="flex gap-2">
           {(['u65', '65to75', 'o75'] as AgeGroup[]).map(a => (
             <button key={a} onClick={() => setAge(a)}
-              className={`flex-1 py-2.5 rounded-xl text-sm font-500 border transition-all
+              className={`flex-1 py-2.5 rounded-xl text-sm font-medium border transition-all
                 ${age === a ? 'bg-green-500 text-white border-green-500' : 'bg-white text-sand-700 border-sand-200 hover:border-green-300'}`}>
               {a === 'u65' ? 'Under 65' : a === '65to75' ? '65 – 74' : '75+'}
             </button>
@@ -63,8 +63,8 @@ function TaxCalc() {
       {result && (
         <div className="tab-content space-y-3">
           <div className="result-card">
-            <p className="text-xs text-green-600 font-500 mb-1">Annual tax owed</p>
-            <p className="font-display font-700 text-3xl text-green-700">{fmtRand(result.annualTax)}</p>
+            <p className="text-xs text-green-600 font-medium mb-1">Annual tax owed</p>
+            <p className="font-display font-bold text-3xl text-green-700">{fmtRand(result.annualTax)}</p>
           </div>
           <div className="grid grid-cols-2 gap-2 bg-sand-100 rounded-xl p-3">
             <ResultRow label="Monthly PAYE" value={fmtRand(result.monthlyTax)} />
@@ -99,17 +99,17 @@ function VATCalc() {
     <div className="space-y-3">
       <div className="alert-blue text-sm">South Africa's VAT rate is <strong>15%</strong>. Basic food items (bread, maize, milk) are zero-rated.</div>
       <div>
-        <label className="block text-sm font-500 text-sand-700 mb-1">Amount (R)</label>
+        <label className="block text-sm font-medium text-sand-700 mb-1">Amount (R)</label>
         <input className="input-field" type="number" placeholder="e.g. 1 150" value={amount}
           onChange={e => setAmount(e.target.value)} onKeyDown={e => e.key === 'Enter' && calc()} />
       </div>
       <div>
-        <label className="block text-sm font-500 text-sand-700 mb-1">This amount is...</label>
+        <label className="block text-sm font-medium text-sand-700 mb-1">This amount is...</label>
         <div className="flex gap-2">
-          <button onClick={() => setIncl(true)} className={`flex-1 py-2.5 rounded-xl text-sm font-500 border transition-all ${incl ? 'bg-green-500 text-white border-green-500' : 'bg-white text-sand-700 border-sand-200 hover:border-green-300'}`}>
+          <button onClick={() => setIncl(true)} className={`flex-1 py-2.5 rounded-xl text-sm font-medium border transition-all ${incl ? 'bg-green-500 text-white border-green-500' : 'bg-white text-sand-700 border-sand-200 hover:border-green-300'}`}>
             VAT inclusive
           </button>
-          <button onClick={() => setIncl(false)} className={`flex-1 py-2.5 rounded-xl text-sm font-500 border transition-all ${!incl ? 'bg-green-500 text-white border-green-500' : 'bg-white text-sand-700 border-sand-200 hover:border-green-300'}`}>
+          <button onClick={() => setIncl(false)} className={`flex-1 py-2.5 rounded-xl text-sm font-medium border transition-all ${!incl ? 'bg-green-500 text-white border-green-500' : 'bg-white text-sand-700 border-sand-200 hover:border-green-300'}`}>
             VAT exclusive
           </button>
         </div>
@@ -145,16 +145,16 @@ function SalaryCalc() {
     <div className="space-y-3">
       <div className="alert-blue text-sm">Enter your <strong>gross salary</strong> — the amount before any deductions.</div>
       <div>
-        <label className="block text-sm font-500 text-sand-700 mb-1">Gross monthly salary (R)</label>
+        <label className="block text-sm font-medium text-sand-700 mb-1">Gross monthly salary (R)</label>
         <input className="input-field" type="number" placeholder="e.g. 15 000" value={gross}
           onChange={e => setGross(e.target.value)} onKeyDown={e => e.key === 'Enter' && calc()} />
       </div>
       <div>
-        <label className="block text-sm font-500 text-sand-700 mb-1">Age</label>
+        <label className="block text-sm font-medium text-sand-700 mb-1">Age</label>
         <div className="flex gap-2">
           {(['u65', '65to75', 'o75'] as AgeGroup[]).map(a => (
             <button key={a} onClick={() => setAge(a)}
-              className={`flex-1 py-2.5 rounded-xl text-sm font-500 border transition-all
+              className={`flex-1 py-2.5 rounded-xl text-sm font-medium border transition-all
                 ${age === a ? 'bg-green-500 text-white border-green-500' : 'bg-white text-sand-700 border-sand-200 hover:border-green-300'}`}>
               {a === 'u65' ? 'Under 65' : a === '65to75' ? '65 – 74' : '75+'}
             </button>
@@ -165,14 +165,14 @@ function SalaryCalc() {
       {result && (
         <div className="tab-content space-y-3">
           <div className="result-card">
-            <p className="text-xs text-green-600 font-500 mb-1">Monthly take-home pay</p>
-            <p className="font-display font-700 text-3xl text-green-700">{fmtRand(result.net)}</p>
+            <p className="text-xs text-green-600 font-medium mb-1">Monthly take-home pay</p>
+            <p className="font-display font-bold text-3xl text-green-700">{fmtRand(result.net)}</p>
           </div>
           <div className="bg-sand-50 rounded-xl p-4 font-mono text-sm space-y-1.5">
-            <div className="flex justify-between text-sand-700"><span>Gross salary</span><span className="font-600">{fmtRand(result.monthlyGross)}</span></div>
+            <div className="flex justify-between text-sand-700"><span>Gross salary</span><span className="font-semibold">{fmtRand(result.monthlyGross)}</span></div>
             <div className="flex justify-between text-red-500"><span>− PAYE (income tax)</span><span>− {fmtRand(result.monthlyTax)}</span></div>
             <div className="flex justify-between text-red-500"><span>− UIF (1%)</span><span>− {fmtRand(result.uif)}</span></div>
-            <div className="border-t border-sand-200 pt-2 flex justify-between text-green-700 font-700"><span>Take-home</span><span>{fmtRand(result.net)}</span></div>
+            <div className="border-t border-sand-200 pt-2 flex justify-between text-green-700 font-bold"><span>Take-home</span><span>{fmtRand(result.net)}</span></div>
           </div>
           <Hint text="UIF is capped at R177.12/month. Medical aid, pension fund, and other deductions are not included in this estimate as they vary by employer." />
         </div>
@@ -205,7 +205,7 @@ function ProfitCalc() {
         { label: 'Other monthly expenses (R)', val: exp, set: setExp, placeholder: 'e.g. 10 000 (rent, salaries, marketing)' },
       ].map(f => (
         <div key={f.label}>
-          <label className="block text-sm font-500 text-sand-700 mb-1">{f.label}</label>
+          <label className="block text-sm font-medium text-sand-700 mb-1">{f.label}</label>
           <input className="input-field" type="number" placeholder={f.placeholder} value={f.val} onChange={e => f.set(e.target.value)} />
         </div>
       ))}
@@ -213,8 +213,8 @@ function ProfitCalc() {
       {result && (
         <div className="tab-content space-y-3">
           <div className={`rounded-xl p-4 ${result.netProfit >= 0 ? 'bg-green-50 border border-green-100' : 'bg-red-50 border border-red-100'}`}>
-            <p className="text-xs font-500 mb-1" style={{ color: result.netProfit >= 0 ? '#0F6E56' : '#A32D2D' }}>Monthly net profit</p>
-            <p className="font-display font-700 text-3xl" style={{ color: result.netProfit >= 0 ? '#085041' : '#791F1F' }}>{fmtRand(result.netProfit)}</p>
+            <p className="text-xs font-medium mb-1" style={{ color: result.netProfit >= 0 ? '#0F6E56' : '#A32D2D' }}>Monthly net profit</p>
+            <p className="font-display font-bold text-3xl" style={{ color: result.netProfit >= 0 ? '#085041' : '#791F1F' }}>{fmtRand(result.netProfit)}</p>
           </div>
           <div className="grid grid-cols-2 gap-2 bg-sand-100 rounded-xl p-3">
             <ResultRow label="Gross profit" value={fmtRand(result.grossProfit)} />
@@ -269,7 +269,7 @@ function BudgetTool() {
     <div className="space-y-3">
       {fields.map(f => (
         <div key={f.label}>
-          <label className="block text-sm font-500 text-sand-700 mb-1">{f.label}</label>
+          <label className="block text-sm font-medium text-sand-700 mb-1">{f.label}</label>
           <input className="input-field" type="number" placeholder={f.ph} value={f.val} onChange={e => f.set(e.target.value)} />
         </div>
       ))}
@@ -277,10 +277,10 @@ function BudgetTool() {
       {result && (
         <div className="tab-content space-y-3">
           <div className={`rounded-xl p-4 ${result.inDeficit ? 'bg-red-50 border border-red-100' : 'bg-green-50 border border-green-100'}`}>
-            <p className="text-xs font-500 mb-1" style={{ color: result.inDeficit ? '#A32D2D' : '#0F6E56' }}>
+            <p className="text-xs font-medium mb-1" style={{ color: result.inDeficit ? '#A32D2D' : '#0F6E56' }}>
               {result.inDeficit ? 'Monthly shortfall' : 'Money left over each month'}
             </p>
-            <p className="font-display font-700 text-3xl" style={{ color: result.inDeficit ? '#791F1F' : '#085041' }}>
+            <p className="font-display font-bold text-3xl" style={{ color: result.inDeficit ? '#791F1F' : '#085041' }}>
               {fmtRand(result.surplus)}
             </p>
           </div>
@@ -359,7 +359,7 @@ function AffordCalc() {
         { label: 'Monthly payment if on credit (R)', val: monthly, set: setMonthly, ph: 'e.g. 500 (enter 0 if once-off)' },
       ].map(f => (
         <div key={f.label}>
-          <label className="block text-sm font-500 text-sand-700 mb-1">{f.label}</label>
+          <label className="block text-sm font-medium text-sand-700 mb-1">{f.label}</label>
           <input className="input-field" type="number" placeholder={f.ph} value={f.val} onChange={e => f.set(e.target.value)} />
         </div>
       ))}
@@ -367,7 +367,7 @@ function AffordCalc() {
       {result && (
         <div className="tab-content space-y-3">
           <div className={`rounded-xl p-5 ${result.good ? 'bg-green-50 border border-green-100' : 'bg-amber-50 border border-amber-100'}`}>
-            <p className={`font-display font-700 text-xl ${result.good ? 'text-green-700' : 'text-amber-700'}`}>{result.verdict}</p>
+            <p className={`font-display font-bold text-xl ${result.good ? 'text-green-700' : 'text-amber-700'}`}>{result.verdict}</p>
           </div>
           <Hint text={result.hint} />
         </div>
@@ -395,7 +395,7 @@ export default function ToolsPage() {
       <div className="bg-green-700 px-4 pt-6 pb-6">
         <div className="max-w-2xl mx-auto">
           <Link href="/" className="text-green-200 text-sm mb-2 block">← Back</Link>
-          <h1 className="font-display font-700 text-white text-2xl">Calculators & Tools</h1>
+          <h1 className="font-display font-bold text-white text-2xl">Calculators & Tools</h1>
           <p className="text-green-100 text-sm mt-1">Simple tools — clear answers, plain English</p>
         </div>
       </div>
@@ -410,7 +410,7 @@ export default function ToolsPage() {
                   ? 'bg-green-50 border-green-400 shadow-sm'
                   : 'bg-white border-sand-200 hover:border-green-200'}`}>
               <div className="text-2xl mb-1">{t.icon}</div>
-              <p className={`text-xs font-600 leading-tight ${active === t.id ? 'text-green-700' : 'text-sand-800'}`}>{t.label}</p>
+              <p className={`text-xs font-semibold leading-tight ${active === t.id ? 'text-green-700' : 'text-sand-800'}`}>{t.label}</p>
               <p className="text-[10px] text-sand-400 mt-0.5 leading-tight">{t.sub}</p>
             </button>
           ))}
@@ -421,7 +421,7 @@ export default function ToolsPage() {
           <div className="flex items-center gap-2 mb-4">
             <span className="text-2xl">{tools.find(t => t.id === active)?.icon}</span>
             <div>
-              <h2 className="font-display font-600 text-lg">{tools.find(t => t.id === active)?.label} Calculator</h2>
+              <h2 className="font-display font-semibold text-lg">{tools.find(t => t.id === active)?.label} Calculator</h2>
               <p className="text-xs text-sand-500">{tools.find(t => t.id === active)?.sub}</p>
             </div>
           </div>

@@ -46,7 +46,7 @@ export default function RunBusinessPage() {
       <div className="bg-amber-700 px-4 pt-6 pb-6">
         <div className="max-w-2xl mx-auto">
           <Link href="/" className="text-amber-200 text-sm mb-2 block">← Back</Link>
-          <h1 className="font-display font-700 text-white text-2xl">Run a Business</h1>
+          <h1 className="font-display font-bold text-white text-2xl">Run a Business</h1>
           <p className="text-amber-100 text-sm mt-1">VAT, payroll, tax filing, expenses, and systems</p>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function RunBusinessPage() {
         <section id="vat">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">🧾</span>
-            <h2 className="font-display font-600 text-xl">VAT Registration</h2>
+            <h2 className="font-display font-semibold text-xl">VAT Registration</h2>
           </div>
 
           <div className="alert-blue mb-4">
@@ -67,12 +67,12 @@ export default function RunBusinessPage() {
 
           {/* VAT example */}
           <div className="card bg-green-50 border-green-100 mb-4">
-            <p className="font-600 text-sm mb-2 text-green-800">Simple VAT example:</p>
+            <p className="font-semibold text-sm mb-2 text-green-800">Simple VAT example:</p>
             <div className="space-y-1 font-mono text-sm">
-              <div className="flex justify-between text-sand-700"><span>You sell a product for</span><span className="font-600">R1,150</span></div>
+              <div className="flex justify-between text-sand-700"><span>You sell a product for</span><span className="font-semibold">R1,150</span></div>
               <div className="flex justify-between text-sand-500"><span>Your price (excl. VAT)</span><span>R1,000</span></div>
               <div className="flex justify-between text-sand-500"><span>VAT you collected (15%)</span><span>R150</span></div>
-              <div className="border-t border-green-200 pt-1 flex justify-between text-green-700 font-600"><span>You send R150 to SARS, keep R1,000</span><span>→</span></div>
+              <div className="border-t border-green-200 pt-1 flex justify-between text-green-700 font-semibold"><span>You send R150 to SARS, keep R1,000</span><span>→</span></div>
             </div>
           </div>
 
@@ -89,7 +89,7 @@ export default function RunBusinessPage() {
         <section id="tax">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">📑</span>
-            <h2 className="font-display font-600 text-xl">Filing Business Tax</h2>
+            <h2 className="font-display font-semibold text-xl">Filing Business Tax</h2>
           </div>
 
           <div className="alert-green mb-4">
@@ -109,7 +109,7 @@ export default function RunBusinessPage() {
                 <div className="flex gap-3">
                   <span className="step-number bg-amber-500">{s.num}</span>
                   <div>
-                    <p className="font-600 text-sm">{s.title}</p>
+                    <p className="font-semibold text-sm">{s.title}</p>
                     <p className="text-xs text-sand-500 mt-1 leading-relaxed">{s.body}</p>
                     <span className="badge-amber mt-2">{s.tag}</span>
                   </div>
@@ -125,7 +125,7 @@ export default function RunBusinessPage() {
         <section id="payroll">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">👥</span>
-            <h2 className="font-display font-600 text-xl">Payroll & Employing Staff</h2>
+            <h2 className="font-display font-semibold text-xl">Payroll & Employing Staff</h2>
           </div>
 
           <div className="alert-blue mb-4">
@@ -134,12 +134,12 @@ export default function RunBusinessPage() {
           </div>
 
           <div className="card mb-4 bg-sand-50">
-            <p className="font-600 text-sm mb-2">Monthly payroll example (R10,000 employee):</p>
+            <p className="font-semibold text-sm mb-2">Monthly payroll example (R10,000 employee):</p>
             <div className="space-y-1 font-mono text-sm">
               <div className="flex justify-between text-sand-700"><span>Gross salary</span><span>R10,000</span></div>
               <div className="flex justify-between text-red-500"><span>− PAYE (deducted from employee)</span><span>− R542</span></div>
               <div className="flex justify-between text-red-500"><span>− UIF employee (1%)</span><span>− R100</span></div>
-              <div className="border-t border-sand-200 pt-1 flex justify-between font-600 text-sand-900"><span>Employee receives</span><span>R9,358</span></div>
+              <div className="border-t border-sand-200 pt-1 flex justify-between font-semibold text-sand-900"><span>Employee receives</span><span>R9,358</span></div>
               <div className="border-t border-sand-200 pt-1 flex justify-between text-amber-600"><span>+ UIF employer (1% — you pay)</span><span>R100</span></div>
               <div className="flex justify-between text-amber-600"><span>You pay SARS monthly</span><span>R742</span></div>
             </div>
@@ -154,7 +154,7 @@ export default function RunBusinessPage() {
         <section id="expenses">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">📁</span>
-            <h2 className="font-display font-600 text-xl">Tracking Expenses</h2>
+            <h2 className="font-display font-semibold text-xl">Tracking Expenses</h2>
           </div>
 
           <div className="alert-green mb-4">
@@ -172,7 +172,7 @@ export default function RunBusinessPage() {
               <div key={r.rule} className="card flex gap-3">
                 <span className="text-xl flex-shrink-0">{r.icon}</span>
                 <div>
-                  <p className="font-600 text-sm">{r.rule}</p>
+                  <p className="font-semibold text-sm">{r.rule}</p>
                   <p className="text-xs text-sand-500 mt-1 leading-relaxed">{r.detail}</p>
                 </div>
               </div>
@@ -190,7 +190,7 @@ export default function RunBusinessPage() {
         <section id="systems">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">⚙️</span>
-            <h2 className="font-display font-600 text-xl">Free Business Systems</h2>
+            <h2 className="font-display font-semibold text-xl">Free Business Systems</h2>
           </div>
 
           <div className="alert-amber mb-4">
@@ -208,8 +208,8 @@ export default function RunBusinessPage() {
                 className="card-hover p-4"
               >
                 <span className="text-2xl">{s.icon}</span>
-                <p className="font-600 text-sm mt-2">{s.title}</p>
-                <p className="text-xs text-green-600 font-500 mt-0.5">{s.tool}</p>
+                <p className="font-semibold text-sm mt-2">{s.title}</p>
+                <p className="text-xs text-green-600 font-medium mt-0.5">{s.tool}</p>
                 <p className="text-xs text-sand-500 mt-1 leading-snug">{s.desc}</p>
               </a>
             ))}

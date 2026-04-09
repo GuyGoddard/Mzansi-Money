@@ -71,7 +71,7 @@ export default function StartBusinessPage() {
       <div className="bg-blue-700 px-4 pt-6 pb-6">
         <div className="max-w-2xl mx-auto">
           <Link href="/" className="text-blue-200 text-sm mb-2 block">← Back</Link>
-          <h1 className="font-display font-700 text-white text-2xl">Start a Business</h1>
+          <h1 className="font-display font-bold text-white text-2xl">Start a Business</h1>
           <p className="text-blue-100 text-sm mt-1">Register, open a bank account, stay compliant</p>
         </div>
       </div>
@@ -82,7 +82,7 @@ export default function StartBusinessPage() {
         <section id="type">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">🤔</span>
-            <h2 className="font-display font-600 text-xl">Step 1: Choose Your Business Type</h2>
+            <h2 className="font-display font-semibold text-xl">Step 1: Choose Your Business Type</h2>
           </div>
 
           <div className="alert-blue mb-4">
@@ -94,7 +94,7 @@ export default function StartBusinessPage() {
             {bizTypes.map(b => (
               <div key={b.title} className="card">
                 <div className="flex items-start justify-between gap-2 mb-2">
-                  <p className="font-display font-600 text-base text-sand-900">{b.title}</p>
+                  <p className="font-display font-semibold text-base text-sand-900">{b.title}</p>
                   <span className={`badge ${b.badgeColor} whitespace-nowrap text-xs`}>{b.badge}</span>
                 </div>
                 <p className="text-xs text-sand-500 mb-2">Best for: {b.best}</p>
@@ -117,7 +117,7 @@ export default function StartBusinessPage() {
         <section id="cipc">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">🏢</span>
-            <h2 className="font-display font-600 text-xl">Step 2: Register with CIPC</h2>
+            <h2 className="font-display font-semibold text-xl">Step 2: Register with CIPC</h2>
           </div>
 
           <div className="alert-green mb-4">
@@ -128,10 +128,10 @@ export default function StartBusinessPage() {
 
           <div className="bg-sand-100 rounded-xl p-4 mb-4 flex justify-between items-center">
             <div>
-              <p className="font-600 text-sm">Total cost to register</p>
+              <p className="font-semibold text-sm">Total cost to register</p>
               <p className="text-xs text-sand-500 mt-0.5">Name reservation + company registration</p>
             </div>
-            <p className="font-display font-700 text-2xl text-green-600">R175</p>
+            <p className="font-display font-bold text-2xl text-green-600">R175</p>
           </div>
 
           <Checklist id="cipc-register" items={cipcSteps} accentColor="blue" />
@@ -143,7 +143,7 @@ export default function StartBusinessPage() {
         <section id="bank">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">🏦</span>
-            <h2 className="font-display font-600 text-xl">Step 3: Open a Business Bank Account</h2>
+            <h2 className="font-display font-semibold text-xl">Step 3: Open a Business Bank Account</h2>
           </div>
 
           <div className="alert-blue mb-4">
@@ -160,7 +160,7 @@ export default function StartBusinessPage() {
         <section id="checklist">
           <div className="flex items-center gap-2 mb-3">
             <span className="text-2xl">✅</span>
-            <h2 className="font-display font-600 text-xl">Step 4: Compliance Checklist</h2>
+            <h2 className="font-display font-semibold text-xl">Step 4: Compliance Checklist</h2>
           </div>
 
           <div className="alert-amber mb-4">
@@ -172,7 +172,7 @@ export default function StartBusinessPage() {
 
         {/* CTA to run business */}
         <div className="card bg-amber-50 border-amber-100">
-          <p className="font-600 text-sm mb-1">Now that you've registered...</p>
+          <p className="font-semibold text-sm mb-1">Now that you've registered...</p>
           <p className="text-sm text-sand-600 mb-3">Head to "Run a Business" to learn about VAT, payroll, tax filing, and keeping good records.</p>
           <Link href="/run-business" className="btn-primary text-sm w-full">
             Go to Run a Business →

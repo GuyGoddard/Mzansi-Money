@@ -37,7 +37,7 @@ export default function Checklist({ id, items, accentColor = 'green' }: Props) {
     setChecked(prev => {
       const next = new Set(prev)
       next.has(itemId) ? next.delete(itemId) : next.add(itemId)
-      try { localStorage.setItem(`checklist-${id}`, JSON.stringify([...next])) } catch {}
+      try { localStorage.setItem(`checklist-${id}`, JSON.stringify(Array.from(next))) } catch {}
       return next
     })
   }
@@ -53,7 +53,7 @@ export default function Checklist({ id, items, accentColor = 'green' }: Props) {
           <span className="text-sm text-sand-600">
             {checked.size} of {items.length} steps completed
           </span>
-          <span className={`text-sm font-600 ${complete ? 'text-green-600' : 'text-sand-400'}`}>
+          <span className={`text-sm font-semibold ${complete ? 'text-green-600' : 'text-sand-400'}`}>
             {pct}%
           </span>
         </div>
@@ -70,7 +70,7 @@ export default function Checklist({ id, items, accentColor = 'green' }: Props) {
         <div className="alert-green flex gap-3 mb-4 tab-content">
           <span className="text-xl">🎉</span>
           <div>
-            <p className="font-600">All steps complete!</p>
+            <p className="font-semibold">All steps complete!</p>
             <p className="text-sm mt-0.5">Well done — you've finished this checklist.</p>
           </div>
         </div>
@@ -99,8 +99,8 @@ export default function Checklist({ id, items, accentColor = 'green' }: Props) {
                 {/* Content */}
                 <div className="flex-1 min-w-0">
                   <div className="flex items-start justify-between gap-2">
-                    <p className={`font-600 text-sm leading-snug ${done ? 'line-through text-sand-400' : 'text-sand-900'}`}>
-                      <span className={`inline-flex w-5 h-5 rounded-full ${c.num} text-white text-[10px] items-center justify-center mr-1.5 font-700 flex-shrink-0`}>
+                    <p className={`font-semibold text-sm leading-snug ${done ? 'line-through text-sand-400' : 'text-sand-900'}`}>
+                      <span className={`inline-flex w-5 h-5 rounded-full ${c.num} text-white text-[10px] items-center justify-center mr-1.5 font-bold flex-shrink-0`}>
                         {i + 1}
                       </span>
                       {item.title}
@@ -118,7 +118,7 @@ export default function Checklist({ id, items, accentColor = 'green' }: Props) {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={e => e.stopPropagation()}
-                      className="inline-flex items-center gap-1 mt-2 ml-6 text-xs font-500 text-green-600 hover:underline"
+                      className="inline-flex items-center gap-1 mt-2 ml-6 text-xs font-medium text-green-600 hover:underline"
                     >
                       🔗 {item.link.label} →
                     </a>

@@ -1,20 +1,5 @@
 import type { Metadata } from 'next'
-import { Poppins, DM_Sans } from 'next/font/google'
 import './globals.css'
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-display',
-  display: 'swap',
-})
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  variable: '--font-body',
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: {
@@ -43,25 +28,28 @@ export const metadata: Metadata = {
     url: 'https://mzansi-money.com',
     siteName: 'Mzansi Money',
     title: 'Mzansi Money Guide — Free Financial Help for South Africans',
-    description:
-      'Step-by-step help with SASSA, tax, business registration, UIF, and budgeting. Free, simple, no jargon.',
+    description: 'Step-by-step help with SASSA, tax, business registration, UIF, and budgeting. Free, simple, no jargon.',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Mzansi Money Guide',
     description: 'Free financial guidance for South Africans.',
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true },
-  },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-ZA" className={`${poppins.variable} ${dmSans.variable}`}>
-      <body className="font-body bg-sand-50 text-sand-900 antialiased">
+    <html lang="en-ZA">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Sans:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-sand-50 text-sand-900 antialiased">
         {children}
       </body>
     </html>

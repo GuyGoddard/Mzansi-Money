@@ -96,7 +96,7 @@ export default function Home() {
       <div className="bg-gradient-to-br from-green-700 via-green-500 to-green-400 px-4 pt-6 pb-8">
         <div className="max-w-2xl mx-auto">
           <SAFlag className="mb-4" />
-          <h1 className="font-display text-white text-3xl font-700 leading-tight mb-2">
+          <h1 className="font-display text-white text-3xl font-bold leading-tight mb-2">
             Mzansi Money Guide
           </h1>
           <p className="text-green-50 text-base mb-5 leading-relaxed">
@@ -140,7 +140,7 @@ export default function Home() {
                   <div className="flex items-center gap-4">
                     <span className="text-3xl">{p.icon}</span>
                     <div className="flex-1">
-                      <p className="font-display font-600 text-base text-sand-900">{p.title}</p>
+                      <p className="font-display font-semibold text-base text-sand-900">{p.title}</p>
                       <p className="text-sm text-sand-500 mt-0.5">{p.sub}</p>
                     </div>
                     <div className="flex flex-col items-end gap-1">
@@ -162,7 +162,7 @@ export default function Home() {
               <Link key={t.href} href={t.href} className="block">
                 <div className="card-hover p-3 text-center">
                   <div className="text-2xl mb-1">{t.icon}</div>
-                  <p className="text-xs font-500 text-sand-700 leading-tight">{t.label}</p>
+                  <p className="text-xs font-medium text-sand-700 leading-tight">{t.label}</p>
                 </div>
               </Link>
             ))}
@@ -178,7 +178,7 @@ export default function Home() {
                 <div className="flex gap-3 py-4 first:pt-0 last:pb-0 hover:bg-sand-50 -mx-5 px-5 transition-colors">
                   <span className="text-2xl flex-shrink-0">{s.icon}</span>
                   <div className="flex-1">
-                    <p className="font-600 text-sm text-sand-900 leading-snug">{s.title}</p>
+                    <p className="font-semibold text-sm text-sand-900 leading-snug">{s.title}</p>
                     <p className="text-xs text-sand-500 mt-1 leading-relaxed">{s.sub}</p>
                     <span className={`badge ${s.badge} mt-2`}>⏱ {s.time}</span>
                   </div>
@@ -199,7 +199,7 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <span className="text-3xl">📱</span>
             <div>
-              <p className="font-display font-600 text-white text-base">Get help on WhatsApp</p>
+              <p className="font-display font-semibold text-white text-base">Get help on WhatsApp</p>
               <p className="text-sm text-white/85 mt-0.5">Ask our free bot about tax, SASSA, or business registration</p>
             </div>
           </div>
