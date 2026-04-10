@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mzansi Money Guide | Free Financial Help for Every South African</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Nunito:wght@700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#00694c", "primary-container": "#008560", "primary-fixed": "#86f8c9",
+        "primary-fixed-dim": "#68dbae", "on-primary": "#ffffff", "on-primary-container": "#f5fff7",
+        "on-primary-fixed": "#002115", "on-primary-fixed-variant": "#00513a",
+        "secondary": "#1960a6", "secondary-container": "#7ab3ff", "secondary-fixed": "#d4e3ff",
+        "secondary-fixed-dim": "#a4c9ff", "on-secondary": "#ffffff", "on-secondary-container": "#00447e",
+        "on-secondary-fixed": "#001c39", "on-secondary-fixed-variant": "#004883",
+        "tertiary": "#855000", "tertiary-container": "#a76500", "tertiary-fixed": "#ffdcbb",
+        "tertiary-fixed-dim": "#ffb869", "on-tertiary": "#ffffff", "on-tertiary-container": "#fffbff",
+        "on-tertiary-fixed": "#2b1700", "on-tertiary-fixed-variant": "#673d00",
+        "surface": "#fbf9f2", "surface-bright": "#fbf9f2", "surface-dim": "#dcdad3",
+        "surface-container-lowest": "#ffffff", "surface-container-low": "#f6f4ec",
+        "surface-container": "#f0eee7", "surface-container-high": "#eae8e1",
+        "surface-container-highest": "#e4e2dc", "surface-variant": "#e4e2dc",
+        "surface-tint": "#006c4e", "on-surface": "#1b1c18", "on-surface-variant": "#3d4943",
+        "background": "#fbf9f2", "on-background": "#1b1c18",
+        "outline": "#6d7a73", "outline-variant": "#bccac1",
+        "inverse-surface": "#30312c", "inverse-on-surface": "#f3f1ea", "inverse-primary": "#68dbae",
+        "error": "#ba1a1a", "error-container": "#ffdad6", "on-error": "#ffffff", "on-error-container": "#93000a"
+      },
+      borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
+      fontFamily: { "headline": ["Plus Jakarta Sans"], "body": ["Inter"], "label": ["Inter"], "brand": ["Nunito"] }
+    }
+  }
+}
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .sa-flag-strip { height: 4px; background: linear-gradient(90deg, #E03E2D 0%, #E03E2D 20%, #007A4D 20%, #007A4D 40%, #000000 40%, #000000 60%, #FFB612 60%, #FFB612 80%, #002395 80%, #002395 100%); width: 100%; }
+  body { font-family: 'Inter', sans-serif; }
+  h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+  body { min-height: max(884px, 100dvh); }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>
+</head>
+<body class="bg-surface text-on-surface max-w-[430px] mx-auto min-h-screen pb-32">
+
+<!-- Top App Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-bright flex flex-col items-center max-w-[430px] mx-auto">
+  <div class="sa-flag-strip w-full"></div>
+  <nav class="w-full px-6 py-4 flex justify-between items-center bg-surface-bright">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary">language</span>
+      <span class="font-brand font-extrabold text-xl tracking-tight text-on-background">Mzansi Money Guide</span>
+    </div>
+    <button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low transition-colors" onclick="window.location='search.html'">
+      <span class="material-symbols-outlined text-on-surface-variant">search</span>
+    </button>
+  </nav>
+</header>
+
+<!-- Main Content -->
+<main class="mt-20 px-6 space-y-8">
+
+  <!-- Hero Section -->
+  <section class="pt-6 space-y-6">
+    <h1 class="font-headline font-extrabold text-3xl leading-tight text-on-background">
+      Free financial help for every South African
+    </h1>
+
+    <!-- Language Pills -->
+    <div class="flex gap-2 overflow-x-auto pb-2 -mx-6 px-6 no-scrollbar">
+      <button class="flex-shrink-0 bg-primary text-on-primary px-5 py-2 rounded-full font-label text-sm font-semibold shadow-sm">English</button>
+      <button class="flex-shrink-0 bg-surface-container-high text-on-surface-variant px-5 py-2 rounded-full font-label text-sm font-medium hover:bg-surface-variant transition-colors">isiZulu</button>
+      <button class="flex-shrink-0 bg-surface-container-high text-on-surface-variant px-5 py-2 rounded-full font-label text-sm font-medium hover:bg-surface-variant transition-colors">isiXhosa</button>
+      <button class="flex-shrink-0 bg-surface-container-high text-on-surface-variant px-5 py-2 rounded-full font-label text-sm font-medium hover:bg-surface-variant transition-colors">Afrikaans</button>
+      <button class="flex-shrink-0 bg-surface-container-high text-on-surface-variant px-5 py-2 rounded-full font-label text-sm font-medium hover:bg-surface-variant transition-colors">More</button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="relative group" onclick="window.location='search.html'" style="cursor:pointer">
+      <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+        <span class="material-symbols-outlined text-outline">search</span>
+      </div>
+      <input class="w-full h-14 pl-12 pr-4 bg-surface-container-highest border-none rounded-2xl focus:ring-2 focus:ring-primary transition-all placeholder:text-outline font-body text-base pointer-events-none" placeholder="What do you need help with?" type="text" readonly/>
+    </div>
+  </section>
+
+  <!-- Path Cards -->
+  <section class="space-y-4">
+
+    <!-- Personal Finance -->
+    <a href="pathways.html" class="group relative bg-surface-container-lowest p-6 rounded-3xl border-l-4 border-primary transition-all active:scale-[0.98] flex justify-between items-start block hover:shadow-md">
+      <div class="flex-1">
+        <div class="flex justify-between items-start mb-4">
+          <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-3xl">account_balance_wallet</span>
+          </div>
+          <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">12 steps</span>
+        </div>
+        <div class="flex justify-between items-end">
+          <div class="space-y-1">
+            <h3 class="font-headline font-bold text-xl text-on-surface">Personal Finance</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Tax, SASSA, UIF, budgeting</p>
+          </div>
+          <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Start a Business -->
+    <a href="business.html" class="group relative bg-surface-container-lowest p-6 rounded-3xl border-l-4 border-secondary transition-all active:scale-[0.98] flex justify-between items-start block hover:shadow-md">
+      <div class="flex-1">
+        <div class="flex justify-between items-start mb-4">
+          <div class="w-12 h-12 bg-secondary/10 rounded-2xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary text-3xl">rocket_launch</span>
+          </div>
+          <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">8 steps</span>
+        </div>
+        <div class="flex justify-between items-end">
+          <div class="space-y-1">
+            <h3 class="font-headline font-bold text-xl text-on-surface">Start a Business</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Register, open account, comply</p>
+          </div>
+          <span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Run a Business -->
+    <a href="business.html" class="group relative bg-surface-container-lowest p-6 rounded-3xl border-l-4 border-tertiary transition-all active:scale-[0.98] flex justify-between items-start block hover:shadow-md">
+      <div class="flex-1">
+        <div class="flex justify-between items-start mb-4">
+          <div class="w-12 h-12 bg-tertiary/10 rounded-2xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-tertiary text-3xl">storefront</span>
+          </div>
+          <span class="bg-tertiary/10 text-tertiary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">15 steps</span>
+        </div>
+        <div class="flex justify-between items-end">
+          <div class="space-y-1">
+            <h3 class="font-headline font-bold text-xl text-on-surface">Run a Business</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">VAT, payroll, filing taxes</p>
+          </div>
+          <span class="material-symbols-outlined text-tertiary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </div>
+      </div>
+    </a>
+  </section>
+
+  <!-- Photo Banner -->
+  <div class="w-full h-48 rounded-[2rem] overflow-hidden relative">
+    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Rh1aaRI6zPvKi9wK9f0HGGPebV4R3xGRXxebv0ZS7HHHDpBnpz4cdE5s7zuLmexo5jNQL9XH1ly11Omf0aTFed2xdfA5IRe1ZGdgxdIUQiALOs6atvUsFiQ81uXLqzbRrSekry3Chvu7vTJSlxcu1gllkrmh9aM1QHultxg7BRj_0LwJqfDpd7dvFno7qir2Llxz7diJU6L-R6hrJikGhH8VCnuOIqE6yJlcKW36qSOcpgx_j2nan1r46-HS3nu71jbPCZWmJDGc" alt="Diverse South Africans working together"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+  </div>
+
+  <!-- Disclaimer -->
+  <div class="bg-tertiary-fixed text-on-tertiary-fixed p-4 rounded-2xl flex items-start gap-3 mb-4">
+    <span class="material-symbols-outlined text-tertiary shrink-0">warning</span>
+    <p class="text-[12px] leading-snug font-medium">
+      This guide provides general financial information and does not constitute official legal or financial advice. Always consult with a certified practitioner for your specific needs.
+    </p>
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low px-6 py-10 space-y-4">
+  <div class="text-primary font-bold text-lg font-brand">Mzansi Money Guide</div>
+  <div class="grid grid-cols-2 gap-4">
+    <div class="flex flex-col gap-2">
+      <span class="font-bold text-primary text-xs uppercase tracking-wider">Quick Links</span>
+      <a href="pathways.html" class="text-stone-600 text-sm hover:underline">Tax Help</a>
+      <a href="sassa.html" class="text-stone-600 text-sm hover:underline">SASSA Info</a>
+      <a href="business.html" class="text-stone-600 text-sm hover:underline">Business</a>
+    </div>
+    <div class="flex flex-col gap-2">
+      <span class="font-bold text-primary text-xs uppercase tracking-wider">Support</span>
+      <a href="request-help.html" class="text-stone-600 text-sm hover:underline">Get Help</a>
+      <a href="search.html" class="text-stone-600 text-sm hover:underline">Search</a>
+    </div>
+  </div>
+  <p class="text-stone-500 text-xs pt-4 border-t border-stone-200">© 2024 Mzansi Money Guide. Multilingual Support (isiZulu, isiXhosa, Afrikaans)</p>
+</footer>
+
+<!-- Bottom Nav -->
+<nav class="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto z-50 bg-white rounded-t-2xl shadow-[0_-4px_12px_rgba(27,28,24,0.08)] border-t border-stone-100 flex justify-around items-center px-4 py-2 pb-safe">
+  <a href="index.html" class="flex flex-col items-center justify-center bg-[#00694c]/10 text-[#00694c] rounded-2xl px-3 py-1.5 transition-all active:scale-90">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span>
+    <span class="text-[11px] font-semibold">Home</span>
+  </a>
+  <a href="pathways.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
+    <span class="material-symbols-outlined">insights</span>
+    <span class="text-[11px] font-semibold">Pathways</span>
+  </a>
+  <a href="search.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
+    <span class="material-symbols-outlined">search</span>
+    <span class="text-[11px] font-semibold">Search</span>
+  </a>
+  <a href="request-help.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
+    <span class="material-symbols-outlined">person</span>
+    <span class="text-[11px] font-semibold">Profile</span>
+  </a>
+</nav>
+
+</body>
+</html>

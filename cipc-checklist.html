@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mzansi Money Guide | CIPC Registration Checklist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config={darkMode:"class",theme:{extend:{colors:{
+  "primary":"#00694c","primary-container":"#008560","primary-fixed":"#86f8c9","primary-fixed-dim":"#68dbae",
+  "on-primary":"#ffffff","on-primary-container":"#f5fff7","on-primary-fixed":"#002115","on-primary-fixed-variant":"#00513a",
+  "secondary":"#1960a6","secondary-container":"#7ab3ff","on-secondary":"#ffffff","on-secondary-container":"#00447e",
+  "tertiary":"#855000","tertiary-container":"#a76500","tertiary-fixed":"#ffdcbb",
+  "on-tertiary":"#ffffff","on-tertiary-container":"#fffbff","on-tertiary-fixed":"#2b1700",
+  "surface":"#fbf9f2","surface-bright":"#fbf9f2","surface-container-lowest":"#ffffff",
+  "surface-container-low":"#f6f4ec","surface-container":"#f0eee7","surface-container-high":"#eae8e1",
+  "surface-container-highest":"#e4e2dc","surface-variant":"#e4e2dc",
+  "on-surface":"#1b1c18","on-surface-variant":"#3d4943","background":"#fbf9f2","on-background":"#1b1c18",
+  "outline":"#6d7a73","outline-variant":"#bccac1",
+},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","2xl":"1rem","3xl":"1.5rem","full":"9999px"},
+fontFamily:{"headline":["Plus Jakarta Sans"],"body":["Inter"],"label":["Inter"]}}}}
+</script>
+<style>
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}
+  body{font-family:'Inter',sans-serif;min-height:max(884px,100dvh);}
+  h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif;}
+  .step-item.checked .check-icon{font-variation-settings:'FILL' 1;}
+  .step-item{transition:all 0.2s ease;}
+</style>
+</head>
+<body class="bg-background text-on-surface max-w-[430px] mx-auto pb-40">
+
+<header class="fixed top-0 left-0 right-0 max-w-[430px] mx-auto z-50 bg-surface-bright border-b border-outline-variant/20">
+  <div class="flex items-center justify-between px-6 py-4">
+    <a href="business.html" class="text-primary"><span class="material-symbols-outlined">arrow_back</span></a>
+    <h1 class="font-headline font-bold text-lg text-primary">Registration Path</h1>
+    <button class="text-primary w-9 h-9 flex items-center justify-center rounded-full hover:bg-surface-container-low">
+      <span class="material-symbols-outlined">help_outline</span>
+    </button>
+  </div>
+</header>
+
+<main class="pt-20 pb-40 px-6">
+
+  <!-- Hero -->
+  <section class="mb-6">
+    <h2 class="font-headline font-extrabold text-3xl text-on-surface mb-1 leading-tight">Register Your Business</h2>
+    <p class="text-on-surface-variant font-medium">Takes about 30 minutes online. Costs R175.</p>
+  </section>
+
+  <!-- Progress Card -->
+  <section id="progress-card" class="bg-surface-container-lowest rounded-2xl p-6 mb-6 shadow-[0_8px_24px_rgba(27,28,24,0.06)]">
+    <div class="flex justify-between items-end mb-3">
+      <div>
+        <p id="progress-label" class="font-label text-sm font-bold text-primary mb-1">0 of 7 steps completed</p>
+        <span id="progress-pct-badge" class="inline-flex items-center px-3 py-0.5 rounded-full text-xs font-bold bg-tertiary-fixed text-on-tertiary-fixed">0%</span>
+      </div>
+      <span class="material-symbols-outlined text-primary-container" style="font-variation-settings:'FILL' 1">stars</span>
+    </div>
+    <div class="w-full bg-primary-fixed h-3 rounded-full overflow-hidden">
+      <div id="progress-bar" class="bg-primary h-full rounded-full transition-all duration-500" style="width:0%"></div>
+    </div>
+    <p id="progress-msg" class="mt-3 text-sm text-on-surface-variant italic hidden">"You're making great progress. Keep going!"</p>
+  </section>
+
+  <!-- Checklist -->
+  <div id="checklist" class="space-y-3">
+    <!-- Steps rendered by JS -->
+  </div>
+
+  <!-- Celebration (hidden until complete) -->
+  <div id="celebration" class="hidden mt-6 relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary to-primary-container p-8 text-on-primary text-center shadow-lg">
+    <div class="relative z-10 flex flex-col items-center space-y-4">
+      <div class="bg-primary-fixed/20 p-4 rounded-full">
+        <span class="material-symbols-outlined text-5xl" style="font-variation-settings:'FILL' 1">verified</span>
+      </div>
+      <h2 class="text-3xl font-extrabold tracking-tight">You're registered! 🎉</h2>
+      <p class="text-on-primary/90 max-w-xs font-medium">Your business is officially recognized. Time to take the next leap.</p>
+      <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-bold uppercase tracking-widest border border-on-primary/20">100% COMPLETE</span>
+    </div>
+    <div class="absolute -top-10 -left-10 w-32 h-32 bg-primary-fixed/20 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-tertiary-fixed/20 rounded-full blur-3xl"></div>
+  </div>
+
+  <!-- What to do next (hidden until complete) -->
+  <div id="next-steps" class="hidden mt-6 space-y-4">
+    <h3 class="font-headline font-bold text-xl">What to do next</h3>
+    <a href="pathways.html#banking" class="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-2xl shadow-sm hover:shadow-md transition-all group">
+      <div class="bg-secondary-container/20 w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined text-secondary">account_balance</span>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg">Open Business Account</h5>
+        <p class="text-sm text-on-surface-variant">Separate personal and business finances.</p>
+      </div>
+    </a>
+    <a href="pathways.html#tax" class="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-2xl shadow-sm hover:shadow-md transition-all group">
+      <div class="bg-tertiary-fixed/40 w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined text-tertiary">description</span>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg">Apply for Tax Number</h5>
+        <p class="text-sm text-on-surface-variant">Register with SARS for tax compliance.</p>
+      </div>
+    </a>
+    <a href="pathways.html#uif" class="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-2xl shadow-sm hover:shadow-md transition-all group">
+      <div class="bg-primary-fixed/40 w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined text-primary">group_add</span>
+      </div>
+      <div>
+        <h5 class="font-bold text-lg">Register for UIF</h5>
+        <p class="text-sm text-on-surface-variant">Protect employees, register with Dept of Labour.</p>
+      </div>
+    </a>
+  </div>
+
+</main>
+
+<!-- Fixed Cost Bar -->
+<div class="fixed bottom-[4rem] left-0 right-0 max-w-[430px] mx-auto px-4 z-40">
+  <div class="bg-tertiary-container text-on-tertiary-container rounded-2xl p-4 flex justify-between items-center shadow-lg">
+    <div class="flex items-center gap-3">
+      <span class="material-symbols-outlined bg-white/20 p-2 rounded-xl">payments</span>
+      <div>
+        <p class="text-xs font-bold opacity-80 uppercase tracking-widest">Required Funds</p>
+        <p class="font-headline font-extrabold text-lg">Total cost: R175</p>
+      </div>
+    </div>
+    <a href="request-help.html" class="bg-on-tertiary-container text-tertiary-container px-5 py-2.5 rounded-xl font-bold text-sm active:scale-95 transition-transform">
+      Get Help
+    </a>
+  </div>
+</div>
+
+<!-- Bottom Nav -->
+<nav class="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto z-50 bg-white rounded-t-2xl shadow-[0_-4px_12px_rgba(27,28,24,0.08)] border-t border-stone-100 flex justify-around items-center px-4 py-2">
+  <a href="index.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
+    <span class="material-symbols-outlined">home</span><span class="text-[11px] font-semibold">Home</span>
+  </a>
+  <a href="pathways.html" class="flex flex-col items-center justify-center bg-[#00694c]/10 text-[#00694c] rounded-2xl px-3 py-1.5 transition-all active:scale-90">
+    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">insights</span><span class="text-[11px] font-semibold">Pathways</span>
+  </a>
+  <a href="search.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
+    <span class="material-symbols-outlined">search</span><span class="text-[11px] font-semibold">Search</span>
+  </a>
+  <a href="request-help.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
+    <span class="material-symbols-outlined">person</span><span class="text-[11px] font-semibold">Profile</span>
+  </a>
+</nav>
+
+<script>
+const steps = [
+  { title: "CIPC Customer Registration", desc: "Create your unique profile on the CIPC portal.", time: "5 MIN" },
+  { title: "Business Name Reservation", desc: "Check availability and reserve your chosen trade name.", time: "10 MIN" },
+  { title: "Director Information", desc: "ID numbers and contact details for all board members.", time: "5 MIN" },
+  { title: "Company Address Details", desc: "Physical and postal address for the registered office.", time: "2 MIN" },
+  { title: "Payment of Fees", desc: "Settling the registration and name reservation costs.", time: "R175", highlight: true },
+  { title: "ID Verification (Biometrics)", desc: "Selfie and ID document scan for security.", time: "3 MIN" },
+  { title: "Final Document Submission", desc: "Review all details and submit for approval.", time: "5 MIN" },
+];
+
+let checked = new Set();
+
+function render() {
+  const list = document.getElementById('checklist');
+  list.innerHTML = steps.map((s, i) => {
+    const done = checked.has(i);
+    return `
+    <div class="step-item bg-surface-container-lowest rounded-2xl p-5 flex items-start gap-4 cursor-pointer hover:bg-surface-container-low transition-colors ${done ? 'opacity-60' : ''}" onclick="toggle(${i})">
+      <div class="mt-1 flex-shrink-0">
+        <span class="material-symbols-outlined check-icon ${done ? 'text-primary' : 'text-outline'}" style="${done ? "font-variation-settings:'FILL' 1" : ''}">
+          ${done ? 'check_circle' : 'radio_button_unchecked'}
+        </span>
+      </div>
+      <div class="flex-grow">
+        <div class="flex justify-between items-start mb-1">
+          <h3 class="font-headline font-bold text-on-surface ${done ? 'line-through opacity-60' : ''}">${s.title}</h3>
+          <span class="text-[10px] font-bold ${s.highlight ? 'bg-tertiary-fixed text-on-tertiary-fixed' : 'bg-surface-variant text-on-surface-variant'} px-2 py-1 rounded-md uppercase tracking-wider ml-2 flex-shrink-0">${s.time}</span>
+        </div>
+        <p class="text-on-surface-variant text-sm leading-relaxed">${s.desc}</p>
+      </div>
+    </div>`;
+  }).join('');
+  updateProgress();
+}
+
+function toggle(i) {
+  if (checked.has(i)) checked.delete(i);
+  else checked.add(i);
+  render();
+}
+
+function updateProgress() {
+  const n = checked.size;
+  const pct = Math.round((n / steps.length) * 100);
+  document.getElementById('progress-bar').style.width = pct + '%';
+  document.getElementById('progress-label').textContent = `${n} of ${steps.length} steps completed`;
+  document.getElementById('progress-pct-badge').textContent = pct + '%';
+  const msg = document.getElementById('progress-msg');
+  if (n > 0 && n < steps.length) { msg.classList.remove('hidden'); }
+  else { msg.classList.add('hidden'); }
+  const cel = document.getElementById('celebration');
+  const nxt = document.getElementById('next-steps');
+  if (n === steps.length) {
+    cel.classList.remove('hidden');
+    nxt.classList.remove('hidden');
+  } else {
+    cel.classList.add('hidden');
+    nxt.classList.add('hidden');
+  }
+}
+
+render();
+</script>
+
+</body>
+</html>
