@@ -1,271 +1,282 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Mzansi Money Guide | SASSA Grants &amp; Support</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="SASSA grants guide for South Africa - Child Support, Old Age, SRD, Disability grants explained"/>
+<title>SASSA Grants &amp; Support | Mzansi Money Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-tailwind.config = {
-  darkMode:"class",
-  theme:{extend:{colors:{
-    "primary":"#00694c","primary-container":"#008560","primary-fixed":"#86f8c9","primary-fixed-dim":"#68dbae",
-    "on-primary":"#ffffff","on-primary-container":"#f5fff7","on-primary-fixed":"#002115","on-primary-fixed-variant":"#00513a",
-    "secondary":"#1960a6","secondary-container":"#7ab3ff","on-secondary":"#ffffff","on-secondary-container":"#00447e",
-    "tertiary":"#855000","tertiary-container":"#a76500","tertiary-fixed":"#ffdcbb","tertiary-fixed-dim":"#ffb869",
-    "on-tertiary":"#ffffff","on-tertiary-container":"#fffbff","on-tertiary-fixed":"#2b1700",
-    "surface":"#fbf9f2","surface-bright":"#fbf9f2","surface-container-lowest":"#ffffff",
-    "surface-container-low":"#f6f4ec","surface-container":"#f0eee7","surface-container-high":"#eae8e1",
-    "surface-container-highest":"#e4e2dc","surface-variant":"#e4e2dc",
-    "on-surface":"#1b1c18","on-surface-variant":"#3d4943","background":"#fbf9f2","on-background":"#1b1c18",
-    "outline":"#6d7a73","outline-variant":"#bccac1",
-  },borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","2xl":"1rem","3xl":"1.5rem","full":"9999px"},
-  fontFamily:{"headline":["Plus Jakarta Sans"],"body":["Inter"],"label":["Inter"]}}}
-}
-</script>
-<style>
-  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}
-  body{font-family:'Inter',sans-serif;min-height:max(884px,100dvh);}
-  h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif;}
-  .no-scrollbar::-webkit-scrollbar{display:none;}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none;}
-</style>
+<link rel="stylesheet" href="shared.css"/>
 </head>
-<body class="bg-surface text-on-surface max-w-[430px] mx-auto pb-32">
+<body>
 
-<header class="sticky top-0 z-50 bg-surface-bright border-b border-outline-variant/20">
-  <div class="flex items-center justify-between px-6 py-4">
-    <a href="index.html" class="text-primary"><span class="material-symbols-outlined">arrow_back</span></a>
-    <span class="font-headline font-bold text-on-surface">SASSA Grants</span>
-    <a href="request-help.html" class="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-      <span class="material-symbols-outlined text-lg">person</span>
-    </a>
+<nav class="sidebar-nav">
+  <div class="flag-strip"></div>
+  <div class="sidebar-brand">
+    <span class="material-symbols-outlined text-primary">language</span>
+    <span data-t="nav_brand">Mzansi Money Guide</span>
   </div>
-</header>
-
-<main class="space-y-0">
-
-  <!-- Hero -->
-  <div class="relative overflow-hidden bg-gradient-to-br from-primary to-primary-container px-6 pt-8 pb-10">
-    <span class="inline-block px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-[10px] font-bold uppercase tracking-widest mb-3">Official Support</span>
-    <h1 class="font-headline font-extrabold text-3xl text-on-primary leading-tight mb-3">SASSA Grants &amp; Support</h1>
-    <p class="text-on-primary-container text-sm opacity-90 leading-relaxed">Simplified guides to help you apply for, manage, and track your social grants with confidence.</p>
-    <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-primary-fixed/20 rounded-full blur-2xl"></div>
-  </div>
-
-  <!-- Free Banner -->
-  <div class="mx-6 mt-6 bg-primary rounded-xl px-4 py-3 flex items-center gap-3 text-on-primary">
-    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">verified_user</span>
-    <p class="text-sm font-bold">This is always FREE to apply. Never pay anyone.</p>
-  </div>
-
-  <!-- Available Grants -->
-  <section class="px-6 mt-6">
-    <div class="flex items-center justify-between mb-4">
-      <h2 class="font-headline font-bold text-xl text-on-surface">Available Grants</h2>
-      <span class="text-xs font-bold text-outline uppercase tracking-wide">Swipe Left</span>
-    </div>
-    <div class="flex gap-4 overflow-x-auto pb-2 no-scrollbar -mx-0">
-      <!-- Child Support -->
-      <div class="flex-shrink-0 w-48 bg-surface-container-lowest rounded-2xl p-5 shadow-sm">
-        <div class="flex justify-between items-start mb-3">
-          <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary">child_care</span>
-          </div>
-          <span class="bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Monthly</span>
-        </div>
-        <p class="font-headline font-extrabold text-2xl text-on-surface">R530</p>
-        <p class="font-bold text-on-surface text-sm">Child Support</p>
-        <p class="text-xs text-on-surface-variant mt-1">Monthly support for children</p>
-        <div class="mt-3 flex items-center gap-1.5 text-xs text-on-surface-variant">
-          <span class="material-symbols-outlined text-sm">info</span>
-          <span>Eligibility: Under 18</span>
-        </div>
-      </div>
-      <!-- Old Age -->
-      <div class="flex-shrink-0 w-48 bg-surface-container-lowest rounded-2xl p-5 shadow-sm">
-        <div class="flex justify-between items-start mb-3">
-          <div class="w-10 h-10 bg-tertiary/10 rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-tertiary">elderly</span>
-          </div>
-          <span class="bg-tertiary text-on-tertiary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Monthly</span>
-        </div>
-        <p class="font-headline font-extrabold text-2xl text-on-surface">R2,180</p>
-        <p class="font-bold text-on-surface text-sm">Old Age Grant</p>
-        <p class="text-xs text-on-surface-variant mt-1">For South Africans 60+</p>
-        <div class="mt-3 flex items-center gap-1.5 text-xs text-on-surface-variant">
-          <span class="material-symbols-outlined text-sm">info</span>
-          <span>Eligibility: 60+ years</span>
-        </div>
-      </div>
-      <!-- SRD -->
-      <div class="flex-shrink-0 w-48 bg-surface-container-lowest rounded-2xl p-5 shadow-sm">
-        <div class="flex justify-between items-start mb-3">
-          <div class="w-10 h-10 bg-secondary/10 rounded-xl flex items-center justify-center">
-            <span class="material-symbols-outlined text-secondary">volunteer_activism</span>
-          </div>
-          <span class="bg-secondary text-on-secondary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Monthly</span>
-        </div>
-        <p class="font-headline font-extrabold text-2xl text-on-surface">R350</p>
-        <p class="font-bold text-on-surface text-sm">SRD Grant</p>
-        <p class="text-xs text-on-surface-variant mt-1">Social Relief of Distress</p>
-        <div class="mt-3 flex items-center gap-1.5 text-xs text-on-surface-variant">
-          <span class="material-symbols-outlined text-sm">info</span>
-          <span>Unemployed adults</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Am I Eligible? -->
-  <section class="px-6 mt-8">
-    <div class="bg-surface-container-low rounded-2xl p-5">
-      <h2 class="font-headline font-bold text-xl text-on-surface mb-4">Am I eligible?</h2>
-      <div class="space-y-3">
-        <div class="flex items-center justify-between">
-          <span class="text-sm text-on-surface">Are you 60+ years old?</span>
-          <div class="flex gap-2">
-            <button class="px-4 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-bold">No</button>
-            <button class="px-4 py-1.5 rounded-full bg-primary text-on-primary text-sm font-bold">Yes</button>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-sm text-on-surface">Is your income below R8k?</span>
-          <div class="flex gap-2">
-            <button class="px-4 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-bold">No</button>
-            <button class="px-4 py-1.5 rounded-full bg-primary text-on-primary text-sm font-bold">Yes</button>
-          </div>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-sm text-on-surface">South African citizen?</span>
-          <div class="flex gap-2">
-            <button class="px-4 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant text-sm font-bold">No</button>
-            <button class="px-4 py-1.5 rounded-full bg-primary text-on-primary text-sm font-bold">Yes</button>
-          </div>
-        </div>
-      </div>
-      <div class="mt-4 bg-primary/10 rounded-xl p-3 text-primary text-sm font-bold flex items-center gap-2">
-        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">check_circle</span>
-        You may qualify for the Old Age Grant of R2,180/month
-      </div>
-    </div>
-  </section>
-
-  <!-- How to Apply -->
-  <section class="px-6 mt-8">
-    <h2 class="font-headline font-bold text-xl text-on-surface mb-5">How to Apply</h2>
-    <div class="space-y-4">
-      <!-- Steps -->
-      <div class="flex gap-4">
-        <div class="flex flex-col items-center">
-          <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
-          <div class="w-0.5 bg-outline-variant flex-1 mt-2"></div>
-        </div>
-        <div class="pb-6 flex-1">
-          <div class="flex justify-between items-start">
-            <h3 class="font-bold text-on-surface">Prepare Documents</h3>
-            <span class="text-[10px] font-bold bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-md uppercase">10 Mins</span>
-          </div>
-          <p class="text-sm text-on-surface-variant mt-1">Gather your ID book and 3 months bank statement.</p>
-        </div>
-      </div>
-      <div class="flex gap-4">
-        <div class="flex flex-col items-center">
-          <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
-          <div class="w-0.5 bg-outline-variant flex-1 mt-2"></div>
-        </div>
-        <div class="pb-6 flex-1">
-          <div class="flex justify-between items-start">
-            <h3 class="font-bold text-on-surface">Check Requirements</h3>
-            <span class="text-[10px] font-bold bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-md uppercase">5 Mins</span>
-          </div>
-          <p class="text-sm text-on-surface-variant mt-1">Perform a self-test of age and income criteria.</p>
-        </div>
-      </div>
-      <div class="flex gap-4">
-        <div class="flex flex-col items-center">
-          <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
-          <div class="w-0.5 bg-outline-variant flex-1 mt-2"></div>
-        </div>
-        <div class="pb-6 flex-1">
-          <div class="flex justify-between items-start">
-            <h3 class="font-bold text-on-surface">Find Nearest Office</h3>
-            <span class="text-[10px] font-bold bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-md uppercase">10 Mins</span>
-          </div>
-          <p class="text-sm text-on-surface-variant mt-1">Locate your local SASSA branch office.</p>
-          <a href="https://www.sassa.gov.za" target="_blank" class="inline-flex items-center gap-1 mt-2 text-primary text-xs font-bold">
-            VIEW BRANCH MAP <span class="material-symbols-outlined text-sm">open_in_new</span>
-          </a>
-        </div>
-      </div>
-      <div class="flex gap-4">
-        <div class="flex flex-col items-center">
-          <div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
-          <div class="w-0.5 bg-primary/30 flex-1 mt-2"></div>
-        </div>
-        <div class="pb-6 flex-1">
-          <div class="flex justify-between items-start">
-            <h3 class="font-bold text-on-surface">Complete Application</h3>
-            <span class="text-[10px] font-bold bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-md uppercase">45 Mins</span>
-          </div>
-          <p class="text-sm text-on-surface-variant mt-1">Fill forms and attend the interview in person.</p>
-        </div>
-      </div>
-      <div class="flex gap-4">
-        <div class="flex flex-col items-center">
-          <div class="w-8 h-8 rounded-full bg-surface-container-highest text-outline flex items-center justify-center text-sm font-bold flex-shrink-0">5</div>
-        </div>
-        <div class="flex-1">
-          <div class="flex justify-between items-start">
-            <h3 class="font-bold text-on-surface">Wait for Approval</h3>
-            <span class="text-[10px] font-bold bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-md uppercase">3 Months</span>
-          </div>
-          <p class="text-sm text-on-surface-variant mt-1">Final notification will arrive via SMS.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Scam Alert -->
-  <section class="px-6 mt-6">
-    <div class="bg-tertiary-container rounded-2xl p-5 text-on-tertiary-container">
-      <div class="flex items-center gap-2 mb-2">
-        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">warning</span>
-        <h3 class="font-headline font-bold">Common Scam Alert</h3>
-      </div>
-      <p class="text-sm opacity-90 leading-relaxed">SASSA will never ask you for money or your bank PIN to process an application. Be aware of fake websites.</p>
-      <button class="mt-4 w-full border-2 border-on-tertiary-container/40 text-on-tertiary-container font-bold py-3 rounded-xl text-sm active:scale-95 transition-transform">
-        REPORT A SCAM
-      </button>
-    </div>
-  </section>
-
-  <!-- WhatsApp CTA -->
-  <section class="px-6 mt-6 mb-4">
-    <a href="request-help.html" class="w-full flex items-center justify-center gap-3 bg-primary text-on-primary font-bold py-4 rounded-2xl shadow-lg active:scale-95 transition-transform">
-      <span class="material-symbols-outlined">chat</span>
-      Need help? WhatsApp Us
-    </a>
-  </section>
-
-</main>
-
-<!-- Bottom Nav -->
-<nav class="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto z-50 bg-white rounded-t-2xl shadow-[0_-4px_12px_rgba(27,28,24,0.08)] border-t border-stone-100 flex justify-around items-center px-4 py-2">
-  <a href="index.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
-    <span class="material-symbols-outlined">home</span><span class="text-[11px] font-semibold">Home</span>
-  </a>
-  <a href="pathways.html" class="flex flex-col items-center justify-center bg-[#00694c]/10 text-[#00694c] rounded-2xl px-3 py-1.5 transition-all active:scale-90">
-    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">insights</span><span class="text-[11px] font-semibold">Pathways</span>
-  </a>
-  <a href="search.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
-    <span class="material-symbols-outlined">search</span><span class="text-[11px] font-semibold">Search</span>
-  </a>
-  <a href="request-help.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
-    <span class="material-symbols-outlined">person</span><span class="text-[11px] font-semibold">Profile</span>
-  </a>
+  <div class="nav-section">Main</div>
+  <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
+  <a href="sassa.html" class="active"><span class="material-symbols-outlined">volunteer_activism</span><span>SASSA</span></a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span>Business</span></a>
+  <div class="nav-section">Personal Finance</div>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span>Tax &amp; SARS</span></a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span>UIF Claims</span></a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span>Budgeting</span></a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
+  <div class="nav-section">Tools</div>
+  <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
 </nav>
 
+<div class="main-content">
+  <header class="top-bar">
+    <div class="sa-flag-strip"></div>
+    <div class="top-bar-inner">
+      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <nav class="top-bar-desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="pathways.html">Pathways</a>
+        <a href="personal-finance.html">Personal Finance</a>
+        <a href="sassa.html" class="active">SASSA</a>
+        <a href="business.html">Business</a>
+      </nav>
+      <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <!-- Lang bar -->
+    <div class="lang-bar" style="margin-bottom:24px;" role="group">
+      <button class="lang-btn bg-primary" data-lang="en" onclick="setLang('en')">English</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="zu" onclick="setLang('zu')">isiZulu</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="xh" onclick="setLang('xh')">isiXhosa</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="af" onclick="setLang('af')">Afrikaans</button>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero-gradient" style="margin-bottom:20px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:rgba(255,255,255,0.2);display:inline-block;padding:4px 12px;border-radius:99px;margin-bottom:12px;" data-t="sassa_hero_badge">Official Support</div>
+      <h1 style="font-size:clamp(26px,4vw,40px);font-weight:800;margin-bottom:10px;" data-t="sassa_hero_title">SASSA Grants &amp; Support</h1>
+      <p style="font-size:15px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;" data-t="sassa_hero_sub">Simplified guides to help you apply for, manage, and track your social grants with confidence.</p>
+    </div>
+
+    <!-- Free banner -->
+    <div class="free-banner" style="margin-bottom:24px;">
+      <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;flex-shrink:0;">verified_user</span>
+      <span data-t="sassa_free_banner">This is always FREE to apply. Never pay anyone.</span>
+    </div>
+
+    <!-- Grant cards -->
+    <div style="margin-bottom:28px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;" data-t="sassa_available">Available Grants</h2>
+        <span style="font-size:11px;font-weight:700;color:#6d7a73;text-transform:uppercase;letter-spacing:0.06em;" data-t="sassa_swipe">Swipe Left</span>
+      </div>
+      <div style="display:flex;gap:14px;overflow-x:auto;padding-bottom:8px;" class="no-scrollbar">
+        <!-- Child Support -->
+        <div class="grant-card" style="flex-shrink:0;width:200px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
+            <div style="width:40px;height:40px;background:rgba(0,105,76,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined text-primary">child_care</span></div>
+            <span style="background:#00694c;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;">MONTHLY</span>
+          </div>
+          <div style="font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#1b1c18;">R560</div>
+          <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;" data-t="sassa_child_name">Child Support</div>
+          <div style="font-size:12px;color:#6d7a73;margin-bottom:10px;" data-t="sassa_child_sub">Monthly support for children</div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6d7a73;"><span class="material-symbols-outlined" style="font-size:14px;">info</span><span data-t="sassa_child_elig">Eligibility: Under 18</span></div>
+        </div>
+        <!-- Old Age -->
+        <div class="grant-card" style="flex-shrink:0;width:200px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
+            <div style="width:40px;height:40px;background:rgba(133,80,0,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined text-tertiary">elderly</span></div>
+            <span style="background:#855000;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;">MONTHLY</span>
+          </div>
+          <div style="font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#1b1c18;">R2,180</div>
+          <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;" data-t="sassa_old_name">Old Age Grant</div>
+          <div style="font-size:12px;color:#6d7a73;margin-bottom:10px;" data-t="sassa_old_sub">For South Africans 60+</div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6d7a73;"><span class="material-symbols-outlined" style="font-size:14px;">info</span><span data-t="sassa_old_elig">Eligibility: 60+ years</span></div>
+        </div>
+        <!-- Disability -->
+        <div class="grant-card" style="flex-shrink:0;width:200px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
+            <div style="width:40px;height:40px;background:rgba(25,96,166,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined text-secondary">accessible</span></div>
+            <span style="background:#1960a6;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;">MONTHLY</span>
+          </div>
+          <div style="font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#1b1c18;">R2,180</div>
+          <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;">Disability Grant</div>
+          <div style="font-size:12px;color:#6d7a73;margin-bottom:10px;">For people with disabilities</div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6d7a73;"><span class="material-symbols-outlined" style="font-size:14px;">info</span><span>Requires medical assessment</span></div>
+        </div>
+        <!-- SRD -->
+        <div class="grant-card" style="flex-shrink:0;width:200px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
+            <div style="width:40px;height:40px;background:rgba(25,96,166,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined text-secondary">volunteer_activism</span></div>
+            <span style="background:#1960a6;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;">MONTHLY</span>
+          </div>
+          <div style="font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#1b1c18;">R370</div>
+          <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;" data-t="sassa_srd_name">SRD Grant</div>
+          <div style="font-size:12px;color:#6d7a73;margin-bottom:10px;" data-t="sassa_srd_sub">Social Relief of Distress</div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6d7a73;"><span class="material-symbols-outlined" style="font-size:14px;">info</span><span data-t="sassa_srd_elig">Unemployed adults</span></div>
+        </div>
+        <!-- Foster Care -->
+        <div class="grant-card" style="flex-shrink:0;width:200px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
+            <div style="width:40px;height:40px;background:rgba(0,105,76,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined text-primary">family_restroom</span></div>
+            <span style="background:#00694c;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;">MONTHLY</span>
+          </div>
+          <div style="font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#1b1c18;">R1,120</div>
+          <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;">Foster Care Grant</div>
+          <div style="font-size:12px;color:#6d7a73;margin-bottom:10px;">For foster parents/caregivers</div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6d7a73;"><span class="material-symbols-outlined" style="font-size:14px;">info</span><span>Requires court order</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eligibility checker -->
+    <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:24px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:18px;" data-t="sassa_eligible_title">Am I eligible?</h2>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+          <span style="font-size:14px;" data-t="sassa_q1">Are you 60+ years old?</span>
+          <div style="display:flex;gap:8px;flex-shrink:0;">
+            <button class="elig-btn" data-group="q1" data-val="no" onclick="eligToggle(this)" style="padding:7px 16px;border-radius:99px;border:none;background:#eae8e1;color:#3d4943;font-weight:700;font-size:13px;cursor:pointer;" data-t="sassa_q_no">No</button>
+            <button class="elig-btn" data-group="q1" data-val="yes" onclick="eligToggle(this)" style="padding:7px 16px;border-radius:99px;border:none;background:#00694c;color:#fff;font-weight:700;font-size:13px;cursor:pointer;" data-t="sassa_q_yes">Yes</button>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+          <span style="font-size:14px;" data-t="sassa_q2">Is your income below R8k?</span>
+          <div style="display:flex;gap:8px;flex-shrink:0;">
+            <button class="elig-btn" data-group="q2" data-val="no" onclick="eligToggle(this)" style="padding:7px 16px;border-radius:99px;border:none;background:#eae8e1;color:#3d4943;font-weight:700;font-size:13px;cursor:pointer;" data-t="sassa_q_no">No</button>
+            <button class="elig-btn" data-group="q2" data-val="yes" onclick="eligToggle(this)" style="padding:7px 16px;border-radius:99px;border:none;background:#00694c;color:#fff;font-weight:700;font-size:13px;cursor:pointer;" data-t="sassa_q_yes">Yes</button>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+          <span style="font-size:14px;" data-t="sassa_q3">South African citizen?</span>
+          <div style="display:flex;gap:8px;flex-shrink:0;">
+            <button class="elig-btn" data-group="q3" data-val="no" onclick="eligToggle(this)" style="padding:7px 16px;border-radius:99px;border:none;background:#eae8e1;color:#3d4943;font-weight:700;font-size:13px;cursor:pointer;" data-t="sassa_q_no">No</button>
+            <button class="elig-btn" data-group="q3" data-val="yes" onclick="eligToggle(this)" style="padding:7px 16px;border-radius:99px;border:none;background:#00694c;color:#fff;font-weight:700;font-size:13px;cursor:pointer;" data-t="sassa_q_yes">Yes</button>
+          </div>
+        </div>
+      </div>
+      <div id="elig-result" style="display:none;margin-top:16px;background:rgba(0,105,76,0.1);border-radius:14px;padding:14px 16px;display:flex;align-items:center;gap:10px;color:#00694c;font-weight:700;font-size:14px;">
+        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;flex-shrink:0;">check_circle</span>
+        <span data-t="sassa_result">You may qualify for the Old Age Grant of R2,180/month</span>
+      </div>
+    </div>
+
+    <!-- How to Apply -->
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:20px;" data-t="sassa_howto">How to Apply</h2>
+    <div style="display:flex;flex-direction:column;gap:0;margin-bottom:28px;">
+      <div class="step-line" style="margin-bottom:0;">
+        <div class="step-dot-col"><div class="step-dot">1</div><div class="step-connector" style="min-height:48px;"></div></div>
+        <div style="padding-bottom:24px;flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;color:#1b1c18;" data-t="sassa_step1_title">Prepare Documents</div>
+            <span style="font-size:10px;font-weight:700;background:#eae8e1;color:#3d4943;padding:3px 8px;border-radius:6px;text-transform:uppercase;flex-shrink:0;">10 MINS</span>
+          </div>
+          <p style="font-size:13px;color:#3d4943;margin:6px 0 0;" data-t="sassa_step1_sub">Gather your ID book and 3 months bank statement.</p>
+        </div>
+      </div>
+      <div class="step-line" style="margin-bottom:0;">
+        <div class="step-dot-col"><div class="step-dot">2</div><div class="step-connector" style="min-height:48px;"></div></div>
+        <div style="padding-bottom:24px;flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;" data-t="sassa_step2_title">Check Requirements</div>
+            <span style="font-size:10px;font-weight:700;background:#eae8e1;color:#3d4943;padding:3px 8px;border-radius:6px;text-transform:uppercase;flex-shrink:0;">5 MINS</span>
+          </div>
+          <p style="font-size:13px;color:#3d4943;margin:6px 0 0;" data-t="sassa_step2_sub">Perform a self-test of age and income criteria.</p>
+        </div>
+      </div>
+      <div class="step-line" style="margin-bottom:0;">
+        <div class="step-dot-col"><div class="step-dot">3</div><div class="step-connector" style="min-height:48px;"></div></div>
+        <div style="padding-bottom:24px;flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;" data-t="sassa_step3_title">Find Nearest Office</div>
+            <span style="font-size:10px;font-weight:700;background:#eae8e1;color:#3d4943;padding:3px 8px;border-radius:6px;text-transform:uppercase;flex-shrink:0;">10 MINS</span>
+          </div>
+          <p style="font-size:13px;color:#3d4943;margin:6px 0 0;" data-t="sassa_step3_sub">Locate your local SASSA branch office.</p>
+          <a href="https://www.sassa.gov.za" target="_blank" style="display:inline-flex;align-items:center;gap:4px;color:#00694c;font-size:12px;font-weight:700;text-decoration:none;margin-top:8px;" data-t="sassa_step3_link">VIEW BRANCH MAP <span class="material-symbols-outlined" style="font-size:14px;">open_in_new</span></a>
+        </div>
+      </div>
+      <div class="step-line" style="margin-bottom:0;">
+        <div class="step-dot-col"><div class="step-dot">4</div><div class="step-connector" style="min-height:48px;"></div></div>
+        <div style="padding-bottom:24px;flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;" data-t="sassa_step4_title">Complete Application</div>
+            <span style="font-size:10px;font-weight:700;background:#eae8e1;color:#3d4943;padding:3px 8px;border-radius:6px;text-transform:uppercase;flex-shrink:0;">45 MINS</span>
+          </div>
+          <p style="font-size:13px;color:#3d4943;margin:6px 0 0;" data-t="sassa_step4_sub">Fill forms and attend the interview in person.</p>
+        </div>
+      </div>
+      <div class="step-line">
+        <div class="step-dot-col"><div class="step-dot" style="background:#eae8e1;color:#6d7a73;">5</div></div>
+        <div style="flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
+            <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;" data-t="sassa_step5_title">Wait for Approval</div>
+            <span style="font-size:10px;font-weight:700;background:#ffdcbb;color:#2b1700;padding:3px 8px;border-radius:6px;text-transform:uppercase;flex-shrink:0;">3 MONTHS</span>
+          </div>
+          <p style="font-size:13px;color:#3d4943;margin:6px 0 0;" data-t="sassa_step5_sub">Final notification will arrive via SMS.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SRD Online section -->
+    <div style="background:#eaf0fb;border-radius:20px;padding:20px;margin-bottom:24px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <span class="material-symbols-outlined text-secondary">smartphone</span>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1960a6;">Apply for SRD Grant Online</h3>
+      </div>
+      <p style="font-size:13px;color:#3d4943;margin-bottom:14px;line-height:1.6;">The R370 SRD grant is <strong>online only</strong>. Apply at srd.sassa.gov.za, WhatsApp 082 046 8553, or USSD *134*7737#</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;">
+        <a href="https://srd.sassa.gov.za" target="_blank" class="btn-primary" style="font-size:13px;padding:10px 18px;">Apply Online</a>
+        <a href="tel:0800601011" class="btn-secondary" style="font-size:13px;padding:9px 18px;">Call 0800 60 10 11</a>
+      </div>
+    </div>
+
+    <!-- Scam alert -->
+    <div class="scam-banner" style="margin-bottom:24px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">warning</span>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;" data-t="sassa_scam_title">Common Scam Alert</h3>
+      </div>
+      <p style="font-size:13px;opacity:0.9;line-height:1.6;margin-bottom:14px;" data-t="sassa_scam_text">SASSA will never ask you for money or your bank PIN. Be aware of fake websites.</p>
+      <button style="width:100%;border:2px solid rgba(255,255,255,0.4);background:transparent;color:#fffbff;font-weight:700;padding:12px;border-radius:12px;font-size:13px;cursor:pointer;" data-t="sassa_scam_btn">REPORT A SCAM</button>
+    </div>
+
+    <!-- CTA -->
+    <a href="request-help.html" class="btn-primary" style="width:100%;justify-content:center;font-size:15px;margin-bottom:8px;" data-t="sassa_whatsapp">
+      <span class="material-symbols-outlined">chat</span> Need help? WhatsApp Us
+    </a>
+
+    <script>
+    function eligToggle(btn){
+      const group=btn.dataset.group;
+      document.querySelectorAll('.elig-btn[data-group="'+group+'"]').forEach(b=>{
+        b.style.background='#eae8e1'; b.style.color='#3d4943';
+      });
+      btn.style.background=btn.dataset.val==='yes'?'#00694c':'#ba1a1a';
+      btn.style.color='#fff';
+      const allYes=[...document.querySelectorAll('.elig-btn[data-val="yes"]')].filter(b=>b.style.background==='rgb(0, 105, 76)');
+      const r=document.getElementById('elig-result');
+      if(allYes.length>=2){r.style.display='flex';}else{r.style.display='none';}
+    }
+    </script>
+
+  </div>
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined" style="">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="search.html"><span class="material-symbols-outlined" style="">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined" style="">person</span><span data-t="nav_profile">Profile</span></a>
+</nav>
+
+<script src="lang.js"></script>
 </body>
 </html>

@@ -1,175 +1,126 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Mzansi Money Guide | Pathways</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pathways | Mzansi Money Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        "primary": "#00694c", "primary-container": "#008560", "primary-fixed": "#86f8c9",
-        "primary-fixed-dim": "#68dbae", "on-primary": "#ffffff", "on-primary-container": "#f5fff7",
-        "on-primary-fixed": "#002115", "on-primary-fixed-variant": "#00513a",
-        "secondary": "#1960a6", "secondary-container": "#7ab3ff", "on-secondary": "#ffffff", "on-secondary-container": "#00447e",
-        "tertiary": "#855000", "tertiary-container": "#a76500", "tertiary-fixed": "#ffdcbb",
-        "on-tertiary": "#ffffff", "on-tertiary-container": "#fffbff", "on-tertiary-fixed": "#2b1700",
-        "surface": "#fbf9f2", "surface-bright": "#fbf9f2", "surface-container-lowest": "#ffffff",
-        "surface-container-low": "#f6f4ec", "surface-container": "#f0eee7",
-        "surface-container-high": "#eae8e1", "surface-container-highest": "#e4e2dc",
-        "surface-variant": "#e4e2dc", "on-surface": "#1b1c18", "on-surface-variant": "#3d4943",
-        "background": "#fbf9f2", "on-background": "#1b1c18",
-        "outline": "#6d7a73", "outline-variant": "#bccac1",
-      },
-      borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
-      fontFamily: { "headline": ["Plus Jakarta Sans"], "body": ["Inter"], "label": ["Inter"] }
-    }
-  }
-}
-</script>
-<style>
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-  .sa-flag-strip { height: 4px; background: linear-gradient(90deg, #E03E2D 0%,#E03E2D 20%,#007A4D 20%,#007A4D 40%,#000 40%,#000 60%,#FFB612 60%,#FFB612 80%,#002395 80%,#002395 100%); }
-  body { font-family: 'Inter', sans-serif; min-height: max(884px, 100dvh); }
-  h1,h2,h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
-</style>
+<link rel="stylesheet" href="shared.css"/>
 </head>
-<body class="bg-surface text-on-surface max-w-[430px] mx-auto pb-32">
-
-<header class="fixed top-0 left-0 right-0 max-w-[430px] mx-auto z-50 bg-surface-bright">
-  <div class="sa-flag-strip"></div>
-  <div class="flex items-center justify-between px-6 py-4">
-    <a href="index.html" class="flex items-center gap-2 text-primary">
-      <span class="material-symbols-outlined">arrow_back</span>
-    </a>
-    <h1 class="font-headline font-bold text-lg text-primary">Pathways</h1>
-    <a href="search.html" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low">
-      <span class="material-symbols-outlined text-on-surface-variant">search</span>
-    </a>
-  </div>
-</header>
-
-<main class="mt-24 px-6 space-y-8">
-
-  <section>
-    <h2 class="font-headline font-extrabold text-2xl text-on-background mb-2">Choose your path</h2>
-    <p class="text-on-surface-variant text-sm">Step-by-step guidance for every financial situation.</p>
-  </section>
-
-  <!-- Personal Finance -->
-  <section class="space-y-3">
-    <h3 class="font-headline font-bold text-lg text-on-surface px-1">Personal Finance</h3>
-
-    <a href="sassa.html" class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-2xl border-l-4 border-primary hover:shadow-md transition-all active:scale-[0.98] block">
-      <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-primary">volunteer_activism</span>
-      </div>
-      <div class="flex-1">
-        <p class="font-bold text-on-surface">SASSA Grants</p>
-        <p class="text-xs text-on-surface-variant">Apply, check status, pay dates</p>
-      </div>
-      <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">chevron_right</span>
-    </a>
-
-    <a href="pathways.html#tax" class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-2xl border-l-4 border-primary hover:shadow-md transition-all active:scale-[0.98] block">
-      <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-primary">account_balance</span>
-      </div>
-      <div class="flex-1">
-        <p class="font-bold text-on-surface">Tax &amp; SARS</p>
-        <p class="text-xs text-on-surface-variant">eFiling, tax number, returns</p>
-      </div>
-      <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">chevron_right</span>
-    </a>
-
-    <a href="pathways.html#uif" class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-2xl border-l-4 border-primary hover:shadow-md transition-all active:scale-[0.98] block">
-      <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-primary">savings</span>
-      </div>
-      <div class="flex-1">
-        <p class="font-bold text-on-surface">Budgeting &amp; UIF</p>
-        <p class="text-xs text-on-surface-variant">Save more, claim UIF benefits</p>
-      </div>
-      <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">chevron_right</span>
-    </a>
-  </section>
-
-  <!-- Business -->
-  <section class="space-y-3">
-    <h3 class="font-headline font-bold text-lg text-on-surface px-1">Business</h3>
-
-    <a href="business.html" class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-2xl border-l-4 border-secondary hover:shadow-md transition-all active:scale-[0.98] block">
-      <div class="w-10 h-10 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-secondary">rocket_launch</span>
-      </div>
-      <div class="flex-1">
-        <p class="font-bold text-on-surface">Register a Business</p>
-        <p class="text-xs text-on-surface-variant">CIPC registration guide</p>
-      </div>
-      <span class="ml-auto bg-secondary/10 text-secondary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">8 Steps</span>
-      <span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">chevron_right</span>
-    </a>
-
-    <a href="cipc-checklist.html" class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-2xl border-l-4 border-secondary hover:shadow-md transition-all active:scale-[0.98] block">
-      <div class="w-10 h-10 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-secondary">checklist</span>
-      </div>
-      <div class="flex-1">
-        <p class="font-bold text-on-surface">CIPC Checklist</p>
-        <p class="text-xs text-on-surface-variant">Track your registration steps</p>
-      </div>
-      <span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">chevron_right</span>
-    </a>
-
-    <a href="pathways.html#vat" class="group flex items-center gap-4 bg-surface-container-lowest p-5 rounded-2xl border-l-4 border-tertiary hover:shadow-md transition-all active:scale-[0.98] block">
-      <div class="w-10 h-10 bg-tertiary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-tertiary">storefront</span>
-      </div>
-      <div class="flex-1">
-        <p class="font-bold text-on-surface">VAT &amp; Payroll</p>
-        <p class="text-xs text-on-surface-variant">Running a registered business</p>
-      </div>
-      <span class="ml-auto bg-tertiary/10 text-tertiary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">15 Steps</span>
-      <span class="material-symbols-outlined text-outline group-hover:text-tertiary transition-colors">chevron_right</span>
-    </a>
-  </section>
-
-  <!-- Get Help CTA -->
-  <div class="bg-gradient-to-br from-primary to-primary-container rounded-3xl p-6 text-on-primary">
-    <h3 class="font-headline font-bold text-xl mb-2">Need personal help?</h3>
-    <p class="text-on-primary-container text-sm mb-4 opacity-90">Speak with a local expert who understands South African finances.</p>
-    <a href="request-help.html" class="inline-flex items-center gap-2 bg-white text-primary font-bold px-5 py-3 rounded-xl hover:bg-primary-fixed transition-colors active:scale-95">
-      <span class="material-symbols-outlined text-lg">support_agent</span>
-      Request Help
-    </a>
-  </div>
-
-</main>
-
-<!-- Bottom Nav -->
-<nav class="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto z-50 bg-white rounded-t-2xl shadow-[0_-4px_12px_rgba(27,28,24,0.08)] border-t border-stone-100 flex justify-around items-center px-4 py-2">
-  <a href="index.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
-    <span class="material-symbols-outlined">home</span>
-    <span class="text-[11px] font-semibold">Home</span>
-  </a>
-  <a href="pathways.html" class="flex flex-col items-center justify-center bg-[#00694c]/10 text-[#00694c] rounded-2xl px-3 py-1.5 transition-all active:scale-90">
-    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">insights</span>
-    <span class="text-[11px] font-semibold">Pathways</span>
-  </a>
-  <a href="search.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
-    <span class="material-symbols-outlined">search</span>
-    <span class="text-[11px] font-semibold">Search</span>
-  </a>
-  <a href="request-help.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
-    <span class="material-symbols-outlined">person</span>
-    <span class="text-[11px] font-semibold">Profile</span>
-  </a>
+<body>
+<nav class="sidebar-nav">
+  <div class="flag-strip"></div>
+  <div class="sidebar-brand"><span class="material-symbols-outlined text-primary">language</span><span data-t="nav_brand">Mzansi Money Guide</span></div>
+  <div class="nav-section">Main</div>
+  <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html" class="active"><span class="material-symbols-outlined">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span>Personal Finance</a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span>SASSA</a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span>Business</a>
+  <div class="nav-section">Personal Finance</div>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span>Tax &amp; SARS</a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</span>UIF Claims</a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span>Budgeting</a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span>Credit Score</a>
+  <div class="nav-section">Tools</div>
+  <a href="search.html"><span class="material-symbols-outlined">search</span>Search</a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
 </nav>
+<div class="main-content">
+  <header class="top-bar">
+    <div class="sa-flag-strip"></div>
+    <div class="top-bar-inner">
+      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <nav class="top-bar-desktop-nav">
+        <a href="index.html" data-t="nav_home">Home</a>
+        <a href="pathways.html" class="active" data-t="nav_pathways">Pathways</a>
+        <a href="personal-finance.html">Personal Finance</a>
+        <a href="sassa.html">SASSA</a>
+        <a href="business.html">Business</a>
+      </nav>
+      <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
+    </div>
+  </header>
+  <div class="page-content">
+    <div class="lang-bar" style="margin-bottom:24px;" role="group">
+      <button class="lang-btn bg-primary" data-lang="en" onclick="setLang('en')">English</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="zu" onclick="setLang('zu')">isiZulu</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="xh" onclick="setLang('xh')">isiXhosa</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="af" onclick="setLang('af')">Afrikaans</button>
+    </div>
+    <h1 class="section-title" style="margin-bottom:8px;" data-t="nav_pathways">Pathways</h1>
+    <p class="section-sub" style="margin-bottom:28px;">Step-by-step guidance for every financial situation in South Africa.</p>
 
+    <!-- Personal Finance -->
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#6d7a73;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;">Personal Finance</h2>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+      <a href="sassa.html" style="display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:18px 20px;text-decoration:none;color:#1b1c18;box-shadow:0 2px 10px rgba(27,28,24,0.05);transition:all 0.2s;border-left:4px solid #00694c;">
+        <div style="width:40px;height:40px;background:rgba(0,105,76,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span class="material-symbols-outlined text-primary">volunteer_activism</span></div>
+        <div style="flex:1;"><div style="font-weight:700;font-size:15px;margin-bottom:2px;">SASSA Grants</div><div style="font-size:13px;color:#6d7a73;">Apply, check status, grant pay dates</div></div>
+        <span style="background:rgba(0,105,76,0.1);color:#00694c;font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;flex-shrink:0;">5 grants</span>
+        <span class="material-symbols-outlined text-muted">chevron_right</span>
+      </a>
+      <a href="tax.html" style="display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:18px 20px;text-decoration:none;color:#1b1c18;box-shadow:0 2px 10px rgba(27,28,24,0.05);transition:all 0.2s;border-left:4px solid #00694c;">
+        <div style="width:40px;height:40px;background:rgba(0,105,76,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span class="material-symbols-outlined text-primary">account_balance</span></div>
+        <div style="flex:1;"><div style="font-weight:700;font-size:15px;margin-bottom:2px;">Tax &amp; SARS eFiling</div><div style="font-size:13px;color:#6d7a73;">File returns, tax numbers, deadlines</div></div>
+        <span class="material-symbols-outlined text-muted">chevron_right</span>
+      </a>
+      <a href="uif.html" style="display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:18px 20px;text-decoration:none;color:#1b1c18;box-shadow:0 2px 10px rgba(27,28,24,0.05);transition:all 0.2s;border-left:4px solid #00694c;">
+        <div style="width:40px;height:40px;background:rgba(0,105,76,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span class="material-symbols-outlined text-primary">work_off</span></div>
+        <div style="flex:1;"><div style="font-weight:700;font-size:15px;margin-bottom:2px;">UIF Claims</div><div style="font-size:13px;color:#6d7a73;">Unemployment, maternity, illness, death</div></div>
+        <span class="material-symbols-outlined text-muted">chevron_right</span>
+      </a>
+      <a href="budgeting.html" style="display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:18px 20px;text-decoration:none;color:#1b1c18;box-shadow:0 2px 10px rgba(27,28,24,0.05);transition:all 0.2s;border-left:4px solid #00694c;">
+        <div style="width:40px;height:40px;background:rgba(0,105,76,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span class="material-symbols-outlined text-primary">savings</span></div>
+        <div style="flex:1;"><div style="font-weight:700;font-size:15px;margin-bottom:2px;">Budgeting &amp; Savings</div><div style="font-size:13px;color:#6d7a73;">50/30/20 calculator, stokvels, emergency fund</div></div>
+        <span class="material-symbols-outlined text-muted">chevron_right</span>
+      </a>
+      <a href="credit.html" style="display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:18px 20px;text-decoration:none;color:#1b1c18;box-shadow:0 2px 10px rgba(27,28,24,0.05);transition:all 0.2s;border-left:4px solid #1960a6;">
+        <div style="width:40px;height:40px;background:rgba(25,96,166,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span class="material-symbols-outlined text-secondary">credit_score</span></div>
+        <div style="flex:1;"><div style="font-weight:700;font-size:15px;margin-bottom:2px;">Credit Score &amp; Debt</div><div style="font-size:13px;color:#6d7a73;">Free credit report, debt review, NCR rights</div></div>
+        <span class="material-symbols-outlined text-muted">chevron_right</span>
+      </a>
+    </div>
+
+    <!-- Business -->
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#6d7a73;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;">Business</h2>
+    <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
+      <a href="business.html" style="display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:18px 20px;text-decoration:none;color:#1b1c18;box-shadow:0 2px 10px rgba(27,28,24,0.05);transition:all 0.2s;border-left:4px solid #1960a6;">
+        <div style="width:40px;height:40px;background:rgba(25,96,166,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span class="material-symbols-outlined text-secondary">rocket_launch</span></div>
+        <div style="flex:1;"><div style="font-weight:700;font-size:15px;margin-bottom:2px;">Register a Business</div><div style="font-size:13px;color:#6d7a73;">CIPC registration guide — 4 simple steps</div></div>
+        <span style="background:rgba(25,96,166,0.1);color:#1960a6;font-size:11px;font-weight:700;padding:3px 10px;border-radius:99px;flex-shrink:0;">8 steps</span>
+        <span class="material-symbols-outlined text-muted">chevron_right</span>
+      </a>
+      <a href="cipc-checklist.html" style="display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:18px 20px;text-decoration:none;color:#1b1c18;box-shadow:0 2px 10px rgba(27,28,24,0.05);transition:all 0.2s;border-left:4px solid #1960a6;">
+        <div style="width:40px;height:40px;background:rgba(25,96,166,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span class="material-symbols-outlined text-secondary">checklist</span></div>
+        <div style="flex:1;"><div style="font-weight:700;font-size:15px;margin-bottom:2px;">CIPC Checklist</div><div style="font-size:13px;color:#6d7a73;">Interactive checklist — track your progress</div></div>
+        <span class="material-symbols-outlined text-muted">chevron_right</span>
+      </a>
+      <a href="business.html#funding" style="display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:18px 20px;text-decoration:none;color:#1b1c18;box-shadow:0 2px 10px rgba(27,28,24,0.05);transition:all 0.2s;border-left:4px solid #855000;">
+        <div style="width:40px;height:40px;background:rgba(133,80,0,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span class="material-symbols-outlined text-tertiary">payments</span></div>
+        <div style="flex:1;"><div style="font-weight:700;font-size:15px;margin-bottom:2px;">Business Funding</div><div style="font-size:13px;color:#6d7a73;">SEDFA, NYDA, government grants &amp; loans</div></div>
+        <span class="material-symbols-outlined text-muted">chevron_right</span>
+      </a>
+    </div>
+
+    <!-- Get help CTA -->
+    <div class="hero-gradient">
+      <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:8px;">Need personal guidance?</h3>
+      <p style="font-size:14px;opacity:0.9;margin-bottom:16px;line-height:1.6;">Our local experts can walk you through any of these pathways personally — in your language.</p>
+      <a href="request-help.html" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#00694c;font-weight:700;font-size:14px;padding:12px 20px;border-radius:12px;text-decoration:none;">
+        <span class="material-symbols-outlined" style="font-size:18px;">support_agent</span> Request Help
+      </a>
+    </div>
+  </div>
+</div>
+<nav class="bottom-nav">
+  <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html" class="active"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined">person</span><span data-t="nav_profile">Profile</span></a>
+</nav>
+<script src="lang.js"></script>
 </body>
 </html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Personal Finance"/>
+<title>Personal Finance | Mzansi Money Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="shared.css"/>
+</head>
+<body>
+
+<nav class="sidebar-nav">
+  <div class="flag-strip"></div>
+  <div class="sidebar-brand">
+    <span class="material-symbols-outlined text-primary">language</span>
+    <span data-t="nav_brand">Mzansi Money Guide</span>
+  </div>
+  <div class="nav-section">Main</div>
+  <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="personal-finance.html" class="active"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span>SASSA</span></a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span>Business</span></a>
+  <div class="nav-section">Personal Finance</div>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span>Tax &amp; SARS</span></a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span>UIF Claims</span></a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span>Budgeting</span></a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
+  <div class="nav-section">Tools</div>
+  <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
+</nav>
+
+<div class="main-content">
+  <header class="top-bar">
+    <div class="sa-flag-strip"></div>
+    <div class="top-bar-inner">
+      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <nav class="top-bar-desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="pathways.html">Pathways</a>
+        <a href="personal-finance.html" class="active">Personal Finance</a>
+        <a href="sassa.html">SASSA</a>
+        <a href="business.html">Business</a>
+      </nav>
+      <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <div class="lang-bar" style="margin-bottom:24px;" role="group">
+      <button class="lang-btn bg-primary" data-lang="en" onclick="setLang('en')">English</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="zu" onclick="setLang('zu')">isiZulu</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="xh" onclick="setLang('xh')">isiXhosa</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="af" onclick="setLang('af')">Afrikaans</button>
+    </div>
+
+    <h1 class="section-title" style="margin-bottom:8px;" data-t="pf_title">Personal Finance</h1>
+    <p class="section-sub" style="margin-bottom:28px;" data-t="pf_sub">Tax, SASSA, UIF, credit and budgeting guides for every South African.</p>
+
+    <div class="card-grid card-grid-3" style="margin-bottom:32px;">
+
+      <a href="tax.html" class="topic-card tap">
+        <div class="topic-icon" style="background:rgba(0,105,76,0.1);"><span class="material-symbols-outlined text-primary" style="font-size:28px;">account_balance</span></div>
+        <div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1b1c18;margin-bottom:4px;" data-t="pf_tax_title">Tax &amp; SARS eFiling</div>
+          <div style="font-size:13px;color:#6d7a73;" data-t="pf_tax_sub">File your returns, get a tax number</div>
+        </div>
+        <span class="material-symbols-outlined text-muted" style="margin-left:auto;">chevron_right</span>
+      </a>
+
+      <a href="uif.html" class="topic-card tap">
+        <div class="topic-icon" style="background:rgba(0,105,76,0.1);"><span class="material-symbols-outlined text-primary" style="font-size:28px;">work_off</span></div>
+        <div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1b1c18;margin-bottom:4px;" data-t="pf_uif_title">UIF — Unemployment Fund</div>
+          <div style="font-size:13px;color:#6d7a73;" data-t="pf_uif_sub">Claim unemployment, maternity, illness benefits</div>
+        </div>
+        <span class="material-symbols-outlined text-muted" style="margin-left:auto;">chevron_right</span>
+      </a>
+
+      <a href="budgeting.html" class="topic-card tap">
+        <div class="topic-icon" style="background:rgba(0,105,76,0.1);"><span class="material-symbols-outlined text-primary" style="font-size:28px;">savings</span></div>
+        <div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1b1c18;margin-bottom:4px;" data-t="pf_budget_title">Budgeting &amp; Savings</div>
+          <div style="font-size:13px;color:#6d7a73;" data-t="pf_budget_sub">50/30/20 rule, stokvels, emergency funds</div>
+        </div>
+        <span class="material-symbols-outlined text-muted" style="margin-left:auto;">chevron_right</span>
+      </a>
+
+      <a href="credit.html" class="topic-card tap">
+        <div class="topic-icon" style="background:rgba(25,96,166,0.1);"><span class="material-symbols-outlined text-secondary" style="font-size:28px;">credit_score</span></div>
+        <div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1b1c18;margin-bottom:4px;" data-t="pf_debt_title">Debt &amp; Credit Score</div>
+          <div style="font-size:13px;color:#6d7a73;" data-t="pf_debt_sub">Understand your score, debt review, rights</div>
+        </div>
+        <span class="material-symbols-outlined text-muted" style="margin-left:auto;">chevron_right</span>
+      </a>
+
+      <a href="sassa.html" class="topic-card tap">
+        <div class="topic-icon" style="background:rgba(133,80,0,0.1);"><span class="material-symbols-outlined text-tertiary" style="font-size:28px;">volunteer_activism</span></div>
+        <div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1b1c18;margin-bottom:4px;" data-t="pf_sassa_link">SASSA Grants</div>
+          <div style="font-size:13px;color:#6d7a73;" data-t="pf_sassa_link_sub">Apply for social grants</div>
+        </div>
+        <span class="material-symbols-outlined text-muted" style="margin-left:auto;">chevron_right</span>
+      </a>
+
+      <a href="request-help.html" class="topic-card tap" style="background:rgba(0,105,76,0.04);border-color:#00694c;">
+        <div class="topic-icon" style="background:rgba(0,105,76,0.15);"><span class="material-symbols-outlined text-primary" style="font-size:28px;">support_agent</span></div>
+        <div>
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#00694c;margin-bottom:4px;">Get Personal Help</div>
+          <div style="font-size:13px;color:#6d7a73;">Speak with a local financial expert</div>
+        </div>
+        <span class="material-symbols-outlined text-primary" style="margin-left:auto;">chevron_right</span>
+      </a>
+
+    </div>
+
+    <!-- Quick tip -->
+    <div style="background:#fff;border-radius:16px;padding:20px;display:flex;gap:14px;align-items:flex-start;box-shadow:0 2px 10px rgba(27,28,24,0.05);">
+      <div style="width:44px;height:44px;background:rgba(0,105,76,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1;">lightbulb</span></div>
+      <div>
+        <div style="font-weight:700;font-size:14px;margin-bottom:6px;">Daily Tip</div>
+        <p style="font-size:13px;color:#3d4943;line-height:1.6;margin:0;">By law, South Africans are entitled to <strong>one free credit report per year</strong> from TransUnion, Compuscan, Experian, or XDS. Check yours today — it costs nothing and could reveal errors affecting your score.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined" style="">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="search.html"><span class="material-symbols-outlined" style="">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined" style="">person</span><span data-t="nav_profile">Profile</span></a>
+</nav>
+
+<script src="lang.js"></script>
+</body>
+</html>

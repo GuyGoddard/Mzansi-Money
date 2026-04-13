@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Budgeting &amp; Savings"/>
+<title>Budgeting &amp; Savings | Mzansi Money Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="shared.css"/>
+</head>
+<body>
+
+<nav class="sidebar-nav">
+  <div class="flag-strip"></div>
+  <div class="sidebar-brand">
+    <span class="material-symbols-outlined text-primary">language</span>
+    <span data-t="nav_brand">Mzansi Money Guide</span>
+  </div>
+  <div class="nav-section">Main</div>
+  <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span>SASSA</span></a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span>Business</span></a>
+  <div class="nav-section">Personal Finance</div>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span>Tax &amp; SARS</span></a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span>UIF Claims</span></a>
+  <a href="budgeting.html" class="active"><span class="material-symbols-outlined">savings</span><span>Budgeting</span></a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
+  <div class="nav-section">Tools</div>
+  <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
+</nav>
+
+<div class="main-content">
+  <header class="top-bar">
+    <div class="sa-flag-strip"></div>
+    <div class="top-bar-inner">
+      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <nav class="top-bar-desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="pathways.html">Pathways</a>
+        <a href="personal-finance.html" class="active">Personal Finance</a>
+        <a href="sassa.html">SASSA</a>
+        <a href="business.html">Business</a>
+      </nav>
+      <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <div class="lang-bar" style="margin-bottom:24px;" role="group">
+      <button class="lang-btn bg-primary" data-lang="en" onclick="setLang('en')">English</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="zu" onclick="setLang('zu')">isiZulu</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="xh" onclick="setLang('xh')">isiXhosa</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="af" onclick="setLang('af')">Afrikaans</button>
+    </div>
+
+    <div class="hero-gradient" style="margin-bottom:24px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:rgba(255,255,255,0.2);display:inline-block;padding:4px 12px;border-radius:99px;margin-bottom:12px;">Personal Finance</div>
+      <h1 style="font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:10px;">Budgeting &amp; Savings</h1>
+      <p style="font-size:14px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;">Simple, practical guides to take control of your money — no matter your income level.</p>
+    </div>
+
+    <!-- Budget calculator -->
+    <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:6px;">50/30/20 Budget Calculator</h2>
+      <p style="font-size:13px;color:#6d7a73;margin-bottom:16px;">Enter your monthly take-home pay to see how to split it.</p>
+      <div style="background:#f6f4ec;border-radius:12px;padding:16px;margin-bottom:16px;">
+        <label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#6d7a73;display:block;margin-bottom:6px;">Monthly Income (ZAR)</label>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:20px;font-weight:800;color:#1b1c18;">R</span>
+          <input id="income-input" type="number" placeholder="0" oninput="calcBudget()" style="width:100%;background:transparent;border:none;border-bottom:2px solid #bccac1;font-size:20px;font-weight:700;color:#1b1c18;outline:none;padding:4px 0;font-family:'Plus Jakarta Sans',sans-serif;"/>
+        </div>
+      </div>
+      <div id="budget-result" style="display:none;display:flex;flex-direction:column;gap:10px;">
+        <div style="background:#e6f4ef;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
+          <div><div style="font-weight:700;font-size:14px;color:#00694c;">Needs (50%)</div><div style="font-size:12px;color:#6d7a73;">Rent, food, transport, utilities</div></div>
+          <div id="needs-val" style="font-size:20px;font-weight:800;color:#00694c;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
+        </div>
+        <div style="background:#eaf0fb;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
+          <div><div style="font-weight:700;font-size:14px;color:#1960a6;">Wants (30%)</div><div style="font-size:12px;color:#6d7a73;">Entertainment, eating out, clothing</div></div>
+          <div id="wants-val" style="font-size:20px;font-weight:800;color:#1960a6;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
+        </div>
+        <div style="background:#fff3e6;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
+          <div><div style="font-weight:700;font-size:14px;color:#855000;">Savings (20%)</div><div style="font-size:12px;color:#6d7a73;">Emergency fund, retirement, stokvel</div></div>
+          <div id="savings-val" style="font-size:20px;font-weight:800;color:#855000;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
+        </div>
+      </div>
+      <script>
+      function calcBudget(){
+        const v=parseFloat(document.getElementById('income-input').value)||0;
+        if(v>0){
+          document.getElementById('budget-result').style.display='flex';
+          document.getElementById('needs-val').textContent='R'+Math.round(v*0.5).toLocaleString();
+          document.getElementById('wants-val').textContent='R'+Math.round(v*0.3).toLocaleString();
+          document.getElementById('savings-val').textContent='R'+Math.round(v*0.2).toLocaleString();
+        } else {
+          document.getElementById('budget-result').style.display='none';
+        }
+      }
+      </script>
+    </div>
+
+    <!-- Emergency fund -->
+    <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;">Build an Emergency Fund</h2>
+      <p style="font-size:14px;color:#3d4943;line-height:1.6;margin-bottom:16px;">An emergency fund is 3–6 months of living expenses saved in a separate account. It protects you from debt when unexpected things happen.</p>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <div style="width:28px;height:28px;border-radius:50%;background:#00694c;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;">1</div>
+          <div style="font-size:14px;color:#3d4943;line-height:1.5;"><strong>Open a separate savings account</strong> — not your everyday account. FNB, Capitec, or Nedbank all have free savings accounts.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <div style="width:28px;height:28px;border-radius:50%;background:#00694c;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;">2</div>
+          <div style="font-size:14px;color:#3d4943;line-height:1.5;"><strong>Set up a debit order on payday</strong> — even R200/month compounds over time.</div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:12px;">
+          <div style="width:28px;height:28px;border-radius:50%;background:#00694c;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;">3</div>
+          <div style="font-size:14px;color:#3d4943;line-height:1.5;"><strong>Do not touch it</strong> — except for genuine emergencies (medical, job loss, urgent repairs).</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stokvels -->
+    <div style="background:#f6f4ec;border-radius:20px;padding:20px;margin-bottom:20px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <span class="material-symbols-outlined text-primary" style="font-size:24px;">groups</span>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;">Stokvels — South Africa's Savings Tradition</h3>
+      </div>
+      <p style="font-size:13px;color:#3d4943;line-height:1.6;margin-bottom:12px;">Over 11 million South Africans participate in stokvels — rotating savings clubs. Members contribute monthly and receive a lump sum in rotation.</p>
+      <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3d4943;">
+        <div>✓ <strong>General stokvel:</strong> Monthly contributions, one member receives all at a time</div>
+        <div>✓ <strong>Grocery stokvel:</strong> Pool money to buy food in bulk at year-end</div>
+        <div>✓ <strong>Investment stokvel:</strong> Pool money into interest-bearing accounts</div>
+      </div>
+    </div>
+
+    <!-- Avoiding loan sharks -->
+    <div class="scam-banner" style="margin-bottom:24px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+        <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">warning</span>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;">⚠️ Avoid Loan Sharks (Mashonisas)</h3>
+      </div>
+      <p style="font-size:13px;opacity:0.9;line-height:1.6;margin:0;">Unregistered lenders often charge 30–100% monthly interest. This is illegal under the National Credit Act. Always check that a lender is registered with the NCR (National Credit Regulator) at ncr.org.za or call 0860 627 627.</p>
+    </div>
+
+  </div>
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined" style="">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="search.html"><span class="material-symbols-outlined" style="">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined" style="">person</span><span data-t="nav_profile">Profile</span></a>
+</nav>
+
+<script src="lang.js"></script>
+</body>
+</html>

@@ -1,180 +1,128 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Mzansi Money Guide | Search</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Search | Mzansi Money Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-tailwind.config={darkMode:"class",theme:{extend:{colors:{
-  "primary":"#00694c","primary-container":"#008560","primary-fixed":"#86f8c9",
-  "on-primary":"#ffffff","on-primary-fixed":"#002115",
-  "secondary":"#1960a6","secondary-container":"#7ab3ff","on-secondary":"#ffffff","on-secondary-container":"#00447e",
-  "tertiary":"#855000","tertiary-fixed":"#ffdcbb","on-tertiary-fixed":"#2b1700",
-  "surface":"#fbf9f2","surface-bright":"#fbf9f2","surface-container-lowest":"#ffffff",
-  "surface-container-low":"#f6f4ec","surface-container":"#f0eee7","surface-container-high":"#eae8e1",
-  "surface-container-highest":"#e4e2dc","surface-variant":"#e4e2dc",
-  "on-surface":"#1b1c18","on-surface-variant":"#3d4943","background":"#fbf9f2","on-background":"#1b1c18",
-  "outline":"#6d7a73","outline-variant":"#bccac1",
-},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","2xl":"1rem","3xl":"1.5rem","full":"9999px"},
-fontFamily:{"headline":["Plus Jakarta Sans"],"body":["Inter"]}}}}
-</script>
+<link rel="stylesheet" href="shared.css"/>
 <style>
-  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}
-  body{font-family:'Inter',sans-serif;min-height:max(884px,100dvh);}
-  h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif;}
+  .search-box{position:relative;}
+  .search-box input{width:100%;height:56px;padding:0 16px 0 52px;background:#fff;border:2px solid #bccac1;border-radius:16px;font-size:16px;font-family:'Inter',sans-serif;outline:none;transition:all 0.2s;}
+  .search-box input:focus{border-color:#00694c;box-shadow:0 0 0 3px rgba(0,105,76,0.12);}
+  .search-box .si{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#6d7a73;}
+  .pill{display:inline-flex;padding:7px 16px;border-radius:99px;background:#eae8e1;color:#3d4943;font-size:13px;font-weight:600;cursor:pointer;border:none;font-family:'Inter',sans-serif;transition:all 0.15s;}
+  .pill:hover{background:#00694c;color:#fff;}
+  .result-item{display:flex;align-items:center;gap:14px;background:#fff;border-radius:14px;padding:16px 18px;text-decoration:none;color:#1b1c18;box-shadow:0 2px 8px rgba(27,28,24,0.05);transition:all 0.15s;margin-bottom:10px;}
+  .result-item:hover{box-shadow:0 4px 14px rgba(27,28,24,0.1);transform:translateY(-1px);}
+  .result-icon{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 </style>
 </head>
-<body class="bg-surface text-on-surface max-w-[430px] mx-auto pb-32">
-
-<header class="sticky top-0 z-50 bg-surface-bright border-b border-outline-variant/20">
-  <div class="flex items-center justify-between px-6 py-4">
-    <a href="index.html" class="text-primary"><span class="material-symbols-outlined">arrow_back</span></a>
-    <span class="font-headline font-bold text-on-surface">Search</span>
-    <div class="w-9"></div>
-  </div>
-  <div class="px-6 pb-4">
-    <div class="relative">
-      <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
-        <span class="material-symbols-outlined text-outline">search</span>
-      </div>
-      <input id="search-input" autofocus class="w-full h-14 pl-12 pr-4 bg-surface-container-highest border-none rounded-2xl focus:ring-2 focus:ring-primary transition-all placeholder:text-outline text-base outline-none" placeholder="What do you need help with?" type="text" oninput="doSearch(this.value)"/>
-    </div>
-  </div>
-</header>
-
-<main class="px-6 py-4">
-
-  <!-- Popular Searches -->
-  <div id="popular-section">
-    <h2 class="font-headline font-bold text-lg text-on-surface mb-4">Popular searches</h2>
-    <div class="flex flex-wrap gap-2 mb-8">
-      <button onclick="setQuery('SASSA SRD grant')" class="px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">SASSA SRD grant</button>
-      <button onclick="setQuery('CIPC registration')" class="px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">CIPC registration</button>
-      <button onclick="setQuery('eFiling tax return')" class="px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">eFiling tax return</button>
-      <button onclick="setQuery('UIF claim')" class="px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">UIF claim</button>
-      <button onclick="setQuery('old age grant')" class="px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">Old age grant</button>
-      <button onclick="setQuery('register business')" class="px-4 py-2 bg-surface-container-high text-on-surface-variant rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">Register a business</button>
-    </div>
-
-    <h2 class="font-headline font-bold text-lg text-on-surface mb-4">Browse by category</h2>
-    <div class="space-y-3">
-      <a href="sassa.html" class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-2xl hover:shadow-sm transition-all">
-        <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-          <span class="material-symbols-outlined text-primary">volunteer_activism</span>
-        </div>
-        <div>
-          <p class="font-bold text-on-surface">SASSA &amp; Grants</p>
-          <p class="text-xs text-on-surface-variant">Apply, check status, pay dates</p>
-        </div>
-        <span class="ml-auto material-symbols-outlined text-outline">chevron_right</span>
-      </a>
-      <a href="pathways.html#tax" class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-2xl hover:shadow-sm transition-all">
-        <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-          <span class="material-symbols-outlined text-primary">account_balance</span>
-        </div>
-        <div>
-          <p class="font-bold text-on-surface">Tax &amp; SARS</p>
-          <p class="text-xs text-on-surface-variant">eFiling, returns, tax numbers</p>
-        </div>
-        <span class="ml-auto material-symbols-outlined text-outline">chevron_right</span>
-      </a>
-      <a href="business.html" class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-2xl hover:shadow-sm transition-all">
-        <div class="w-10 h-10 bg-secondary/10 rounded-xl flex items-center justify-center">
-          <span class="material-symbols-outlined text-secondary">storefront</span>
-        </div>
-        <div>
-          <p class="font-bold text-on-surface">Business Registration</p>
-          <p class="text-xs text-on-surface-variant">CIPC, company setup, VAT</p>
-        </div>
-        <span class="ml-auto material-symbols-outlined text-outline">chevron_right</span>
-      </a>
-      <a href="pathways.html#uif" class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-2xl hover:shadow-sm transition-all">
-        <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center">
-          <span class="material-symbols-outlined text-primary">savings</span>
-        </div>
-        <div>
-          <p class="font-bold text-on-surface">Budgeting &amp; UIF</p>
-          <p class="text-xs text-on-surface-variant">Save more, claim benefits</p>
-        </div>
-        <span class="ml-auto material-symbols-outlined text-outline">chevron_right</span>
-      </a>
-    </div>
-  </div>
-
-  <!-- Search results -->
-  <div id="results-section" class="hidden">
-    <p id="results-count" class="text-sm text-on-surface-variant mb-4"></p>
-    <div id="results-list" class="space-y-3"></div>
-  </div>
-
-</main>
-
-<!-- Bottom Nav -->
-<nav class="fixed bottom-0 left-0 right-0 max-w-[430px] mx-auto z-50 bg-white rounded-t-2xl shadow-[0_-4px_12px_rgba(27,28,24,0.08)] border-t border-stone-100 flex justify-around items-center px-4 py-2">
-  <a href="index.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
-    <span class="material-symbols-outlined">home</span><span class="text-[11px] font-semibold">Home</span>
-  </a>
-  <a href="pathways.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
-    <span class="material-symbols-outlined">insights</span><span class="text-[11px] font-semibold">Pathways</span>
-  </a>
-  <a href="search.html" class="flex flex-col items-center justify-center bg-[#00694c]/10 text-[#00694c] rounded-2xl px-3 py-1.5 transition-all active:scale-90">
-    <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">search</span><span class="text-[11px] font-semibold">Search</span>
-  </a>
-  <a href="request-help.html" class="flex flex-col items-center justify-center text-stone-500 p-2 transition-all active:scale-90 hover:text-primary">
-    <span class="material-symbols-outlined">person</span><span class="text-[11px] font-semibold">Profile</span>
-  </a>
+<body>
+<nav class="sidebar-nav">
+  <div class="flag-strip"></div>
+  <div class="sidebar-brand"><span class="material-symbols-outlined text-primary">language</span><span data-t="nav_brand">Mzansi Money Guide</span></div>
+  <div class="nav-section">Main</div>
+  <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span>Personal Finance</a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span>SASSA</a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span>Business</a>
+  <div class="nav-section">Personal Finance</div>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span>Tax &amp; SARS</a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</span>UIF Claims</a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span>Budgeting</a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span>Credit Score</a>
+  <div class="nav-section">Tools</div>
+  <a href="search.html" class="active"><span class="material-symbols-outlined">search</span>Search</a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
 </nav>
+<div class="main-content">
+  <header class="top-bar">
+    <div class="sa-flag-strip"></div>
+    <div class="top-bar-inner">
+      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <nav class="top-bar-desktop-nav">
+        <a href="index.html">Home</a><a href="pathways.html">Pathways</a><a href="personal-finance.html">Personal Finance</a><a href="sassa.html">SASSA</a><a href="business.html">Business</a>
+      </nav>
+      <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
+    </div>
+  </header>
+  <div class="page-content">
+    <h1 class="section-title" style="margin-bottom:16px;" data-t="nav_search">Search</h1>
+    <div class="search-box" style="margin-bottom:24px;">
+      <span class="material-symbols-outlined si">search</span>
+      <input type="text" id="q" autofocus data-t="search_placeholder" data-t-attr="placeholder" placeholder="What do you need help with?" oninput="doSearch(this.value)"/>
+    </div>
 
+    <div id="popular-section">
+      <p style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;margin-bottom:10px;" data-t="search_popular">Popular searches</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;">
+        <button class="pill" onclick="sq('SASSA SRD grant')">SASSA SRD grant</button>
+        <button class="pill" onclick="sq('CIPC registration')">CIPC registration</button>
+        <button class="pill" onclick="sq('eFiling tax return')">eFiling tax</button>
+        <button class="pill" onclick="sq('UIF claim')">UIF claim</button>
+        <button class="pill" onclick="sq('old age grant')">Old age grant</button>
+        <button class="pill" onclick="sq('credit score')">Credit score</button>
+        <button class="pill" onclick="sq('budget')">Budgeting</button>
+        <button class="pill" onclick="sq('register business')">Register business</button>
+        <button class="pill" onclick="sq('debt review')">Debt review</button>
+        <button class="pill" onclick="sq('child support')">Child support grant</button>
+      </div>
+      <p style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;margin-bottom:12px;" data-t="search_browse">Browse by category</p>
+      <div id="all-results"></div>
+    </div>
+
+    <div id="results-section" style="display:none;">
+      <p id="results-count" style="font-size:13px;color:#6d7a73;margin-bottom:16px;"></p>
+      <div id="results-list"></div>
+    </div>
+  </div>
+</div>
+<nav class="bottom-nav">
+  <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="search.html" class="active"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined">person</span><span data-t="nav_profile">Profile</span></a>
+</nav>
+<script src="lang.js"></script>
 <script>
-const allPages = [
-  { title: "SASSA Grants & Support", desc: "Apply for grants, check eligibility, pay dates", url: "sassa.html", tags: ["sassa","grant","child","old age","disability","srd","social relief"] },
-  { title: "Business Registration Guide", desc: "4 steps to register with CIPC", url: "business.html", tags: ["business","cipc","register","company","entrepreneur"] },
-  { title: "CIPC Checklist", desc: "Track your 7-step CIPC registration", url: "cipc-checklist.html", tags: ["cipc","checklist","registration","r175"] },
-  { title: "Personal Finance Pathways", desc: "Tax, UIF, budgeting and more", url: "pathways.html", tags: ["tax","sars","efiling","uif","budget","savings"] },
-  { title: "Get Expert Help", desc: "Request support from a financial advisor", url: "request-help.html", tags: ["help","support","advisor","consult","question"] },
+const PAGES = [
+  {title:"SASSA Grants & Support", desc:"Child Support, Old Age, SRD, Disability, Foster Care grants", url:"sassa.html", icon:"volunteer_activism", color:"rgba(0,105,76,0.1)", icolor:"#00694c", tags:["sassa","grant","child","old age","disability","srd","social relief","foster","pension","300"]},
+  {title:"Tax & SARS eFiling", desc:"File returns, tax number, deadlines, auto-assessment", url:"tax.html", icon:"account_balance", color:"rgba(0,105,76,0.1)", icolor:"#00694c", tags:["tax","sars","efiling","return","itr12","income","refund","paye","provisional"]},
+  {title:"UIF Claims", desc:"Unemployment, maternity, illness and adoption benefits", url:"uif.html", icon:"work_off", color:"rgba(0,105,76,0.1)", icolor:"#00694c", tags:["uif","unemployment","retrench","maternity","illness","ufiling","labour","retrenched"]},
+  {title:"Budgeting & Savings", desc:"50/30/20 calculator, stokvels, emergency fund, loan sharks", url:"budgeting.html", icon:"savings", color:"rgba(0,105,76,0.1)", icolor:"#00694c", tags:["budget","save","savings","stokvel","emergency","50/30/20","money","loan shark","mashonisa"]},
+  {title:"Credit Score & Debt", desc:"Free credit report, improve score, debt review, NCR", url:"credit.html", icon:"credit_score", color:"rgba(25,96,166,0.1)", icolor:"#1960a6", tags:["credit","score","debt","review","transunion","experian","ncr","blacklist","loan"]},
+  {title:"Business Registration Guide", desc:"4 steps to register your business with CIPC", url:"business.html", icon:"storefront", color:"rgba(25,96,166,0.1)", icolor:"#1960a6", tags:["business","cipc","register","company","entrepreneur","pty","ltd","small business"]},
+  {title:"CIPC Checklist", desc:"Interactive 7-step CIPC registration checklist", url:"cipc-checklist.html", icon:"checklist", color:"rgba(25,96,166,0.1)", icolor:"#1960a6", tags:["cipc","checklist","registration","r175","steps"]},
+  {title:"Personal Finance Overview", desc:"All personal finance guides in one place", url:"personal-finance.html", icon:"account_balance_wallet", color:"rgba(0,105,76,0.1)", icolor:"#00694c", tags:["personal","finance","money","guide","overview"]},
+  {title:"Get Expert Help", desc:"Request a callback from a local financial advisor", url:"request-help.html", icon:"support_agent", color:"rgba(133,80,0,0.1)", icolor:"#855000", tags:["help","support","advisor","expert","consult","question","whatsapp"]},
 ];
 
-function setQuery(q) {
-  document.getElementById('search-input').value = q;
-  doSearch(q);
+function renderItem(p){
+  return `<a href="${p.url}" class="result-item">
+    <div class="result-icon" style="background:${p.color};"><span class="material-symbols-outlined" style="color:${p.icolor};">${p.icon}</span></div>
+    <div style="flex:1;"><div style="font-weight:700;font-size:15px;margin-bottom:3px;">${p.title}</div><div style="font-size:13px;color:#6d7a73;">${p.desc}</div></div>
+    <span class="material-symbols-outlined text-muted">chevron_right</span>
+  </a>`;
 }
 
-function doSearch(q) {
-  const query = q.trim().toLowerCase();
-  if (!query) {
-    document.getElementById('popular-section').classList.remove('hidden');
-    document.getElementById('results-section').classList.add('hidden');
-    return;
-  }
-  document.getElementById('popular-section').classList.add('hidden');
-  document.getElementById('results-section').classList.remove('hidden');
-  const results = allPages.filter(p =>
-    p.title.toLowerCase().includes(query) ||
-    p.desc.toLowerCase().includes(query) ||
-    p.tags.some(t => t.includes(query))
-  );
-  document.getElementById('results-count').textContent = `${results.length} result${results.length !== 1 ? 's' : ''} for "${q}"`;
-  document.getElementById('results-list').innerHTML = results.length ? results.map(r => `
-    <a href="${r.url}" class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-2xl hover:shadow-sm transition-all block">
-      <div class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-        <span class="material-symbols-outlined text-primary">article</span>
-      </div>
-      <div class="flex-1">
-        <p class="font-bold text-on-surface">${r.title}</p>
-        <p class="text-xs text-on-surface-variant">${r.desc}</p>
-      </div>
-      <span class="material-symbols-outlined text-outline">chevron_right</span>
-    </a>`).join('') :
-    `<div class="text-center py-12">
-      <span class="material-symbols-outlined text-outline text-5xl mb-4 block">search_off</span>
-      <p class="font-bold text-on-surface mb-2">No results found</p>
-      <p class="text-sm text-on-surface-variant">Try different keywords or <a href="request-help.html" class="text-primary underline">ask an expert</a>.</p>
-    </div>`;
+// Render all on load
+document.getElementById('all-results').innerHTML = PAGES.map(renderItem).join('');
+
+function sq(q){ document.getElementById('q').value=q; doSearch(q); }
+
+function doSearch(q){
+  const query=q.trim().toLowerCase();
+  if(!query){ document.getElementById('popular-section').style.display=''; document.getElementById('results-section').style.display='none'; return; }
+  document.getElementById('popular-section').style.display='none';
+  document.getElementById('results-section').style.display='';
+  const results=PAGES.filter(p=>p.title.toLowerCase().includes(query)||p.desc.toLowerCase().includes(query)||p.tags.some(t=>t.includes(query)));
+  document.getElementById('results-count').textContent=`${results.length} result${results.length!==1?'s':''} for "${q}"`;
+  document.getElementById('results-list').innerHTML=results.length?results.map(renderItem).join(''):`<div style="text-align:center;padding:48px 20px;"><span class="material-symbols-outlined text-muted" style="font-size:48px;display:block;margin-bottom:12px;">search_off</span><div style="font-weight:700;font-size:16px;margin-bottom:8px;" data-t="search_none">No results found</div><p style="font-size:14px;color:#6d7a73;">Try different keywords or <a href="request-help.html" style="color:#00694c;font-weight:700;" data-t="search_ask">ask an expert</a>.</p></div>`;
 }
 </script>
-
 </body>
 </html>

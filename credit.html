@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Debt &amp; Credit Score"/>
+<title>Debt &amp; Credit Score | Mzansi Money Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="shared.css"/>
+</head>
+<body>
+
+<nav class="sidebar-nav">
+  <div class="flag-strip"></div>
+  <div class="sidebar-brand">
+    <span class="material-symbols-outlined text-primary">language</span>
+    <span data-t="nav_brand">Mzansi Money Guide</span>
+  </div>
+  <div class="nav-section">Main</div>
+  <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span>SASSA</span></a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span>Business</span></a>
+  <div class="nav-section">Personal Finance</div>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span>Tax &amp; SARS</span></a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span>UIF Claims</span></a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span>Budgeting</span></a>
+  <a href="credit.html" class="active"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
+  <div class="nav-section">Tools</div>
+  <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
+</nav>
+
+<div class="main-content">
+  <header class="top-bar">
+    <div class="sa-flag-strip"></div>
+    <div class="top-bar-inner">
+      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <nav class="top-bar-desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="pathways.html">Pathways</a>
+        <a href="personal-finance.html" class="active">Personal Finance</a>
+        <a href="sassa.html">SASSA</a>
+        <a href="business.html">Business</a>
+      </nav>
+      <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <div class="lang-bar" style="margin-bottom:24px;" role="group">
+      <button class="lang-btn bg-primary" data-lang="en" onclick="setLang('en')">English</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="zu" onclick="setLang('zu')">isiZulu</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="xh" onclick="setLang('xh')">isiXhosa</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="af" onclick="setLang('af')">Afrikaans</button>
+    </div>
+
+    <div class="hero-gradient" style="margin-bottom:24px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:rgba(255,255,255,0.2);display:inline-block;padding:4px 12px;border-radius:99px;margin-bottom:12px;">Personal Finance</div>
+      <h1 style="font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:10px;">Debt &amp; Credit Score</h1>
+      <p style="font-size:14px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;">Understanding and improving your credit score unlocks better loan rates, rentals, and financial opportunities.</p>
+    </div>
+
+    <!-- Score ranges -->
+    <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:6px;">What's a good credit score?</h2>
+      <p style="font-size:13px;color:#6d7a73;margin-bottom:16px;">In South Africa, scores typically range from 300–850. The average in 2025 is 612 — only 42% of South Africans have a "Good" or better score.</p>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;background:#f6f4ec;">
+          <div style="width:12px;height:12px;border-radius:50%;background:#00694c;flex-shrink:0;"></div>
+          <div style="flex:1;"><span style="font-weight:700;">Excellent: 781–850</span> <span style="font-size:12px;color:#6d7a73;">— Best rates, most applications approved</span></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;background:#f6f4ec;">
+          <div style="width:12px;height:12px;border-radius:50%;background:#68dbae;flex-shrink:0;"></div>
+          <div style="flex:1;"><span style="font-weight:700;">Good: 661–780</span> <span style="font-size:12px;color:#6d7a73;">— Good rates, most applications approved</span></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;background:#f6f4ec;">
+          <div style="width:12px;height:12px;border-radius:50%;background:#ffb869;flex-shrink:0;"></div>
+          <div style="flex:1;"><span style="font-weight:700;">Fair: 610–660</span> <span style="font-size:12px;color:#6d7a73;">— Some applications declined, higher rates</span></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;background:#f6f4ec;">
+          <div style="width:12px;height:12px;border-radius:50%;background:#ba1a1a;flex-shrink:0;"></div>
+          <div style="flex:1;"><span style="font-weight:700;">Poor: Below 610</span> <span style="font-size:12px;color:#6d7a73;">— High rates, often declined</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How to improve -->
+    <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;">How to improve your score</h2>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;font-variation-settings:'FILL' 1;">check_circle</span>
+          <div><strong style="font-size:14px;">Pay on time, every time</strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;">Even one missed payment stays on your record for 2 years. Set up debit orders so you never forget.</p></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;font-variation-settings:'FILL' 1;">check_circle</span>
+          <div><strong style="font-size:14px;">Keep credit usage below 30%</strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;">If your credit card limit is R10,000, keep your balance below R3,000.</p></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;font-variation-settings:'FILL' 1;">check_circle</span>
+          <div><strong style="font-size:14px;">Don't apply for multiple loans at once</strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;">Each application leaves a "hard enquiry" on your record for 12 months.</p></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:flex-start;">
+          <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;font-variation-settings:'FILL' 1;">check_circle</span>
+          <div><strong style="font-size:14px;">Check your report for errors</strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;">You are entitled to one FREE report per year. Errors are common — dispute them immediately.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Free reports -->
+    <div style="background:#eaf0fb;border-radius:20px;padding:20px;margin-bottom:20px;">
+      <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1960a6;margin-bottom:12px;">Get your FREE credit report</h3>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <a href="https://www.transunion.co.za" target="_blank" style="display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:12px;padding:12px 16px;text-decoration:none;color:#1b1c18;font-weight:700;font-size:14px;">TransUnion <span class="material-symbols-outlined" style="font-size:16px;color:#6d7a73;">open_in_new</span></a>
+        <a href="https://www.experian.co.za" target="_blank" style="display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:12px;padding:12px 16px;text-decoration:none;color:#1b1c18;font-weight:700;font-size:14px;">Experian <span class="material-symbols-outlined" style="font-size:16px;color:#6d7a73;">open_in_new</span></a>
+        <a href="https://www.xds.co.za" target="_blank" style="display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:12px;padding:12px 16px;text-decoration:none;color:#1b1c18;font-weight:700;font-size:14px;">XDS (Compuscan) <span class="material-symbols-outlined" style="font-size:16px;color:#6d7a73;">open_in_new</span></a>
+      </div>
+    </div>
+
+    <!-- Debt review -->
+    <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;">Debt Review — What is it?</h2>
+      <p style="font-size:14px;color:#3d4943;line-height:1.6;margin-bottom:14px;">If you're struggling with debt, debt review (debt counselling) restructures your payments to fit your budget and <strong>protects your assets from repossession</strong>.</p>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3d4943;">
+        <div>✓ One reduced monthly payment instead of many</div>
+        <div>✓ Protection from legal action by creditors</div>
+        <div>✓ Takes 3–5 years, then you get a clearance certificate</div>
+        <div>✗ You cannot take on new credit during debt review</div>
+      </div>
+      <div style="margin-top:14px;padding:12px;background:#f6f4ec;border-radius:10px;font-size:13px;color:#3d4943;">
+        <strong>Important:</strong> Only use NCR-registered debt counsellors. Verify at <a href="https://www.ncr.org.za" target="_blank" style="color:#00694c;">ncr.org.za</a> or call <strong>0860 627 627</strong>.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<nav class="bottom-nav">
+  <a href="index.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined" style="">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="search.html"><span class="material-symbols-outlined" style="">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined" style="">person</span><span data-t="nav_profile">Profile</span></a>
+</nav>
+
+<script src="lang.js"></script>
+</body>
+</html>
