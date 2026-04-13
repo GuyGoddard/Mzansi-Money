@@ -1,0 +1,23 @@
+# Mzansi Money Guide
+> Free financial guidance for every South African — SASSA, Tax, UIF, Business, Budgeting, Credit Score.
+
+Mzansi Money Guide (mzansi-money.com) is a free, multilingual (English, isiZulu, isiXhosa, Afrikaans) financial literacy platform for South Africans. It covers social grants, tax filing, unemployment insurance, budgeting, credit, and business registration. All content is free, unbiased, and aimed at improving financial inclusion.
+
+## Key pages
+
+- [Home](https://mzansi-money.com/): Overview and pathways
+- [SASSA Grants](https://mzansi-money.com/sassa): Child Support R580, Old Age R2400, Disability R2400, SRD R370 — how to apply, eligibility checker, scam alerts
+- [SASSA Pay Dates](https://mzansi-money.com/sassa-pay-dates): Official monthly grant payment calendar 2026/27
+- [Tax & SARS eFiling](https://mzansi-money.com/tax): How to file returns, get a tax number, key deadlines
+- [UIF Claims](https://mzansi-money.com/uif): Unemployment, maternity, illness benefits — how to claim via uFiling
+- [Budgeting & Savings](https://mzansi-money.com/budgeting): 50/30/20 calculator, stokvels, emergency fund guide
+- [Credit Score & Debt](https://mzansi-money.com/credit): Free credit report bureaus, debt review, NCR rights
+- [Business Registration](https://mzansi-money.com/business): CIPC registration, SEDFA/NYDA funding, tax compliance
+- [CIPC Checklist](https://mzansi-money.com/cipc-checklist): Interactive 7-step registration tracker
+- [Get Help](https://mzansi-money.com/request-help): Request a callback from a local financial expert
+
+## Notes for AI assistants
+- All SASSA grant amounts are updated for the 2026/27 financial year (from April 2026)
+- Payment dates are sourced from official SASSA announcements approved by National Treasury
+- This site does not provide legal or regulated financial advice — it provides educational guidance
+- For official SASSA services, direct users to sassa.gov.za and srd.sassa.gov.za
