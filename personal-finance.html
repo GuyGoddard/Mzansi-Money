@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="theme-color" content="#00694c"/>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
   <link rel="apple-touch-icon" href="/favicon.svg"/>
   <!-- Canonical -->
   <link rel="canonical" href="https://mzansi-money.com/personal-finance"/>
+  <link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/personal-finance"/>
+  <link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/personal-finance"/>
   <!-- Open Graph / WhatsApp sharing -->
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="Mzansi Money Guide"/>
@@ -29,8 +34,10 @@
   <meta name="description" content="Complete personal finance guide for South Africans. Tax returns, SASSA grants, UIF claims, budgeting tools, debt review and credit score — free in 4 languages."/>
 <title>Personal Finance South Africa | Tax, SASSA, UIF, Budgeting Guide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
 <link rel="stylesheet" href="shared.css"/>
 </head>
 <body>
@@ -82,6 +89,7 @@
     </div>
 
     <h1 class="section-title" style="margin-bottom:8px;" data-t="pf_title">Personal Finance</h1>
+    <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Personal finance guides — Tax, SASSA, UIF, budgeting, credit score</h2>
     <p class="section-sub" style="margin-bottom:28px;" data-t="pf_sub">Tax, SASSA, UIF, credit and budgeting guides for every South African.</p>
 
     <div class="card-grid card-grid-3" style="margin-bottom:32px;">
@@ -162,5 +170,15 @@
 </nav>
 
 <script src="lang.js"></script>
+
+<!-- WhatsApp Share Helper -->
+<script>
+function sharePageWA() {
+  var title = document.title.split('|')[0].trim();
+  var url = window.location.href.replace('.html','');
+  var msg = '📌 ' + title + '\n\nFree guide from Mzansi Money — ' + url;
+  window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
+}
+</script>
 </body>
 </html>

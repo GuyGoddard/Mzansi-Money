@@ -1,0 +1,35 @@
+{
+  "name": "Mzansi Money Guide",
+  "short_name": "Mzansi Money",
+  "description": "Free financial guidance for every South African — SASSA, Tax, UIF, Business",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf9f2",
+  "theme_color": "#00694c",
+  "lang": "en-ZA",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "education", "utilities"],
+  "shortcuts": [
+    {
+      "name": "SASSA Pay Dates",
+      "short_name": "Pay Dates",
+      "description": "See this month's SASSA payment dates",
+      "url": "/sassa-pay-dates",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "SASSA Grants",
+      "short_name": "SASSA",
+      "description": "Apply for SASSA grants",
+      "url": "/sassa",
+      "icons": [{ "src": "/favicon.svg", "sizes": "any" }]
+    }
+  ]
+}

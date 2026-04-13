@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="theme-color" content="#00694c"/>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
   <link rel="apple-touch-icon" href="/favicon.svg"/>
   <!-- Canonical -->
   <link rel="canonical" href="https://mzansi-money.com/budgeting"/>
+  <link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/budgeting"/>
+  <link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/budgeting"/>
   <!-- Open Graph / WhatsApp sharing -->
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="Mzansi Money Guide"/>
@@ -29,8 +34,10 @@
   <meta name="description" content="Free budgeting guide for South Africans. 50/30/20 calculator, stokvel tips, emergency fund guide and how to avoid loan sharks. Plan your money in minutes."/>
 <title>Budgeting & Savings South Africa | 50/30/20 Calculator | Free Guide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
 <link rel="stylesheet" href="shared.css"/>
 </head>
 <body>
@@ -181,5 +188,15 @@
 </nav>
 
 <script src="lang.js"></script>
+
+<!-- WhatsApp Share Helper -->
+<script>
+function sharePageWA() {
+  var title = document.title.split('|')[0].trim();
+  var url = window.location.href.replace('.html','');
+  var msg = '📌 ' + title + '\n\nFree guide from Mzansi Money — ' + url;
+  window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
+}
+</script>
 </body>
 </html>

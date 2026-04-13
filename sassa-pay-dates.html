@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="theme-color" content="#00694c"/>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>SASSA Payment Dates 2026 | Official Monthly Schedule | Mzansi Money Guide</title>
 <meta name="description" content="Official SASSA grant payment dates for 2026/27. See exactly when Old Age (R2,400), Disability (R2,400), Child Support (R580) and SRD (R370) grants are paid each month. Live countdown + WhatsApp share."/>
 <link rel="canonical" href="https://mzansi-money.com/sassa-pay-dates"/>
+  <link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-pay-dates"/>
+  <link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-pay-dates"/>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 
 <!-- OG / WhatsApp -->
@@ -466,6 +471,16 @@ function toggleFAQ(btn){
 renderCalendar();
 updateCountdown();
 setInterval(updateCountdown, 1000);
+</script>
+
+<!-- WhatsApp Share Helper -->
+<script>
+function sharePageWA() {
+  var title = document.title.split('|')[0].trim();
+  var url = window.location.href.replace('.html','');
+  var msg = '📌 ' + title + '\n\nFree guide from Mzansi Money — ' + url;
+  window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
+}
 </script>
 </body>
 </html>

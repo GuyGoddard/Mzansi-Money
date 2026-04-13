@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#00694c"/>
+  <!-- SA flag strip at bottom -->
+  <rect y="590" width="240" height="40" fill="#E03E2D"/>
+  <rect y="590" x="240" width="240" height="40" fill="#007A4D"/>
+  <rect y="590" x="480" width="240" height="40" fill="#000000"/>
+  <rect y="590" x="720" width="240" height="40" fill="#FFB612"/>
+  <rect y="590" x="960" width="240" height="40" fill="#002395"/>
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="120" r="200" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="1100" cy="350" r="150" fill="rgba(255,255,255,0.04)"/>
+  <!-- Brand mark -->
+  <rect x="80" y="80" width="72" height="72" rx="20" fill="rgba(255,255,255,0.15)"/>
+  <text x="116" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="40" fill="#ffffff">M</text>
+  <!-- Main heading -->
+  <text x="80" y="260" font-family="Arial,sans-serif" font-weight="800" font-size="64" fill="#ffffff">Mzansi Money Guide</text>
+  <!-- Subheading -->
+  <text x="80" y="330" font-family="Arial,sans-serif" font-weight="400" font-size="32" fill="rgba(255,255,255,0.85)">Free financial help for every South African</text>
+  <!-- Feature pills -->
+  <rect x="80" y="390" width="130" height="44" rx="22" fill="rgba(255,255,255,0.15)"/>
+  <text x="145" y="418" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="18" fill="#ffffff">SASSA</text>
+  <rect x="228" y="390" width="100" height="44" rx="22" fill="rgba(255,255,255,0.15)"/>
+  <text x="278" y="418" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="18" fill="#ffffff">Tax</text>
+  <rect x="346" y="390" width="90" height="44" rx="22" fill="rgba(255,255,255,0.15)"/>
+  <text x="391" y="418" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="18" fill="#ffffff">UIF</text>
+  <rect x="454" y="390" width="150" height="44" rx="22" fill="rgba(255,255,255,0.15)"/>
+  <text x="529" y="418" text-anchor="middle" font-family="Arial,sans-serif" font-weight="600" font-size="18" fill="#ffffff">Business</text>
+  <!-- URL -->
+  <text x="80" y="555" font-family="Arial,sans-serif" font-weight="400" font-size="24" fill="rgba(255,255,255,0.6)">mzansi-money.com</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#1b1c18"/>
+  <rect y="590" width="240" height="40" fill="#E03E2D"/>
+  <rect y="590" x="240" width="240" height="40" fill="#007A4D"/>
+  <rect y="590" x="480" width="240" height="40" fill="#000000"/>
+  <rect y="590" x="720" width="240" height="40" fill="#FFB612"/>
+  <rect y="590" x="960" width="240" height="40" fill="#002395"/>
+  <rect x="80" y="60" width="200" height="44" rx="22" fill="#00694c"/>
+  <text x="180" y="89" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="18" fill="#ffffff">Official 2026 Schedule</text>
+  <text x="80" y="220" font-family="Arial,sans-serif" font-weight="800" font-size="60" fill="#ffffff">SASSA Payment</text>
+  <text x="80" y="295" font-family="Arial,sans-serif" font-weight="800" font-size="60" fill="#ffffff">Dates 2026</text>
+  <text x="80" y="370" font-family="Arial,sans-serif" font-weight="400" font-size="28" fill="rgba(255,255,255,0.7)">Old Age · Disability · Child Support · SRD</text>
+  <!-- Date boxes -->
+  <rect x="80" y="420" width="200" height="110" rx="16" fill="#00694c"/>
+  <text x="180" y="464" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="16" fill="rgba(255,255,255,0.8)">Old Age</text>
+  <text x="180" y="500" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="30" fill="#ffffff">2nd</text>
+  <rect x="300" y="420" width="200" height="110" rx="16" fill="#1960a6"/>
+  <text x="400" y="464" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="16" fill="rgba(255,255,255,0.8)">Disability</text>
+  <text x="400" y="500" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="30" fill="#ffffff">3rd</text>
+  <rect x="520" y="420" width="200" height="110" rx="16" fill="#855000"/>
+  <text x="620" y="455" text-anchor="middle" font-family="Arial,sans-serif" font-weight="400" font-size="16" fill="rgba(255,255,255,0.8)">Child Support</text>
+  <text x="620" y="500" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="30" fill="#ffffff">4th</text>
+  <text x="80" y="568" font-family="Arial,sans-serif" font-size="22" fill="rgba(255,255,255,0.5)">mzansi-money.com/sassa-pay-dates</text>
+</svg>

@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="theme-color" content="#00694c"/>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
   <link rel="apple-touch-icon" href="/favicon.svg"/>
   <!-- Canonical -->
   <link rel="canonical" href="https://mzansi-money.com/"/>
+  <link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/"/>
+  <link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/"/>
   <!-- Open Graph / WhatsApp sharing -->
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="Mzansi Money Guide"/>
@@ -29,8 +34,10 @@
   <meta name="description" content="Free financial guidance for every South African. SASSA grants, SARS eFiling, UIF claims, business registration and more — in English, isiZulu, isiXhosa and Afrikaans."/>
 <title>Mzansi Money Guide | Free Financial Help South Africa</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
 <link rel="stylesheet" href="shared.css"/>
 <style>
   .hero-photo { width:100%;height:220px;object-fit:cover;border-radius:24px;display:block;margin-top:20px; }
@@ -116,7 +123,7 @@
 
       <img class="hero-photo"
         src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Rh1aaRI6zPvKi9wK9f0HGGPebV4R3xGRXxebv0ZS7HHHDpBnpz4cdE5s7zuLmexo5jNQL9XH1ly11Omf0aTFed2xdfA5IRe1ZGdgxdIUQiALOs6atvUsFiQ81uXLqzbRrSekry3Chvu7vTJSlxcu1gllkrmh9aM1QHultxg7BRj_0LwJqfDpd7dvFno7qir2Llxz7diJU6L-R6hrJikGhH8VCnuOIqE6yJlcKW36qSOcpgx_j2nan1r46-HS3nu71jbPCZWmJDGc"
-        alt="Diverse South Africans working together"/>
+        alt="Diverse South Africans working together on personal finance, SASSA grants and tax"/>
     </div>
 
     <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:18px;color:#1b1c18;">Choose your path</h2>
@@ -191,5 +198,15 @@
 </nav>
 
 <script src="lang.js"></script>
+
+<!-- WhatsApp Share Helper -->
+<script>
+function sharePageWA() {
+  var title = document.title.split('|')[0].trim();
+  var url = window.location.href.replace('.html','');
+  var msg = '📌 ' + title + '\n\nFree guide from Mzansi Money — ' + url;
+  window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank');
+}
+</script>
 </body>
 </html>
