@@ -55,26 +55,30 @@
   <div class="sidebar-brand"><span class="material-symbols-outlined text-primary">language</span><span data-t="nav_brand">Mzansi Money Guide</span></div>
   <div class="nav-section">Main</div>
   <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
-  <a href="pathways.html"><span class="material-symbols-outlined">insights</span>Pathways</a>
-  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span>Personal Finance</a>
-  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span>SASSA</a>
-  <a href="business.html"><span class="material-symbols-outlined">storefront</span>Business</a>
+  <a href="pathways.html"><span class="material-symbols-outlined">insights</spandata-t="nav_pathways">Pathways</a>
+  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span>data-t="nav_pf">Personal Finance</a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</spandata-t="nav_sassa">SASSA</a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</spandata-t="nav_business">Business</a>
   <div class="nav-section">Personal Finance</div>
-  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span>Tax &amp; SARS</a>
-  <a href="uif.html"><span class="material-symbols-outlined">work_off</span>UIF Claims</a>
-  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span>Budgeting</a>
-  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span>Credit Score</a>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</spandata-t="nav_tax">Tax &amp; SARS</a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</spandata-t="nav_uif" data-t="topic_uif">UIF Claims</a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</spandata-t="nav_budgeting">Budgeting</a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</spandata-t="nav_credit" data-t="topic_credit">Credit Score</a>
   <div class="nav-section">Tools</div>
-  <a href="search.html"><span class="material-symbols-outlined">search</span>Search</a>
-  <a href="request-help.html" class="active"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
+  <a href="search.html"><span class="material-symbols-outlined">search</spandata-t="nav_search">Search</a>
+  <a href="request-help.html" class="active"><span class="material-symbols-outlined">support_agent</spandata-t="nav_gethelp">Get Help</a>
 </nav>
 <div class="main-content">
   <header class="top-bar">
     <div class="sa-flag-strip"></div>
     <div class="top-bar-inner">
-      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <a href="index.html" class="top-bar-brand"><svg width="26" height="26" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:7px;overflow:hidden;">
+        <rect width="28" height="28" fill="#00694c"/>
+        <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+        <rect y="24" width="28" height="4" fill="#FFB612"/>
+      </svg><span data-t="nav_brand">Mzansi Money Guide</span></a>
       <nav class="top-bar-desktop-nav">
-        <a href="index.html">Home</a><a href="pathways.html">Pathways</a><a href="personal-finance.html">Personal Finance</a><a href="sassa.html">SASSA</a><a href="business.html">Business</a>
+        <a href="index.html"data-t="nav_home">Home</a><a href="pathways.html">Pathways</a><a href="personal-finance.html">Personal Finance</a><a href="sassa.html">SASSA</a><a href="business.html">Business</a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
     </div>
@@ -119,7 +123,7 @@
 
       <!-- Step 1: Contact -->
       <div id="step1" style="background:#fff;border-radius:20px;padding:24px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:18px;margin-bottom:20px;">Your contact details</h2>
+        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:18px;margin-bottom:20px;" data-t="help_contact_details">Your contact details</h2>
         <div class="form-group">
           <label class="form-label" data-t="help_name">Full Name</label>
           <input class="form-input" id="f-name" type="text" data-t="help_name_ph" data-t-attr="placeholder" placeholder="Enter your name"/>
@@ -141,8 +145,8 @@
           <button class="topic-chip" onclick="selectTopic(this)" data-t="topic_tax">Tax Returns</button>
           <button class="topic-chip" onclick="selectTopic(this)" data-t="topic_biz">Business Funding</button>
           <button class="topic-chip" onclick="selectTopic(this)" data-t="topic_debt">Debt Review</button>
-          <button class="topic-chip" onclick="selectTopic(this)">UIF Claims</button>
-          <button class="topic-chip" onclick="selectTopic(this)">Credit Score</button>
+          <button class="topic-chip" onclick="selectTopic(this)" data-t="topic_uif">UIF Claims</button>
+          <button class="topic-chip" onclick="selectTopic(this)" data-t="topic_credit">Credit Score</button>
           <button class="topic-chip" onclick="selectTopic(this)" data-t="topic_other">Other</button>
         </div>
         <div class="form-group">
@@ -156,7 +160,7 @@
 
       <!-- Step 3: Confirm -->
       <div id="step3" style="display:none;background:#fff;border-radius:20px;padding:24px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:18px;margin-bottom:16px;">Confirm &amp; submit</h2>
+        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:18px;margin-bottom:16px;" data-t="help_confirm">Confirm &amp; submit</h2>
         <div style="background:#f6f4ec;border-radius:12px;padding:16px;margin-bottom:16px;font-size:13px;color:#3d4943;line-height:1.7;">
           <div><strong>Name:</strong> <span id="confirm-name">—</span></div>
           <div><strong>Phone:</strong> <span id="confirm-phone">—</span></div>

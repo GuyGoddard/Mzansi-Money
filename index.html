@@ -64,29 +64,37 @@
 <nav class="sidebar-nav">
   <div class="flag-strip"></div>
   <div class="sidebar-brand">
-    <span class="material-symbols-outlined text-primary">language</span>
+    <svg width="28" height="28" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:8px;overflow:hidden;">
+      <rect width="28" height="28" fill="#00694c"/>
+      <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+      <rect y="24" width="28" height="4" fill="#FFB612"/>
+    </svg>
     <span data-t="nav_brand">Mzansi Money Guide</span>
   </div>
   <div class="nav-section">Main</div>
   <a href="index.html" class="active"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
   <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_pathways">Pathways</span></a>
   <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
-  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span>SASSA</a>
-  <a href="business.html"><span class="material-symbols-outlined">storefront</span>Business</a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</spandata-t="nav_sassa">SASSA</a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</spandata-t="nav_business">Business</a>
   <div class="nav-section">Tools</div>
   <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
-  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</spandata-t="nav_gethelp">Get Help</a>
 </nav>
 
 <div class="main-content">
   <header class="top-bar">
     <div class="sa-flag-strip"></div>
     <div class="top-bar-inner">
-      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <a href="index.html" class="top-bar-brand"><svg width="26" height="26" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:7px;overflow:hidden;">
+        <rect width="28" height="28" fill="#00694c"/>
+        <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+        <rect y="24" width="28" height="4" fill="#FFB612"/>
+      </svg><span data-t="nav_brand">Mzansi Money Guide</span></a>
       <nav class="top-bar-desktop-nav">
         <a href="index.html" class="active" data-t="nav_home">Home</a>
         <a href="pathways.html" data-t="nav_pathways">Pathways</a>
-        <a href="personal-finance.html">Personal Finance</a>
+        <a href="personal-finance.html">data-t="nav_pf">Personal Finance</a>
         <a href="sassa.html">SASSA</a>
         <a href="business.html">Business</a>
       </nav>
@@ -116,8 +124,8 @@
           <a href="tax.html" class="chip" style="background:#eaf0fb;color:#1960a6;">Tax / SARS</a>
           <a href="uif.html" class="chip" style="background:#e6f4ef;color:#00694c;">UIF</a>
           <a href="business.html" class="chip" style="background:#fff3e6;color:#855000;">Business</a>
-          <a href="credit.html" class="chip" style="background:#f0eee7;color:#3d4943;">Credit Score</a>
-          <a href="budgeting.html" class="chip" style="background:#e6f4ef;color:#00694c;">Budgeting</a>
+          <a href="credit.html" class="chip" style="background:#f0eee7;color:#3d4943;"data-t="nav_credit">Credit Score</a>
+          <a href="budgeting.html" class="chip" style="background:#e6f4ef;color:#00694c;"data-t="nav_budgeting">Budgeting</a>
         </div>
       </div>
 
@@ -126,7 +134,7 @@
         alt="Diverse South Africans working together on personal finance, SASSA grants and tax"/>
     </div>
 
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:18px;color:#1b1c18;">Choose your path</h2>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:18px;color:#1b1c18;"><span data-t="home_choose_path">Choose your path</span></h2>
     <div class="path-cards" style="margin-bottom:36px;">
       <a href="personal-finance.html" class="path-card green tap">
         <div style="display:flex;justify-content:space-between;align-items:flex-start;">
@@ -179,7 +187,7 @@
           <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;margin-bottom:10px;" data-t="footer_support">Support</div>
           <div style="display:flex;flex-direction:column;gap:8px;">
             <a href="request-help.html" style="color:#3d4943;font-size:14px;text-decoration:none;">Get Help</a>
-            <a href="search.html" style="color:#3d4943;font-size:14px;text-decoration:none;">Search</a>
+            <a href="search.html" style="color:#3d4943;font-size:14px;text-decoration:none;"data-t="nav_search">Search</a>
             <a href="credit.html" style="color:#3d4943;font-size:14px;text-decoration:none;">Credit Score</a>
             <a href="budgeting.html" style="color:#3d4943;font-size:14px;text-decoration:none;">Budgeting</a>
           </div>

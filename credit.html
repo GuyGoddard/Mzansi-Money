@@ -39,13 +39,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
 <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
 <link rel="stylesheet" href="shared.css"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"How do I check my credit score for free in South Africa?","acceptedAnswer":{"@type":"Answer","text":"By law you are entitled to one free credit report per year from each of the four credit bureaus: TransUnion (transunion.co.za), Experian (experian.co.za), Compuscan/XDS (xds.co.za) and VeriCred. Checking your own credit score does not affect it."}},
+      {"@type":"Question","name":"What is considered a good credit score in South Africa?","acceptedAnswer":{"@type":"Answer","text":"A score of 661–780 is considered Good, while 781–850 is Excellent. The average South African credit score in 2026 is 612 (Fair). Most banks require at least 650 to approve a personal loan."}},
+      {"@type":"Question","name":"How long does debt review take in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Debt review typically takes 3–5 years to complete, after which you receive a clearance certificate. During this period you cannot take on new credit, but your assets are protected from repossession and creditors cannot take legal action against you."}}
+    ]
+  }
+  </script>
 </head>
 <body>
 
 <nav class="sidebar-nav">
   <div class="flag-strip"></div>
   <div class="sidebar-brand">
-    <span class="material-symbols-outlined text-primary">language</span>
+    <svg width="28" height="28" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:8px;overflow:hidden;">
+      <rect width="28" height="28" fill="#00694c"/>
+      <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+      <rect y="24" width="28" height="4" fill="#FFB612"/>
+    </svg>
     <span data-t="nav_brand">Mzansi Money Guide</span>
   </div>
   <div class="nav-section">Main</div>
@@ -61,20 +76,24 @@
   <a href="credit.html" class="active"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
   <div class="nav-section">Tools</div>
   <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
-  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</spandata-t="nav_gethelp">Get Help</a>
 </nav>
 
 <div class="main-content">
   <header class="top-bar">
     <div class="sa-flag-strip"></div>
     <div class="top-bar-inner">
-      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <a href="index.html" class="top-bar-brand"><svg width="26" height="26" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:7px;overflow:hidden;">
+        <rect width="28" height="28" fill="#00694c"/>
+        <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+        <rect y="24" width="28" height="4" fill="#FFB612"/>
+      </svg><span data-t="nav_brand">Mzansi Money Guide</span></a>
       <nav class="top-bar-desktop-nav">
-        <a href="index.html">Home</a>
-        <a href="pathways.html">Pathways</a>
-        <a href="personal-finance.html" class="active">Personal Finance</a>
-        <a href="sassa.html">SASSA</a>
-        <a href="business.html">Business</a>
+        <a href="index.html"data-t="nav_home">Home</a>
+        <a href="pathways.html"data-t="nav_pathways">Pathways</a>
+        <a href="personal-finance.html" class="active">data-t="nav_pf">Personal Finance</a>
+        <a href="sassa.html"data-t="nav_sassa">SASSA</a>
+        <a href="business.html"data-t="nav_business">Business</a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
     </div>
@@ -96,7 +115,7 @@
 
     <!-- Score ranges -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:6px;">What's a good credit score?</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:6px;" data-t="credit_score_title">What's a good credit score in South Africa?</h2>
       <p style="font-size:13px;color:#6d7a73;margin-bottom:16px;">In South Africa, scores typically range from 300–850. The average in 2025 is 612 — only 42% of South Africans have a "Good" or better score.</p>
       <div style="display:flex;flex-direction:column;gap:8px;">
         <div style="display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;background:#f6f4ec;">
@@ -120,7 +139,7 @@
 
     <!-- How to improve -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;">How to improve your score</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;" data-t="credit_improve_title">How to improve your score</h2>
       <div style="display:flex;flex-direction:column;gap:12px;">
         <div style="display:flex;gap:12px;align-items:flex-start;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;font-variation-settings:'FILL' 1;">check_circle</span>
@@ -143,7 +162,7 @@
 
     <!-- Free reports -->
     <div style="background:#eaf0fb;border-radius:20px;padding:20px;margin-bottom:20px;">
-      <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1960a6;margin-bottom:12px;">Get your FREE credit report</h3>
+      <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1960a6;margin-bottom:12px;" data-t="credit_free_title">Get your FREE credit report</h3>
       <div style="display:flex;flex-direction:column;gap:10px;">
         <a href="https://www.transunion.co.za" target="_blank" style="display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:12px;padding:12px 16px;text-decoration:none;color:#1b1c18;font-weight:700;font-size:14px;">TransUnion <span class="material-symbols-outlined" style="font-size:16px;color:#6d7a73;">open_in_new</span></a>
         <a href="https://www.experian.co.za" target="_blank" style="display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:12px;padding:12px 16px;text-decoration:none;color:#1b1c18;font-weight:700;font-size:14px;">Experian <span class="material-symbols-outlined" style="font-size:16px;color:#6d7a73;">open_in_new</span></a>
@@ -153,7 +172,7 @@
 
     <!-- Debt review -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;">Debt Review — What is it?</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;" data-t="credit_debt_title">Debt Review — What is it?</h2>
       <p style="font-size:14px;color:#3d4943;line-height:1.6;margin-bottom:14px;">If you're struggling with debt, debt review (debt counselling) restructures your payments to fit your budget and <strong>protects your assets from repossession</strong>.</p>
       <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3d4943;">
         <div>✓ One reduced monthly payment instead of many</div>

@@ -39,13 +39,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
 <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
 <link rel="stylesheet" href="shared.css"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"How much UIF will I receive if retrenched?","acceptedAnswer":{"@type":"Answer","text":"UIF pays 38–60% of your previous salary, depending on your income level. The maximum salary used for calculation is R17,712 per month, giving a maximum benefit of approximately R10,627/month. Lower earners receive a higher percentage."}},
+      {"@type":"Question","name":"How do I claim UIF online?","acceptedAnswer":{"@type":"Answer","text":"Register at uFiling.gov.za and submit your claim online. You will need your SA ID, bank details, last 3 months payslips, and the UI19 form from your employer showing why you left."}},
+      {"@type":"Question","name":"How long does it take for UIF to pay out?","acceptedAnswer":{"@type":"Answer","text":"Once your claim is approved and submitted on uFiling, payments are processed directly into your bank account. Initial processing typically takes 5–10 business days. You must confirm each month that you are still seeking employment."}},
+      {"@type":"Question","name":"Can I claim UIF if I resigned voluntarily?","acceptedAnswer":{"@type":"Answer","text":"No. UIF benefits are only available if you involuntarily lost your job — through retrenchment, dismissal, or contract expiry. If you resigned voluntarily, you do not qualify for unemployment benefits."}}
+    ]
+  }
+  </script>
 </head>
 <body>
 
 <nav class="sidebar-nav">
   <div class="flag-strip"></div>
   <div class="sidebar-brand">
-    <span class="material-symbols-outlined text-primary">language</span>
+    <svg width="28" height="28" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:8px;overflow:hidden;">
+      <rect width="28" height="28" fill="#00694c"/>
+      <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+      <rect y="24" width="28" height="4" fill="#FFB612"/>
+    </svg>
     <span data-t="nav_brand">Mzansi Money Guide</span>
   </div>
   <div class="nav-section">Main</div>
@@ -61,20 +77,24 @@
   <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
   <div class="nav-section">Tools</div>
   <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
-  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</spandata-t="nav_gethelp">Get Help</a>
 </nav>
 
 <div class="main-content">
   <header class="top-bar">
     <div class="sa-flag-strip"></div>
     <div class="top-bar-inner">
-      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <a href="index.html" class="top-bar-brand"><svg width="26" height="26" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:7px;overflow:hidden;">
+        <rect width="28" height="28" fill="#00694c"/>
+        <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+        <rect y="24" width="28" height="4" fill="#FFB612"/>
+      </svg><span data-t="nav_brand">Mzansi Money Guide</span></a>
       <nav class="top-bar-desktop-nav">
-        <a href="index.html">Home</a>
-        <a href="pathways.html">Pathways</a>
-        <a href="personal-finance.html" class="active">Personal Finance</a>
-        <a href="sassa.html">SASSA</a>
-        <a href="business.html">Business</a>
+        <a href="index.html"data-t="nav_home">Home</a>
+        <a href="pathways.html"data-t="nav_pathways">Pathways</a>
+        <a href="personal-finance.html" class="active">data-t="nav_pf">Personal Finance</a>
+        <a href="sassa.html"data-t="nav_sassa">SASSA</a>
+        <a href="business.html"data-t="nav_business">Business</a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
     </div>
@@ -96,7 +116,7 @@
 
     <!-- What is UIF -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;">What is UIF?</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;" data-t="uif_what_title">What is UIF?</h2>
       <p style="font-size:14px;color:#3d4943;line-height:1.6;margin-bottom:14px;">UIF is a government fund that both you and your employer contribute to every month. If you lose your job (not by choice), you can claim back up to <strong>238 days</strong> of financial support.</p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
         <div style="background:#f6f4ec;border-radius:12px;padding:14px;text-align:center;">
@@ -120,30 +140,30 @@
 
     <!-- What can you claim -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;">What can you claim?</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;" data-t="uif_claim_title">What can you claim?</h2>
       <div style="display:flex;flex-direction:column;gap:10px;">
         <div style="display:flex;align-items:flex-start;gap:12px;padding:14px;background:#f6f4ec;border-radius:12px;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">work_off</span>
-          <div><div style="font-weight:700;font-size:14px;">Unemployment Benefits</div><div style="font-size:13px;color:#6d7a73;">Retrenched, dismissed, or contract expired. Up to 238 days.</div></div>
+          <div><div style="font-weight:700;font-size:14px;" data-t="uif_c1_title">Unemployment Benefits</div><div style="font-size:13px;color:#6d7a73;">Retrenched, dismissed, or contract expired. Up to 238 days.</div></div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:12px;padding:14px;background:#f6f4ec;border-radius:12px;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">pregnant_woman</span>
-          <div><div style="font-weight:700;font-size:14px;">Maternity Benefits</div><div style="font-size:13px;color:#6d7a73;">Up to 121 days of maternity leave pay.</div></div>
+          <div><div style="font-weight:700;font-size:14px;" data-t="uif_c2_title">Maternity Benefits</div><div style="font-size:13px;color:#6d7a73;">Up to 121 days of maternity leave pay.</div></div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:12px;padding:14px;background:#f6f4ec;border-radius:12px;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">sick</span>
-          <div><div style="font-weight:700;font-size:14px;">Illness Benefits</div><div style="font-size:13px;color:#6d7a73;">If off work for more than 7 days due to illness.</div></div>
+          <div><div style="font-weight:700;font-size:14px;" data-t="uif_c3_title">Illness Benefits</div><div style="font-size:13px;color:#6d7a73;">If off work for more than 7 days due to illness.</div></div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:12px;padding:14px;background:#f6f4ec;border-radius:12px;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">family_restroom</span>
-          <div><div style="font-weight:700;font-size:14px;">Adoption &amp; Death Benefits</div><div style="font-size:13px;color:#6d7a73;">Adopting a child under 2, or dependant of deceased contributor.</div></div>
+          <div><div style="font-weight:700;font-size:14px;" data-t="uif_c4_title">Adoption &amp; Death Benefits</div><div style="font-size:13px;color:#6d7a73;">Adopting a child under 2, or dependant of deceased contributor.</div></div>
         </div>
       </div>
     </div>
 
     <!-- How to claim -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;">How to claim UIF</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;" data-t="uif_how_title">How to claim UIF</h2>
       <div style="display:flex;flex-direction:column;gap:0;">
         <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="font-size:12px;">1</div><div class="step-connector" style="min-height:44px;"></div></div><div style="padding-bottom:18px;flex:1;"><div style="font-weight:700;font-size:14px;">Go to uFiling.gov.za</div><p style="font-size:13px;color:#6d7a73;margin:4px 0 0;">Register on uFiling.gov.za or visit your nearest Labour Centre. The paperless system processes claims instantly.</p></div></div>
         <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="font-size:12px;">2</div><div class="step-connector" style="min-height:44px;"></div></div><div style="padding-bottom:18px;flex:1;"><div style="font-weight:700;font-size:14px;">Get your UI19 form from employer</div><p style="font-size:13px;color:#6d7a73;margin:4px 0 0;">Your employer must give you this form showing why you left. Code matters: 04 = Dismissed, 11 = Retrenched.</p></div></div>
@@ -154,7 +174,7 @@
 
     <!-- Who CANNOT claim -->
     <div style="background:#ffdad6;border-radius:20px;padding:20px;margin-bottom:20px;">
-      <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#ba1a1a;margin-bottom:12px;">⚠️ Who cannot claim UIF?</h3>
+      <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#ba1a1a;margin-bottom:12px;">⚠️ <span data-t="uif_cannot_title">Who cannot claim UIF?</span>/h3>
       <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3d4943;">
         <div>• Self-employed / independent contractors</div>
         <div>• Government employees</div>

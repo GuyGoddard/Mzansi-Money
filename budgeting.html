@@ -45,7 +45,11 @@
 <nav class="sidebar-nav">
   <div class="flag-strip"></div>
   <div class="sidebar-brand">
-    <span class="material-symbols-outlined text-primary">language</span>
+    <svg width="28" height="28" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:8px;overflow:hidden;">
+      <rect width="28" height="28" fill="#00694c"/>
+      <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+      <rect y="24" width="28" height="4" fill="#FFB612"/>
+    </svg>
     <span data-t="nav_brand">Mzansi Money Guide</span>
   </div>
   <div class="nav-section">Main</div>
@@ -61,20 +65,24 @@
   <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
   <div class="nav-section">Tools</div>
   <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
-  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</spandata-t="nav_gethelp">Get Help</a>
 </nav>
 
 <div class="main-content">
   <header class="top-bar">
     <div class="sa-flag-strip"></div>
     <div class="top-bar-inner">
-      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <a href="index.html" class="top-bar-brand"><svg width="26" height="26" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:7px;overflow:hidden;">
+        <rect width="28" height="28" fill="#00694c"/>
+        <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+        <rect y="24" width="28" height="4" fill="#FFB612"/>
+      </svg><span data-t="nav_brand">Mzansi Money Guide</span></a>
       <nav class="top-bar-desktop-nav">
-        <a href="index.html">Home</a>
-        <a href="pathways.html">Pathways</a>
-        <a href="personal-finance.html" class="active">Personal Finance</a>
-        <a href="sassa.html">SASSA</a>
-        <a href="business.html">Business</a>
+        <a href="index.html"data-t="nav_home">Home</a>
+        <a href="pathways.html"data-t="nav_pathways">Pathways</a>
+        <a href="personal-finance.html" class="active">data-t="nav_pf">Personal Finance</a>
+        <a href="sassa.html"data-t="nav_sassa">SASSA</a>
+        <a href="business.html"data-t="nav_business">Business</a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
     </div>
@@ -96,7 +104,7 @@
 
     <!-- Budget calculator -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:6px;">50/30/20 Budget Calculator</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:6px;" data-t="budget_calc_title">50/30/20 Budget Calculator</h2>
       <p style="font-size:13px;color:#6d7a73;margin-bottom:16px;">Enter your monthly take-home pay to see how to split it.</p>
       <div style="background:#f6f4ec;border-radius:12px;padding:16px;margin-bottom:16px;">
         <label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#6d7a73;display:block;margin-bottom:6px;">Monthly Income (ZAR)</label>
@@ -107,15 +115,15 @@
       </div>
       <div id="budget-result" style="display:none;display:flex;flex-direction:column;gap:10px;">
         <div style="background:#e6f4ef;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
-          <div><div style="font-weight:700;font-size:14px;color:#00694c;">Needs (50%)</div><div style="font-size:12px;color:#6d7a73;">Rent, food, transport, utilities</div></div>
+          <div><div style="font-weight:700;font-size:14px;color:#00694c;" data-t="budget_needs_label">Needs (50%)</div><div style="font-size:12px;color:#6d7a73;">Rent, food, transport, utilities</div></div>
           <div id="needs-val" style="font-size:20px;font-weight:800;color:#00694c;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
         </div>
         <div style="background:#eaf0fb;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
-          <div><div style="font-weight:700;font-size:14px;color:#1960a6;">Wants (30%)</div><div style="font-size:12px;color:#6d7a73;">Entertainment, eating out, clothing</div></div>
+          <div><div style="font-weight:700;font-size:14px;color:#1960a6;" data-t="budget_wants_label">Wants (30%)</div><div style="font-size:12px;color:#6d7a73;">Entertainment, eating out, clothing</div></div>
           <div id="wants-val" style="font-size:20px;font-weight:800;color:#1960a6;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
         </div>
         <div style="background:#fff3e6;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
-          <div><div style="font-weight:700;font-size:14px;color:#855000;">Savings (20%)</div><div style="font-size:12px;color:#6d7a73;">Emergency fund, retirement, stokvel</div></div>
+          <div><div style="font-weight:700;font-size:14px;color:#855000;" data-t="budget_savings_label">Savings (20%)</div><div style="font-size:12px;color:#6d7a73;">Emergency fund, retirement, stokvel</div></div>
           <div id="savings-val" style="font-size:20px;font-weight:800;color:#855000;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
         </div>
       </div>
@@ -136,7 +144,7 @@
 
     <!-- Emergency fund -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;">Build an Emergency Fund</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;" data-t="budget_emergency_title">Build an Emergency Fund</h2>
       <p style="font-size:14px;color:#3d4943;line-height:1.6;margin-bottom:16px;">An emergency fund is 3–6 months of living expenses saved in a separate account. It protects you from debt when unexpected things happen.</p>
       <div style="display:flex;flex-direction:column;gap:10px;">
         <div style="display:flex;align-items:flex-start;gap:12px;">
@@ -158,7 +166,7 @@
     <div style="background:#f6f4ec;border-radius:20px;padding:20px;margin-bottom:20px;">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
         <span class="material-symbols-outlined text-primary" style="font-size:24px;">groups</span>
-        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;">Stokvels — South Africa's Savings Tradition</h3>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;" data-t="budget_stokvel_title">Stokvels — South Africa's Savings Tradition</h3>
       </div>
       <p style="font-size:13px;color:#3d4943;line-height:1.6;margin-bottom:12px;">Over 11 million South Africans participate in stokvels — rotating savings clubs. Members contribute monthly and receive a lump sum in rotation.</p>
       <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3d4943;">
@@ -172,7 +180,7 @@
     <div class="scam-banner" style="margin-bottom:24px;">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">warning</span>
-        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;">⚠️ Avoid Loan Sharks (Mashonisas)</h3>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;">⚠️ <span data-t="budget_scam_title">Avoid Loan Sharks (Mashonisas)</span>/h3>
       </div>
       <p style="font-size:13px;opacity:0.9;line-height:1.6;margin:0;">Unregistered lenders often charge 30–100% monthly interest. This is illegal under the National Credit Act. Always check that a lender is registered with the NCR (National Credit Regulator) at ncr.org.za or call 0860 627 627.</p>
     </div>

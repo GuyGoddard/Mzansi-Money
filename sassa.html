@@ -39,13 +39,30 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
 <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
 <link rel="stylesheet" href="shared.css"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"How do I apply for a SASSA grant?","acceptedAnswer":{"@type":"Answer","text":"Visit your nearest SASSA office with your SA ID, 3 months bank statements and proof of residence. Alternatively, apply for the SRD R370 grant online at srd.sassa.gov.za or WhatsApp 082 046 8553."}},
+      {"@type":"Question","name":"How much is the SASSA old age grant in 2026?","acceptedAnswer":{"@type":"Answer","text":"From April 2026, the Older Persons Grant (old age pension) is R2,400 per month. This increased by R80 from the previous amount following the National Budget Speech."}},
+      {"@type":"Question","name":"Who qualifies for the SASSA Child Support Grant?","acceptedAnswer":{"@type":"Answer","text":"Any South African caregiver of a child under 18 may qualify, provided the child lives in South Africa and the caregiver's income is below the means test threshold. The Child Support Grant is R580 per child per month from April 2026."}},
+      {"@type":"Question","name":"Is SASSA free to apply for?","acceptedAnswer":{"@type":"Answer","text":"Yes, applying for any SASSA grant is completely free of charge. Never pay anyone to apply on your behalf — this is a scam. SASSA will never ask you for money or your bank PIN."}},
+      {"@type":"Question","name":"How do I check my SASSA SRD status?","acceptedAnswer":{"@type":"Answer","text":"Check your SRD status online at srd.sassa.gov.za, WhatsApp 082 046 8553, dial *134*7737# on your phone, or call the SASSA helpline on 0800 60 10 11 (free call)."}}
+    ]
+  }
+  </script>
 </head>
 <body>
 
 <nav class="sidebar-nav">
   <div class="flag-strip"></div>
   <div class="sidebar-brand">
-    <span class="material-symbols-outlined text-primary">language</span>
+    <svg width="28" height="28" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:8px;overflow:hidden;">
+      <rect width="28" height="28" fill="#00694c"/>
+      <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+      <rect y="24" width="28" height="4" fill="#FFB612"/>
+    </svg>
     <span data-t="nav_brand">Mzansi Money Guide</span>
   </div>
   <div class="nav-section">Main</div>
@@ -61,20 +78,24 @@
   <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
   <div class="nav-section">Tools</div>
   <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
-  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</spandata-t="nav_gethelp">Get Help</a>
 </nav>
 
 <div class="main-content">
   <header class="top-bar">
     <div class="sa-flag-strip"></div>
     <div class="top-bar-inner">
-      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <a href="index.html" class="top-bar-brand"><svg width="26" height="26" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:7px;overflow:hidden;">
+        <rect width="28" height="28" fill="#00694c"/>
+        <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+        <rect y="24" width="28" height="4" fill="#FFB612"/>
+      </svg><span data-t="nav_brand">Mzansi Money Guide</span></a>
       <nav class="top-bar-desktop-nav">
-        <a href="index.html">Home</a>
-        <a href="pathways.html">Pathways</a>
-        <a href="personal-finance.html">Personal Finance</a>
-        <a href="sassa.html" class="active">SASSA</a>
-        <a href="business.html">Business</a>
+        <a href="index.html"data-t="nav_home">Home</a>
+        <a href="pathways.html"data-t="nav_pathways">Pathways</a>
+        <a href="personal-finance.html">data-t="nav_pf">Personal Finance</a>
+        <a href="sassa.html" class="active"data-t="nav_sassa">SASSA</a>
+        <a href="business.html"data-t="nav_business">Business</a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
     </div>
@@ -113,7 +134,7 @@
         <div class="grant-card" style="flex-shrink:0;width:200px;">
           <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
             <div style="width:40px;height:40px;background:rgba(0,105,76,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined text-primary">child_care</span></div>
-            <span style="background:#00694c;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;">MONTHLY</span>
+            <span style="background:#00694c;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;" data-t="sassa_monthly">MONTHLY</span>
           </div>
           <div style="font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#1b1c18;">R560</div>
           <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;" data-t="sassa_child_name">Child Support</div>
@@ -124,7 +145,7 @@
         <div class="grant-card" style="flex-shrink:0;width:200px;">
           <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
             <div style="width:40px;height:40px;background:rgba(133,80,0,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined text-tertiary">elderly</span></div>
-            <span style="background:#855000;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;">MONTHLY</span>
+            <span style="background:#855000;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;" data-t="sassa_monthly">MONTHLY</span>
           </div>
           <div style="font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#1b1c18;">R2,180</div>
           <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;" data-t="sassa_old_name">Old Age Grant</div>
@@ -135,18 +156,18 @@
         <div class="grant-card" style="flex-shrink:0;width:200px;">
           <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
             <div style="width:40px;height:40px;background:rgba(25,96,166,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined text-secondary">accessible</span></div>
-            <span style="background:#1960a6;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;">MONTHLY</span>
+            <span style="background:#1960a6;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;" data-t="sassa_monthly">MONTHLY</span>
           </div>
           <div style="font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#1b1c18;">R2,180</div>
-          <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;">Disability Grant</div>
-          <div style="font-size:12px;color:#6d7a73;margin-bottom:10px;">For people with disabilities</div>
-          <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6d7a73;"><span class="material-symbols-outlined" style="font-size:14px;">info</span><span>Requires medical assessment</span></div>
+          <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;" data-t="sassa_dis_name">Disability Grant</div>
+          <div style="font-size:12px;color:#6d7a73;margin-bottom:10px;" data-t="sassa_dis_sub">For people with disabilities</div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6d7a73;"><span class="material-symbols-outlined" style="font-size:14px;">info</span><span data-t="sassa_dis_elig">Requires medical assessment</span></div>
         </div>
         <!-- SRD -->
         <div class="grant-card" style="flex-shrink:0;width:200px;">
           <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
             <div style="width:40px;height:40px;background:rgba(25,96,166,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined text-secondary">volunteer_activism</span></div>
-            <span style="background:#1960a6;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;">MONTHLY</span>
+            <span style="background:#1960a6;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;" data-t="sassa_monthly">MONTHLY</span>
           </div>
           <div style="font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#1b1c18;">R370</div>
           <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;" data-t="sassa_srd_name">SRD Grant</div>
@@ -157,12 +178,12 @@
         <div class="grant-card" style="flex-shrink:0;width:200px;">
           <div style="display:flex;justify-content:space-between;margin-bottom:12px;">
             <div style="width:40px;height:40px;background:rgba(0,105,76,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;"><span class="material-symbols-outlined text-primary">family_restroom</span></div>
-            <span style="background:#00694c;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;">MONTHLY</span>
+            <span style="background:#00694c;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;align-self:flex-start;" data-t="sassa_monthly">MONTHLY</span>
           </div>
           <div style="font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;color:#1b1c18;">R1,120</div>
-          <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;">Foster Care Grant</div>
-          <div style="font-size:12px;color:#6d7a73;margin-bottom:10px;">For foster parents/caregivers</div>
-          <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6d7a73;"><span class="material-symbols-outlined" style="font-size:14px;">info</span><span>Requires court order</span></div>
+          <div style="font-weight:700;font-size:14px;color:#1b1c18;margin-bottom:4px;" data-t="sassa_foster_name">Foster Care Grant</div>
+          <div style="font-size:12px;color:#6d7a73;margin-bottom:10px;" data-t="sassa_foster_sub">For foster parents/caregivers</div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#6d7a73;"><span class="material-symbols-outlined" style="font-size:14px;">info</span><span data-t="sassa_foster_elig">Requires court order</span></div>
         </div>
       </div>
     </div>
@@ -200,7 +221,7 @@
     </div>
 
     <!-- How to Apply -->
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:20px;" data-t="sassa_howto">How to Apply</h2>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:20px;" data-t="sassa_howto" data-t="sassa_howto">How to Apply</h2>
     <div style="display:flex;flex-direction:column;gap:0;margin-bottom:28px;">
       <div class="step-line" style="margin-bottom:0;">
         <div class="step-dot-col"><div class="step-dot">1</div><div class="step-connector" style="min-height:48px;"></div></div>
@@ -259,12 +280,12 @@
     <div style="background:#eaf0fb;border-radius:20px;padding:20px;margin-bottom:24px;">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
         <span class="material-symbols-outlined text-secondary">smartphone</span>
-        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1960a6;">Apply for SRD Grant Online</h3>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#1960a6;" data-t="sassa_srd_title">Apply for SRD Grant Online</h3>
       </div>
-      <p style="font-size:13px;color:#3d4943;margin-bottom:14px;line-height:1.6;">The R370 SRD grant is <strong>online only</strong>. Apply at srd.sassa.gov.za, WhatsApp 082 046 8553, or USSD *134*7737#</p>
+      <p style="font-size:13px;color:#3d4943;margin-bottom:14px;line-height:1.6;"><span data-t="sassa_srd_body">The R370 SRD grant is online only. Apply at srd.sassa.gov.za, WhatsApp 082 046 8553, or USSD *134*7737#</span></p>
       <div style="display:flex;flex-wrap:wrap;gap:8px;">
-        <a href="https://srd.sassa.gov.za" target="_blank" class="btn-primary" style="font-size:13px;padding:10px 18px;">Apply Online</a>
-        <a href="tel:0800601011" class="btn-secondary" style="font-size:13px;padding:9px 18px;">Call 0800 60 10 11</a>
+        <a href="https://srd.sassa.gov.za" target="_blank" class="btn-primary" style="font-size:13px;padding:10px 18px;" data-t="sassa_apply_online">Apply Online</a>
+        <a href="tel:0800601011" class="btn-secondary" style="font-size:13px;padding:9px 18px;" data-t="sassa_call_sassa">Call 0800 60 10 11</a>
       </div>
     </div>
 

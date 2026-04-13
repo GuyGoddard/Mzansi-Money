@@ -39,6 +39,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
 <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
 <link rel="stylesheet" href="shared.css"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"How much does it cost to register a company in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Registering a private company (Pty Ltd) with CIPC costs R125 for registration, plus R50 to reserve your company name. Total startup cost is R175. Registration is done online at bizportal.gov.za or cipc.co.za."}},
+      {"@type":"Question","name":"How long does CIPC registration take?","acceptedAnswer":{"@type":"Answer","text":"CIPC typically processes company registrations within 3–10 business days when submitted online at bizportal.gov.za. You will receive your registration certificate by email."}},
+      {"@type":"Question","name":"Where can I get funding for my small business in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Key government funding sources include SEDFA (loans from R500 to R5M for any business), NYDA (grants R1,000–R200,000 for youth 18–35), and NEF (R250,000–R75M for Black-owned businesses). All offer both financial and mentorship support."}},
+      {"@type":"Question","name":"Do I need to register for VAT in South Africa?","acceptedAnswer":{"@type":"Answer","text":"You must register for VAT when your turnover exceeds R1 million per year. You can voluntarily register from R50,000 per year. The VAT rate in South Africa is 15%. Register at efiling.sars.gov.za."}}
+    ]
+  }
+  </script>
 </head>
 <body>
 <nav class="sidebar-nav">
@@ -46,26 +58,30 @@
   <div class="sidebar-brand"><span class="material-symbols-outlined text-primary">language</span><span data-t="nav_brand">Mzansi Money Guide</span></div>
   <div class="nav-section">Main</div>
   <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
-  <a href="pathways.html"><span class="material-symbols-outlined">insights</span>Pathways</a>
-  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span>Personal Finance</a>
-  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span>SASSA</a>
-  <a href="business.html" class="active"><span class="material-symbols-outlined">storefront</span>Business</a>
+  <a href="pathways.html"><span class="material-symbols-outlined">insights</spandata-t="nav_pathways">Pathways</a>
+  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span>data-t="nav_pf">Personal Finance</a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</spandata-t="nav_sassa">SASSA</a>
+  <a href="business.html" class="active"><span class="material-symbols-outlined">storefront</spandata-t="nav_business">Business</a>
   <div class="nav-section">Personal Finance</div>
-  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span>Tax &amp; SARS</a>
-  <a href="uif.html"><span class="material-symbols-outlined">work_off</span>UIF Claims</a>
-  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span>Budgeting</a>
-  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span>Credit Score</a>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</spandata-t="nav_tax">Tax &amp; SARS</a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</spandata-t="nav_uif">UIF Claims</a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</spandata-t="nav_budgeting">Budgeting</a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</spandata-t="nav_credit">Credit Score</a>
   <div class="nav-section">Tools</div>
-  <a href="search.html"><span class="material-symbols-outlined">search</span>Search</a>
-  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span>Get Help</a>
+  <a href="search.html"><span class="material-symbols-outlined">search</spandata-t="nav_search">Search</a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</spandata-t="nav_gethelp">Get Help</a>
 </nav>
 <div class="main-content">
   <header class="top-bar">
     <div class="sa-flag-strip"></div>
     <div class="top-bar-inner">
-      <a href="index.html" class="top-bar-brand"><span class="material-symbols-outlined">language</span><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <a href="index.html" class="top-bar-brand"><svg width="26" height="26" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:7px;overflow:hidden;">
+        <rect width="28" height="28" fill="#00694c"/>
+        <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+        <rect y="24" width="28" height="4" fill="#FFB612"/>
+      </svg><span data-t="nav_brand">Mzansi Money Guide</span></a>
       <nav class="top-bar-desktop-nav">
-        <a href="index.html">Home</a><a href="pathways.html">Pathways</a><a href="personal-finance.html">Personal Finance</a><a href="sassa.html">SASSA</a><a href="business.html" class="active">Business</a>
+        <a href="index.html"data-t="nav_home">Home</a><a href="pathways.html">Pathways</a><a href="personal-finance.html">Personal Finance</a><a href="sassa.html">SASSA</a><a href="business.html" class="active">Business</a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
     </div>
@@ -93,7 +109,7 @@
 
     <!-- Registration Tab -->
     <div id="tab-content-register">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;" data-t="biz_steps_title">4 Simple Steps to Register</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;" data-t="biz_steps_title" data-t="biz_steps_title">4 Simple Steps to Register</h2>
       <div style="display:flex;flex-direction:column;gap:0;margin-bottom:24px;">
         <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="background:#1960a6;font-size:12px;">1</div><div class="step-connector" style="min-height:56px;background:#bccac1;"></div></div>
           <div style="padding-bottom:24px;flex:1;"><div style="font-weight:700;font-size:15px;margin-bottom:4px;" data-t="biz_s1_title">Reserve Your Name</div><p style="font-size:13px;color:#3d4943;margin:0;line-height:1.6;" data-t="biz_s1_sub">Think of 4 name options. Go to bizportal.gov.za and search if your name is available. Reserve it for R50. Name valid for 6 months.</p></div>
@@ -117,7 +133,7 @@
 
     <!-- Funding Tab -->
     <div id="tab-content-funding" style="display:none;" id="funding">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:6px;">Business Funding in South Africa</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:6px;" data-t="biz_funding_title">Business Funding in South Africa</h2>
       <p style="font-size:14px;color:#3d4943;margin-bottom:20px;line-height:1.6;">There are multiple government funding agencies specifically designed to help South African entrepreneurs.</p>
 
       <!-- SEDFA -->
@@ -169,7 +185,7 @@
 
       <!-- Tips for success -->
       <div style="background:#f6f4ec;border-radius:16px;padding:18px 20px;margin-bottom:20px;">
-        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;margin-bottom:10px;">💡 Tips to get funded</h3>
+        <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;margin-bottom:10px;">💡 <span data-t="biz_tips_title">Tips to get funded</span>/h3>
         <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3d4943;">
           <div>✓ Have a solid written business plan with financial projections</div>
           <div>✓ Be registered with CIPC, SARS-compliant, and have a B-BBEE affidavit</div>
@@ -182,26 +198,26 @@
 
     <!-- Compliance Tab -->
     <div id="tab-content-comply" style="display:none;">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;">Tax &amp; Compliance for Businesses</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;" data-t="biz_comply_title">Tax &amp; Compliance for Businesses</h2>
       <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:20px;">
         <div style="background:#fff;border-radius:16px;padding:18px;box-shadow:0 2px 10px rgba(27,28,24,0.05);">
-          <div style="font-weight:700;font-size:15px;margin-bottom:6px;">PAYE — Pay As You Earn</div>
+          <div style="font-weight:700;font-size:15px;margin-bottom:6px;" data-t="biz_paye_title">PAYE — Pay As You Earn</div>
           <p style="font-size:13px;color:#3d4943;line-height:1.6;margin:0;">If you pay employees, you must register for PAYE and deduct income tax from salaries. Submit EMP201 monthly to SARS.</p>
         </div>
         <div style="background:#fff;border-radius:16px;padding:18px;box-shadow:0 2px 10px rgba(27,28,24,0.05);">
-          <div style="font-weight:700;font-size:15px;margin-bottom:6px;">VAT — Value Added Tax</div>
+          <div style="font-weight:700;font-size:15px;margin-bottom:6px;" data-t="biz_vat_title">VAT — Value Added Tax</div>
           <p style="font-size:13px;color:#3d4943;line-height:1.6;margin:0;">Register for VAT when your turnover exceeds <strong>R1 million/year</strong>. You can voluntarily register from R50,000/year. VAT rate is 15%.</p>
         </div>
         <div style="background:#fff;border-radius:16px;padding:18px;box-shadow:0 2px 10px rgba(27,28,24,0.05);">
-          <div style="font-weight:700;font-size:15px;margin-bottom:6px;">UIF &amp; SDL Contributions</div>
+          <div style="font-weight:700;font-size:15px;margin-bottom:6px;" data-t="biz_uif_title">UIF &amp; SDL Contributions</div>
           <p style="font-size:13px;color:#3d4943;line-height:1.6;margin:0;">Register all employees for UIF (1% employee + 1% employer). If payroll exceeds R500,000/year, pay 1% Skills Development Levy (SDL).</p>
         </div>
         <div style="background:#fff;border-radius:16px;padding:18px;box-shadow:0 2px 10px rgba(27,28,24,0.05);">
-          <div style="font-weight:700;font-size:15px;margin-bottom:6px;">Provisional Tax</div>
+          <div style="font-weight:700;font-size:15px;margin-bottom:6px;" data-t="biz_prov_title">Provisional Tax</div>
           <p style="font-size:13px;color:#3d4943;line-height:1.6;margin:0;">If you expect taxable income over R30,000 beyond what your employer withholds, you are a provisional taxpayer. Pay twice yearly: Aug 31 and Feb 28.</p>
         </div>
         <div style="background:#fff;border-radius:16px;padding:18px;box-shadow:0 2px 10px rgba(27,28,24,0.05);">
-          <div style="font-weight:700;font-size:15px;margin-bottom:6px;">Annual Returns to CIPC</div>
+          <div style="font-weight:700;font-size:15px;margin-bottom:6px;" data-t="biz_annual_title">Annual Returns to CIPC</div>
           <p style="font-size:13px;color:#3d4943;line-height:1.6;margin:0;">File annual returns with CIPC within 30 business days of your anniversary date. Costs R100–R3,000 depending on turnover. Non-compliance leads to deregistration.</p>
         </div>
       </div>
