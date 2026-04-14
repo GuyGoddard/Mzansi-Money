@@ -10,12 +10,12 @@ HOW TO GET YOUR GA4 ID:
   2. Click Admin (gear icon, bottom left)
   3. Under "Property", click "Data Streams"
   4. Click your web stream
-  5. Copy the "MEASUREMENT ID" — it looks like G-XXXXXXXXXX
+  5. Copy the "MEASUREMENT ID" — it looks like G-2MDWNC0LKX
 
 USAGE:
   python3 replace_ga4.py G-ABCD1234567
 
-This replaces every instance of G-XXXXXXXXXX across all 13 HTML files.
+This replaces every instance of G-2MDWNC0LKX across all 13 HTML files.
 """
 
 import sys, os, glob
@@ -32,7 +32,7 @@ if not NEW_ID.startswith('G-') or len(NEW_ID) < 8:
     print("   It should start with G- followed by letters and numbers.")
     sys.exit(1)
 
-PLACEHOLDER = 'G-XXXXXXXXXX'
+PLACEHOLDER = 'G-2MDWNC0LKX'
 html_files = glob.glob('*.html')
 
 if not html_files:
