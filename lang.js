@@ -4,6 +4,25 @@
 const TRANSLATIONS = {
   en: {
     // ── Brand / Nav ──
+    footer_support: 'Support',
+    help_almost: 'Almost there',
+    help_certified_sub: 'Vetted financial advisors.',
+    help_desc_ph: 'Tell us a bit more about your situation...',
+    help_name_ph: 'Enter your name',
+    help_of: 'of',
+    help_phone_ph: 'e.g. 082 123 4567',
+    help_quick_sub: 'Reply within 2 hours.',
+    nav_budgeting: 'Budgeting',
+    nav_gethelp: 'Get Help',
+    nav_pathways: 'Pathways',
+    nav_sassa: 'SASSA',
+    nav_search: 'Search',
+    nav_tax: 'Tax & SARS',
+    sassa_q_yes: 'Yes',
+    topic_credit: 'Credit Score',
+    topic_debt: 'Debt Review',
+    topic_other: 'Other',
+    topic_tax: 'Tax Returns',
     nav_brand: "Mzansi Money Guide",
     nav_home: "Home", nav_pathways: "Pathways", nav_search: "Search",
     nav_profile: "Profile", nav_back: "Back",
@@ -328,10 +347,38 @@ const TRANSLATIONS = {
     topic_uif: "UIF Claims", topic_credit: "Credit Score", topic_other: "Other",
   },
 
+    biz_tab_register: 'Registration',
+    biz_tab_funding: 'Funding',
+    biz_tab_comply: 'Tax & Compliance',
+    paydates_filter_all: 'All grants',
+    paydates_filter_old: 'Old Age',
+    paydates_filter_dis: 'Disability',
+    paydates_filter_csg: 'Child Support',
+    paydates_filter_srd: 'SRD R370',
+  
   // ═══════════════════════════════════════════════════
   // isiZulu
   // ═══════════════════════════════════════════════════
   zu: {
+    footer_support: 'Usizo',
+    help_almost: 'Ufinyelele',
+    help_certified_sub: 'Abaluleki bezimali abehlolwe.',
+    help_desc_ph: 'Sitshele okwengeziwe ngezimo zakho...',
+    help_name_ph: 'Faka igama lakho',
+    help_of: 'ku',
+    help_phone_ph: 'isib. 082 123 4567',
+    help_quick_sub: 'Siphendula ngaphakathi kwamahora amabili.',
+    nav_budgeting: 'Isabelomali',
+    nav_gethelp: 'Thola Usizo',
+    nav_pathways: 'Izindlela',
+    nav_sassa: 'SASSA',
+    nav_search: 'Sesha',
+    nav_tax: 'Intela ne-SARS',
+    sassa_q_yes: 'Yebo',
+    topic_credit: 'Isilinganiso Sokhrediti',
+    topic_debt: 'Ukubuyekezwa Kwezikweletu',
+    topic_other: 'Okunye',
+    topic_tax: 'Izinkulumo Zentela',
     nav_brand: "Umhlahlandlela Wezimali WaseMzansi",
     nav_home: "Ikhaya", nav_pathways: "Izindlela", nav_search: "Sesha",
     nav_profile: "Iphrofayili", nav_back: "Emuva",
@@ -569,10 +616,38 @@ const TRANSLATIONS = {
     topic_uif: "Izimangalo ze-UIF", topic_credit: "Isilinganiso Sokhrediti", topic_other: "Okunye",
   },
 
-  // ═══════════════════════════════════════════════════
+
+    biz_tab_register: 'Ukubhalisa',
+    biz_tab_funding: 'Uxhaso',
+    biz_tab_comply: 'Intela Nokufanelana',
+    paydates_filter_all: 'Izibonelelo zonke',
+    paydates_filter_old: 'Abantu Abadala',
+    paydates_filter_dis: 'Ukukhubazeka',
+    paydates_filter_csg: 'Usizo Lomntwana',
+    paydates_filter_srd: 'SRD R370',
+    // ═══════════════════════════════════════════════════
   // isiXhosa
   // ═══════════════════════════════════════════════════
   xh: {
+    footer_support: 'Uncedo',
+    help_almost: 'Kufuphi',
+    help_certified_sub: 'Abaluleki bemali abagqitiweyo.',
+    help_desc_ph: 'Sitshintshe okuninzi ngimeko yakho...',
+    help_name_ph: 'Faka igama lakho',
+    help_of: 'ku',
+    help_phone_ph: 'umz. 082 123 4567',
+    help_quick_sub: 'Siphendula ngaphakathi kweeyure ezimbini.',
+    nav_budgeting: 'Isicwangciso Semali',
+    nav_gethelp: 'Fumana Uncedo',
+    nav_pathways: 'Iindlela',
+    nav_sassa: 'SASSA',
+    nav_search: 'Khangela',
+    nav_tax: 'Irhafu ne-SARS',
+    sassa_q_yes: 'Ewe',
+    topic_credit: 'Isi-Score Sekredi',
+    topic_debt: 'Ukubuyekezwa Kwamatyala',
+    topic_other: 'Okunye',
+    topic_tax: 'Iingxelo Zerhafu',
     nav_brand: "Isicwangciso Semali SaseMzantsi",
     nav_home: "Ikhaya", nav_pathways: "Iindlela", nav_search: "Khangela",
     nav_profile: "Iprofayile", nav_back: "Emva",
@@ -787,10 +862,38 @@ const TRANSLATIONS = {
     topic_uif: "Izicelo ze-UIF", topic_credit: "Isi-Score Sekredi", topic_other: "Okunye",
   },
 
-  // ═══════════════════════════════════════════════════
+
+    biz_tab_register: 'Ubhaliso',
+    biz_tab_funding: 'Inkxaso',
+    biz_tab_comply: 'Irhafu Nokumana',
+    paydates_filter_all: 'Zonke izibonelelo',
+    paydates_filter_old: 'Abantu Abadala',
+    paydates_filter_dis: 'Ukukhubazeka',
+    paydates_filter_csg: 'Inkxaso Yomntwana',
+    paydates_filter_srd: 'SRD R370',
+    // ═══════════════════════════════════════════════════
   // Afrikaans
   // ═══════════════════════════════════════════════════
   af: {
+    footer_support: 'Ondersteuning',
+    help_almost: 'Amper daar',
+    help_certified_sub: 'Geverifieerde finansiële adviseurs.',
+    help_desc_ph: 'Vertel ons meer oor jou situasie...',
+    help_name_ph: 'Voer jou naam in',
+    help_of: 'van',
+    help_phone_ph: 'bv. 082 123 4567',
+    help_quick_sub: 'Ons antwoord binne 2 uur.',
+    nav_budgeting: 'Begroting',
+    nav_gethelp: 'Kry Hulp',
+    nav_pathways: 'Paaie',
+    nav_sassa: 'SASSA',
+    nav_search: 'Soek',
+    nav_tax: 'Belasting en SARS',
+    sassa_q_yes: 'Ja',
+    topic_credit: 'Kredietpunt',
+    topic_debt: 'Skuldhersiening',
+    topic_other: 'Ander',
+    topic_tax: 'Belastingopgawes',
     nav_brand: "Mzansi Geldgids",
     nav_home: "Tuis", nav_pathways: "Paaie", nav_search: "Soek",
     nav_profile: "Profiel", nav_back: "Terug",
@@ -1004,6 +1107,15 @@ const TRANSLATIONS = {
     topic_biz: "Besigheidsbefondsing", topic_debt: "Skuldhersiening",
     topic_uif: "UIF-Eise", topic_credit: "Kredietpunt", topic_other: "Ander",
   }
+    biz_tab_register: 'Registrasie',
+    biz_tab_funding: 'Befondsing',
+    biz_tab_comply: 'Belasting en Nakoming',
+    paydates_filter_all: 'Alle toelaes',
+    paydates_filter_old: 'Ouderdom',
+    paydates_filter_dis: 'Gestremdheid',
+    paydates_filter_csg: 'Kinderondersteuning',
+    paydates_filter_srd: 'SRD R370',
+  
 };
 
 // ── Engine ──
