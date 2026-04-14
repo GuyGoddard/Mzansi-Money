@@ -185,6 +185,50 @@
       <p style="font-size:13px;opacity:0.9;line-height:1.6;margin:0;">Unregistered lenders often charge 30–100% monthly interest. This is illegal under the National Credit Act. Always check that a lender is registered with the NCR (National Credit Regulator) at ncr.org.za or call 0860 627 627.</p>
     </div>
 
+  
+    <div style="margin-top:32px;">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:16px;color:#1b1c18;">Budgeting — Frequently Asked Questions</h2>
+      <div id="budget-faq">
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleBudFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            How do South Africans save money on a low income?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">The most effective strategies for low-income savers: join a stokvel (rotating savings club) for forced savings and community support; use a free bank account (Capitec, TymeBank) to avoid monthly fees; buy groceries in bulk at month-end; use laybye for large purchases instead of credit; avoid airtime loans which charge 30%+ effective interest; set up a free Capitec savings pocket that earns 7% interest on small amounts.</p>
+          </div>
+        </div>
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleBudFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            Is Buy Now Pay Later (BNPL) a good idea in South Africa?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">BNPL services like PayJustNow and Payflex can be useful if you pay within the interest-free period, but carry real risks. Unlike traditional credit, many BNPL services operate outside the National Credit Act — meaning you have fewer protections. In 2024, 50% of South Africans using BNPL were doing so for essential items like groceries — a warning sign of financial stress. Use BNPL only for planned purchases you can definitely afford to pay off, never for everyday expenses.</p>
+          </div>
+        </div>
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleBudFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            How do I start a stokvel?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">To start a stokvel: gather 4–12 trusted people (family, friends, colleagues); agree on the monthly contribution amount everyone can afford; decide the payout order and frequency; appoint a treasurer and secretary; open a dedicated bank account in the group's name; and draw up a simple written agreement everyone signs. Many banks (FNB, Standard Bank) offer free stokvel accounts. Register with the National Stokvel Association of South Africa (NASASA) at nasasa.co.za for added credibility.</p>
+          </div>
+        </div>
+      </div>
+      <script>
+      function toggleBudFAQ(btn) {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+        document.querySelectorAll('#budget-faq div[style*="max-height"]').forEach(d => d.style.maxHeight='0px');
+        document.querySelectorAll('#budget-faq .material-symbols-outlined').forEach(i => i.textContent='add');
+        if(!isOpen){ content.style.maxHeight = content.scrollHeight+'px'; icon.textContent='remove'; }
+      }
+      </script>
+    </div>
+
   </div>
 </div>
 

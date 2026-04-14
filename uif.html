@@ -193,6 +193,107 @@
       </a>
     </div>
 
+  
+    <!-- SEO: UIF calculator + rich content -->
+    <div style="margin-top:32px;">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:8px;color:#1b1c18;">UIF Benefits Calculator 2026</h2>
+      <p style="font-size:14px;color:#3d4943;line-height:1.7;margin-bottom:16px;">Enter your monthly salary to estimate your UIF payout. Based on the official sliding scale — low earners receive a higher percentage.</p>
+      <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:24px;box-shadow:0 2px 12px rgba(27,28,24,0.07);">
+        <div style="background:#f6f4ec;border-radius:12px;padding:16px;margin-bottom:16px;">
+          <label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#6d7a73;display:block;margin-bottom:6px;">Monthly Gross Salary (ZAR)</label>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span style="font-size:20px;font-weight:800;color:#1b1c18;">R</span>
+            <input id="uif-salary" type="number" placeholder="e.g. 12000" oninput="calcUIF()" style="width:100%;background:transparent;border:none;border-bottom:2px solid #bccac1;font-size:20px;font-weight:700;color:#1b1c18;outline:none;padding:4px 0;font-family:'Plus Jakarta Sans',sans-serif;"/>
+          </div>
+        </div>
+        <div id="uif-result" style="display:none;flex-direction:column;gap:10px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="background:#e6f4ef;border-radius:12px;padding:14px;text-align:center;">
+              <div style="font-size:11px;color:#6d7a73;margin-bottom:4px;">Monthly UIF benefit</div>
+              <div id="uif-monthly" style="font-size:24px;font-weight:800;color:#00694c;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
+            </div>
+            <div style="background:#f6f4ec;border-radius:12px;padding:14px;text-align:center;">
+              <div style="font-size:11px;color:#6d7a73;margin-bottom:4px;">Replacement rate</div>
+              <div id="uif-rate" style="font-size:24px;font-weight:800;color:#3d4943;font-family:'Plus Jakarta Sans',sans-serif;">0%</div>
+            </div>
+          </div>
+          <div style="background:#f6f4ec;border-radius:12px;padding:14px;">
+            <div style="font-size:13px;color:#3d4943;line-height:1.6;" id="uif-note">—</div>
+          </div>
+        </div>
+        <p style="font-size:11px;color:#6d7a73;margin-top:12px;line-height:1.5;">⚠️ This is an estimate only. Actual UIF benefits depend on your credit days accumulated and the official sliding scale formula. Benefits are capped at a salary of R17,712/month.</p>
+      </div>
+
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:16px;color:#1b1c18;">UIF — Frequently Asked Questions</h2>
+      <div id="uif-faq">
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleUFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            How long does UIF take to pay out after I apply?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">UIF payments typically take 4–8 weeks after submitting a complete application on uFiling. The timeline depends on whether your employer has submitted your UI-19 form and whether your documents are complete. Once approved, funds are deposited directly into your bank account. You can track progress by logging into uFiling and checking your claim status.</p>
+          </div>
+        </div>
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleUFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            Can domestic workers claim UIF?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Yes. Domestic workers (housekeepers, gardeners, child minders) who work more than 24 hours per month are covered by UIF. Their employer must register them for UIF and deduct 1% from their wages monthly, with the employer contributing another 1%. If the employer has not been registering and contributing, the domestic worker can report this to the Department of Employment and Labour.</p>
+          </div>
+        </div>
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleUFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            What does UIF status "Sent to Assessor" mean?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">"Sent to Assessor" means your UIF claim documents have been received and are now being reviewed by a claims assessor. This is a normal step in the process — it usually takes 5–15 business days for the assessor to complete the review. After this, your status should change to "Assessed" and then "Approved" if everything is in order.</p>
+          </div>
+        </div>
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleUFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            How many months of UIF can I claim?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Your UIF benefit duration depends on how long you contributed. For every 4 days worked as a contributor, you earn 1 day of UIF benefit. The maximum is 365 days (about 12 months) for someone who contributed for 4+ years. If you worked for 2 years, you'd qualify for approximately 182 benefit days. Maternity benefits are limited to 121 days regardless of contribution period.</p>
+          </div>
+        </div>
+      </div>
+      <script>
+      function calcUIF() {
+        const raw = parseFloat(document.getElementById('uif-salary').value) || 0;
+        const salary = Math.min(raw, 17712); // cap at UIF ceiling
+        const res = document.getElementById('uif-result');
+        if (raw <= 0) { res.style.display='none'; return; }
+        res.style.display='flex';
+        // Sliding scale: lower earners get higher %. Formula approximation:
+        // Rate = 29.2 + 7592.8/(salary + 239) — official UIF formula
+        const dailySalary = salary * 12 / 365;
+        const replacementRate = Math.min(58, Math.max(38, 29.2 + 7592.8/(dailySalary + 239)));
+        const dailyBenefit = dailySalary * (replacementRate / 100);
+        const monthlyBenefit = dailyBenefit * 30;
+        document.getElementById('uif-monthly').textContent = 'R' + Math.round(monthlyBenefit).toLocaleString();
+        document.getElementById('uif-rate').textContent = Math.round(replacementRate) + '%';
+        let note = '';
+        if (raw > 17712) note = `Your salary (R${raw.toLocaleString()}) exceeds the UIF ceiling. UIF is calculated on R17,712. `;
+        note += `You would receive approximately R${Math.round(monthlyBenefit).toLocaleString()}/month — ${Math.round(replacementRate)}% of your capped UIF salary.`;
+        document.getElementById('uif-note').textContent = note;
+      }
+      function toggleUFAQ(btn) {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+        document.querySelectorAll('#uif-faq div[style*="max-height"]').forEach(d => d.style.maxHeight='0px');
+        document.querySelectorAll('#uif-faq .material-symbols-outlined').forEach(i => i.textContent='add');
+        if(!isOpen){ content.style.maxHeight = content.scrollHeight+'px'; icon.textContent='remove'; }
+      }
+      </script>
+    </div>
+
   </div>
 </div>
 

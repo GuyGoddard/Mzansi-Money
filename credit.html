@@ -185,6 +185,59 @@
       </div>
     </div>
 
+  
+    <div style="margin-top:32px;">
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:16px;color:#1b1c18;">Credit Score — Frequently Asked Questions</h2>
+      <div id="credit-faq">
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleCFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            How long does it take to improve a bad credit score in South Africa?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Improving a credit score takes time and consistency. Negative listings like missed payments stay for 2 years; judgments for 5 years; defaults for up to 7 years. With disciplined on-time payments and reduced debt, most people see meaningful improvement within 6–12 months. Going from Poor to Good typically takes 2–3 years of consistent positive behaviour.</p>
+          </div>
+        </div>
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleCFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            Does checking your own credit score affect it?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">No. Checking your own credit report is called a "soft enquiry" and has zero impact on your score. Only "hard enquiries" — where a credit provider pulls your report to assess a loan application — temporarily affect your score. This is why you should check your own report at least once a year — it costs nothing and cannot hurt you.</p>
+          </div>
+        </div>
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleCFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            What credit score do I need to buy a house in South Africa?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Most South African banks require a minimum score of around 620–650 for a home loan. A score above 650 gives you an 85% chance of approval. A score above 700 can qualify you for prime or below-prime interest rates, which makes a significant difference on a 20-year bond — the difference between 10.5% and 13.5% on a R1M bond is over R4,000/month.</p>
+          </div>
+        </div>
+        <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <button onclick="toggleCFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+            How do I dispute incorrect information on my credit report?
+            <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+          </button>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Download your free annual credit report from TransUnion, Experian, or XDS. If you find an error, contact the credit bureau directly with proof (bank statements, paid-up letters, or correspondence). The bureau must investigate within 20 business days. If the credit provider confirms the information is wrong, it must be removed. You can escalate unresolved disputes to the Credit Ombud (0861 66 28 37).</p>
+          </div>
+        </div>
+      </div>
+      <script>
+      function toggleCFAQ(btn) {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.material-symbols-outlined');
+        const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+        document.querySelectorAll('#credit-faq div[style*="max-height"]').forEach(d => d.style.maxHeight='0px');
+        document.querySelectorAll('#credit-faq .material-symbols-outlined').forEach(i => i.textContent='add');
+        if(!isOpen){ content.style.maxHeight = content.scrollHeight+'px'; icon.textContent='remove'; }
+      }
+      </script>
+    </div>
+
   </div>
 </div>
 
