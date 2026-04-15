@@ -196,11 +196,11 @@
   
     <!-- SEO: UIF calculator + rich content -->
     <div style="margin-top:32px;">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:8px;color:#1b1c18;">UIF Benefits Calculator 2026</h2>
-      <p style="font-size:14px;color:#3d4943;line-height:1.7;margin-bottom:16px;">Enter your monthly salary to estimate your UIF payout. Based on the official sliding scale — low earners receive a higher percentage.</p>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:8px;color:#1b1c18;"><span data-t="uif_calc_title">UIF Benefits Calculator 2026</span></h2>
+      <p style="font-size:14px;color:#3d4943;line-height:1.7;margin-bottom:16px;"><span data-t="uif_calc_intro">Enter your monthly salary to estimate your UIF payout. Based on the official sliding scale — low earners receive a higher percentage.</span></p>
       <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:24px;box-shadow:0 2px 12px rgba(27,28,24,0.07);">
         <div style="background:#f6f4ec;border-radius:12px;padding:16px;margin-bottom:16px;">
-          <label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#6d7a73;display:block;margin-bottom:6px;">Monthly Gross Salary (ZAR)</label>
+          <label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#6d7a73;display:block;margin-bottom:6px;"><span data-t="uif_salary_label">Monthly Gross Salary (ZAR)</span></label>
           <div style="display:flex;align-items:center;gap:8px;">
             <span style="font-size:20px;font-weight:800;color:#1b1c18;">R</span>
             <input id="uif-salary" type="number" placeholder="e.g. 12000" oninput="calcUIF()" style="width:100%;background:transparent;border:none;border-bottom:2px solid #bccac1;font-size:20px;font-weight:700;color:#1b1c18;outline:none;padding:4px 0;font-family:'Plus Jakarta Sans',sans-serif;"/>
@@ -209,11 +209,11 @@
         <div id="uif-result" style="display:none;flex-direction:column;gap:10px;">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
             <div style="background:#e6f4ef;border-radius:12px;padding:14px;text-align:center;">
-              <div style="font-size:11px;color:#6d7a73;margin-bottom:4px;">Monthly UIF benefit</div>
+              <div style="font-size:11px;color:#6d7a73;margin-bottom:4px;"><span data-t="uif_monthly_label">Monthly UIF benefit</span></div>
               <div id="uif-monthly" style="font-size:24px;font-weight:800;color:#00694c;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
             </div>
             <div style="background:#f6f4ec;border-radius:12px;padding:14px;text-align:center;">
-              <div style="font-size:11px;color:#6d7a73;margin-bottom:4px;">Replacement rate</div>
+              <div style="font-size:11px;color:#6d7a73;margin-bottom:4px;"><span data-t="uif_rate_label">Replacement rate</span></div>
               <div id="uif-rate" style="font-size:24px;font-weight:800;color:#3d4943;font-family:'Plus Jakarta Sans',sans-serif;">0%</div>
             </div>
           </div>
@@ -221,14 +221,14 @@
             <div style="font-size:13px;color:#3d4943;line-height:1.6;" id="uif-note">—</div>
           </div>
         </div>
-        <p style="font-size:11px;color:#6d7a73;margin-top:12px;line-height:1.5;">⚠️ This is an estimate only. Actual UIF benefits depend on your credit days accumulated and the official sliding scale formula. Benefits are capped at a salary of R17,712/month.</p>
+        <p style="font-size:11px;color:#6d7a73;margin-top:12px;line-height:1.5;">⚠️ <span data-t="uif_calc_disclaimer">This is an estimate only. Actual UIF benefits depend on your credit days accumulated and the official sliding scale formula. Benefits are capped at a salary of R17,712/month.</span></p>
       </div>
 
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:16px;color:#1b1c18;">UIF — Frequently Asked Questions</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:16px;color:#1b1c18;"><span data-t="uif_faq_title">UIF — Frequently Asked Questions</span></h2>
       <div id="uif-faq">
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
           <button onclick="toggleUFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
-            How long does UIF take to pay out after I apply?
+            <span data-t="uif_faq_q1">How long does UIF take to pay out after I apply?</span>
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
@@ -237,7 +237,7 @@
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
           <button onclick="toggleUFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
-            Can domestic workers claim UIF?
+            <span data-t="uif_faq_q2">Can domestic workers claim UIF?</span>
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
@@ -246,7 +246,7 @@
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
           <button onclick="toggleUFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
-            What does UIF status "Sent to Assessor" mean?
+            <span data-t="uif_faq_q3">What does UIF status &quot;Sent to Assessor&quot; mean?</span>
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
@@ -255,7 +255,7 @@
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
           <button onclick="toggleUFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
-            How many months of UIF can I claim?
+            <span data-t="uif_faq_q4">How many months of UIF can I claim?</span>
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
