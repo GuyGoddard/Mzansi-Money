@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="theme-color" content="#00694c"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <link rel="apple-touch-icon" href="/favicon.svg"/>
+  <!-- Canonical -->
+  <link rel="canonical" href="https://mzansi-money.com/tax-calculator"/>
+  <link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/tax-calculator"/>
+  <link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/tax-calculator"/>
+  <!-- Open Graph / WhatsApp sharing -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Mzansi Money Guide"/>
+  <meta property="og:title" content="SARS eFiling South Africa 2025 | How to File Your Tax Return"/>
+  <meta property="og:description" content="Step-by-step guide to filing your SARS tax return online in South Africa. Get a tax number, understand auto-assessment, key deadlines and how to claim your refund."/>
+  <meta property="og:url" content="https://mzansi-money.com/tax"/>
+  <meta property="og:image" content="https://mzansi-money.com/og/home.png"/>
+  <meta property="og:locale" content="en_ZA"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="SARS eFiling South Africa 2025 | How to File Your Tax Return"/>
+  <meta name="twitter:description" content="Step-by-step guide to filing your SARS tax return online in South Africa. Get a tax number, understand auto-assessment, key deadlines and how to claim your refund."/>
+  <!-- Google Analytics GA4 — replace G-2MDWNC0LKX -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MDWNC0LKX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2MDWNC0LKX');</script>
+  <!-- Organisation Schema -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Mzansi Money Guide","url":"https://mzansi-money.com","description":"Free financial guidance for every South African."}
+  </script>
+  <meta name="description" content="Step-by-step guide to filing your SARS tax return online in South Africa. Get a tax number, understand auto-assessment, key deadlines and how to claim your refund."/>
+<title>SARS Tax Calculator 2026/27 | PAYE &amp; Take-Home Pay | Mzansi Money</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
+<link rel="stylesheet" href="shared.css"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Do I need to file a tax return in South Africa?","acceptedAnswer":{"@type":"Answer","text":"You must file if you earn more than R500,000 per year, have more than one income source, or want to claim a refund. If you earn under R500,000 from a single employer, you may qualify for SARS auto-assessment."}},
+      {"@type":"Question","name":"How do I register for SARS eFiling?","acceptedAnswer":{"@type":"Answer","text":"Go to efiling.sars.gov.za and click Register. You will need your SA ID number, a tax reference number, and a valid email address. Alternatively visit any SARS branch with your ID and proof of address."}},
+      {"@type":"Question","name":"When is the tax return deadline in South Africa 2025?","acceptedAnswer":{"@type":"Answer","text":"The 2025 tax season runs from July to October 2025 for individual eFiling submissions. Provisional taxpayers have different deadlines: 31 August 2025 (first period) and 28 February 2026 (second period)."}},
+      {"@type":"Question","name":"How long does SARS take to process a refund?","acceptedAnswer":{"@type":"Answer","text":"SARS typically processes tax refunds within 72 hours of a completed and accepted return for straightforward cases. More complex assessments can take up to 3 weeks. Ensure your banking details are correct on eFiling."}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "SARS Tax Calculator 2026/27",
+    "url": "https://mzansi-money.com/tax-calculator",
+    "description": "Free South African PAYE and take-home pay calculator using official SARS 2026/27 tax brackets.",
+    "applicationCategory": "FinanceApplication",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "ZAR"},
+    "provider": {"@type": "Organization", "name": "Mzansi Money Guide", "url": "https://mzansi-money.com"}
+  }
+  </script>
+</head>
+<body>
+<div class="app-shell">
+<nav class="sidebar-nav">
+  <div class="flag-strip"></div>
+  <div class="sidebar-brand">
+    <svg width="28" height="28" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:8px;overflow:hidden;">
+      <rect width="28" height="28" fill="#00694c"/>
+      <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+      <rect y="24" width="28" height="4" fill="#FFB612"/>
+    </svg>
+    <span data-t="nav_brand">Mzansi Money Guide</span>
+  </div>
+  <div class="nav-section">Main</div>
+  <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span>SASSA</span></a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span>Business</span></a>
+  <div class="nav-section">Personal Finance</div>
+  <a href="tax.html" class="active"><span class="material-symbols-outlined">account_balance</span><span>Tax &amp; SARS</span></a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span>UIF Claims</span></a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span>Budgeting</span></a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
+  <div class="nav-section">Tools</div>
+  <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
+</nav>
+<div class="main-content">
+<header class="top-bar">
+    <div class="sa-flag-strip"></div>
+    <div class="top-bar-inner">
+      <a href="index.html" class="top-bar-brand"><svg width="26" height="26" viewBox="0 0 28 28" style="flex-shrink:0;border-radius:7px;overflow:hidden;">
+        <rect width="28" height="28" fill="#00694c"/>
+        <text x="14" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="17" fill="#fff">M</text>
+        <rect y="24" width="28" height="4" fill="#FFB612"/>
+      </svg><span data-t="nav_brand">Mzansi Money Guide</span></a>
+      <nav class="top-bar-desktop-nav">
+        <a href="index.html"data-t="nav_home">Home</a>
+        <a href="pathways.html"data-t="nav_pathways">Pathways</a>
+        <a href="personal-finance.html" class="active" data-t="nav_pf">Personal Finance</a>
+        <a href="sassa.html"data-t="nav_sassa">SASSA</a>
+        <a href="business.html"data-t="nav_business">Business</a>
+      </nav>
+      <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
+    </div>
+  </header>
+  <div class="page-content">
+
+    <div style="background:linear-gradient(135deg,#00694c 0%,#1a7a5e 100%);border-radius:20px;padding:24px 24px 20px;margin-bottom:24px;color:#fff;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:-20px;right:-20px;width:120px;height:120px;background:rgba(255,255,255,0.06);border-radius:50%;"></div>
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;opacity:0.75;margin-bottom:6px;" data-t="calc_badge">Free Tool</div>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(22px,4vw,30px);margin:0 0 6px;line-height:1.2;" data-t="calc_title">SARS Tax Calculator 2026/27</h1>
+      <p style="font-size:14px;opacity:0.85;margin:0;" data-t="calc_sub">Enter your monthly salary. See your PAYE, UIF and take-home pay instantly — using official SARS 2026/27 tax brackets.</p>
+    </div>
+
+    <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.07);">
+      <div style="display:grid;gap:16px;margin-bottom:20px;">
+
+        <div style="background:#f6f4ec;border-radius:14px;padding:16px;">
+          <label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;display:block;margin-bottom:8px;" data-t="calc_salary_label">Monthly Gross Salary (ZAR)</label>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span style="font-size:22px;font-weight:800;color:#6d7a73;">R</span>
+            <input id="c-salary" type="number" min="0" max="999999" placeholder="e.g. 25000" oninput="calcTax()"
+              style="flex:1;background:transparent;border:none;border-bottom:2px solid #bccac1;font-size:22px;font-weight:700;color:#1b1c18;outline:none;padding:4px 0;font-family:'Plus Jakarta Sans',sans-serif;"/>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+          <div style="background:#f6f4ec;border-radius:14px;padding:14px;">
+            <label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;display:block;margin-bottom:8px;" data-t="calc_age_label">Your Age</label>
+            <select id="c-age" onchange="calcTax()" style="width:100%;background:transparent;border:none;border-bottom:2px solid #bccac1;font-size:15px;font-weight:600;color:#1b1c18;outline:none;padding:4px 0;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;">
+              <option value="under65" data-t="calc_age_u65">Under 65</option>
+              <option value="65to74" data-t="calc_age_6574">65 to 74</option>
+              <option value="75plus" data-t="calc_age_75p">75 or older</option>
+            </select>
+          </div>
+          <div style="background:#f6f4ec;border-radius:14px;padding:14px;">
+            <label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;display:block;margin-bottom:8px;" data-t="calc_medical_label">Medical Aid Members</label>
+            <select id="c-medical" onchange="calcTax()" style="width:100%;background:transparent;border:none;border-bottom:2px solid #bccac1;font-size:15px;font-weight:600;color:#1b1c18;outline:none;padding:4px 0;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;">
+              <option value="0" data-t="calc_med_none">None</option>
+              <option value="1" data-t="calc_med_1">1 (just you)</option>
+              <option value="2" selected data-t="calc_med_2">2 (you + 1)</option>
+              <option value="3" data-t="calc_med_3">3 members</option>
+              <option value="4" data-t="calc_med_4">4 or more</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="background:#f6f4ec;border-radius:14px;padding:14px;">
+          <label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;display:block;margin-bottom:8px;" data-t="calc_pension_label">Monthly Pension / RA Contribution (optional)</label>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span style="font-size:15px;font-weight:700;color:#6d7a73;">R</span>
+            <input id="c-pension" type="number" min="0" placeholder="0" oninput="calcTax()"
+              style="flex:1;background:transparent;border:none;border-bottom:2px solid #bccac1;font-size:15px;font-weight:600;color:#1b1c18;outline:none;padding:4px 0;font-family:'Plus Jakarta Sans',sans-serif;"/>
+          </div>
+          <p style="font-size:11px;color:#6d7a73;margin:6px 0 0;" data-t="calc_pension_note">Reduces your taxable income. Max deductible: 27.5% of salary or R430,000/year.</p>
+        </div>
+      </div>
+
+      <div id="c-results" style="display:none;">
+        <div style="margin-bottom:20px;">
+          <div style="display:flex;height:14px;border-radius:99px;overflow:hidden;margin-bottom:8px;">
+            <div id="bar-takehome" style="background:#00694c;transition:width 0.4s;height:100%;"></div>
+            <div id="bar-paye" style="background:#e03e2d;transition:width 0.4s;height:100%;"></div>
+            <div id="bar-uif" style="background:#FFB612;transition:width 0.4s;height:100%;"></div>
+            <div id="bar-pension" style="background:#1960a6;transition:width 0.4s;height:100%;"></div>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:#6d7a73;">
+            <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:50%;background:#00694c;display:inline-block;"></span><span data-t="calc_takehome">Take-home</span></span>
+            <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:50%;background:#e03e2d;display:inline-block;"></span>PAYE</span>
+            <span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:50%;background:#FFB612;display:inline-block;"></span>UIF</span>
+            <span id="legend-pension" style="display:none;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:50%;background:#1960a6;display:inline-block;"></span><span data-t="calc_pension_legend">Pension/RA</span></span>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;">
+          <div style="background:#e6f4ef;border-radius:14px;padding:16px;">
+            <div style="font-size:11px;color:#6d7a73;margin-bottom:4px;" data-t="calc_result_takehome">Monthly Take-Home</div>
+            <div id="r-takehome" style="font-size:26px;font-weight:800;color:#00694c;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.1;"></div>
+            <div id="r-annual-takehome" style="font-size:11px;color:#6d7a73;margin-top:4px;"></div>
+          </div>
+          <div style="background:#fdf2f0;border-radius:14px;padding:16px;">
+            <div style="font-size:11px;color:#6d7a73;margin-bottom:4px;" data-t="calc_result_paye">Monthly PAYE Tax</div>
+            <div id="r-paye" style="font-size:26px;font-weight:800;color:#c41c00;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.1;"></div>
+            <div id="r-annual-paye" style="font-size:11px;color:#6d7a73;margin-top:4px;"></div>
+          </div>
+          <div style="background:#f6f4ec;border-radius:14px;padding:16px;">
+            <div style="font-size:11px;color:#6d7a73;margin-bottom:4px;" data-t="calc_result_uif">Monthly UIF</div>
+            <div id="r-uif" style="font-size:26px;font-weight:800;color:#3d4943;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.1;"></div>
+            <div style="font-size:11px;color:#6d7a73;margin-top:4px;" data-t="calc_uif_cap">Capped at R177.12/month</div>
+          </div>
+          <div style="background:#f6f4ec;border-radius:14px;padding:16px;">
+            <div style="font-size:11px;color:#6d7a73;margin-bottom:4px;" data-t="calc_result_effective">Effective Tax Rate</div>
+            <div id="r-effective" style="font-size:26px;font-weight:800;color:#3d4943;font-family:'Plus Jakarta Sans',sans-serif;line-height:1.1;"></div>
+            <div id="r-bracket" style="font-size:11px;color:#6d7a73;margin-top:4px;"></div>
+          </div>
+        </div>
+
+        <div style="background:#f6f4ec;border-radius:14px;padding:16px;margin-bottom:16px;">
+          <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;margin-bottom:12px;" data-t="calc_breakdown">Full Breakdown</div>
+          <div id="breakdown-rows" style="font-size:14px;"></div>
+        </div>
+
+        <details style="margin-bottom:4px;">
+          <summary style="font-size:13px;font-weight:700;color:#00694c;cursor:pointer;padding:4px 0;" data-t="calc_show_working">Show how this was calculated</summary>
+          <div id="working-out" style="background:#f6f4ec;border-radius:12px;padding:14px;margin-top:10px;font-size:13px;color:#3d4943;line-height:1.8;"></div>
+        </details>
+
+        <p style="font-size:11px;color:#6d7a73;line-height:1.5;margin-top:12px;" data-t="calc_disclaimer">Estimates only. Based on SARS 2026/27 tables. Actual PAYE depends on your IRP5 and employer. Consult a tax practitioner for exact figures.</p>
+      </div>
+
+      <div id="c-empty" style="text-align:center;padding:20px 0;color:#6d7a73;">
+        <span class="material-symbols-outlined" style="font-size:40px;opacity:0.3;">calculate</span>
+        <p style="font-size:14px;margin:8px 0 0;" data-t="calc_enter_salary">Enter your salary above to see your breakdown</p>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:10px;background:#eaf0fb;border-radius:14px;padding:14px 18px;margin-bottom:24px;">
+      <span class="material-symbols-outlined" style="color:#1960a6;font-size:20px;">info</span>
+      <p style="font-size:13px;color:#1b1c18;margin:0;" data-t="calc_tax_year_note">Using official SARS 2026/27 brackets (1 March 2026 – 28 February 2027). Primary rebate R17,820 · Medical credit R376/person. <a href="tax.html" style="color:#1960a6;font-weight:700;" data-t="calc_see_tables">See full tax tables</a></p>
+    </div>
+
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:14px;color:#1b1c18;" data-t="calc_examples_title">Quick examples — click to calculate</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-bottom:24px;">
+
+      <button onclick="setExample(8000)" style="background:#fff;border:1.5px solid #e4e2dc;border-radius:12px;padding:12px;text-align:left;cursor:pointer;" onmouseover="this.style.borderColor='#00694c'" onmouseout="this.style.borderColor='#e4e2dc'">
+        <div style="font-size:11px;color:#6d7a73;margin-bottom:2px;" data-t="calc_ex_min">Minimum wage</div>
+        <div style="font-weight:800;font-size:16px;color:#1b1c18;font-family:'Plus Jakarta Sans',sans-serif;">R 8,000</div>
+      </button>
+      <button onclick="setExample(15000)" style="background:#fff;border:1.5px solid #e4e2dc;border-radius:12px;padding:12px;text-align:left;cursor:pointer;" onmouseover="this.style.borderColor='#00694c'" onmouseout="this.style.borderColor='#e4e2dc'">
+        <div style="font-size:11px;color:#6d7a73;margin-bottom:2px;" data-t="calc_ex_entry">Entry level</div>
+        <div style="font-weight:800;font-size:16px;color:#1b1c18;font-family:'Plus Jakarta Sans',sans-serif;">R 15,000</div>
+      </button>
+      <button onclick="setExample(25000)" style="background:#fff;border:1.5px solid #e4e2dc;border-radius:12px;padding:12px;text-align:left;cursor:pointer;" onmouseover="this.style.borderColor='#00694c'" onmouseout="this.style.borderColor='#e4e2dc'">
+        <div style="font-size:11px;color:#6d7a73;margin-bottom:2px;" data-t="calc_ex_mid">Mid-level</div>
+        <div style="font-weight:800;font-size:16px;color:#1b1c18;font-family:'Plus Jakarta Sans',sans-serif;">R 25,000</div>
+      </button>
+      <button onclick="setExample(45000)" style="background:#fff;border:1.5px solid #e4e2dc;border-radius:12px;padding:12px;text-align:left;cursor:pointer;" onmouseover="this.style.borderColor='#00694c'" onmouseout="this.style.borderColor='#e4e2dc'">
+        <div style="font-size:11px;color:#6d7a73;margin-bottom:2px;" data-t="calc_ex_senior">Senior</div>
+        <div style="font-weight:800;font-size:16px;color:#1b1c18;font-family:'Plus Jakarta Sans',sans-serif;">R 45,000</div>
+      </button>
+      <button onclick="setExample(80000)" style="background:#fff;border:1.5px solid #e4e2dc;border-radius:12px;padding:12px;text-align:left;cursor:pointer;" onmouseover="this.style.borderColor='#00694c'" onmouseout="this.style.borderColor='#e4e2dc'">
+        <div style="font-size:11px;color:#6d7a73;margin-bottom:2px;" data-t="calc_ex_exec">Executive</div>
+        <div style="font-weight:800;font-size:16px;color:#1b1c18;font-family:'Plus Jakarta Sans',sans-serif;">R 80,000</div>
+      </button>
+    </div>
+
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:14px;color:#1b1c18;" data-t="calc_faq_title">Tax Calculator FAQs</h2>
+    <div id="calc-faq">
+      <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+        <button onclick="toggleCalcFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+          <span data-t="calc_faq_q1">What is the difference between PAYE and income tax?</span><span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+        </button>
+        <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="calc_faq_a1">They are the same thing at different stages. Income tax is what you owe SARS for the year. PAYE (Pay As You Earn) is how your employer pays it monthly on your behalf. At year end, if your employer over-deducted, SARS refunds you. If under-deducted, you pay the shortfall after filing.</p></div>
+      </div>
+      <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+        <button onclick="toggleCalcFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+          <span data-t="calc_faq_q2">Why does a pension contribution reduce my tax?</span><span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+        </button>
+        <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="calc_faq_a2">Pension, provident fund and RA contributions reduce your taxable income — the number SARS uses to calculate your tax. Contributing R2,000/month on a R25,000 salary means SARS taxes you on R23,000 instead. Limit: 27.5% of salary or R430,000/year, whichever is lower.</p></div>
+      </div>
+      <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+        <button onclick="toggleCalcFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+          <span data-t="calc_faq_q3">How does the medical aid tax credit work?</span><span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+        </button>
+        <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="calc_faq_a3">SARS gives you R376/month credit for yourself and your first dependant, and R254/month for each additional dependant (2026/27). This is deducted directly from your tax bill — 2 members saves you R752/month regardless of income. Select your members above to see the impact.</p></div>
+      </div>
+      <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+        <button onclick="toggleCalcFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;">
+          <span data-t="calc_faq_q4">Why does this show less PAYE than my payslip?</span><span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
+        </button>
+        <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="calc_faq_a4">This uses basic salary only. Your payslip may differ if your package includes taxable benefits (company car, housing allowance, bonus), or if your employer applies a different tax directive. Use this as a planning guide — for exact figures check your IRP5 or payroll department.</p></div>
+      </div>
+    </div>
+
+    <div style="margin-top:24px;padding:18px 20px;background:#e6f4ef;border-radius:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+      <div>
+        <div style="font-weight:700;font-size:15px;color:#1b1c18;margin-bottom:2px;" data-t="calc_guide_link_title">Need the full tax guide?</div>
+        <div style="font-size:13px;color:#3d4943;" data-t="calc_guide_link_sub">eFiling steps, deadlines and bracket tables</div>
+      </div>
+      <a href="tax.html" style="background:#00694c;color:#fff;padding:10px 20px;border-radius:99px;font-weight:700;font-size:14px;text-decoration:none;" data-t="calc_go_guide">Tax Guide</a>
+    </div>
+
+  </div>
+</div>
+<nav class="bottom-nav">
+  <a href="index.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span><span data-t="nav_home">Home</span></a>
+  <a href="pathways.html"><span class="material-symbols-outlined" style="">insights</span><span data-t="nav_pathways">Pathways</span></a>
+  <a href="search.html"><span class="material-symbols-outlined" style="">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html"><span class="material-symbols-outlined" style="">person</span><span data-t="nav_profile">Profile</span></a>
+</nav>
+</div>
+
+<script src="lang.js"></script>
+<script>
+const BRACKETS = [
+  {max:245100,  base:0,       rate:0.18, prev:0},
+  {max:383100,  base:44118,   rate:0.26, prev:245100},
+  {max:530200,  base:79998,   rate:0.31, prev:383100},
+  {max:695800,  base:125599,  rate:0.36, prev:530200},
+  {max:887000,  base:185215,  rate:0.39, prev:695800},
+  {max:1878600, base:259783,  rate:0.41, prev:887000},
+  {max:Infinity,base:666339,  rate:0.45, prev:1878600},
+];
+const REBATES = {under65:17820, r65:9765, r75:3249};
+const MED_CREDIT = {first2:376, additional:254};
+const UIF_RATE = 0.01, UIF_CAP = 177.12;
+
+function calcAnnualTax(income) {
+  for (const b of BRACKETS) {
+    if (income <= b.max) return b.base + b.rate * (income - b.prev);
+  }
+}
+function fmt(n) { return 'R\u202F' + Math.round(n).toLocaleString('en-ZA'); }
+
+function calcTax() {
+  const monthly = parseFloat(document.getElementById('c-salary').value) || 0;
+  const pension  = parseFloat(document.getElementById('c-pension').value) || 0;
+  const ageVal   = document.getElementById('c-age').value;
+  const medCount = parseInt(document.getElementById('c-medical').value) || 0;
+
+  if (monthly <= 0) {
+    document.getElementById('c-empty').style.display = 'block';
+    document.getElementById('c-results').style.display = 'none';
+    return;
+  }
+  document.getElementById('c-empty').style.display = 'none';
+  document.getElementById('c-results').style.display = 'block';
+
+  const annualGross   = monthly * 12;
+  const annualPension = Math.min(pension * 12, annualGross * 0.275, 430000);
+  const annualTaxable = Math.max(0, annualGross - annualPension);
+  let annualGrossTax  = calcAnnualTax(annualTaxable);
+
+  let totalRebate = REBATES.under65;
+  if (ageVal === '65to74') totalRebate += REBATES.r65;
+  if (ageVal === '75plus') totalRebate += REBATES.r65 + REBATES.r75;
+
+  let annualMedCredit = 0;
+  if (medCount >= 1) annualMedCredit += MED_CREDIT.first2 * 12;
+  if (medCount >= 2) annualMedCredit += MED_CREDIT.first2 * 12;
+  if (medCount > 2)  annualMedCredit += MED_CREDIT.additional * 12 * (medCount - 2);
+
+  const annualNetTax    = Math.max(0, annualGrossTax - totalRebate - annualMedCredit);
+  const monthlyPAYE     = annualNetTax / 12;
+  const monthlyUIF      = Math.min(monthly * UIF_RATE, UIF_CAP);
+  const monthlyTakeHome = monthly - monthlyPAYE - monthlyUIF - pension;
+  const effectiveRate   = (annualNetTax / annualGross) * 100;
+
+  let marginalRate = 18;
+  for (const b of BRACKETS) { if (annualTaxable <= b.max) { marginalRate = Math.round(b.rate * 100); break; } }
+
+  document.getElementById('r-takehome').textContent = fmt(monthlyTakeHome);
+  document.getElementById('r-annual-takehome').textContent = fmt(monthlyTakeHome*12) + ' / year';
+  document.getElementById('r-paye').textContent = fmt(monthlyPAYE);
+  document.getElementById('r-annual-paye').textContent = fmt(annualNetTax) + ' / year';
+  document.getElementById('r-uif').textContent = fmt(monthlyUIF);
+  document.getElementById('r-effective').textContent = effectiveRate.toFixed(1) + '%';
+  document.getElementById('r-bracket').textContent = 'Marginal rate: ' + marginalRate + '%';
+
+  const total = monthly;
+  document.getElementById('bar-takehome').style.width = (monthlyTakeHome/total*100).toFixed(1) + '%';
+  document.getElementById('bar-paye').style.width     = (monthlyPAYE/total*100).toFixed(1) + '%';
+  document.getElementById('bar-uif').style.width      = (monthlyUIF/total*100).toFixed(1) + '%';
+  document.getElementById('bar-pension').style.width  = (pension/total*100).toFixed(1) + '%';
+  document.getElementById('legend-pension').style.display = pension > 0 ? 'flex' : 'none';
+
+  const rows = [
+    ['Gross salary', fmt(monthly)],
+    ['PAYE tax deducted', '&#8722; ' + fmt(monthlyPAYE)],
+    ['UIF (1%, capped)', '&#8722; ' + fmt(monthlyUIF)],
+  ];
+  if (pension > 0) rows.push(['Pension / RA', '&#8722; ' + fmt(pension)]);
+  rows.push(['<strong>Take-home pay</strong>', '<strong>' + fmt(monthlyTakeHome) + '</strong>']);
+  document.getElementById('breakdown-rows').innerHTML = rows.map(([k,v]) =>
+    '<div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #e4e2dc;"><span>' + k + '</span><span style="font-weight:600;">' + v + '</span></div>'
+  ).join('');
+
+  const pensionNote = annualPension > 0 ? '<b>Less pension/RA:</b> ' + fmt(annualPension) + ' = Taxable income ' + fmt(annualTaxable) + '<br>' : '';
+  const rebateNote  = 'R17,820' + (ageVal !== 'under65' ? ' + secondary R9,765' : '') + (ageVal === '75plus' ? ' + tertiary R3,249' : '');
+  const medNote     = annualMedCredit > 0 ? '<b>Less medical credit:</b> ' + fmt(annualMedCredit) + ' (' + medCount + ' member' + (medCount > 1 ? 's' : '') + ')<br>' : '';
+  document.getElementById('working-out').innerHTML =
+    '<b>Annual gross:</b> ' + fmt(annualGross) + '<br>' +
+    pensionNote +
+    '<b>Gross tax on ' + fmt(annualTaxable) + ':</b> ' + fmt(annualGrossTax) + '<br>' +
+    '<b>Less rebate:</b> ' + rebateNote + '<br>' +
+    medNote +
+    '<b>Net annual tax:</b> ' + fmt(annualNetTax) + ' ÷ 12 = <b>' + fmt(monthlyPAYE) + '/month</b><br>' +
+    '<b>UIF:</b> 1% × ' + fmt(monthly) + ' = R' + (monthly * 0.01).toFixed(2) + (monthly * 0.01 > UIF_CAP ? ' → capped R177.12' : '');
+}
+
+function setExample(amount) {
+  document.getElementById('c-salary').value = amount;
+  calcTax();
+  document.getElementById('c-salary').scrollIntoView({behavior:'smooth',block:'center'});
+}
+function toggleCalcFAQ(btn) {
+  const content = btn.nextElementSibling;
+  const icon    = btn.querySelector('.material-symbols-outlined');
+  const isOpen  = content.style.maxHeight && content.style.maxHeight !== '0px';
+  document.querySelectorAll('#calc-faq div[style*="max-height"]').forEach(d => d.style.maxHeight = '0px');
+  document.querySelectorAll('#calc-faq .material-symbols-outlined').forEach(i => i.textContent = 'add');
+  if (!isOpen) { content.style.maxHeight = content.scrollHeight + 'px'; icon.textContent = 'remove'; }
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2MDWNC0LKX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2MDWNC0LKX');</script>
+</body>
+</html>
