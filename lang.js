@@ -463,6 +463,9 @@ const TRANSLATIONS = {
     calc_guide_link_title: 'Need the full tax guide?',
     calc_guide_link_sub: 'eFiling steps, deadlines and bracket tables',
     calc_go_guide: 'Tax Guide',
+    nav_guides: 'Guides',
+    nav_topics: 'Topics',
+    nav_tools: 'Tools',
   // ═══════════════════════════════════════════════════
   // isiZulu
   // ═══════════════════════════════════════════════════
@@ -1679,6 +1682,9 @@ const TRANSLATIONS = {
     calc_guide_link_title: 'Het jy die volledige belastinggids nodig?',
     calc_guide_link_sub: 'eFiling stappe, sperdatums en skaal tabelle',
     calc_go_guide: 'Belastinggids',
+    nav_guides: 'Gidse',
+    nav_topics: 'Onderwerpe',
+    nav_tools: 'Hulpmiddels',
 };
 
 // ── Engine ──
