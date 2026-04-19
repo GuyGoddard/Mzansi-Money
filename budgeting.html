@@ -102,15 +102,15 @@
     <div class="hero-gradient" style="margin-bottom:24px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:rgba(255,255,255,0.2);display:inline-block;padding:4px 12px;border-radius:99px;margin-bottom:12px;">Personal Finance</div>
       <h1 style="font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:10px;">Budgeting &amp; Savings</h1>
-      <p style="font-size:14px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;">Simple, practical guides to take control of your money — no matter your income level.</p>
+      <p style="font-size:14px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;"><span data-t="budget_sub_text">Simple, practical guides to take control of your money — no matter your income level.</span></p>
     </div>
 
     <!-- Budget calculator -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
       <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:6px;" data-t="budget_calc_title">50/30/20 Budget Calculator</h2>
-      <p style="font-size:13px;color:#6d7a73;margin-bottom:16px;">Enter your monthly take-home pay to see how to split it.</p>
+      <p style="font-size:13px;color:#6d7a73;margin-bottom:16px;"><span data-t="budget_calc_enter">Enter your monthly take-home pay to see how to split it.</span></p>
       <div style="background:#f6f4ec;border-radius:12px;padding:16px;margin-bottom:16px;">
-        <label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#6d7a73;display:block;margin-bottom:6px;">Monthly Income (ZAR)</label>
+        <label style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:#6d7a73;display:block;margin-bottom:6px;"><span data-t="budget_monthly_income">Monthly Income (ZAR)</span></label>
         <div style="display:flex;align-items:center;gap:8px;">
           <span style="font-size:20px;font-weight:800;color:#1b1c18;">R</span>
           <input id="income-input" type="number" placeholder="0" oninput="calcBudget()" style="width:100%;background:transparent;border:none;border-bottom:2px solid #bccac1;font-size:20px;font-weight:700;color:#1b1c18;outline:none;padding:4px 0;font-family:'Plus Jakarta Sans',sans-serif;"/>
@@ -118,15 +118,15 @@
       </div>
       <div id="budget-result" style="display:none;display:flex;flex-direction:column;gap:10px;">
         <div style="background:#e6f4ef;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
-          <div><div style="font-weight:700;font-size:14px;color:#00694c;" data-t="budget_needs_label">Needs (50%)</div><div style="font-size:12px;color:#6d7a73;">Rent, food, transport, utilities</div></div>
+          <div><div style="font-weight:700;font-size:14px;color:#00694c;" data-t="budget_needs_label">Needs (50%)</div><div style="font-size:12px;color:#6d7a73;"><span data-t="budget_needs_sub_text">Rent, food, transport, utilities</span></div></div>
           <div id="needs-val" style="font-size:20px;font-weight:800;color:#00694c;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
         </div>
         <div style="background:#eaf0fb;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
-          <div><div style="font-weight:700;font-size:14px;color:#1960a6;" data-t="budget_wants_label">Wants (30%)</div><div style="font-size:12px;color:#6d7a73;">Entertainment, eating out, clothing</div></div>
+          <div><div style="font-weight:700;font-size:14px;color:#1960a6;" data-t="budget_wants_label">Wants (30%)</div><div style="font-size:12px;color:#6d7a73;"><span data-t="budget_wants_sub_text">Entertainment, eating out, clothing</span></div></div>
           <div id="wants-val" style="font-size:20px;font-weight:800;color:#1960a6;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
         </div>
         <div style="background:#fff3e6;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;">
-          <div><div style="font-weight:700;font-size:14px;color:#855000;" data-t="budget_savings_label">Savings (20%)</div><div style="font-size:12px;color:#6d7a73;">Emergency fund, retirement, stokvel</div></div>
+          <div><div style="font-weight:700;font-size:14px;color:#855000;" data-t="budget_savings_label">Savings (20%)</div><div style="font-size:12px;color:#6d7a73;"><span data-t="budget_savings_sub_text">Emergency fund, retirement, stokvel</span></div></div>
           <div id="savings-val" style="font-size:20px;font-weight:800;color:#855000;font-family:'Plus Jakarta Sans',sans-serif;">R0</div>
         </div>
       </div>
