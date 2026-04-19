@@ -70,9 +70,9 @@
   <div class="nav-section">Main</div>
   <a href="index.html" class="active"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
   <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_guides">Guides</span></a>
-  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
+  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title"><span data-t="home_path_personal">Personal Finance</span></span></a>
   <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
-  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Business</span></a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business"><span data-t="home_path_business">Business</span></span></a>
   <div class="nav-section">Tools</div>
   <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
   <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
@@ -88,7 +88,7 @@
         <a href="pathways.html" data-t="nav_guides">Guides</a>
         <a href="personal-finance.html" data-t="nav_topics">Topics</a>
         <a href="sassa.html">SASSA</a>
-        <a href="business.html">Business</a>
+        <a href="business.html"><span data-t="home_path_business">Business</span></a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
     </div>
@@ -113,9 +113,9 @@
 
         <div class="chip-bar">
           <a href="sassa.html" class="chip" style="background:#e6f4ef;color:#00694c;">SASSA</a>
-          <a href="tax.html" class="chip" style="background:#eaf0fb;color:#1960a6;">Tax / SARS</a>
+          <a href="tax.html" class="chip" style="background:#eaf0fb;color:#1960a6;"><span data-t="nav_tax">Tax / SARS</span></a>
           <a href="uif.html" class="chip" style="background:#e6f4ef;color:#00694c;">UIF</a>
-          <a href="business.html" class="chip" style="background:#fff3e6;color:#855000;">Business</a>
+          <a href="business.html" class="chip" style="background:#fff3e6;color:#855000;"><span data-t="home_path_business">Business</span></a>
           <a href="credit.html" class="chip" style="background:#f0eee7;color:#3d4943;"data-t="nav_credit">Credit Score</a>
           <a href="budgeting.html" class="chip" style="background:#e6f4ef;color:#00694c;"data-t="nav_budgeting">Budgeting</a>
         </div>
@@ -150,7 +150,7 @@
       </div>
     </div>
 
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:18px;color:#1b1c18;"><span data-t="home_choose_path">Choose your path</span></h2>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:18px;color:#1b1c18;"><span data-t="home_choose_path"><span data-t="home_choose_path">Choose your path</span></span></h2>
     <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:18px;color:#1b1c18;"><span data-t="index_intro_title">Free financial guides for South Africans</span></h2>
     <p style="font-size:14px;color:#3d4943;line-height:1.7;margin-bottom:24px;"><span data-t="index_intro_body">Mzansi Money Guide gives every South African free, clear guidance on SASSA grants, SARS tax returns, UIF claims, credit scores, business registration and budgeting — in English, isiZulu, isiXhosa and Afrikaans.</span></p>
     <div class="path-cards" style="margin-bottom:36px;">
@@ -159,8 +159,8 @@
           <div class="pcard-icon" style="background:rgba(0,105,76,0.1);"><span class="material-symbols-outlined text-primary" style="font-size:28px;">account_balance_wallet</span></div>
           <span class="pcard-steps" style="background:rgba(0,105,76,0.1);color:#00694c;" data-t="home_card_personal_steps">12 steps</span>
         </div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:#1b1c18;margin-bottom:4px;" data-t="home_card_personal">Personal Finance</div>
-        <div style="font-size:13px;color:#3d4943;" data-t="home_card_personal_sub">Tax, SASSA, UIF, budgeting</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:#1b1c18;margin-bottom:4px;" data-t="home_card_personal"><span data-t="home_path_personal">Personal Finance</span></div>
+        <div style="font-size:13px;color:#3d4943;" data-t="home_card_personal_sub"><span data-t="home_path_personal_sub">Tax, SASSA, UIF, budgeting</span></div>
         <div class="pcard-arrow"><span class="material-symbols-outlined text-primary">arrow_forward</span></div>
       </a>
       <a href="business.html" class="path-card blue tap">
@@ -188,7 +188,7 @@
     <p style="font-size:14px;color:#3d4943;line-height:1.7;margin-bottom:20px;">Mzansi Money Guide is a free, multilingual financial literacy platform built specifically for South Africans. Whether you need to apply for a SASSA grant, file your SARS tax return, claim UIF after retrenchment, register a business with CIPC, or improve your credit score — we provide clear, step-by-step guidance in English, isiZulu, isiXhosa and Afrikaans. No jargon, no fees, no forms to fill in to access information.</p>
         <div class="disclaimer" style="margin-bottom:0;">
       <span class="material-symbols-outlined text-tertiary" style="flex-shrink:0;font-size:20px;">warning</span>
-      <p style="margin:0;" data-t="home_disclaimer">This guide provides general financial information and does not constitute official legal or financial advice. Always consult with a certified practitioner for your specific needs.</p>
+      <p style="margin:0;" data-t="home_disclaimer">This guide provides <span data-t="home_disclaimer">This guide provides general financial information, not official advice. Always consult a certified practitioner for your situation.</span> for your specific needs.</p>
     </div>
 
     <footer class="site-footer" style="margin:40px -20px -120px;border-radius:0;padding:40px 20px;">
@@ -197,7 +197,7 @@
         <div>
           <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;margin-bottom:10px;" data-t="footer_quicklinks">Quick Links</div>
           <div style="display:flex;flex-direction:column;gap:8px;">
-            <a href="personal-finance.html" style="color:#3d4943;font-size:14px;text-decoration:none;">Personal Finance</a>
+            <a href="personal-finance.html" style="color:#3d4943;font-size:14px;text-decoration:none;"><span data-t="home_path_personal">Personal Finance</span></a>
             <a href="sassa.html" style="color:#3d4943;font-size:14px;text-decoration:none;">SASSA Grants</a>
             <a href="business.html" style="color:#3d4943;font-size:14px;text-decoration:none;">Business Guide</a>
             <a href="tax.html" style="color:#3d4943;font-size:14px;text-decoration:none;">Tax & SARS</a>
