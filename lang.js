@@ -677,6 +677,10 @@ const TRANSLATIONS = {
     uif_what_title: 'What is UIF?',
     uif_you_pay: 'You pay (of salary)',
     uif_you_pay_label: 'You pay (of salary)',
+  
+    sassa_means_title: 'SASSA Means Test — income limits',
+    sassa_means_sub: 'How much can you earn and still qualify?',
+    sassa_more_guides: 'More SASSA guides',
   },
 
   // isiZulu
@@ -1355,6 +1359,10 @@ const TRANSLATIONS = {
     uif_what_title: 'Yini i-UIF?',
     uif_you_pay: 'Ukukhokha kwakho (komholo)',
     uif_you_pay_label: 'Ukukhokha kwakho (koholo)',
+  
+    sassa_means_title: 'Uhlolo Lwemali lwe-SASSA — imikhawulo yemali',
+    sassa_means_sub: 'Ungahola malini futhi usafaneleke?',
+    sassa_more_guides: 'Imihlahlandlela eyengeziwe ye-SASSA',
   },
 
   // isiXhosa
@@ -2033,6 +2041,10 @@ const TRANSLATIONS = {
     uif_what_title: 'Yintoni i-UIF?',
     uif_you_pay: 'Uhlawula (womvuzo)',
     uif_you_pay_label: 'Ukukhokha kwakho (kumvuzo)',
+  
+    sassa_means_title: 'Uvavanyo lweMali ye-SASSA — iimida yemali',
+    sassa_means_sub: 'Ungahola malini usafanelekile?',
+    sassa_more_guides: 'Izikhokelo ezongezelelekileyo ze-SASSA',
   },
 
   // Afrikaans
@@ -2711,6 +2723,10 @@ const TRANSLATIONS = {
     uif_what_title: 'Wat is UIF?',
     uif_you_pay: 'Jy betaal (van salaris)',
     uif_you_pay_label: 'Jy betaal (van salaris)',
+  
+    sassa_means_title: 'SASSA Inkomstetoets — inkomstegrense',
+    sassa_means_sub: 'Hoeveel kan jy verdien en steeds kwalifiseer?',
+    sassa_more_guides: 'Meer SASSA-gidse',
   },
 };
 

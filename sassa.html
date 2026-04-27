@@ -12,6 +12,9 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://mzansi-money.com/sassa"/>
   <link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa"/>
+  <link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa"/>
+  <link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa"/>
+  <link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa"/>
   <link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa"/>
   <!-- Open Graph / WhatsApp sharing -->
   <meta property="og:type" content="website"/>
@@ -65,13 +68,13 @@
   <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
   <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_guides">Guides</span></a>
   <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
-  <a href="sassa.html" class="active"><span class="material-symbols-outlined">volunteer_activism</span><span>SASSA</span></a>
-  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span>Business</span></a>
+  <a href="sassa.html" class="active"><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Business</span></a>
   <div class="nav-section">Personal Finance</div>
-  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span>Tax &amp; SARS</span></a>
-  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span>UIF Claims</span></a>
-  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span>Budgeting</span></a>
-  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Tax &amp; SARS</span></a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">UIF Claims</span></a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Budgeting</span></a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Credit Score</span></a>
   <div class="nav-section">Tools</div>
   <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
   <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
@@ -213,7 +216,7 @@
     </div>
 
     <!-- How to Apply -->
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:20px;" data-t="sassa_howto" data-t="sassa_howto">How to Apply</h2>
+    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:20px;" data-t="sassa_howto">How to Apply</h2>
     <div style="display:flex;flex-direction:column;gap:0;margin-bottom:28px;">
       <div class="step-line" style="margin-bottom:0;">
         <div class="step-dot-col"><div class="step-dot">1</div><div class="step-connector" style="min-height:48px;"></div></div>
@@ -243,7 +246,7 @@
             <span style="font-size:10px;font-weight:700;background:#eae8e1;color:#3d4943;padding:3px 8px;border-radius:6px;text-transform:uppercase;flex-shrink:0;"><span data-t="sassa_10mins">10 MINS</span></span>
           </div>
           <p style="font-size:13px;color:#3d4943;margin:6px 0 0;" data-t="sassa_step3_sub">Locate your local SASSA branch office.</p>
-          <a href="https://www.sassa.gov.za" target="_blank" style="display:inline-flex;align-items:center;gap:4px;color:#00694c;font-size:12px;font-weight:700;text-decoration:none;margin-top:8px;" data-t="sassa_step3_link">VIEW BRANCH MAP <span class="material-symbols-outlined" style="font-size:14px;">open_in_new</span></a>
+          <a href="https://www.sassa.gov.za" target="_blank" style="display:inline-flex;align-items:center;gap:4px;color:#00694c;font-size:12px;font-weight:700;text-decoration:none;margin-top:8px;"><span data-t="sassa_step3_link">VIEW BRANCH MAP</span> <span class="material-symbols-outlined" style="font-size:14px;">open_in_new</span></a>
         </div>
       </div>
       <div class="step-line" style="margin-bottom:0;">
@@ -251,7 +254,7 @@
         <div style="padding-bottom:24px;flex:1;">
           <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">
             <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;" data-t="sassa_step4_title">Complete Application</div>
-            <span style="font-size:10px;font-weight:700;background:#eae8e1;color:#3d4943;padding:3px 8px;border-radius:6px;text-transform:uppercase;flex-shrink:0;">45 MINS</span>
+            <span style="font-size:10px;font-weight:700;background:#eae8e1;color:#3d4943;padding:3px 8px;border-radius:6px;text-transform:uppercase;flex-shrink:0;" data-t="sassa_10mins">45 MINS</span>
           </div>
           <p style="font-size:13px;color:#3d4943;margin:6px 0 0;" data-t="sassa_step4_sub">Fill forms and attend the interview in person.</p>
         </div>
@@ -292,8 +295,8 @@
     </div>
 
     <!-- CTA -->
-    <a href="request-help.html" class="btn-primary" style="width:100%;justify-content:center;font-size:15px;margin-bottom:8px;" data-t="sassa_whatsapp">
-      <span class="material-symbols-outlined">chat</span> Need help? WhatsApp Us
+    <a href="request-help.html" class="btn-primary" style="width:100%;justify-content:center;font-size:15px;margin-bottom:8px;">
+      <span class="material-symbols-outlined">chat</span> <span data-t="sassa_whatsapp">Need help? WhatsApp Us</span>
     </a>
 
     <script>
@@ -323,7 +326,7 @@
           </tr></thead>
           <tbody>
             <tr style="border-bottom:1px solid #f0eee7;"><td style="padding:12px 16px;font-weight:600;"><span data-t="sassa_table_older">Older Persons Grant (60+)</span></td><td style="padding:12px 16px;text-align:right;font-weight:700;color:#00694c;">R2,400</td><td style="padding:12px 16px;text-align:right;color:#6d7a73;">+R80</td></tr>
-            <tr style="border-bottom:1px solid #f0eee7;background:#fafaf8;"><td style="padding:12px 16px;font-weight:600;">Disability Grant</td><td style="padding:12px 16px;text-align:right;font-weight:700;color:#00694c;">R2,400</td><td style="padding:12px 16px;text-align:right;color:#6d7a73;">+R80</td></tr>
+            <tr style="border-bottom:1px solid #f0eee7;background:#fafaf8;"><td style="padding:12px 16px;font-weight:600;" data-t="sassa_dis_name">Disability Grant</td><td style="padding:12px 16px;text-align:right;font-weight:700;color:#00694c;">R2,400</td><td style="padding:12px 16px;text-align:right;color:#6d7a73;">+R80</td></tr>
             <tr style="border-bottom:1px solid #f0eee7;"><td style="padding:12px 16px;font-weight:600;"><span data-t="sassa_table_care">Care Dependency Grant</span></td><td style="padding:12px 16px;text-align:right;font-weight:700;color:#00694c;">R2,400</td><td style="padding:12px 16px;text-align:right;color:#6d7a73;">+R80</td></tr>
             <tr style="border-bottom:1px solid #f0eee7;background:#fafaf8;"><td style="padding:12px 16px;font-weight:600;"><span data-t="sassa_table_csg">Child Support Grant</span></td><td style="padding:12px 16px;text-align:right;font-weight:700;color:#00694c;"><span data-t="sassa_table_csg_amount">R580 per child</span></td><td style="padding:12px 16px;text-align:right;color:#6d7a73;">+R20</td></tr>
             <tr style="border-bottom:1px solid #f0eee7;"><td style="padding:12px 16px;font-weight:600;"><span data-t="sassa_table_orphan">Child Support (orphan top-up)</span></td><td style="padding:12px 16px;text-align:right;font-weight:700;color:#00694c;"><span data-t="sassa_table_orphan_amount">R830 per child</span></td><td style="padding:12px 16px;text-align:right;color:#6d7a73;">+R20</td></tr>
@@ -336,29 +339,29 @@
       <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:16px;color:#1b1c18;"><span data-t="sassa_status_title">How to Check Your SASSA Status</span></h2>
       <p style="font-size:14px;color:#3d4943;line-height:1.7;margin-bottom:14px;"><span data-t="sassa_status_intro">Check your SASSA grant or SRD status without visiting an office — four official methods:</span></p>
       <div style="display:grid;grid-template-columns:1fr;gap:8px;margin-bottom:24px;">
-        <div style="background:#fff;border-radius:12px;padding:14px 16px;display:flex;gap:12px;box-shadow:0 2px 8px rgba(27,28,24,0.05);"><span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">language</span><div><strong style="font-size:14px;"><strong data-t="sassa_status_online">Online:</strong></strong> <a href="https://srd.sassa.gov.za" target="_blank" rel="noopener" style="color:#00694c;font-weight:700;">srd.sassa.gov.za</a> — enter your ID and phone number</div></div>
-        <div style="background:#fff;border-radius:12px;padding:14px 16px;display:flex;gap:12px;box-shadow:0 2px 8px rgba(27,28,24,0.05);"><span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">chat</span><div><strong style="font-size:14px;"><strong data-t="sassa_status_whatsapp">WhatsApp:</strong></strong> Send "Status" to <strong>082 046 8553</strong></div></div>
-        <div style="background:#fff;border-radius:12px;padding:14px 16px;display:flex;gap:12px;box-shadow:0 2px 8px rgba(27,28,24,0.05);"><span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">smartphone</span><div><strong style="font-size:14px;"><strong data-t="sassa_status_ussd">USSD:</strong></strong> Dial <strong>*134*7737#</strong> — works without data</div></div>
-        <div style="background:#fff;border-radius:12px;padding:14px 16px;display:flex;gap:12px;box-shadow:0 2px 8px rgba(27,28,24,0.05);"><span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">call</span><div><strong style="font-size:14px;"><strong data-t="sassa_status_call">Call Centre:</strong></strong> <strong>0800 60 10 11</strong> (free, Mon–Fri 8am–4pm)</div></div>
+        <div style="background:#fff;border-radius:12px;padding:14px 16px;display:flex;gap:12px;box-shadow:0 2px 8px rgba(27,28,24,0.05);"><span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">language</span><div><strong style="font-size:14px;" data-t="sassa_status_online">Online:</strong> <a href="https://srd.sassa.gov.za" target="_blank" rel="noopener" style="color:#00694c;font-weight:700;">srd.sassa.gov.za</a> — enter your ID and phone number</div></div>
+        <div style="background:#fff;border-radius:12px;padding:14px 16px;display:flex;gap:12px;box-shadow:0 2px 8px rgba(27,28,24,0.05);"><span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">chat</span><div><strong style="font-size:14px;" data-t="sassa_status_whatsapp">WhatsApp:</strong> Send "Status" to <strong>082 046 8553</strong></div></div>
+        <div style="background:#fff;border-radius:12px;padding:14px 16px;display:flex;gap:12px;box-shadow:0 2px 8px rgba(27,28,24,0.05);"><span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">smartphone</span><div><strong style="font-size:14px;" data-t="sassa_status_ussd">USSD:</strong> Dial <strong>*134*7737#</strong> — works without data</div></div>
+        <div style="background:#fff;border-radius:12px;padding:14px 16px;display:flex;gap:12px;box-shadow:0 2px 8px rgba(27,28,24,0.05);"><span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">call</span><div><strong style="font-size:14px;" data-t="sassa_status_call">Call Centre:</strong> <strong>0800 60 10 11</strong> (free, Mon–Fri 8am–4pm)</div></div>
       </div>
 
       <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:16px;color:#1b1c18;"><span data-t="sassa_faq_title">SASSA — Frequently Asked Questions</span></h2>
       <div id="sas-faq">
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
           <button onclick="toggleSFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;"><span data-t="sassa_faq_q1">How long does SASSA take to approve a grant?</span><span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span></button>
-          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">SASSA typically takes up to 3 months (90 days) to process a grant application. For the SRD grant, approval can be faster — sometimes within 2 weeks. You receive an SMS once a decision is made. If declined, you have 90 days to appeal at your nearest SASSA office.</p></div>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="sassa_faq_a1">SASSA typically takes up to 3 months (90 days) to process a grant application. For the SRD grant, approval can be faster — sometimes within 2 weeks. You receive an SMS once a decision is made. If declined, you have 90 days to appeal at your nearest SASSA office.</p></div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
           <button onclick="toggleSFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;"><span data-t="sassa_faq_q2">Can I receive UIF and a SASSA grant at the same time?</span><span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span></button>
-          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">No — you cannot receive UIF benefits and the SRD R370 grant simultaneously. The SRD is for people not receiving any UIF. However, you can receive Old Age, Child Support, or Disability grants alongside UIF — those are means-tested separately.</p></div>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="sassa_faq_a2">No — you cannot receive UIF benefits and the SRD R370 grant simultaneously. The SRD is for people not receiving any UIF. However, you can receive Old Age, Child Support, or Disability grants alongside UIF — those are means-tested separately.</p></div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
           <button onclick="toggleSFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;"><span data-t="sassa_faq_q3">Why was my SASSA SRD grant declined?</span><span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span></button>
-          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Common reasons for SRD decline: income above R624/month found in bank records, you are receiving UIF or NSFAS, your ID could not be verified by Home Affairs, or the phone number entered does not match your ID number records. Appeal at srd.sassa.gov.za within 90 days and provide bank statements showing no income.</p></div>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="sassa_faq_a3">Common reasons for SRD decline: income above R624/month found in bank records, you are receiving UIF or NSFAS, your ID could not be verified by Home Affairs, or the phone number entered does not match your ID number records. Appeal at srd.sassa.gov.za within 90 days and provide bank statements showing no income.</p></div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
           <button onclick="toggleSFAQ(this)" style="width:100%;text-align:left;background:none;border:none;padding:18px 20px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#1b1c18;"><span data-t="sassa_faq_q4">How much can I earn and still qualify for SASSA grants?</span><span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span></button>
-          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">It depends on the grant. For the SRD R370: maximum R624/month income. For the Old Age Grant (2026): single applicants up to R8,990/month (R107,880/year). For Child Support Grant: the caregiver's income must be below R5,000/month (single) or R10,000/month (married). Always declare your full income — SASSA cross-checks with SARS and banks.</p></div>
+          <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;"><p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="sassa_faq_a4">It depends on the grant. For the SRD R370: maximum R624/month income. For the Old Age Grant (2026): single applicants up to R8,990/month (R107,880/year). For Child Support Grant: the caregiver's income must be below R5,000/month (single) or R10,000/month (married). Always declare your full income — SASSA cross-checks with SARS and banks.</p></div>
         </div>
       </div>
       <script>
@@ -378,14 +381,14 @@
     </div>
     <!-- Links to articles -->
     <div style="margin-top:24px;">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:18px;margin-bottom:12px;color:#1b1c18;">More SASSA guides</h2>
+      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:18px;margin-bottom:12px;color:#1b1c18;" data-t="sassa_more_guides">More SASSA guides</h2>
       <div style="display:grid;gap:10px;">
         <a href="sassa-srd-declined.html" style="background:#fff;border-radius:14px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
-          <div><div style="font-weight:700;font-size:14px;color:#1b1c18;">SRD Declined? Here's what to do</div><div style="font-size:12px;color:#6d7a73;margin-top:2px;">Reasons, appeal steps and ITSAA contact</div></div>
+          <div><div style="font-weight:700;font-size:14px;color:#1b1c18;" data-t="sassa_srd_title">SRD Declined? Here's what to do</div><div style="font-size:12px;color:#6d7a73;margin-top:2px;" data-t="sassa_srd_sub">Reasons, appeal steps and ITSAA contact</div></div>
           <span class="material-symbols-outlined" style="color:#6d7a73;font-size:20px;">chevron_right</span>
         </a>
         <a href="sassa-means-test.html" style="background:#fff;border-radius:14px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
-          <div><div style="font-weight:700;font-size:14px;color:#1b1c18;">SASSA Means Test — income limits</div><div style="font-size:12px;color:#6d7a73;margin-top:2px;">How much can you earn and still qualify?</div></div>
+          <div><div style="font-weight:700;font-size:14px;color:#1b1c18;" data-t="sassa_means_title">SASSA Means Test — income limits</div><div style="font-size:12px;color:#6d7a73;margin-top:2px;" data-t="sassa_means_sub">How much can you earn and still qualify?</div></div>
           <span class="material-symbols-outlined" style="color:#6d7a73;font-size:20px;">chevron_right</span>
         </a>
       </div>
