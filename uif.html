@@ -12,6 +12,9 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://mzansi-money.com/uif"/>
   <link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/uif"/>
+  <link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/uif"/>
+  <link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/uif"/>
+  <link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/uif"/>
   <link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/uif"/>
   <!-- Open Graph / WhatsApp sharing -->
   <meta property="og:type" content="website"/>
@@ -64,13 +67,13 @@
   <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
   <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_guides">Guides</span></a>
   <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
-  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span>SASSA</span></a>
-  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span>Business</span></a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Business</span></a>
   <div class="nav-section">Personal Finance</div>
-  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span>Tax &amp; SARS</span></a>
-  <a href="uif.html" class="active"><span class="material-symbols-outlined">work_off</span><span>UIF Claims</span></a>
-  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span>Budgeting</span></a>
-  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Tax &amp; SARS</span></a>
+  <a href="uif.html" class="active"><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">UIF Claims</span></a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Budgeting</span></a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Credit Score</span></a>
   <div class="nav-section">Tools</div>
   <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
   <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
@@ -103,7 +106,7 @@
     <div class="hero-gradient" style="margin-bottom:24px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:rgba(255,255,255,0.2);display:inline-block;padding:4px 12px;border-radius:99px;margin-bottom:12px;">Personal Finance</div>
       <h1 style="font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:10px;"><span data-t="uif_page_title">UIF — Unemployment Insurance Fund</span></h1>
-      <p style="font-size:14px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;"><span data-t="uif_page_sub"><span data-t="uif_page_sub">Your financial safety net when you lose your job, go on maternity leave, fall ill or face other hardships.</span></span>, or become ill.</p>
+      <p style="font-size:14px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;" data-t="uif_page_sub">Your financial safety net when you lose your job, go on maternity leave, fall ill or face other hardships.</p>
     </div>
 
     <!-- What is UIF -->
@@ -144,11 +147,11 @@
         </div>
         <div style="display:flex;align-items:flex-start;gap:12px;padding:14px;background:#f6f4ec;border-radius:12px;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">sick</span>
-          <div><div style="font-weight:700;font-size:14px;" data-t="uif_c3_title">Illness Benefits</div><div style="font-size:13px;color:#6d7a73;">If off work for more than 7 days due to illness.</div></div>
+          <div><div style="font-weight:700;font-size:14px;" data-t="uif_c3_title">Illness Benefits</div><div style="font-size:13px;color:#6d7a73;" data-t="uif_illness_days">If off work for more than 7 days due to illness.</div></div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:12px;padding:14px;background:#f6f4ec;border-radius:12px;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;">family_restroom</span>
-          <div><div style="font-weight:700;font-size:14px;" data-t="uif_c4_title">Adoption &amp; Death Benefits</div><div style="font-size:13px;color:#6d7a73;">Adopting a child under 2, or dependant of deceased contributor.</div></div>
+          <div><div style="font-weight:700;font-size:14px;" data-t="uif_c4_title">Adoption &amp; Death Benefits</div><div style="font-size:13px;color:#6d7a73;" data-t="uif_adoption">Adopting a child under 2, or dependant of deceased contributor.</div></div>
         </div>
       </div>
     </div>
@@ -157,10 +160,10 @@
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
       <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:16px;" data-t="uif_how_title">How to claim UIF</h2>
       <div style="display:flex;flex-direction:column;gap:0;">
-        <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="font-size:12px;">1</div><div class="step-connector" style="min-height:44px;"></div></div><div style="padding-bottom:18px;flex:1;"><div style="font-weight:700;font-size:14px;">Go to uFiling.gov.za</div><p style="font-size:13px;color:#6d7a73;margin:4px 0 0;">Register on uFiling.gov.za or visit your nearest Labour Centre. The paperless system processes claims instantly.</p></div></div>
-        <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="font-size:12px;">2</div><div class="step-connector" style="min-height:44px;"></div></div><div style="padding-bottom:18px;flex:1;"><div style="font-weight:700;font-size:14px;">Get your UI19 form from employer</div><p style="font-size:13px;color:#6d7a73;margin:4px 0 0;">Your employer must give you this form showing why you left. Code matters: 04 = Dismissed, 11 = Retrenched.</p></div></div>
-        <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="font-size:12px;">3</div><div class="step-connector" style="min-height:44px;"></div></div><div style="padding-bottom:18px;flex:1;"><div style="font-weight:700;font-size:14px;">Submit documents</div><p style="font-size:13px;color:#6d7a73;margin:4px 0 0;">ID, bank details, last 3 months payslips, UI19 form. All can be submitted online.</p></div></div>
-        <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="font-size:12px;">4</div></div><div style="flex:1;"><div style="font-weight:700;font-size:14px;"><span data-t="uif_confirm_step">Confirm seeking employment monthly</span></div><p style="font-size:13px;color:#6d7a73;margin:4px 0 0;">You must confirm each month online that you are actively looking for work to continue receiving benefits.</p></div></div>
+        <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="font-size:12px;">1</div><div class="step-connector" style="min-height:44px;"></div></div><div style="padding-bottom:18px;flex:1;"><div style="font-weight:700;font-size:14px;" data-t="uif_s1">Go to uFiling.gov.za</div><p style="font-size:13px;color:#6d7a73;margin:4px 0 0;" data-t="uif_register_note">Register on uFiling.gov.za or visit your nearest Labour Centre. The paperless system processes claims instantly.</p></div></div>
+        <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="font-size:12px;">2</div><div class="step-connector" style="min-height:44px;"></div></div><div style="padding-bottom:18px;flex:1;"><div style="font-weight:700;font-size:14px;" data-t="uif_s2">Get your UI19 form from employer</div><p style="font-size:13px;color:#6d7a73;margin:4px 0 0;" data-t="uif_ui19_note">Your employer must give you this form showing why you left. Code matters: 04 = Dismissed, 11 = Retrenched.</p></div></div>
+        <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="font-size:12px;">3</div><div class="step-connector" style="min-height:44px;"></div></div><div style="padding-bottom:18px;flex:1;"><div style="font-weight:700;font-size:14px;" data-t="uif_s3">Submit documents</div><p style="font-size:13px;color:#6d7a73;margin:4px 0 0;" data-t="uif_docs_note">ID, bank details, last 3 months payslips, UI19 form. All can be submitted online.</p></div></div>
+        <div class="step-line"><div class="step-dot-col"><div class="step-dot" style="font-size:12px;">4</div></div><div style="flex:1;"><div style="font-weight:700;font-size:14px;"><span data-t="uif_confirm_step">Confirm seeking employment monthly</span></div><p style="font-size:13px;color:#6d7a73;margin:4px 0 0;" data-t="uif_confirm_note">You must confirm each month online that you are actively looking for work to continue receiving benefits.</p></div></div>
       </div>
     </div>
 
@@ -168,20 +171,20 @@
     <div style="background:#ffdad6;border-radius:20px;padding:20px;margin-bottom:20px;">
       <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;color:#ba1a1a;margin-bottom:12px;">⚠️ <span data-t="uif_cannot_title">Who cannot claim UIF?</span></h3>
       <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3d4943;">
-        <div>• Self-employed / independent contractors</div>
-        <div>• Government employees</div>
-        <div>• Workers employed less than 24 hours/month</div>
-        <div>• Those who resigned voluntarily</div>
-        <div>• Already receiving a SASSA grant</div>
+        <div data-t="uif_cannot_1">• Self-employed / independent contractors</div>
+        <div data-t="uif_cannot_2">• Government employees</div>
+        <div data-t="uif_cannot_3">• Workers employed less than 24 hours/month</div>
+        <div data-t="uif_cannot_4">• Those who resigned voluntarily</div>
+        <div data-t="uif_cannot_5">• Already receiving a SASSA grant</div>
       </div>
     </div>
 
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;">
       <a href="https://ufiling.labour.gov.za" target="_blank" class="btn-primary" style="font-size:13px;padding:10px 18px;">
-        <span class="material-symbols-outlined" style="font-size:18px;">open_in_new</span> Go to uFiling
+        <span class="material-symbols-outlined" style="font-size:18px;">open_in_new</span> <span data-t="uif_go_ufiling">Go to uFiling</span>
       </a>
       <a href="tel:0800030007" class="btn-secondary" style="font-size:13px;padding:9px 18px;">
-        Call UIF: 0800 030 007
+        <span data-t="uif_call">Call UIF: 0800 030 007</span>
       </a>
     </div>
 
@@ -224,7 +227,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">UIF payments typically take 4–8 weeks after submitting a complete application on uFiling. The timeline depends on whether your employer has submitted your UI-19 form and whether your documents are complete. Once approved, funds are deposited directly into your bank account. You can track progress by logging into uFiling and checking your claim status.</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="uif_faq_a1">UIF payments typically take 4–8 weeks after submitting a complete application on uFiling. The timeline depends on whether your employer has submitted your UI-19 form and whether your documents are complete. Once approved, funds are deposited directly into your bank account. You can track progress by logging into uFiling and checking your claim status.</p>
           </div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
@@ -233,7 +236,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Yes. Domestic workers (housekeepers, gardeners, child minders) who work more than 24 hours per month are covered by UIF. Their employer must register them for UIF and deduct 1% from their wages monthly, with the employer contributing another 1%. If the employer has not been registering and contributing, the domestic worker can report this to the Department of Employment and Labour.</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="uif_faq_a2">Yes. Domestic workers (housekeepers, gardeners, child minders) who work more than 24 hours per month are covered by UIF. Their employer must register them for UIF and deduct 1% from their wages monthly, with the employer contributing another 1%. If the employer has not been registering and contributing, the domestic worker can report this to the Department of Employment and Labour.</p>
           </div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
@@ -242,7 +245,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">"Sent to Assessor" means your UIF claim documents have been received and are now being reviewed by a claims assessor. This is a normal step in the process — it usually takes 5–15 business days for the assessor to complete the review. After this, your status should change to "Assessed" and then "Approved" if everything is in order.</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="uif_faq_a3">"Sent to Assessor" means your UIF claim documents have been received and are now being reviewed by a claims assessor. This is a normal step in the process — it usually takes 5–15 business days for the assessor to complete the review. After this, your status should change to "Assessed" and then "Approved" if everything is in order.</p>
           </div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
@@ -251,7 +254,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Your UIF benefit duration depends on how long you contributed. For every 4 days worked as a contributor, you earn 1 day of UIF benefit. The maximum is 365 days (about 12 months) for someone who contributed for 4+ years. If you worked for 2 years, you'd qualify for approximately 182 benefit days. Maternity benefits are limited to 121 days regardless of contribution period.</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="uif_faq_a4">Your UIF benefit duration depends on how long you contributed. For every 4 days worked as a contributor, you earn 1 day of UIF benefit. The maximum is 365 days (about 12 months) for someone who contributed for 4+ years. If you worked for 2 years, you'd qualify for approximately 182 benefit days. Maternity benefits are limited to 121 days regardless of contribution period.</p>
           </div>
         </div>
       </div>

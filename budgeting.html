@@ -12,6 +12,9 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://mzansi-money.com/budgeting"/>
   <link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/budgeting"/>
+  <link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/budgeting"/>
+  <link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/budgeting"/>
+  <link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/budgeting"/>
   <link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/budgeting"/>
   <!-- Open Graph / WhatsApp sharing -->
   <meta property="og:type" content="website"/>
@@ -44,7 +47,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"<span data-t="budget_faq_q1">How do South Africans save money on a low income?</span>","acceptedAnswer":{"@type":"Answer","text":"Join a stokvel for forced savings, use a free bank account (Capitec, TymeBank) to avoid monthly fees, buy groceries in bulk, use laybye instead of credit for large purchases, and set up an automatic debit order to a separate savings pocket on payday."}},
+      {"@type":"Question","name":"How do South Africans save money on a low income?","acceptedAnswer":{"@type":"Answer","text":"Join a stokvel for forced savings, use a free bank account (Capitec, TymeBank) to avoid monthly fees, buy groceries in bulk, use laybye instead of credit for large purchases, and set up an automatic debit order to a separate savings pocket on payday."}},
       {"@type":"Question","name":"What is the 50/30/20 budgeting rule?","acceptedAnswer":{"@type":"Answer","text":"The 50/30/20 rule divides your take-home pay into three parts: 50% for needs (rent, food, transport, utilities), 30% for wants (entertainment, eating out, clothing), and 20% for savings (emergency fund, retirement, stokvel). It is a simple starting point for anyone building a budget."}},
       {"@type":"Question","name":"Are stokvels safe in South Africa?","acceptedAnswer":{"@type":"Answer","text":"Stokvels are generally safe when run with trusted members and a written agreement. The key risks are a member defaulting or the money being mismanaged. Reduce risk by keeping the group small (under 12 people), using a dedicated bank account in the group name, and signing a written stokvel agreement at the start."}}
     ]
@@ -63,13 +66,13 @@
   <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
   <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_guides">Guides</span></a>
   <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
-  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span>SASSA</span></a>
-  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span>Business</span></a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Business</span></a>
   <div class="nav-section">Personal Finance</div>
-  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span>Tax &amp; SARS</span></a>
-  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span>UIF Claims</span></a>
-  <a href="budgeting.html" class="active"><span class="material-symbols-outlined">savings</span><span>Budgeting</span></a>
-  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Tax &amp; SARS</span></a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">UIF Claims</span></a>
+  <a href="budgeting.html" class="active"><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Budgeting</span></a>
+  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Credit Score</span></a>
   <div class="nav-section">Tools</div>
   <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
   <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
@@ -102,7 +105,7 @@
     <div class="hero-gradient" style="margin-bottom:24px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:rgba(255,255,255,0.2);display:inline-block;padding:4px 12px;border-radius:99px;margin-bottom:12px;">Personal Finance</div>
       <h1 style="font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:10px;"><span data-t="budget_page_title">Budgeting &amp; Savings</span></h1>
-      <p style="font-size:14px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;"><span data-t="budget_sub_text"><span data-t="budget_page_sub">Simple, practical guides to take control of your money — no matter your income.</span></span></p>
+      <p style="font-size:14px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;" data-t="budget_page_sub">Simple, practical guides to take control of your money — no matter your income.</p>
     </div>
 
     <!-- Budget calculator -->
@@ -148,19 +151,19 @@
     <!-- Emergency fund -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
       <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;" data-t="budget_emergency_title">Build an Emergency Fund</h2>
-      <p style="font-size:14px;color:#3d4943;line-height:1.6;margin-bottom:16px;"><span data-t="budget_emerg_note">An emergency fund is 3–6 months of living expenses saved in a separate account. It stops you from going into debt when something unexpected happens.</span> account. It protects you from debt when unexpected things happen.</p>
+      <p style="font-size:14px;color:#3d4943;line-height:1.6;margin-bottom:16px;" data-t="budget_emerg_note">An emergency fund is 3–6 months of living expenses saved in a separate account. It stops you from going into debt when something unexpected happens.</p>
       <div style="display:flex;flex-direction:column;gap:10px;">
         <div style="display:flex;align-items:flex-start;gap:12px;">
           <div style="width:28px;height:28px;border-radius:50%;background:#00694c;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;">1</div>
-          <div style="font-size:14px;color:#3d4943;line-height:1.5;"><strong><span data-t="budget_emergency_step1">Open a separate savings account — not your everyday account.</span></strong> — not your everyday account. FNB, Capitec, or Nedbank all have free savings accounts.</div>
+          <div style="font-size:14px;color:#3d4943;line-height:1.5;"><span data-t="budget_emergency_step1">Open a separate savings account — not your everyday account. FNB, Capitec, or Nedbank all have free savings accounts.</span></div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:12px;">
           <div style="width:28px;height:28px;border-radius:50%;background:#00694c;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;">2</div>
-          <div style="font-size:14px;color:#3d4943;line-height:1.5;"><strong><span data-t="budget_emergency_step2">Set up a debit order on payday — even R200/month compounds over time.</span></strong> — even R200/month compounds over time.</div>
+          <div style="font-size:14px;color:#3d4943;line-height:1.5;"><span data-t="budget_emergency_step2">Set up a debit order on payday — even R200/month compounds over time.</span></div>
         </div>
         <div style="display:flex;align-items:flex-start;gap:12px;">
           <div style="width:28px;height:28px;border-radius:50%;background:#00694c;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0;">3</div>
-          <div style="font-size:14px;color:#3d4943;line-height:1.5;"><strong><span data-t="budget_emergency_step3">Do not touch it — except for genuine emergencies.</span></strong> — except for genuine emergencies (medical, job loss, urgent repairs).</div>
+          <div style="font-size:14px;color:#3d4943;line-height:1.5;"><span data-t="budget_emergency_step3">Do not touch it — except for genuine emergencies: medical, job loss, or urgent repairs.</span></div>
         </div>
       </div>
     </div>
@@ -171,11 +174,11 @@
         <span class="material-symbols-outlined text-primary" style="font-size:24px;">groups</span>
         <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;" data-t="budget_stokvel_title">Stokvels — South Africa's Savings Tradition</h3>
       </div>
-      <p style="font-size:13px;color:#3d4943;line-height:1.6;margin-bottom:12px;">Over 11 million South Africans participate in stokvels — rotating savings clubs. Members contribute monthly and receive a lump sum in rotation.</p>
+      <p style="font-size:13px;color:#3d4943;line-height:1.6;margin-bottom:12px;" data-t="budget_stokvel_body">Over 11 million South Africans participate in stokvels — rotating savings clubs. Members contribute monthly and receive a lump sum in rotation.</p>
       <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:#3d4943;">
-        <div>✓ <strong>General stokvel:</strong> Monthly contributions, one member receives all at a time</div>
-        <div>✓ <strong>Grocery stokvel:</strong> Pool money to buy food in bulk at year-end</div>
-        <div>✓ <strong>Investment stokvel:</strong> Pool money into interest-bearing accounts</div>
+        <div data-t="budget_stokvel_1">✓ <strong>General stokvel:</strong> Monthly contributions, one member receives all at a time</div>
+        <div data-t="budget_stokvel_2">✓ <strong>Grocery stokvel:</strong> Pool money to buy food in bulk at year-end</div>
+        <div data-t="budget_stokvel_3">✓ <strong>Investment stokvel:</strong> Pool money into interest-bearing accounts</div>
       </div>
     </div>
 
@@ -185,7 +188,7 @@
         <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">warning</span>
         <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;">⚠️ <span data-t="budget_scam_title">Avoid Loan Sharks (Mashonisas)</span></h3>
       </div>
-      <p style="font-size:13px;opacity:0.9;line-height:1.6;margin:0;">Unregistered lenders often charge 30–100% monthly interest. This is illegal under the National Credit Act. Always check that a lender is registered with the NCR (National Credit Regulator) at ncr.org.za or call 0860 627 627.</p>
+      <p style="font-size:13px;opacity:0.9;line-height:1.6;margin:0;" data-t="budget_scam_body_text">Unregistered lenders often charge 30–100% monthly interest. This is illegal under the National Credit Act. Always check that a lender is registered with the NCR (National Credit Regulator) at ncr.org.za or call 0860 627 627.</p>
     </div>
 
   
@@ -198,7 +201,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">The most effective strategies for low-income savers: join a stokvel (rotating savings club) for forced savings and community support; use a free bank account (Capitec, TymeBank) to avoid monthly fees; buy groceries in bulk at month-end; use laybye for large purchases instead of credit; avoid airtime loans which charge 30%+ effective interest; set up a free Capitec savings pocket that earns 7% interest on small amounts.</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="budget_faq_a1">The most effective strategies for low-income savers: join a stokvel (rotating savings club) for forced savings and community support; use a free bank account (Capitec, TymeBank) to avoid monthly fees; buy groceries in bulk at month-end; use laybye for large purchases instead of credit; avoid airtime loans which charge 30%+ effective interest; set up a free Capitec savings pocket that earns 7% interest on small amounts.</p>
           </div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
@@ -207,7 +210,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">BNPL services like PayJustNow and Payflex can be useful if you pay within the interest-free period, but carry real risks. Unlike traditional credit, many BNPL services operate outside the National Credit Act — meaning you have fewer protections. In 2024, 50% of South Africans using BNPL were doing so for essential items like groceries — a warning sign of financial stress. Use BNPL only for planned purchases you can definitely afford to pay off, never for everyday expenses.</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="budget_faq_a2">BNPL services like PayJustNow and Payflex can be useful if you pay within the interest-free period, but carry real risks. Unlike traditional credit, many BNPL services operate outside the National Credit Act — meaning you have fewer protections. In 2024, 50% of South Africans using BNPL were doing so for essential items like groceries — a warning sign of financial stress. Use BNPL only for planned purchases you can definitely afford to pay off, never for everyday expenses.</p>
           </div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
@@ -216,7 +219,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">To start a stokvel: gather 4–12 trusted people (family, friends, colleagues); agree on the monthly contribution amount everyone can afford; decide the payout order and frequency; appoint a treasurer and secretary; open a dedicated bank account in the group's name; and draw up a simple written agreement everyone signs. Many banks (FNB, Standard Bank) offer free stokvel accounts. Register with the National Stokvel Association of South Africa (NASASA) at nasasa.co.za for added credibility.</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="budget_faq_a3">To start a stokvel: gather 4–12 trusted people (family, friends, colleagues); agree on the monthly contribution amount everyone can afford; decide the payout order and frequency; appoint a treasurer and secretary; open a dedicated bank account in the group's name; and draw up a simple written agreement everyone signs. Many banks (FNB, Standard Bank) offer free stokvel accounts. Register with the National Stokvel Association of South Africa (NASASA) at nasasa.co.za for added credibility.</p>
           </div>
         </div>
       </div>
