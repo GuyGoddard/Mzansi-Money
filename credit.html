@@ -12,6 +12,9 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://mzansi-money.com/credit"/>
   <link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/credit"/>
+  <link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/credit"/>
+  <link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/credit"/>
+  <link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/credit"/>
   <link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/credit"/>
   <!-- Open Graph / WhatsApp sharing -->
   <meta property="og:type" content="website"/>
@@ -63,13 +66,13 @@
   <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
   <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_guides">Guides</span></a>
   <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Personal Finance</span></a>
-  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span>SASSA</span></a>
-  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span>Business</span></a>
-  <div class="nav-section">Personal Finance</div>
-  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span>Tax &amp; SARS</span></a>
-  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span>UIF Claims</span></a>
-  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span>Budgeting</span></a>
-  <a href="credit.html" class="active"><span class="material-symbols-outlined">credit_score</span><span>Credit Score</span></a>
+  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
+  <a href="business.html"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Business</span></a>
+  <div class="nav-section" data-t="nav_pf">Personal Finance</div>
+  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Tax &amp; SARS</span></a>
+  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">UIF Claims</span></a>
+  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Budgeting</span></a>
+  <a href="credit.html" class="active"><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Credit Score</span></a>
   <div class="nav-section">Tools</div>
   <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
   <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
@@ -101,14 +104,14 @@
 
     <div class="hero-gradient" style="margin-bottom:24px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:rgba(255,255,255,0.2);display:inline-block;padding:4px 12px;border-radius:99px;margin-bottom:12px;">Personal Finance</div>
-      <h1 style="font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:10px;"><span data-t="credit_page_title"><span data-t="credit_page_title">Credit Score &amp; Debt</span></span></h1>
-      <p style="font-size:14px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;"><span data-t="credit_page_sub">Understanding and improving your credit score unlocks better loan rates and more financial opportunities.</span>, rentals, and financial opportunities.</p>
+      <h1 style="font-size:clamp(24px,4vw,36px);font-weight:800;margin-bottom:10px;" data-t="credit_page_title">Credit Score &amp; Debt</h1>
+      <p style="font-size:14px;opacity:0.9;max-width:500px;line-height:1.6;margin:0;" data-t="credit_page_sub">Understanding and improving your credit score unlocks better loan rates and more financial opportunities.</p>
     </div>
 
     <!-- Score ranges -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
       <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:6px;" data-t="credit_score_title">What's a good credit score in South Africa?</h2>
-      <p style="font-size:13px;color:#6d7a73;margin-bottom:16px;"><span data-t="credit_score_intro">In South Africa, scores typically range from 300–850. The average in 2026 is around 615.</span>025 is 612 — only 42% of South Africans have a "Good" or better score.</p>
+      <p style="font-size:13px;color:#6d7a73;margin-bottom:16px;" data-t="credit_score_intro">In South Africa, scores typically range from 300–850. The average in 2026 is around 615. Only 42% of South Africans have a "Good" or better score.</p>
       <div style="display:flex;flex-direction:column;gap:8px;">
         <div style="display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;background:#f6f4ec;">
           <div style="width:12px;height:12px;border-radius:50%;background:#00694c;flex-shrink:0;"></div>
@@ -135,19 +138,19 @@
       <div style="display:flex;flex-direction:column;gap:12px;">
         <div style="display:flex;gap:12px;align-items:flex-start;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;font-variation-settings:'FILL' 1;">check_circle</span>
-          <div><strong style="font-size:14px;"><span data-t="credit_i1_label">Pay on time, every time</span></strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;"><span data-t="credit_i1_sub">Even one missed payment stays on your record for 2 years. Set up debit orders.</span> orders so you never forget.</p></div>
+          <div><strong style="font-size:14px;"><span data-t="credit_i1_label">Pay on time, every time</span></strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;" data-t="credit_i1_sub">Even one missed payment stays on your record for 2 years. Set up debit orders so you never forget.</p></div>
         </div>
         <div style="display:flex;gap:12px;align-items:flex-start;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;font-variation-settings:'FILL' 1;">check_circle</span>
-          <div><strong style="font-size:14px;"><span data-t="credit_i2_label">Keep credit usage below 30%</span></strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;">If your credit card limit is R10,000, keep your balance below R3,000.</p></div>
+          <div><strong style="font-size:14px;"><span data-t="credit_i2_label">Keep credit usage below 30%</span></strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;" data-t="credit_i2_sub">If your credit card limit is R10,000, keep your balance below R3,000.</p></div>
         </div>
         <div style="display:flex;gap:12px;align-items:flex-start;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;font-variation-settings:'FILL' 1;">check_circle</span>
-          <div><strong style="font-size:14px;">Don't apply for multiple loans at once</strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;">Each application leaves a "hard enquiry" on your record for 12 months.</p></div>
+          <div><strong style="font-size:14px;" data-t="credit_i3_label">Don't apply for multiple loans at once</strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;" data-t="credit_ncr_text">Each application leaves a "hard enquiry" on your record for 12 months.</p></div>
         </div>
         <div style="display:flex;gap:12px;align-items:flex-start;">
           <span class="material-symbols-outlined text-primary" style="font-size:20px;flex-shrink:0;font-variation-settings:'FILL' 1;">check_circle</span>
-          <div><strong style="font-size:14px;"><span data-t="credit_i4_label">Check your report for errors</span></strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;">You are entitled to one FREE report per year. Errors are common — dispute them immediately.</p></div>
+          <div><strong style="font-size:14px;"><span data-t="credit_i4_label">Check your report for errors</span></strong><p style="font-size:13px;color:#6d7a73;margin:3px 0 0;" data-t="credit_i4_sub">You are entitled to one FREE report per year. Errors are common — dispute them immediately.</p></div>
         </div>
       </div>
     </div>
@@ -165,12 +168,12 @@
     <!-- Debt review -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
       <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;margin-bottom:12px;" data-t="credit_debt_title">Debt Review — What is it?</h2>
-      <p style="font-size:14px;color:#3d4943;line-height:1.6;margin-bottom:14px;">If you're struggling with debt, debt review (debt counselling) restructures your payments to fit your budget and <strong>protects your assets from repossession</strong>.</p>
+      <p style="font-size:14px;color:#3d4943;line-height:1.6;margin-bottom:14px;" data-t="credit_debt_body">If you're struggling with debt, debt review (debt counselling) restructures your payments to fit your budget and <strong>protects your assets from repossession</strong>.</p>
       <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:#3d4943;">
-        <div>✓ One reduced monthly payment instead of many</div>
-        <div>✓ Protection from legal action by creditors</div>
-        <div>✓ Takes 3–5 years, then you get a clearance certificate</div>
-        <div>✗ You cannot take on new credit during debt review</div>
+        <div data-t="credit_debt_1">✓ One reduced monthly payment instead of many</div>
+        <div data-t="credit_debt_2">✓ Protection from legal action by creditors</div>
+        <div data-t="credit_debt_3">✓ Takes 3–5 years, then you get a clearance certificate</div>
+        <div data-t="credit_debt_4">✗ You cannot take on new credit during debt review</div>
       </div>
       <div style="margin-top:14px;padding:12px;background:#f6f4ec;border-radius:10px;font-size:13px;color:#3d4943;">
         <strong>Important:</strong> Only use NCR-registered debt counsellors. Verify at <a href="https://www.ncr.org.za" target="_blank" style="color:#00694c;">ncr.org.za</a> or call <strong>0860 627 627</strong>.
@@ -187,7 +190,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Improving a credit score takes time and consistency. Negative listings like missed payments stay for 2 years; judgments for 5 years; defaults for up to 7 years. With disciplined on-time payments and reduced debt, most people see meaningful improvement within 6–12 months. Going from Poor to Good typically takes 2–3 years of consistent positive behaviour.</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="credit_faq_a1">Improving a credit score takes time and consistency. Negative listings like missed payments stay for 2 years; judgments for 5 years; defaults for up to 7 years. With disciplined on-time payments and reduced debt, most people see meaningful improvement within 6–12 months. Going from Poor to Good typically takes 2–3 years of consistent positive behaviour.</p>
           </div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
@@ -196,7 +199,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">No. Checking your own credit report is called a "soft enquiry" and has zero impact on your score. Only "hard enquiries" — where a credit provider pulls your report to assess a loan application — temporarily affect your score. This is why you should check your own report at least once a year — it costs nothing and cannot hurt you.</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="credit_faq_a2">No. Checking your own credit report is called a "soft enquiry" and has zero impact on your score. Only "hard enquiries" — where a credit provider pulls your report to assess a loan application — temporarily affect your score. This is why you should check your own report at least once a year — it costs nothing and cannot hurt you.</p>
           </div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
@@ -205,7 +208,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Most South African banks require a minimum score of around 620–650 for a home loan. A score above 650 gives you an 85% chance of approval. A score above 700 can qualify you for prime or below-prime interest rates, which makes a significant difference on a 20-year bond — the difference between 10.5% and 13.5% on a R1M bond is over R4,000/month.</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="credit_faq_a3">Most South African banks require a minimum score of around 620–650 for a home loan. A score above 650 gives you an 85% chance of approval. A score above 700 can qualify you for prime or below-prime interest rates, which makes a significant difference on a 20-year bond — the difference between 10.5% and 13.5% on a R1M bond is over R4,000/month.</p>
           </div>
         </div>
         <div style="background:#fff;border-radius:14px;margin-bottom:10px;overflow:hidden;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
@@ -214,7 +217,7 @@
             <span class="material-symbols-outlined" style="font-size:20px;color:#6d7a73;flex-shrink:0;">add</span>
           </button>
           <div style="max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 20px;">
-            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;">Download your free annual credit report from TransUnion, Experian, or XDS. If you find an error, contact the credit bureau directly with proof (bank statements, paid-up letters, or correspondence). The bureau must investigate within 20 business days. If the credit provider confirms the information is wrong, it must be removed. You can escalate unresolved disputes to the Credit Ombud (0861 66 28 37).</p>
+            <p style="font-size:14px;color:#3d4943;line-height:1.7;padding-bottom:16px;margin:0;" data-t="credit_faq_a4">Download your free annual credit report from TransUnion, Experian, or XDS. If you find an error, contact the credit bureau directly with proof (bank statements, paid-up letters, or correspondence). The bureau must investigate within 20 business days. If the credit provider confirms the information is wrong, it must be removed. You can escalate unresolved disputes to the Credit Ombud (0861 66 28 37).</p>
           </div>
         </div>
       </div>
