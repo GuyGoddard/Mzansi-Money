@@ -769,7 +769,7 @@ const TRANSLATIONS = {
     biz_vat_sub: 'Bhalisa lapho ukukhiqiza kudlula uR1 yezigidi ngonyaka. Ngokuzithandela kusukela ku-R50,000/ngonyaka. Intengo ye-VAT: 15%.',
     biz_vat_title: 'I-VAT — Intela Yentengiselwano',
     budget_badge: 'Imali Yomuntu Siqu',
-    budget_calc_enter: 'Enter your monthly take-home pay to see how to split it.',
+    budget_calc_enter: 'Faka inkokhelo yakho yenyanga ukuze ubone ukuthi uyihlukanisa kanjani.',
     budget_calc_sub: 'Faka umholo wakho wanyanga zonke ukuze ubone ukuthi usahlukahluke kanjani.',
     budget_calc_title: 'Isibali Sesabelomali se-50/30/20',
     budget_e1: 'Vula i-akhawunti yokonga ehlukene — hhayi i-akhawunti yakho yansukuzonke.',
@@ -778,24 +778,24 @@ const TRANSLATIONS = {
     budget_emerg_note: 'Isikhwama sokushesha yimali yezindleko zokuphila ezingama-3–6 ezigcinwe kwi-akhawunti ehlukene.',
     budget_emerg_title: 'Ukwakha isikhwama sokushesha',
     budget_emergency_body: 'Imali yokushesha iyizinyanga ezi-3 kuya kwezi-6 zezindleko zokuphila ezikhiphiwe e-akhawuntini ehlukene. Ikuvikela ekwelekeni lapho izinto zenzeka ngokungalindelekile.',
-    budget_emergency_step1: 'Open a separate savings account — not your everyday account.',
-    budget_emergency_step2: 'Set up a debit order on payday — even R200 per month compounds over time.',
-    budget_emergency_step3: 'Do not touch it — except for genuine emergencies: medical, job loss, or urgent repairs.',
+    budget_emergency_step1: 'Vula i-akhawunti yokonga ehlukile — hhayi i-akhawunti yakho yansuku zonke.',
+    budget_emergency_step2: 'Hlela i-debit order ngosuku lokukhokha — ngisho ne-R200 ngenyanga ikhula isikhathi esidlulayo.',
+    budget_emergency_step3: 'Ungayithinti — ngaphandle kwezimo zikashoba: ezezempilo, ukulahlekelwa umsebenzi, noma izixazululo eziphuthumayo.',
     budget_emergency_title: 'Akha Imali Yokushesha',
     budget_faq_q1: 'Abantu baseNingizimu Afrika basonga kanjani imali ngezingeniso eziphansi?',
     budget_faq_q2: 'Ingabe Thenga Manje Ukhokhe Kamuva (BNPL) umqondo omuhle eNingizimu Afrika?',
     budget_faq_q3: 'Ngiqala kanjani isitokhoveli?',
     budget_faq_title: 'Isabelomali — Imibuzo Ejwayelekile',
     budget_income_label: 'Ingeniso Yenyanga (ZAR)',
-    budget_monthly_income: 'Monthly Income (ZAR)',
+    budget_monthly_income: 'Inkokhelo Yenyanga (ZAR)',
     budget_needs_label: 'Izidingo (50%)',
     budget_needs_sub: 'Ukuqasha, ukudla, izimoto, izinsiza',
-    budget_needs_sub_text: 'Rent, food, transport, utilities',
+    budget_needs_sub_text: 'Ukuqasha, ukudla, izithuthi, amanzi nogesi',
     budget_page_sub: 'Imihlahlandlela elula, esebenzayo yokuthi ulawule imali yakho.',
     budget_page_title: 'Isabelomali Nokonga',
     budget_savings_label: 'Ukonga (20%)',
     budget_savings_sub: 'Imali yokushesha, ukuphendla, isitokhoveli',
-    budget_savings_sub_text: 'Emergency fund, retirement, stokvel',
+    budget_savings_sub_text: 'Inhlangano yokonga, umhlalaphansi, istokvel',
     budget_scam_body: 'Abanikeli abangabhalisiwe bahlezi bekhipha inzalo yenyanga yama-30%–100%. Lokhu kuyimvumelwano ngaphansi koMthetho Womboleko Wamazwe. Hlola isikhungo soboleko ku-ncr.org.za noma shayela 0860 627 627.',
     budget_scam_body_text: 'Unregistered lenders often charge 30–100% monthly interest. This is illegal under the National Credit Act. Always check that a lender is registered with the NCR at ncr.org.za or call 0860 627 627.',
     budget_scam_title: 'Qaphela ukukhwabaniswa kwezikweletu',
@@ -808,11 +808,11 @@ const TRANSLATIONS = {
     budget_stokvel_body: 'Ngaphezu kwezigidi eziyi-11 zabantu baseNingizimu Afrika ziyababambela ezitokovela — amaqoqo okonga awuphendukayo lapho amalungu anikela njalo ngenyanga futhi athole izikhwama ngokulandelana.',
     budget_stokvel_title: 'Izistokovela zisebenza kanjani',
     budget_sub: 'Imihlahlandlela elula, esebenzayo yokuthi ulawule imali yakho — noma iyini ingeniso yakho.',
-    budget_sub_text: 'Simple, practical guides to take control of your money — no matter your income level.',
+    budget_sub_text: 'Imihlahlandlela elula, epracticali yokulawula imali yakho — noma ngabe imali yakho ingakanani.',
     budget_title: 'Isabelomali Nokonga',
     budget_wants_label: 'Izifiso (30%)',
     budget_wants_sub: 'Izindleko, ukudla ngaphandle, izingubo',
-    budget_wants_sub_text: 'Entertainment, eating out, clothing',
+    budget_wants_sub_text: 'Ukuzijabulisa, ukudla ngaphandle, izingubo',
     calc_age_6574: '65 kuya ku-74',
     calc_age_75p: '75 nangaphezulu',
     calc_age_label: 'Iminyaka Yakho',
@@ -830,10 +830,10 @@ const TRANSLATIONS = {
     calc_faq_a1: 'They are the same thing at different stages. PAYE is how your employer pays income tax monthly on your behalf. If over-deducted, SARS refunds you when you file.',
     calc_faq_a2: 'Pension and RA contributions reduce your taxable income — the number SARS uses to calculate tax. Limit: 27.5% of salary or R430,000/year.',
     calc_faq_a3: 'SARS gives R376/month credit for yourself and first dependant, R254 for each additional. 2 members saves R752/month in tax regardless of income.',
-    calc_faq_a4: 'This uses basic salary only. Payslip may differ due to taxable benefits or different tax directives. Use as a planning guide.',
+    calc_faq_a4: 'Isebenzisa iholo eliwusizo kuphela. I-payslip ingahluka ngenxa yezinzuzo ezikhokhelwa intela noma izinguquko ezihlukile.',
     calc_faq_q1: 'What is the difference between PAYE and income tax?',
-    calc_faq_q2: 'Why does a pension contribution reduce my tax?',
-    calc_faq_q3: 'How does the medical aid tax credit work?',
+    calc_faq_q2: 'Kungani igalelo lohlelo lwemali lomhlalaphansi linciphisa intela yami?',
+    calc_faq_q3: 'Isebenza kanjani i-medical aid tax credit?',
     calc_faq_q4: 'Why does this show less PAYE than my payslip?',
     calc_faq_title: 'Imibuzo Ejwayelekile Yesibali Sentela',
     calc_go_guide: 'Umhlahlandlela Wentela',
@@ -879,7 +879,7 @@ const TRANSLATIONS = {
     cipc_i5_title: 'Thola inombolo yakho yentela ye-SARS',
     cipc_i6_sub: 'Letha isitifiketi sakho se-CIPC, inombolo yentela yenkampani, ne-SA ID. I-FNB Business Zero ne-Capitec Business zimahhala ukuvulwa.',
     cipc_i6_title: 'Vula i-akhawunti yebhizinisi',
-    cipc_instr: 'Tap each item to mark it done. Your progress is saved automatically.',
+    cipc_instr: 'Thepha into ngayinye ukuyimaka iqediwe. Inqubekela phambili yakho ilondolozwa ngokuzenzakalelayo.',
     cipc_links_title: 'Izixhumanisi Ezinosizo',
     cipc_p_label: 'Intuthuko',
     cipc_progress: '0 kwe-7 kwenziwe',
@@ -899,10 +899,10 @@ const TRANSLATIONS = {
     credit_debt_review_title: 'Yini ukubuyekezwa kwezikweletu?',
     credit_debt_title: 'UkuBuyekezwa Kwezikweletu — Kuyini lokho?',
     credit_exc: 'Okuhle kakhulu: 781–850',
-    credit_exc_label: 'Excellent: 781–850',
+    credit_exc_label: 'Iphezulu kakhulu: 781–850',
     credit_exc_sub: 'Amanani angcono, izicelo eziningi zamukela',
     credit_fair: 'Okufanele: 610–660',
-    credit_fair_label: 'Fair: 610–660',
+    credit_fair_label: 'Ephakathi: 610–660',
     credit_fair_sub: 'Ezinye izicelo zaziwa, amanani aphezulu',
     credit_faq_q1: 'Kuthatha isikhathi esingakanani ukuthuthukisa isilinganiso sokhrediti esibi eNingizimu Afrika?',
     credit_faq_q2: 'Ingabe ukuhlola isilinganiso sakho sokhrediti kuzosithinta?',
@@ -911,20 +911,20 @@ const TRANSLATIONS = {
     credit_faq_title: 'Isilinganiso Sokhrediti — Imibuzo Ejwayelekile',
     credit_free_title: 'Thola umbiko wakho wokhrediti WAMAHHALA',
     credit_good: 'Okuhle: 661–780',
-    credit_good_label: 'Good: 661–780',
+    credit_good_label: 'Enhle: 661–780',
     credit_good_rates: 'Amazinga amahle, izicelo eziningi zigunyaziwe',
     credit_good_sub: 'Amanani angcono, izicelo eziningi zamukela',
     credit_high_risk: 'Amazinga aphezulu, kaningi anikelwa',
-    credit_i1_label: 'Pay on time, every time',
+    credit_i1_label: 'Khokha ngesikhathi, njalo',
     credit_i1_sub: 'Ngisho inkokhelo eyodwa eyashaywa ihlala embrekhindini wakho iminyaka emi-2.',
     credit_i1_title: 'Khokha ngesikhathi, njalo',
-    credit_i2_label: 'Keep credit usage below 30%',
+    credit_i2_label: 'Gcina ukusetyenziswa kwesikweletu ngaphansi kuka-30%',
     credit_i2_sub: 'Uma unomkhawulo we-R10,000, gcina ibhalansi yakho ngaphansi kwe-R3,000.',
     credit_i2_title: 'Gcina ukusetshenziswa kokhrediti ngaphansi kuka-30%',
     credit_i3_label: 'Do not apply for multiple loans at once',
     credit_i3_sub: 'Isicelo ngasinye sengeza ukubuza okukhuni embrekhindini wakho futhi siyancipha isilinganiso sakho.',
     credit_i3_title: 'Ungafaki izicelo zamaholide amaningi ngasikhathi sinye',
-    credit_i4_label: 'Check your report for errors',
+    credit_i4_label: 'Hlola umbiko wakho ukuze uthole amaphutha',
     credit_i4_sub: 'Thola umbiko wakho wamahhala ku-TransUnion, Experian noma Compuscan. Unelungelo lombiko wamahhala onyakanyaka.',
     credit_i4_title: 'Hlola umbiko wakho ngeziphosiso',
     credit_improve_title: 'Indlela yokuthuthukisa isilinganiso sakho sokhrediti',
@@ -933,7 +933,7 @@ const TRANSLATIONS = {
     credit_page_sub: 'Ukuqonda nokuthuthukisa isilinganiso sakho sokhrediti kukuvula amazinga eboleko amahle.',
     credit_page_title: 'Isilinganiso Sokhrediti nezikweletu',
     credit_poor: 'Okubi: Ngaphansi kuka-610',
-    credit_poor_label: 'Poor: Below 610',
+    credit_poor_label: 'Embi: Ngaphansi kuka-610',
     credit_poor_sub: 'Amanani aphezulu, aziwa kaningi',
     credit_score_intro: 'ENingizimu Afrika, isilinganiso sivame ukuba phakathi kuka-300–850. Isilinganiso sango-2026 singu-615.',
     credit_score_sub: 'Izilinganiso zihlala phakathi kuka-300–850. Ngonyaka wezi-2026 ubuphakathi obujwayelekile ngu-612.',
@@ -1012,7 +1012,7 @@ const TRANSLATIONS = {
     nav_business: 'Ibhizinisi',
     nav_credit: 'Isilinganiso Sokhrediti',
     nav_gethelp: 'Thola Usizo',
-    nav_guides: 'Guides',
+    nav_guides: 'Imihlahlandlela',
     nav_home: 'Ikhaya',
     nav_pathways: 'Izindlela',
     nav_pf: 'Imali Yomuntu Siqu',
@@ -1020,15 +1020,15 @@ const TRANSLATIONS = {
     nav_sassa: 'SASSA',
     nav_search: 'Sesha',
     nav_tax: 'Intela ne-SARS',
-    nav_tools: 'Tools',
-    nav_topics: 'Topics',
+    nav_tools: 'Amathuluzi',
+    nav_topics: 'Izihloko',
     nav_uif: 'Izimangalo ze-UIF',
     path_biz_sub: 'Register with CIPC, funding, VAT, PAYE',
-    path_budget_sub: '50/30/20 rule, stokvels, debt, emergency fund',
+    path_budget_sub: 'Umthetho wama-50/30/20, izistokvel, izikweletu, inhlangano yokonga',
     path_budget_title: 'Isabelomali Nokonga',
     path_cipc_sub: 'Uhlu oluzimeleyo — landelela intuthuko yakho',
     path_cipc_title: 'Uhlu Lokuhlola lwe-CIPC',
-    path_credit_sub: 'Free credit report, improve your score, debt review',
+    path_credit_sub: 'Umbiko wamahhala wesikweletu, thuthukisa amapointi akho, ukubuyekezwa kwezikweletu',
     path_credit_title: 'Isilinganiso Sokhrediti nezikweletu',
     path_funding_sub: 'I-SEDFA, i-NYDA, izibonelelo zikaHulumeni nezikweletu',
     path_funding_title: 'Uxhaso Lwezimali Lwamabhizinisi',
@@ -1039,11 +1039,11 @@ const TRANSLATIONS = {
     path_register_sub: 'Umhlahlandlela wokubhalisa kwe-CIPC — izinyathelo ezi-4 elula',
     path_register_title: 'Bhalisa Ibhizinisi',
     path_sassa_badge: 'Izibonelelo ezi-5',
-    path_sassa_sub: 'Apply, check status, grant pay dates',
+    path_sassa_sub: 'Faka isicelo, hlola isimo, izinsuku zokukhokha izibonelelo',
     path_sassa_title: 'Izibonelelo ze-SASSA',
-    path_sub: 'Step-by-step guidance for every financial situation in South Africa.',
+    path_sub: 'Imihlahlandlela yezinyathelo ngazinye yezimo zonke zezezimali eNingizimu Afrika.',
     path_tax_title: 'Intela ne-SARS eFiling',
-    path_uif_sub: 'Unemployment, maternity, illness, death benefits',
+    path_uif_sub: 'Ukungenzi umsebenzi, ukuzala, ukugula, izinzuzo zokufa',
     path_uif_title: 'Izimangalo ze-UIF',
     paydates_apply_sassa: 'Faka Isicelo se-SASSA',
     paydates_apr_increase: 'Ukukhuliswa Kwezibonelelo ka-April 2026 Kuqinisekisiwe',
@@ -1097,7 +1097,7 @@ const TRANSLATIONS = {
     sassa_dis_elig: 'Kudingeka ukuhlolwa ngudokotela',
     sassa_dis_name: 'Isibonelelo Esikhubazekile',
     sassa_dis_sub: 'Abantu abanezinkinga zezempilo',
-    sassa_disclaimer_text: 'Disclaimer: Grant amounts and eligibility are subject to change. Always verify at',
+    sassa_disclaimer_text: 'Isixwayiso: Amanani ezibonelelo nokufaneleka kuyashintsha. Hlola njalo ku-sassa.gov.za ukuze uthole ulwazi olusha.',
     sassa_eligible_title: 'Ngiyafanela yini?',
     sassa_faq_a1: 'I-SASSA ivamise ukuthatha izinyanga ezi-3 (izinsuku ezingama-90) ukucubungula isicelo sesibonelelo. Ngesibonelelo se-SRD, ukugunyazwa kungaba ngokushesha — ngezinye izikhathi ngaphakathi kwamaviki amabili. Uthola i-SMS lapho sekwenziwe isinqumo. Uma inqatshiwe, unezinsuku ezingama-90 wokuphikisa ehhovisi le-SASSA elineduze nawe.',
     sassa_faq_a2: 'Cha — awukwazi ukuthola izinzuzo ze-UIF nesibonelelo se-SRD R370 ngasikhathi sinye. I-SRD ingabantu abangatholi i-UIF. Nokho, ungathola izibonelelo zabantu abadala, usizo lwabantwana, noma ezokukhubazeka kanye ne-UIF — lezo zihlolwa ngezidingo zazo.',
@@ -1136,9 +1136,9 @@ const TRANSLATIONS = {
     sassa_srd_name: 'Isibonelelo se-SRD',
     sassa_srd_sub: 'Ukwesekwa Kwezenhlalo Ngesikhathi Sokucindezeleka',
     sassa_srd_title: 'Faka Isicelo Se-SRD R370 Ku-Inthanethi',
-    sassa_status_call: 'Call Centre',
+    sassa_status_call: 'Isikhungo Sezingcingo',
     sassa_status_intro: 'Bheka isimo sakho sesibonelelo se-SASSA noma i-SRD ngaphandle kokuvakashela ihhovisi — izindlela ezine ezisemthethweni:',
-    sassa_status_online: 'Online',
+    sassa_status_online: 'Ku-inthanethi',
     sassa_status_title: 'Indlela Yokubheka Isimo Sakho se-SASSA',
     sassa_status_ussd: 'USSD',
     sassa_status_whatsapp: 'WhatsApp',
@@ -1155,17 +1155,17 @@ const TRANSLATIONS = {
     sassa_step5_title: 'Linda Ukugunyazwa',
     sassa_swipe: 'Shibilika ukuze ubone okunye',
     sassa_table_amount: 'Inani Lenyanga',
-    sassa_table_care: 'Care Dependency Grant',
+    sassa_table_care: 'Isibonelelo Sokunakekelwa',
     sassa_table_change: 'Uguquko',
-    sassa_table_csg: 'Child Support Grant',
-    sassa_table_csg_amount: 'R580 per child',
-    sassa_table_foster: 'Foster Child Grant',
+    sassa_table_csg: 'Isibonelelo Sokusekela Izingane',
+    sassa_table_csg_amount: 'R580 ngengane',
+    sassa_table_foster: 'Isibonelelo Sokunakekela Ingane',
     sassa_table_grant: 'Uhlobo Lwesibonelelo',
-    sassa_table_older: 'Older Persons Grant (60+)',
-    sassa_table_orphan: 'Child Support (orphan top-up)',
-    sassa_table_orphan_amount: 'R830 per child',
+    sassa_table_older: 'Isibonelelo Sabantu Abadala (60+)',
+    sassa_table_orphan: 'Ukusekela Izingane (inzuziso yenkedama)',
+    sassa_table_orphan_amount: 'R830 ngengane',
     sassa_table_srd: 'SRD Grant (R350 grant)',
-    sassa_table_unchanged: 'Unchanged',
+    sassa_table_unchanged: 'Akushintshanga',
     sassa_whatsapp: 'Udinga usizo? Xoxa ku-WhatsApp',
     search_ask: 'buza ingcweti',
     search_browse: 'Phequla wonke amaholide',
@@ -1179,8 +1179,8 @@ const TRANSLATIONS = {
     search_placeholder: 'Ufuna usizo ngani?',
     search_popular: 'Izifutho ezivelele',
     search_popular_cipc: 'CIPC registration',
-    search_popular_efiling: 'eFiling tax',
-    search_popular_oldage: 'Old age grant',
+    search_popular_efiling: 'Intela ye-eFiling',
+    search_popular_oldage: 'Isibonelelo sabantu abadala',
     search_popular_srd: 'SASSA SRD grant',
     search_popular_uif: 'UIF claim',
     search_register: 'Bhalisa ibhizinisi',
@@ -1239,7 +1239,7 @@ const TRANSLATIONS = {
     tax_s4_sub: 'Umholo wokuqashwa (IRP5), usizo lwezempilo, iminikelo yomhlalaphansi, isibonelelo sokuhamba.',
     tax_s5: 'Faka uphinde ulinde',
     tax_s5_sub: 'I-SARS icubungula ukubuyiselwa nge-72 amahora. Ukuhlolwa kungathatha izisekelo ezi-3.',
-    tax_select_itr12: 'Select ITR12 (individuals) for the correct tax year.',
+    tax_select_itr12: 'Khetha i-ITR12 (abantu ngabanye) ngonyaka wentela ofanele.',
     tax_step_title: 'Indlela yokufaka ku-eFiling — isinyathelo ngasinye',
     tax_sub: 'Konke okudingekayo ukufaka inkulumo yentela yakho, ukuqonda ukuthini okubolekwa, nokusebenza ne-SARS.',
     tax_submit_wait: 'SARS processes refunds within 72 hours. Assessments may take up to 3 weeks.',
@@ -1249,7 +1249,7 @@ const TRANSLATIONS = {
     tax_threshold_label: 'Umkhawulo ongenantela (ngaphansi kweminyaka eyi-65)',
     tax_title: 'Intela ne-SARS eFiling',
     tax_title_short: 'Tax & SARS',
-    tax_two_incomes: 'E.g. salary + freelance work, or two jobs.',
+    tax_two_incomes: 'Isib. iholo + umsebenzi wokuzikhipha, noma imisebenzi emibili.',
     tax_why_file_title: 'Ubani okufanele afake isikhwama sentela?',
     tax_yes1_sub: 'Kufanele ufake — akukho okukhathazayo.',
     tax_yes1_title: 'Uhola ngaphezu kuka-R500,000/ngonyaka',
@@ -1260,23 +1260,23 @@ const TRANSLATIONS = {
     tools_badge: 'Amathuluzi Amahhala',
     tools_badge_live: 'Ephilayo',
     tools_badge_popular: 'Edumile',
-    tools_bond_sub: 'Monthly repayments on any home loan amount',
-    tools_bond_title: 'Bond Repayment Calculator',
+    tools_bond_sub: 'Izinkokhelo zanyanga zonke nganoma imuphi umali wokusiza ukuthenga indlu',
+    tools_bond_title: 'Isibali Sokukhokha Ibhondi',
     tools_budget_sub: 'Faka ingeniso yakho ubone ukwahlukana kwezidingo nokonga.',
     tools_budget_title: 'Uhlelo Lwesabelomali lwe-50/30/20',
     tools_calc_heading: 'Izibali',
     tools_cipc_sub: 'Umlandeleli wezinyathelo ezi-7 wokubhalisa ibhizinisi ne-CIPC.',
     tools_cipc_title: 'Uhlu Lokuhlola Lokubhalisa kwe-CIPC',
-    tools_credit_sub: 'Answer 5 questions to estimate your score range',
-    tools_credit_title: 'Credit Score Estimator',
+    tools_credit_sub: 'Phendula imibuzo emi-5 ukuqagela ibanga lamapointi akho',
+    tools_credit_title: 'Isibali Samapointi Esikweletu',
     tools_elig_sub: 'Phendula imibuzo emi-3 ukuthola izibonelelo ze-SASSA ongazifanela.',
     tools_elig_title: 'Umhloli Wokufanela kwe-SASSA',
     tools_help_sub: 'Khuluma nengcweti yamahhala yezimali eyazi iNingizimu Afrika',
     tools_help_title: 'Udinga usizo olwezindingo zakho?',
     tools_paydates_sub: 'Ikhawunta ephilayo yokukhokha okulandelayo + ikhalenda eliphelele ka-2026/27.',
     tools_paydates_title: 'Izinsuku Zokukhokha ze-SASSA 2026',
-    tools_retire_sub: 'Will you have enough by retirement age?',
-    tools_retire_title: 'Retirement Savings Calculator',
+    tools_retire_sub: 'Uzoba nenele ngesikhathi sokumhlalaphansi?',
+    tools_retire_title: 'Isibali Sokonga Umhlalaphansi',
     tools_soon_heading: 'Kuyeza Maduze',
     tools_sub: 'Amathuluzi amahhala akhiwe abantu baseNingizimu Afrika.',
     tools_tax_sub: 'Faka umholo → bona i-PAYE, i-UIF nemali yasekhaya ngokushesha.',
@@ -1286,7 +1286,7 @@ const TRANSLATIONS = {
     tools_uif_sub: 'Uzothola i-UIF engakanani? Faka umholo ubone iqagelo.',
     tools_uif_title: 'Isiqagelo Sezinzuzo ze-UIF',
     tools_vat_sub: 'Add or remove 15% VAT from any price',
-    tools_vat_title: 'VAT Calculator',
+    tools_vat_title: 'Isibali se-VAT',
     topic_biz: 'Uxhaso Lwemali Webhizinisi',
     topic_credit: 'Isilinganiso Sokhrediti',
     topic_debt: 'Ukubuyekezwa Kwezikweletu',
@@ -1313,7 +1313,7 @@ const TRANSLATIONS = {
     uif_cannot_title: 'Ubani ongeke amangale i-UIF',
     uif_claim_title: 'Ungathola ini?',
     uif_confirm_note: 'Log in to uFiling each month to confirm you are actively looking for work.',
-    uif_confirm_step: 'Confirm seeking employment monthly',
+    uif_confirm_step: 'Qinisekisa ukufuna umsebenzi ngenyanga',
     uif_days_benefit: 'Izinsuku ezingama-238',
     uif_docs_note: 'SA ID, bank details, last 3 months payslips, and the completed UI19 form.',
     uif_docs_step: 'Submit your documents',
@@ -1326,9 +1326,9 @@ const TRANSLATIONS = {
     uif_go_ufiling: 'Yiya ku-uFiling',
     uif_how_title: 'Indlela Yokusola i-UIF — Izinyathelo Ngezinyathelo',
     uif_illness_days: 'If you are off work for more than 7 days due to illness.',
-    uif_maternity_days: 'Up to 121 days of maternity leave pay.',
+    uif_maternity_days: 'Kuze kube nezinsuku eziyi-121 zokukhokha ekuzaleni.',
     uif_max_days: 'Izinsuku eziningi zenzuzo',
-    uif_max_days_label: 'Max days benefit',
+    uif_max_days_label: 'Usuku olumakhsimamu lwenzuzo',
     uif_max_pct: 'Umthamo omkhulu % womholo',
     uif_monthly_label: 'Inzuzo ye-UIF yenyanga',
     uif_of_support: 'yosizo lwezezimali',
@@ -1337,7 +1337,7 @@ const TRANSLATIONS = {
     uif_rate_label: 'Izilinganiso zokukhona',
     uif_register_note: 'Or visit your nearest Labour Centre. The paperless system processes claims directly into your bank account.',
     uif_register_step: 'Register on uFiling.gov.za',
-    uif_retrenched: 'Retrenched, dismissed, or contract expired. Up to 238 days.',
+    uif_retrenched: 'Uxoshiwe, ukhishiwe, noma isivumelwano siphelelwe. Kuze kube nezinsuku eziyi-238.',
     uif_s1: 'Bhalisa ku-uFiling.gov.za',
     uif_s1_sub: 'Noma uyele eNhlanhleni Yabasebenzi elineduze nawe. Inkqubo engenampephe icubungula izimangalo maqondana ne-akhawunti yakho yebhange.',
     uif_s2: 'Thola ifomu lakho le-UI19 kumqashi wakho',
@@ -1354,7 +1354,7 @@ const TRANSLATIONS = {
     uif_what_body: 'I-UIF iwumtapo kahulumeni wokuxhasa omakhelwane bakho nabaqashi bakho njalo ngenyanga. Uma ulahlekelwa umsebenzi ngendlela engafunekile, ungasola usekelo lwezimali izinsuku ezingama-238.',
     uif_what_title: 'Yini i-UIF?',
     uif_you_pay: 'Ukukhokha kwakho (komholo)',
-    uif_you_pay_label: 'You pay (of salary)',
+    uif_you_pay_label: 'Ukukhokha kwakho (koholo)',
   },
 
   // isiXhosa
@@ -1447,7 +1447,7 @@ const TRANSLATIONS = {
     biz_vat_sub: 'Bhalisela xa ingeniso idlula u-R1 yezigidi ngonyaka. Ngokuzikhethela ukusuka ku-R50,000/ngonyaka. Ireyithi ye-VAT: 15%.',
     biz_vat_title: 'I-VAT — Irhafu Yeentengo',
     budget_badge: 'Imali Yobuqu',
-    budget_calc_enter: 'Enter your monthly take-home pay to see how to split it.',
+    budget_calc_enter: 'Ngenisa umvuzo wakho wenyanga ukuze ubone indlela owuhlula ngayo.',
     budget_calc_sub: 'Faka umvuzo wakho wenyanga yonke ukubone ukwahlulwa kwalo.',
     budget_calc_title: 'Isibali Sesicwangciso Semali se-50/30/20',
     budget_e1: 'Vula i-akhawunti yokonga ehlukileyo — hayi i-akhawunti yakho yemihla yonke.',
@@ -1456,24 +1456,24 @@ const TRANSLATIONS = {
     budget_emerg_note: 'Igugu lohlaseleko yimali yezindleko zokuphila ezingama-3–6 ezigcinwe kwi-akhawunti ehlukileyo.',
     budget_emerg_title: 'Ukwakha igugu lohlaseleko',
     budget_emergency_body: 'Imali yohlaseleko yiinyanga ezi-3 ukuya kwezi-6 zeendleko zokuphila ezigciniweyo kwi-akhawunti ehlukileyo.',
-    budget_emergency_step1: 'Open a separate savings account — not your everyday account.',
-    budget_emergency_step2: 'Set up a debit order on payday — even R200 per month compounds over time.',
-    budget_emergency_step3: 'Do not touch it — except for genuine emergencies: medical, job loss, or urgent repairs.',
+    budget_emergency_step1: 'Vula i-akhawunti yokuonga eyahlukileyo — hayi i-akhawunti yakho yemihla ngemihla.',
+    budget_emergency_step2: 'Misela i-debit order ngomhla wokuhlawulwa — nokuba yi-R200 ngenyanga iyakhula ngexesha.',
+    budget_emergency_step3: 'Ungayichukumisi — ngaphandle kwezizathu eziyinyani: ezempilo, ukulahlekelwa ngumsebenzi, okanye izixazululo eziphuthumayo.',
     budget_emergency_title: 'Yakha Imali Yohlaseleko',
     budget_faq_q1: 'Abantu baseMzantsi Afrika balonga njani imali ngoholo oluphansi?',
     budget_faq_q2: 'Ingaba Thenga Ngoku Uhlawule Emva (BNPL) ingumqondo omhle eMzantsi Afrika?',
     budget_faq_q3: 'Ndiqala njani istokveli?',
     budget_faq_title: 'Isicwangciso Semali — Imibuzo Ebuzwa Kaninzi',
     budget_income_label: 'Ingeniso Yenyanga (ZAR)',
-    budget_monthly_income: 'Monthly Income (ZAR)',
+    budget_monthly_income: 'Umvuzo Wenyanga (ZAR)',
     budget_needs_label: 'Izidingo (50%)',
     budget_needs_sub: 'Ukuqesha, ukutya, izithuthi, izixhobo',
-    budget_needs_sub_text: 'Rent, food, transport, utilities',
+    budget_needs_sub_text: 'Ukuqeshwa, ukutya, izithuthi, amanzi nombane',
     budget_page_sub: 'Imihlahlo elula, esebenzayo yokulawula imali yakho.',
     budget_page_title: 'Isicwangciso Semali Nokonga',
     budget_savings_label: 'Ukonga (20%)',
     budget_savings_sub: 'Imali yohlaseleko, umhlala-phantsi, istokveli',
-    budget_savings_sub_text: 'Emergency fund, retirement, stokvel',
+    budget_savings_sub_text: 'Ihlomelo lezingxaki, umhlala-phantsi, istokveli',
     budget_scam_body: 'Abanikeli abangabhaliswanga bahleli behlawulisa inzala yenyanga ye-30%–100%. Oku akunamthetho phantsi koMthetho Wekredi kazwelonke. Hlola ku-ncr.org.za okanye tsalela 0860 627 627.',
     budget_scam_body_text: 'Unregistered lenders often charge 30–100% monthly interest. This is illegal under the National Credit Act. Always check that a lender is registered with the NCR at ncr.org.za or call 0860 627 627.',
     budget_scam_title: 'Qaphela amaqhinga eemali-mboleko',
@@ -1486,11 +1486,11 @@ const TRANSLATIONS = {
     budget_stokvel_body: 'Ngaphezu kwezigidi eziyi-11 zabantu baseMzantsi Afrika bathabatha inxaxheba kumastokveli.',
     budget_stokvel_title: 'Iistokveli zisebenza njani',
     budget_sub: 'Imihlahlo elula, esebenzayo yokulawula imali yakho — nokuba yintoni ingeniso yakho.',
-    budget_sub_text: 'Simple, practical guides to take control of your money — no matter your income level.',
+    budget_sub_text: 'Izikhokelo ezilula, ezisebenzayo zokuphatha imali yakho — nokuba imali yakho ingakanani.',
     budget_title: 'Isicwangciso Semali Nokonga',
     budget_wants_label: 'Izifiso (30%)',
     budget_wants_sub: 'Ukuzonwabisa, ukutya ngaphandle, iimpahla',
-    budget_wants_sub_text: 'Entertainment, eating out, clothing',
+    budget_wants_sub_text: 'Ukuziyolisa, ukutya ngaphandle, izambatho',
     calc_age_6574: '65 ukuya ku-74',
     calc_age_75p: '75 okanye nangaphezulu',
     calc_age_label: 'Iminyaka Yakho',
@@ -1508,10 +1508,10 @@ const TRANSLATIONS = {
     calc_faq_a1: 'They are the same thing at different stages. PAYE is how your employer pays income tax monthly on your behalf. If over-deducted, SARS refunds you when you file.',
     calc_faq_a2: 'Pension and RA contributions reduce your taxable income — the number SARS uses to calculate tax. Limit: 27.5% of salary or R430,000/year.',
     calc_faq_a3: 'SARS gives R376/month credit for yourself and first dependant, R254 for each additional. 2 members saves R752/month in tax regardless of income.',
-    calc_faq_a4: 'This uses basic salary only. Payslip may differ due to taxable benefits or different tax directives. Use as a planning guide.',
+    calc_faq_a4: 'Isebenzisa umvuzo oyisiseko kuphela. I-payslip inokwahluka ngenxa yezibonelelo ezihlawulwa irhafu okanye iinguqu ezahlukileyo.',
     calc_faq_q1: 'What is the difference between PAYE and income tax?',
-    calc_faq_q2: 'Why does a pension contribution reduce my tax?',
-    calc_faq_q3: 'How does the medical aid tax credit work?',
+    calc_faq_q2: 'Kutheni igalelo lehlelo lemali lohlala-phantsi lisinciphisa irhafu yam?',
+    calc_faq_q3: 'Isebenza njani i-medical aid tax credit?',
     calc_faq_q4: 'Why does this show less PAYE than my payslip?',
     calc_faq_title: 'Imibuzo Ebuzwa Kaninzi Yesibali Serhafu',
     calc_go_guide: 'Umhlahlo Werhafu',
@@ -1557,7 +1557,7 @@ const TRANSLATIONS = {
     cipc_i5_title: 'Fumana inombolo yakho yerhafu ye-SARS',
     cipc_i6_sub: 'Zisa isiqinisekiso sakho se-CIPC, inombolo yerhafu yenkampani, ne-SA ID. I-FNB Business Zero ne-Capitec Business zimahhala ukuvulwa.',
     cipc_i6_title: 'Vula i-akhawunti yeshishini',
-    cipc_instr: 'Tap each item to mark it done. Your progress is saved automatically.',
+    cipc_instr: 'Chukumisa into nganye ukuyimaka igqityiwe. Inkqubela-phambili yakho igcinwa ngokuzenzekelayo.',
     cipc_links_title: 'Iinxibelelwano Ezisebenzayo',
     cipc_p_label: 'Inkqubela',
     cipc_progress: '0 kwe-7 kwenziwe',
@@ -1577,10 +1577,10 @@ const TRANSLATIONS = {
     credit_debt_review_title: 'Yintoni ukubuyekezwa kwamatyala?',
     credit_debt_title: 'UkuBuyekezwa Kwamatyala — Yintoni?',
     credit_exc: 'Iphezulu kakhulu: 781–850',
-    credit_exc_label: 'Excellent: 781–850',
+    credit_exc_label: 'Ephezulu kakhulu: 781–850',
     credit_exc_sub: 'Iireyithi ezilungileyo, izicelo eziningi zamkela',
     credit_fair: 'Ifanelekile: 610–660',
-    credit_fair_label: 'Fair: 610–660',
+    credit_fair_label: 'Ephakathi: 610–660',
     credit_fair_sub: 'Ezinye izicelo ziyalandwa, iireyithi eziphezulu',
     credit_faq_q1: 'Kuthatha ixesha elingakanani ukuphucula isi-score sekredi esibi eMzantsi Afrika?',
     credit_faq_q2: 'Ukuhlola isi-score sakho sekredi kuyasichukumisa?',
@@ -1589,20 +1589,20 @@ const TRANSLATIONS = {
     credit_faq_title: 'Isi-Score Sekredi — Imibuzo Ebuzwa Kaninzi',
     credit_free_title: 'Fumana irekhodi yakho yekredi YAMAHHALA',
     credit_good: 'Ilungile: 661–780',
-    credit_good_label: 'Good: 661–780',
+    credit_good_label: 'Elungileyo: 661–780',
     credit_good_rates: 'Amazinga amahle, izicelo ezininzi zigunyaziwe',
     credit_good_sub: 'Iireyithi ezilungileyo, izicelo ezininzi zamkela',
     credit_high_risk: 'Amazinga aphezulu, kaninzi alandwa',
-    credit_i1_label: 'Pay on time, every time',
+    credit_i1_label: 'Hlawula ngexesha, qho',
     credit_i1_sub: 'Nangona intlawulo enye eyalahlekileyo ihlala kwirekhodi yakho iminyaka emi-2.',
     credit_i1_title: 'Hlawula ngexesha, njalo',
-    credit_i2_label: 'Keep credit usage below 30%',
+    credit_i2_label: 'Gcina ukusetyenziswa kwesikweletu ngaphantsi kwe-30%',
     credit_i2_sub: 'Ukuba unemida ye-R10,000, gcina ibhalansi yakho ngaphantsi kwe-R3,000.',
     credit_i2_title: 'Gcina ukusetyenziswa kwekredi ngaphantsi kuka-30%',
     credit_i3_label: 'Do not apply for multiple loans at once',
     credit_i3_sub: 'Isicelo ngasinye sonyusa ukubuza okuqinileyo kwirekhodi yakho kwaye sinciphise isi-score sakho.',
     credit_i3_title: 'Musa ukufaka izicelo zeemali ezininzi ngaxeshanye',
-    credit_i4_label: 'Check your report for errors',
+    credit_i4_label: 'Jonga ingxelo yakho ngeempazamo',
     credit_i4_sub: 'Fumana irekhodi yakho yamahhala ku-TransUnion, Experian okanye Compuscan.',
     credit_i4_title: 'Hlola irekhodi yakho ngeziphosiso',
     credit_improve_title: 'Indlela yokuphucula isi-score sakho sekredi',
@@ -1611,7 +1611,7 @@ const TRANSLATIONS = {
     credit_page_sub: 'Ukuqonda nokuphucula isi-score sakho sekredi kukuvulela amazinga ekredi amahle.',
     credit_page_title: 'Isi-Score Sekredi namatyala',
     credit_poor: 'Imbi: Ngaphantsi kuka-610',
-    credit_poor_label: 'Poor: Below 610',
+    credit_poor_label: 'Embi: Ngaphantsi kwe-610',
     credit_poor_sub: 'Iireyithi eziphezulu, ilandwa kaninzi',
     credit_score_intro: 'EMzantsi Afrika, isi-score sivame ukuba phakathi kuka-300–850. Isilinganiso sango-2026 singu-615.',
     credit_score_sub: 'Isi-score sihlala phakathi kuka-300–850. Ngonyaka wezi-2026 iphakathi yjwayelekileyo ngu-612.',
@@ -1690,7 +1690,7 @@ const TRANSLATIONS = {
     nav_business: 'Ishishini',
     nav_credit: 'Isi-Score Sekredi',
     nav_gethelp: 'Fumana Uncedo',
-    nav_guides: 'Guides',
+    nav_guides: 'Izikhokelo',
     nav_home: 'Ikhaya',
     nav_pathways: 'Iindlela',
     nav_pf: 'Imali Yobuqu',
@@ -1698,15 +1698,15 @@ const TRANSLATIONS = {
     nav_sassa: 'SASSA',
     nav_search: 'Khangela',
     nav_tax: 'Irhafu ne-SARS',
-    nav_tools: 'Tools',
-    nav_topics: 'Topics',
+    nav_tools: 'Izixhobo',
+    nav_topics: 'Izihloko',
     nav_uif: 'Izicelo ze-UIF',
     path_biz_sub: 'Register with CIPC, funding, VAT, PAYE',
-    path_budget_sub: '50/30/20 rule, stokvels, debt, emergency fund',
+    path_budget_sub: 'Umthetho we-50/30/20, izistokveli, amatyala, ihlomelo lezingxaki',
     path_budget_title: 'Isicwangciso Semali Nokonga',
     path_cipc_sub: 'Uluhlu oluzimeleyo — landelela inkqubela yakho',
     path_cipc_title: 'Uluhlu lwe-CIPC',
-    path_credit_sub: 'Free credit report, improve your score, debt review',
+    path_credit_sub: 'Ingxelo yasimahla yesikweletu, phucuka amanqaku akho, ukuphononongwa kwesikweletu',
     path_credit_title: 'Isi-Score Sekredi namatyala',
     path_funding_sub: 'I-SEDFA, i-NYDA, izibonelelo zikaRhulumente neemali-mboleko',
     path_funding_title: 'Inkxaso Yemali Yamashishini',
@@ -1717,11 +1717,11 @@ const TRANSLATIONS = {
     path_register_sub: 'Umhlahlo wobhaliso lwe-CIPC — amanyathelo ama-4 alula',
     path_register_title: 'Bhalisa Ishishini',
     path_sassa_badge: 'Izibonelelo ezi-5',
-    path_sassa_sub: 'Apply, check status, grant pay dates',
+    path_sassa_sub: 'Faka isicelo, jonga imeko, iimini zokuhlawulwa kwezibonelelo',
     path_sassa_title: 'Izibonelelo ze-SASSA',
-    path_sub: 'Step-by-step guidance for every financial situation in South Africa.',
+    path_sub: 'Izikhokelo zenyathelo ngenyathelo zeemeko zonke zezezimali eMzantsi Afrika.',
     path_tax_title: 'Irhafu ne-SARS eFiling',
-    path_uif_sub: 'Unemployment, maternity, illness, death benefits',
+    path_uif_sub: 'Ukungabinamsebenzi, ukuzala, ukugula, izibonelelo zokufa',
     path_uif_title: 'Izimangalo ze-UIF',
     paydates_apply_sassa: 'Faka Isicelo se-SASSA',
     paydates_apr_increase: 'Ukonyuswa Kwezibonelelo kuka-Epreli 2026 Kuqinisekisiwe',
@@ -1775,7 +1775,7 @@ const TRANSLATIONS = {
     sassa_dis_elig: 'Kufuneka uvavanyo lwegqirha',
     sassa_dis_name: 'Isibonelelo Sokukhubazeka',
     sassa_dis_sub: 'Abantu abanezingxaki zempilo',
-    sassa_disclaimer_text: 'Disclaimer: Grant amounts and eligibility are subject to change. Always verify at',
+    sassa_disclaimer_text: 'Isixwayiso: Amanani ezibonelelo namaqondo okubanakho ayatshintsha. Hlola qho ku-sassa.gov.za ukuze ufumane ulwazi olutsha.',
     sassa_eligible_title: 'Ndiyafaneleka na?',
     sassa_faq_a1: 'I-SASSA ithatha iinyanga ezi-3 (iintsuku eziyi-90) ukucubungula isicelo sesibonelelo. Ngesibonelelo se-SRD, imvume inokuba ngokukhawuleza — ngezikhathi ngaphakathi kwamasonto amabini. Ufumana i-SMS xa isigqibo senziwa. Ukuba yandisiwe, uneentsuku eziyi-90 ukuphikisa kwiofisi ye-SASSA ekufutshane nawe.',
     sassa_faq_a2: 'Hayi — awukwazi ukufumana izibonelelo ze-UIF nesibonelelo se-SRD R370 ngaxeshanye. I-SRD ingabantu abangafumani i-UIF. Kodwa, ungafumana izibonelelo zabantu abadala, inkxaso yabantwana, okanye ezokukhubazeka kunye ne-UIF — ezo zivavanyelwa ngeemfuno zazo.',
@@ -1814,9 +1814,9 @@ const TRANSLATIONS = {
     sassa_srd_name: 'Isibonelelo se-SRD',
     sassa_srd_sub: 'Uncedo Loluntu Ngexesha Lobunzima — ku-intanethi kuphela',
     sassa_srd_title: 'Faka Isicelo se-SRD R370 Ku-Intanethi',
-    sassa_status_call: 'Call Centre',
+    sassa_status_call: 'Iziko Lezifono',
     sassa_status_intro: 'Hlola imeko yakho yesibonelelo se-SASSA okanye i-SRD ngaphandle kokuvela eofisini — iindlela ezine ezisemthethweni:',
-    sassa_status_online: 'Online',
+    sassa_status_online: 'Kwi-intanethi',
     sassa_status_title: 'Indlela Yokuhlola Imeko Yakho ye-SASSA',
     sassa_status_ussd: 'USSD',
     sassa_status_whatsapp: 'WhatsApp',
@@ -1833,17 +1833,17 @@ const TRANSLATIONS = {
     sassa_step5_title: 'Linda Imvume',
     sassa_swipe: 'Susa ukuze ubone okuninzi',
     sassa_table_amount: 'Ixabiso Lenyanga Yonke',
-    sassa_table_care: 'Care Dependency Grant',
+    sassa_table_care: 'Isibonelelo Sokukhathalela',
     sassa_table_change: 'Utshintsho',
-    sassa_table_csg: 'Child Support Grant',
-    sassa_table_csg_amount: 'R580 per child',
-    sassa_table_foster: 'Foster Child Grant',
+    sassa_table_csg: 'Isibonelelo Senkxaso Yabantwana',
+    sassa_table_csg_amount: 'R580 ngumntwana',
+    sassa_table_foster: 'Isibonelelo Sokundlela Umntwana',
     sassa_table_grant: 'Uhlobo Lwesibonelelo',
-    sassa_table_older: 'Older Persons Grant (60+)',
-    sassa_table_orphan: 'Child Support (orphan top-up)',
-    sassa_table_orphan_amount: 'R830 per child',
+    sassa_table_older: 'Isibonelelo Sabantu Abadala (60+)',
+    sassa_table_orphan: 'Inkxaso Yabantwana (ithimba lenkedama)',
+    sassa_table_orphan_amount: 'R830 ngumntwana',
     sassa_table_srd: 'SRD Grant (R350 grant)',
-    sassa_table_unchanged: 'Unchanged',
+    sassa_table_unchanged: 'Akutshintshanga',
     sassa_whatsapp: 'Ufuna uncedo? Thetha ku-WhatsApp',
     search_ask: 'buza uchwephesha',
     search_browse: 'Jonga bonke omihlahlo',
@@ -1857,8 +1857,8 @@ const TRANSLATIONS = {
     search_placeholder: 'Kufuneka uncedo ngantoni?',
     search_popular: 'Uphendlo oluxhaphakileyo',
     search_popular_cipc: 'CIPC registration',
-    search_popular_efiling: 'eFiling tax',
-    search_popular_oldage: 'Old age grant',
+    search_popular_efiling: 'IRhafu ye-eFiling',
+    search_popular_oldage: 'Isibonelelo sabantu abadala',
     search_popular_srd: 'SASSA SRD grant',
     search_popular_uif: 'UIF claim',
     search_register: 'Bhalisa ishishini',
@@ -1917,7 +1917,7 @@ const TRANSLATIONS = {
     tax_s4_sub: 'Ingeniso yomsebenzi (IRP5), uncedo lwezempilo, iminikelo yomhlala-phantsi, isibonelelo sohambo.',
     tax_s5: 'Faka uze ulinde',
     tax_s5_sub: 'I-SARS icubungula ukubuyiselwa nge-72 yeyure. Ukuvavanyo kungatshatha iiveki ezi-3.',
-    tax_select_itr12: 'Select ITR12 (individuals) for the correct tax year.',
+    tax_select_itr12: 'Khetha i-ITR12 (abantu ngabanye) ngonyaka werhafu ofanelekileyo.',
     tax_step_title: 'Indlela yokufaka ku-eFiling — inyathelo ngenyathelo',
     tax_sub: 'Yonke into oyidingayo ukufaka ingxelo yakho yerhafu.',
     tax_submit_wait: 'SARS processes refunds within 72 hours. Assessments may take up to 3 weeks.',
@@ -1927,7 +1927,7 @@ const TRANSLATIONS = {
     tax_threshold_label: 'Umda ongenarhafu (ngaphantsi kweminyaka eyi-65)',
     tax_title: 'Irhafu ne-SARS eFiling',
     tax_title_short: 'Tax & SARS',
-    tax_two_incomes: 'E.g. salary + freelance work, or two jobs.',
+    tax_two_incomes: 'Umz. umvuzo + umsebenzi wokuzimela, okanye imisebenzi emibini.',
     tax_why_file_title: 'Ubani okufuneka afake irekhodi lerhafu?',
     tax_yes1_sub: 'Kufuneka ufake — akukho zinto.',
     tax_yes1_title: 'Uhola ngaphezu kuka-R500,000/ngonyaka',
@@ -1938,23 +1938,23 @@ const TRANSLATIONS = {
     tools_badge: 'Izixhobo Zamahhala',
     tools_badge_live: 'Ephilayo',
     tools_badge_popular: 'Edumile',
-    tools_bond_sub: 'Monthly repayments on any home loan amount',
-    tools_bond_title: 'Bond Repayment Calculator',
+    tools_bond_sub: 'Iintlawulo zenyanga nganye nganoma yimuphi umali wobond',
+    tools_bond_title: 'Isibali Sokuhlawula iBhondi',
     tools_budget_sub: 'Faka ingeniso yakho ubone ukwahlulwa kwezidingo nokonga.',
     tools_budget_title: 'Uhlelo Lwesicwangciso Semali lwe-50/30/20',
     tools_calc_heading: 'Izibali',
     tools_cipc_sub: 'Umlandelani wamanyathelo ayi-7 okubhalisa ishishini ne-CIPC.',
     tools_cipc_title: 'Uluhlu Lokubhalisa lwe-CIPC',
-    tools_credit_sub: 'Answer 5 questions to estimate your score range',
-    tools_credit_title: 'Credit Score Estimator',
+    tools_credit_sub: 'Phendula imibuzo emi-5 ukuqikelela uluhlu lwamanqaku akho',
+    tools_credit_title: 'Isibali Samanqaku Esikweletu',
     tools_elig_sub: 'Phendula imibuzo emi-3 ukufumanisa isibonelelo se-SASSA onokusifanelekela.',
     tools_elig_title: 'Umhloli Wokufaneleka kwe-SASSA',
     tools_help_sub: 'Thetha nochwephesha wamahhala wemali iqonda iMzantsi Afrika',
     tools_help_title: 'Udinga uncedo olwezidingo zakho?',
     tools_paydates_sub: 'Ikhawunta ephilayo yentlawulo elandelayo + ikhalenda eligcweleyo ka-2026/27.',
     tools_paydates_title: 'Iimihla Yentlawulo ye-SASSA 2026',
-    tools_retire_sub: 'Will you have enough by retirement age?',
-    tools_retire_title: 'Retirement Savings Calculator',
+    tools_retire_sub: 'Uya kuba nenele ngexesha lohlala-phantsi?',
+    tools_retire_title: 'Isibali Sokonga Uhlala-phantsi',
     tools_soon_heading: 'Kuyeza Malunga',
     tools_sub: 'Izixhobo zamahhala ezikhiwe ngabantu baseMzantsi Afrika.',
     tools_tax_sub: 'Faka umvuzo → bona i-PAYE, i-UIF nomvuzo wasekhaya ngoko.',
@@ -1964,7 +1964,7 @@ const TRANSLATIONS = {
     tools_uif_sub: 'Uzafumana i-UIF engakanani? Faka umvuzo ubone iqikelelo.',
     tools_uif_title: 'Iqikelelo Lezibonelelo ze-UIF',
     tools_vat_sub: 'Add or remove 15% VAT from any price',
-    tools_vat_title: 'VAT Calculator',
+    tools_vat_title: 'Isibali se-VAT',
     topic_biz: 'Inkxaso Yemali Yeshishini',
     topic_credit: 'Isi-Score Sekredi',
     topic_debt: 'Ukubuyekezwa Kwamatyala',
@@ -1991,7 +1991,7 @@ const TRANSLATIONS = {
     uif_cannot_title: 'Ubani ongakwazi ukumangala i-UIF',
     uif_claim_title: 'Ungatyhala ntoni?',
     uif_confirm_note: 'Log in to uFiling each month to confirm you are actively looking for work.',
-    uif_confirm_step: 'Confirm seeking employment monthly',
+    uif_confirm_step: 'Qinisekisa ukufuna umsebenzi ngenyanga',
     uif_days_benefit: 'Iimihla eziyi-238',
     uif_docs_note: 'SA ID, bank details, last 3 months payslips, and the completed UI19 form.',
     uif_docs_step: 'Submit your documents',
@@ -2004,9 +2004,9 @@ const TRANSLATIONS = {
     uif_go_ufiling: 'Yiya ku-uFiling',
     uif_how_title: 'Indlela Yokutyhala i-UIF — Inyathelo Ngenyathelo',
     uif_illness_days: 'If you are off work for more than 7 days due to illness.',
-    uif_maternity_days: 'Up to 121 days of maternity leave pay.',
+    uif_maternity_days: 'Kude kube ziintsuku eziyi-121 zokuhlawulwa kokuzala.',
     uif_max_days: 'Iimihla ezininzi yenzuzo',
-    uif_max_days_label: 'Max days benefit',
+    uif_max_days_label: 'Usuku oluninzi lwenzuzo',
     uif_max_pct: 'Umthamo omkhulu % womvuzo',
     uif_monthly_label: 'Inzuzo ye-UIF yenyanga yonke',
     uif_of_support: 'yoncedo lwemali',
@@ -2015,7 +2015,7 @@ const TRANSLATIONS = {
     uif_rate_label: 'Ireyithi yokutshintshwa',
     uif_register_note: 'Or visit your nearest Labour Centre. The paperless system processes claims directly into your bank account.',
     uif_register_step: 'Register on uFiling.gov.za',
-    uif_retrenched: 'Retrenched, dismissed, or contract expired. Up to 238 days.',
+    uif_retrenched: 'Uphelelwe ngumsebenzi, ukhutshiwe, okanye isivumelwano siphele. Kude kube ziintsuku eziyi-238.',
     uif_s1: 'Bhalisela ku-uFiling.gov.za',
     uif_s1_sub: 'Okanye yiya kwiSikhungo Sabasebenzi esikufutshane nawe. Inkqubo engenamphepha icubungula izicelo maqondana ne-akhawunti yakho yebhanki.',
     uif_s2: 'Fumana ifomu lakho le-UI19 kumqeshi wakho',
@@ -2032,7 +2032,7 @@ const TRANSLATIONS = {
     uif_what_body: 'I-UIF yinxalenye kahulumeni enikelwa nguwe nomqeshi wakho nyanga yonke. Ukuba ulahlekelwa ngumsebenzi ngendlela engayifuniyo, ungacela inkxaso yemali iimihla eyi-238.',
     uif_what_title: 'Yintoni i-UIF?',
     uif_you_pay: 'Uhlawula (womvuzo)',
-    uif_you_pay_label: 'You pay (of salary)',
+    uif_you_pay_label: 'Ukukhokha kwakho (kumvuzo)',
   },
 
   // Afrikaans
@@ -2715,32 +2715,93 @@ const TRANSLATIONS = {
 };
 
 // ── Engine ──
+// Detects current language from URL path (/zu/, /xh/, /af/) or localStorage fallback.
+// setLang() navigates to the correct language subfolder URL rather than just
+// swapping text in place — this keeps each language on its own indexable URL.
+
+const LANG_CODES = ['en', 'zu', 'xh', 'af'];
+
+function detectLangFromPath() {
+  const parts = window.location.pathname.split('/').filter(Boolean);
+  if (parts.length > 0 && LANG_CODES.includes(parts[0]) && parts[0] !== 'en') {
+    return parts[0];
+  }
+  return null;
+}
+
+function getPageSlug() {
+  // Returns the page slug without the language prefix
+  // e.g. /zu/sassa → sassa, /sassa → sassa, / → ''
+  const parts = window.location.pathname.split('/').filter(Boolean);
+  if (parts.length > 0 && LANG_CODES.includes(parts[0]) && parts[0] !== 'en') {
+    return parts.slice(1).join('/');
+  }
+  return parts.join('/');
+}
+
+function getLangUrl(lang) {
+  const slug = getPageSlug();
+  if (lang === 'en') {
+    return '/' + (slug ? slug : '');
+  }
+  return '/' + lang + '/' + (slug ? slug : '');
+}
+
 let currentLang = (() => {
+  // URL path takes priority — that's the canonical source of truth
+  const pathLang = detectLangFromPath();
+  if (pathLang) return pathLang;
+  // Fall back to localStorage preference
   try { return localStorage.getItem('mmg_lang') || 'en'; } catch(e) { return 'en'; }
 })();
+
 function setLang(lang) {
-  currentLang = lang;
+  if (!LANG_CODES.includes(lang)) return;
   try { localStorage.setItem('mmg_lang', lang); } catch(e) {}
-  applyTranslations();
-  updateLangButtons();
-  document.documentElement.lang = lang;
+  // Navigate to the correct language URL — preserves per-language indexable pages
+  const target = getLangUrl(lang);
+  if (window.location.pathname !== target) {
+    window.location.href = target;
+  } else {
+    // Already on the right URL — just apply translations (e.g. same-lang re-click)
+    applyTranslations();
+    updateLangButtons();
+    document.documentElement.lang = lang;
+  }
 }
+
 function t(key) {
   return (TRANSLATIONS[currentLang] && TRANSLATIONS[currentLang][key] !== undefined)
     ? TRANSLATIONS[currentLang][key]
     : (TRANSLATIONS['en'][key] !== undefined ? TRANSLATIONS['en'][key] : key);
 }
+
 function applyTranslations() {
   document.querySelectorAll('[data-t]').forEach(el => {
     const key = el.getAttribute('data-t');
     const attr = el.getAttribute('data-t-attr');
-    if (attr) { el.setAttribute(attr, t(key)); } else { el.textContent = t(key); }
+    if (attr) {
+      // Attribute translation (e.g. placeholder, aria-label) — always safe
+      el.setAttribute(attr, t(key));
+    } else if (el.querySelector('[data-t]')) {
+      // Element contains child data-t elements — do NOT use textContent (it destroys children).
+      // The children will be translated by their own iteration pass. Skip the outer.
+    } else {
+      // Leaf node — safe to set textContent directly
+      el.textContent = t(key);
+    }
   });
 }
+
 function updateLangButtons() {
   document.querySelectorAll('[data-lang]').forEach(btn => {
     const lang = btn.getAttribute('data-lang');
     btn.className = 'lang-btn ' + (lang === currentLang ? 'bg-primary' : 'bg-surface-container-high');
   });
 }
-document.addEventListener('DOMContentLoaded', () => { applyTranslations(); updateLangButtons(); });
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyTranslations();
+  updateLangButtons();
+  document.documentElement.lang = currentLang;
+});
