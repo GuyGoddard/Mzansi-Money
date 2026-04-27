@@ -722,6 +722,12 @@ const TRANSLATIONS = {
     mt_no_means: 'No means test',
     mt_intro: 'Before SASSA approves most grants, they run a means test — a check of your income and assets to confirm you genuinely need support. Understanding the limits before you apply saves time and avoids surprises.',
     mt_help_sub: 'Free expert guidance — no forms required',
+  
+    tools_medical_title: 'Medical Aid Tax Credit',
+    tools_medical_sub: 'See how much your medical aid saves you in tax. 2026/27 rates.',
+    tools_file_title: 'Do I need to file tax?',
+    tools_file_sub: 'Answer 5 quick questions. Get a clear yes or no — with reasons why.',
+    help_notes_label: 'Notes:',
   },
 
   // isiZulu
@@ -1445,6 +1451,12 @@ const TRANSLATIONS = {
     mt_no_means: 'Akukho uhlolo lwezikhwama',
     mt_intro: 'Ngaphambi kokuthi i-SASSA ivume izibonelelo eziningi, iqhuba uhlolo lwezikhwama — ukuhlola imali yakho nezimpahla ukuqinisekisa ukuthi udinga ngempela usekelo. Ukuqonda imikhawulo ngaphambi kokufaka isicelo kusindisa isikhathi.',
     mt_help_sub: 'Isiqondiso esikhululekile sochwepheshe — akudingeki amafomu',
+  
+    tools_medical_title: 'Ithekisi Lentela Lesizinda Sezempilo',
+    tools_medical_sub: 'Bona ukuthi isizinda sakho sezempilo sikusindisaphi intela. Amazinga ka-2026/27.',
+    tools_file_title: 'Ingabe ngidinga ukufaka iritorini sentela?',
+    tools_file_sub: 'Phendula imibuzo emi-5 emfushane. Thola impendulo ecacile — ngenhlaziyombono.',
+    help_notes_label: 'Amanothi:',
   },
 
   // isiXhosa
@@ -2168,6 +2180,12 @@ const TRANSLATIONS = {
     mt_no_means: 'Akukho uvavanyo lwemali',
     mt_intro: 'Ngaphambi kokuba i-SASSA igunyaze izibonelelo eziningi, yenza uvavanyo lwemali — ukujonga imali yakho nezinto ukuqinisekisa ukuba udinga ngokwenene inkxaso. Ukuqonda iimida ngaphambi kokufaka isicelo kusindisa ixesha.',
     mt_help_sub: 'Izikhokelo zasimahla zochwepheshe — akufuneki amafomu',
+  
+    tools_medical_title: 'Ityala leNtlawulo yoNgcedo woNgaphesheya',
+    tools_medical_sub: 'Jonga ukuba ingakanani isizinda sakho sezempilo ekusindisela irhafu. Amanqanaba ka-2026/27.',
+    tools_file_title: 'Ngaba kufuneka ndigcwalise irhafu?',
+    tools_file_sub: 'Phendula imibuzo emi-5 emfutshane. Fumana impendulo ecacileyo — neezizathu.',
+    help_notes_label: 'Iinqaku:',
   },
 
   // Afrikaans
@@ -2891,6 +2909,12 @@ const TRANSLATIONS = {
     mt_no_means: 'Geen middeletoets',
     mt_intro: 'Voordat SASSA die meeste toelaes goedkeur, voer hulle middeletoets uit — kontrole van jou inkomste en bates om te bevestig dat jy werklik ondersteuning nodig het. Om die grense te verstaan voordat jy aansoek doen, spaar tyd.',
     mt_help_sub: 'Gratis kundige leiding — geen vorms nodig nie',
+  
+    tools_medical_title: 'Mediese Hulpfonds Belastingkrediet',
+    tools_medical_sub: 'Sien hoeveel jou mediese fonds jou in belasting bespaar. 2026/27 tariewe.',
+    tools_file_title: 'Moet ek belasting indien?',
+    tools_file_sub: 'Beantwoord 5 vinnige vrae. Kry duidelike ja of nee — met redes.',
+    help_notes_label: 'Notas:',
   },
 };
 
