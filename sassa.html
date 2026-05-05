@@ -106,6 +106,18 @@
       <button class="lang-btn bg-surface-container-high" data-lang="af" onclick="setLang('af')">Afrikaans</button>
     </div>
 
+    <!-- In-page section nav -->
+    <div class="inpage-nav" style="display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:20px;-webkit-overflow-scrolling:touch;scrollbar-width:none;">
+      <style>.inpage-nav::-webkit-scrollbar{display:none}.inpage-pill{flex-shrink:0;padding:7px 14px;border-radius:99px;background:#f6f4ec;font-size:13px;font-weight:600;color:#3d4943;text-decoration:none;white-space:nowrap;border:1.5px solid transparent;transition:background 0.15s,border-color 0.15s}.inpage-pill:hover{background:#00694c;color:#fff;border-color:#00694c}</style>
+      <a href="#sassa-grants" class="inpage-pill" data-t="sassa_h_grants">Grants</a>
+        <a href="#sassa-eligible" class="inpage-pill" data-t="sassa_h_eligible">Am I Eligible?</a>
+        <a href="#sassa-apply" class="inpage-pill" data-t="sassa_h_apply">How to Apply</a>
+        <a href="#sassa-amounts" class="inpage-pill" data-t="sassa_h_amounts">Amounts</a>
+        <a href="#sassa-status" class="inpage-pill" data-t="sassa_h_status">Check Status</a>
+        <a href="#sas-faq" class="inpage-pill" data-t="nav_faq">FAQs</a>
+    </div>
+
+
     <!-- Hero -->
     <div class="hero-gradient" style="margin-bottom:20px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;background:rgba(255,255,255,0.2);display:inline-block;padding:4px 12px;border-radius:99px;margin-bottom:12px;" data-t="sassa_hero_badge">Official Support</div>
@@ -122,7 +134,7 @@
     <!-- Grant cards -->
     <div style="margin-bottom:28px;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
-        <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;" data-t="sassa_available">Available Grants</h2>
+        <h2 id="sassa-grants" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;" data-t="sassa_available">Available Grants</h2>
         <span style="font-size:11px;font-weight:700;color:#6d7a73;text-transform:uppercase;letter-spacing:0.06em;" data-t="sassa_swipe">Swipe Left</span>
       </div>
       <div style="display:flex;gap:14px;overflow-x:auto;padding-bottom:8px;" class="no-scrollbar">
@@ -186,7 +198,7 @@
 
     <!-- Eligibility checker -->
     <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:24px;box-shadow:0 2px 12px rgba(27,28,24,0.06);">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:18px;" data-t="sassa_eligible_title">Am I eligible?</h2>
+      <h2 id="sassa-eligible" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:18px;" data-t="sassa_eligible_title">Am I eligible?</h2>
       <div style="display:flex;flex-direction:column;gap:14px;">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
           <span style="font-size:14px;" data-t="sassa_q1">Are you 60+ years old?</span>
@@ -217,7 +229,7 @@
     </div>
 
     <!-- How to Apply -->
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:20px;" data-t="sassa_howto">How to Apply</h2>
+    <h2 id="sassa-apply" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin-bottom:20px;" data-t="sassa_howto">How to Apply</h2>
     <div style="display:flex;flex-direction:column;gap:0;margin-bottom:28px;">
       <div class="step-line" style="margin-bottom:0;">
         <div class="step-dot-col"><div class="step-dot">1</div><div class="step-connector" style="min-height:48px;"></div></div>

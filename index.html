@@ -43,8 +43,6 @@
 <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
 <link rel="stylesheet" href="shared.css"/>
 <style>
-  .hero-photo { width:100%;height:220px;object-fit:cover;border-radius:24px;display:block;margin-top:20px; }
-  @media(min-width:768px){ .hero-photo{height:300px;} }
   .search-bar{position:relative;cursor:pointer;}
   .search-bar input{width:100%;height:54px;padding:0 16px 0 48px;background:#e4e2dc;border:none;border-radius:16px;font-size:15px;font-family:'Inter',sans-serif;color:#1b1c18;outline:none;cursor:pointer;transition:all 0.2s;}
   .search-bar input:focus{background:#fff;box-shadow:0 0 0 2px #00694c;}
@@ -104,98 +102,129 @@
   </header>
 
   <div class="page-content">
-    <div class="home-hero-grid" style="margin-bottom:36px;">
-      <div>
-        <h1 class="section-title" style="margin-bottom:20px;" data-t="home_hero">Free financial help for every South African</h1>
 
-        <div class="lang-bar" style="margin-bottom:20px;" role="group" aria-label="Language selector">
-          <button class="lang-btn bg-primary" data-lang="en" onclick="setLang('en')">English</button>
-          <button class="lang-btn bg-surface-container-high" data-lang="zu" onclick="setLang('zu')">isiZulu</button>
-          <button class="lang-btn bg-surface-container-high" data-lang="xh" onclick="setLang('xh')">isiXhosa</button>
-          <button class="lang-btn bg-surface-container-high" data-lang="af" onclick="setLang('af')">Afrikaans</button>
-        </div>
-
-        <div class="search-bar" onclick="window.location='search.html'" style="margin-bottom:20px;">
-          <span class="material-symbols-outlined si">search</span>
-          <input type="text" data-t="home_search_placeholder" data-t-attr="placeholder" placeholder="What do you need help with?" readonly/>
-        </div>
-
-        <div class="chip-bar">
-          <a href="sassa.html" class="chip" style="background:#e6f4ef;color:#00694c;">SASSA</a>
-          <a href="tax.html" class="chip" style="background:#eaf0fb;color:#1960a6;"><span data-t="nav_tax">Tax / SARS</span></a>
-          <a href="uif.html" class="chip" style="background:#e6f4ef;color:#00694c;">UIF</a>
-          <a href="business.html" class="chip" style="background:#fff3e6;color:#855000;"><span data-t="home_path_business">Business</span></a>
-          <a href="credit.html" class="chip" style="background:#f0eee7;color:#3d4943;"data-t="nav_credit">Credit Score</a>
-          <a href="budgeting.html" class="chip" style="background:#e6f4ef;color:#00694c;"data-t="nav_budgeting">Budgeting</a>
-        </div>
-      </div>
-
-      <img class="hero-photo"
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Rh1aaRI6zPvKi9wK9f0HGGPebV4R3xGRXxebv0ZS7HHHDpBnpz4cdE5s7zuLmexo5jNQL9XH1ly11Omf0aTFed2xdfA5IRe1ZGdgxdIUQiALOs6atvUsFiQ81uXLqzbRrSekry3Chvu7vTJSlxcu1gllkrmh9aM1QHultxg7BRj_0LwJqfDpd7dvFno7qir2Llxz7diJU6L-R6hrJikGhH8VCnuOIqE6yJlcKW36qSOcpgx_j2nan1r46-HS3nu71jbPCZWmJDGc"
-        alt="Diverse South Africans working together on personal finance, SASSA grants and tax"/>
+    <!-- Lang bar -->
+    <div class="lang-bar" style="margin-bottom:20px;" role="group" aria-label="Language selector">
+      <button class="lang-btn bg-primary" data-lang="en" onclick="setLang('en')">English</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="zu" onclick="setLang('zu')">isiZulu</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="xh" onclick="setLang('xh')">isiXhosa</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="af" onclick="setLang('af')">Afrikaans</button>
     </div>
 
-    
-    <!-- Quick tools strip -->
-    <div style="margin-bottom:28px;">
+    <!-- Hero -->
+    <div style="background:linear-gradient(135deg,#00694c 0%,#1a7a5e 100%);border-radius:20px;padding:28px 24px 24px;margin-bottom:20px;color:#fff;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:-30px;right:-30px;width:140px;height:140px;background:rgba(255,255,255,0.06);border-radius:50%;"></div>
+      <div style="position:absolute;bottom:-20px;left:40px;width:80px;height:80px;background:rgba(255,255,255,0.04);border-radius:50%;"></div>
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;opacity:0.7;margin-bottom:8px;" data-t="home_badge">Free · 4 Languages · No Ads</div>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(24px,5vw,34px);margin:0 0 10px;line-height:1.2;" data-t="home_hero">Free financial help for every South African</h1>
+      <p style="font-size:15px;opacity:0.9;max-width:480px;line-height:1.6;margin:0 0 20px;" data-t="home_hero_sub">SASSA grants · Tax returns · UIF claims · Business registration — step-by-step in your language.</p>
+      <div class="search-bar" onclick="window.location='search.html'" style="background:rgba(255,255,255,0.15);border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px;cursor:pointer;max-width:420px;border:1px solid rgba(255,255,255,0.25);">
+        <span class="material-symbols-outlined" style="font-size:20px;opacity:0.8;">search</span>
+        <input type="text" data-t="home_search_placeholder" data-t-attr="placeholder" placeholder="What do you need help with?" readonly style="background:transparent;border:none;outline:none;font-size:14px;color:#fff;flex:1;cursor:pointer;"/>
+      </div>
+    </div>
+
+    <!-- Quick topic chips -->
+    <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:20px;-webkit-overflow-scrolling:touch;scrollbar-width:none;">
+      <style>.topic-chip::-webkit-scrollbar{display:none}.topic-chip{flex-shrink:0;padding:8px 14px;border-radius:99px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;}</style>
+      <a href="sassa.html" class="topic-chip" style="background:#e6f4ef;color:#00694c;" data-t="nav_sassa">SASSA</a>
+      <a href="tax.html" class="topic-chip" style="background:#eaf0fb;color:#1960a6;" data-t="nav_tax">Tax & SARS</a>
+      <a href="uif.html" class="topic-chip" style="background:#f0eaff;color:#6d2fa0;" data-t="nav_uif">UIF</a>
+      <a href="business.html" class="topic-chip" style="background:#fff3e6;color:#855000;" data-t="nav_business">Business</a>
+      <a href="budgeting.html" class="topic-chip" style="background:#f6f4ec;color:#3d4943;" data-t="nav_budgeting">Budgeting</a>
+      <a href="credit.html" class="topic-chip" style="background:#f6f4ec;color:#3d4943;" data-t="nav_credit">Credit Score</a>
+    </div>
+
+    <!-- Quick tools -->
+    <div style="margin-bottom:24px;">
       <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#6d7a73;margin-bottom:10px;" data-t="index_quick_tools">Quick tools</div>
-      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
         <a href="tax-calculator.html" style="background:#e6f4ef;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
-          <span class="material-symbols-outlined" style="color:#00694c;font-size:20px;">calculate</span>
-          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_tax_title">Tax Calculator</div><div style="font-size:11px;color:#6d7a73;" data-t="index_tool_paye">PAYE &amp; take-home</div></div>
+          <span class="material-symbols-outlined" style="color:#00694c;font-size:22px;flex-shrink:0;">calculate</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_calc_title">Tax Calculator</div><div style="font-size:11px;color:#6d7a73;" data-t="tools_calc_sub">PAYE & take-home</div></div>
         </a>
-        <a href="sassa-pay-dates.html" style="background:#eaf0fb;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
-          <span class="material-symbols-outlined" style="color:#1960a6;font-size:20px;">calendar_month</span>
-          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_paydates_title">SASSA Dates</div><div style="font-size:11px;color:#6d7a73;" data-t="index_tool_paydates">2026 payment calendar</div></div>
+        <a href="tax-refund.html" style="background:#eaf0fb;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
+          <span class="material-symbols-outlined" style="color:#1960a6;font-size:22px;flex-shrink:0;">savings</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_refund_title">Refund Estimator</div><div style="font-size:11px;color:#6d7a73;" data-t="tools_refund_sub">Will SARS pay you?</div></div>
         </a>
-        <a href="uif.html" style="background:#fff8f0;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
-          <span class="material-symbols-outlined" style="color:#855000;font-size:20px;">work_off</span>
-          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_uif_title">UIF Estimator</div><div style="font-size:11px;color:#6d7a73;" data-t="index_tool_uif">How much will I get?</div></div>
+        <a href="sassa-pay-dates.html" style="background:#fff3e6;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
+          <span class="material-symbols-outlined" style="color:#855000;font-size:22px;flex-shrink:0;">calendar_month</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="nav_paydates">SASSA Pay Dates</div><div style="font-size:11px;color:#6d7a73;" data-t="paydates_calendar_heading">2026 payment calendar</div></div>
         </a>
         <a href="tools.html" style="background:#f6f4ec;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
-          <span class="material-symbols-outlined" style="color:#6d7a73;font-size:20px;">grid_view</span>
-          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_title">All Tools</div><div style="font-size:11px;color:#6d7a73;" data-t="index_tool_all">Calculators &amp; checklists</div></div>
+          <span class="material-symbols-outlined" style="color:#6d7a73;font-size:22px;flex-shrink:0;">grid_view</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="home_all_tools">All Tools</div><div style="font-size:11px;color:#6d7a73;" data-t="home_tools_sub">Calculators & checklists</div></div>
         </a>
       </div>
     </div>
 
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:18px;color:#1b1c18;"><span data-t="home_choose_path">Choose your path</span></h2>
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:18px;color:#1b1c18;"><span data-t="index_intro_title">Free financial guides for South Africans</span></h2>
-    <p style="font-size:14px;color:#3d4943;line-height:1.7;margin-bottom:24px;"><span data-t="index_intro_body">Mzansi Money Guide gives every South African free, clear guidance on SASSA grants, SARS tax returns, UIF claims, credit scores, business registration and budgeting — in English, isiZulu, isiXhosa and Afrikaans.</span></p>
-    <div class="path-cards" style="margin-bottom:36px;">
-      <a href="topics.html" class="path-card green tap">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-          <div class="pcard-icon" style="background:rgba(0,105,76,0.1);"><span class="material-symbols-outlined text-primary" style="font-size:28px;">account_balance_wallet</span></div>
-          <span class="pcard-steps" style="background:rgba(0,105,76,0.1);color:#00694c;" data-t="home_card_personal_steps">12 steps</span>
-        </div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:#1b1c18;margin-bottom:4px;" data-t="home_card_personal">Personal Finance</div>
-        <div style="font-size:13px;color:#3d4943;" data-t="home_card_personal_sub">Tax, SASSA, UIF, budgeting</div>
-        <div class="pcard-arrow"><span class="material-symbols-outlined text-primary">arrow_forward</span></div>
-      </a>
-      <a href="business.html" class="path-card blue tap">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-          <div class="pcard-icon" style="background:rgba(25,96,166,0.1);"><span class="material-symbols-outlined text-secondary" style="font-size:28px;">rocket_launch</span></div>
-          <span class="pcard-steps" style="background:rgba(25,96,166,0.1);color:#1960a6;" data-t="home_card_start_steps">8 steps</span>
-        </div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:#1b1c18;margin-bottom:4px;" data-t="home_card_start">Start a Business</div>
-        <div style="font-size:13px;color:#3d4943;" data-t="home_card_start_sub">Register, open account, comply</div>
-        <div class="pcard-arrow"><span class="material-symbols-outlined text-secondary">arrow_forward</span></div>
-      </a>
-      <a href="business.html#run" class="path-card amber tap">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-          <div class="pcard-icon" style="background:rgba(133,80,0,0.1);"><span class="material-symbols-outlined text-tertiary" style="font-size:28px;">storefront</span></div>
-          <span class="pcard-steps" style="background:rgba(133,80,0,0.1);color:#855000;" data-t="home_card_run_steps">15 steps</span>
-        </div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:#1b1c18;margin-bottom:4px;" data-t="home_card_run">Run a Business</div>
-        <div style="font-size:13px;color:#3d4943;" data-t="home_card_run_sub">VAT, payroll, filing taxes</div>
-        <div class="pcard-arrow"><span class="material-symbols-outlined text-tertiary">arrow_forward</span></div>
-      </a>
+    <!-- Topic cards -->
+    <div style="margin-bottom:24px;">
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#6d7a73;margin-bottom:10px;" data-t="home_explore_topics">Explore topics</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+
+        <a href="sassa.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #00694c;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#00694c;font-size:20px;">volunteer_activism</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_sassa">SASSA</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="path_sassa_sub">Apply, amounts, eligibility</div>
+        </a>
+
+        <a href="tax.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #1960a6;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#1960a6;font-size:20px;">account_balance</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_tax">Tax & SARS</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="home_tax_sub">eFiling, refunds, brackets</div>
+        </a>
+
+        <a href="uif.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #6d2fa0;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#6d2fa0;font-size:20px;">work_off</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_uif">UIF</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="path_uif_sub">Unemployment, maternity, illness</div>
+        </a>
+
+        <a href="business.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #855000;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#855000;font-size:20px;">storefront</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_business">Business</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="home_biz_sub">Register, fund, comply</div>
+        </a>
+
+        <a href="budgeting.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #c47a00;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#c47a00;font-size:20px;">savings</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_budgeting">Budgeting</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="path_budget_sub">50/30/20, stokvels, savings</div>
+        </a>
+
+        <a href="credit.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #3d4943;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#3d4943;font-size:20px;">credit_score</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_credit">Credit Score</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="path_credit_sub">Free report, improve rating</div>
+        </a>
+
+      </div>
     </div>
 
+    <!-- Get help CTA -->
+    <a href="request-help.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(135deg,#1b1c18 0%,#2d3530 100%);border-radius:16px;padding:18px 20px;text-decoration:none;margin-bottom:24px;">
+      <div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;color:#fff;margin-bottom:3px;" data-t="path_help_title">Need personal guidance?</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.7);" data-t="art_need_help_sub">Speak with a local financial expert — free</div>
+      </div>
+      <span class="material-symbols-outlined" style="color:#fff;font-size:28px;flex-shrink:0;">arrow_forward</span>
+    </a>
 
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin:32px 0 12px;color:#1b1c18;"><span data-t="index_why_title">Why use Mzansi Money Guide?</span></h2>
-    <p style="font-size:14px;color:#3d4943;line-height:1.7;margin-bottom:20px;" data-t="index_why_body">Mzansi Money Guide is a free, multilingual financial literacy platform built specifically for South Africans. Whether you need to apply for a SASSA grant, file your SARS tax return, claim UIF after retrenchment, register a business with CIPC, or improve your credit score — we provide clear, step-by-step guidance in English, isiZulu, isiXhosa and Afrikaans. No jargon, no fees, no forms to fill in to access information.</p>
-        <div class="disclaimer" style="margin-bottom:0;">
+    <!-- Disclaimer -->
+    <div class="disclaimer" style="margin-bottom:0;">
       <span class="material-symbols-outlined text-tertiary" style="flex-shrink:0;font-size:20px;">warning</span>
       <p style="margin:0;" data-t="home_disclaimer">This guide provides general financial information, not official advice. Always consult a certified practitioner for your situation.</p>
     </div>
@@ -206,18 +235,18 @@
         <div>
           <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;margin-bottom:10px;" data-t="footer_quicklinks">Quick Links</div>
           <div style="display:flex;flex-direction:column;gap:8px;">
-            <a href="topics.html" style="color:#3d4943;font-size:14px;text-decoration:none;"><span data-t="home_path_personal">Personal Finance</span></a>
+            <a href="topics.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_topics">Topics</a>
             <a href="sassa.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_sassa">SASSA Grants</a>
-            <a href="business.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_business">Business Guide</a>
-            <a href="tax.html" style="color:#3d4943;font-size:14px;text-decoration:none;">Tax & SARS</a>
+            <a href="tax.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_tax">Tax & SARS</a>
             <a href="uif.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_uif">UIF</a>
+            <a href="business.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_business">Business</a>
           </div>
         </div>
         <div>
           <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;margin-bottom:10px;" data-t="footer_support">Support</div>
           <div style="display:flex;flex-direction:column;gap:8px;">
             <a href="request-help.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_gethelp">Get Help</a>
-            <a href="search.html" style="color:#3d4943;font-size:14px;text-decoration:none;"data-t="nav_search">Search</a>
+            <a href="tools.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_tools">Tools</a>
             <a href="credit.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_credit">Credit Score</a>
             <a href="budgeting.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_budgeting">Budgeting</a>
           </div>
@@ -226,7 +255,6 @@
       <div style="border-top:1px solid #e4e2dc;padding-top:16px;font-size:12px;color:#6d7a73;" data-t="footer_copyright">© 2026 Mzansi Money Guide. Free financial guidance for South Africa.</div>
     </footer>
   </div>
-</div>
 
 <nav class="bottom-nav">
   <a href="index.html" class="active"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">home</span><span data-t="nav_home">Home</span></a>
