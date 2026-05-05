@@ -801,4 +801,44 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://mzansi-money.com/tax-refund</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/tax-refund"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/tax-refund</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/tax-refund"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/tax-refund</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/tax-refund"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/tax-refund</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/tax-refund"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/tax-refund"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
