@@ -5,28 +5,49 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     },
     {
       "source": "/shared.css",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
       ]
     },
     {
       "source": "/lang.js",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
       ]
     },
     {
       "source": "/favicon.svg",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=604800" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
       ]
     }
   ],
@@ -39,6 +60,56 @@
     {
       "source": "/sassa-pay-dates.html",
       "destination": "/sassa-pay-dates",
+      "permanent": true
+    },
+    {
+      "source": "/personal-finance",
+      "destination": "/topics",
+      "permanent": true
+    },
+    {
+      "source": "/personal-finance.html",
+      "destination": "/topics",
+      "permanent": true
+    },
+    {
+      "source": "/pathways",
+      "destination": "/topics",
+      "permanent": true
+    },
+    {
+      "source": "/pathways.html",
+      "destination": "/topics",
+      "permanent": true
+    },
+    {
+      "source": "/zu/personal-finance",
+      "destination": "/zu/topics",
+      "permanent": true
+    },
+    {
+      "source": "/xh/personal-finance",
+      "destination": "/xh/topics",
+      "permanent": true
+    },
+    {
+      "source": "/af/personal-finance",
+      "destination": "/af/topics",
+      "permanent": true
+    },
+    {
+      "source": "/zu/pathways",
+      "destination": "/zu/topics",
+      "permanent": true
+    },
+    {
+      "source": "/xh/pathways",
+      "destination": "/xh/topics",
+      "permanent": true
+    },
+    {
+      "source": "/af/pathways",
+      "destination": "/af/topics",
       "permanent": true
     }
   ]

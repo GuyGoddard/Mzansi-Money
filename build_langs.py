@@ -52,6 +52,7 @@ PAGES = [
     ('medical-aid-tax-credit.html','medical-aid-tax-credit'),
     ('do-i-need-to-file-tax.html', 'do-i-need-to-file-tax'),
     ('tax-refund.html',             'tax-refund'),
+    ('topics.html',                'topics'),
 ]
 
 # Relative paths that need ../ prefix when inside a language subfolder
@@ -66,6 +67,7 @@ RELATIVE_HTML_HREFS = [
     'tax.html', 'tools.html', 'uif.html', 'uif.html#uif-calc',
     'vat-calculator.html',
     'tax-refund.html',
+    'topics.html',
 ]
 
 RELATIVE_ASSETS = ['favicon.png', 'lang.js', 'logo-icon.png', 'shared.css']

@@ -58,21 +58,24 @@
 <body>
 <nav class="sidebar-nav">
   <div class="flag-strip"></div>
-  <div class="sidebar-brand"><img src="logo-icon.png" width="32" height="32" alt="Mzansi Money Guide" style="flex-shrink:0;border-radius:50%;object-fit:cover;"/><span data-t="nav_brand">Mzansi Money Guide</span></div>
-  <div class="nav-section">Main</div>
-  <a href="index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
-  <a href="pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_guides">Guides</span></a>
-  <a href="personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="nav_topics">Topics</span></a>
-  <a href="sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
+  <div class="sidebar-brand">
+    <img src="logo-icon.png" width="44" height="44" alt="Mzansi Money" style="flex-shrink:0;border-radius:50%;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/>
+    <span data-t="nav_brand">Mzansi Money Guide</span>
+  </div>
+  <div class="nav-section" data-t="nav_section_main">Main</div>
+  <a href="index.html" ><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
+  <a href="topics.html" ><span class="material-symbols-outlined">menu_book</span><span data-t="nav_topics">Topics</span></a>
+  <a href="tools.html" ><span class="material-symbols-outlined">calculate</span><span data-t="nav_tools">Tools</span></a>
+  <div class="nav-section" data-t="nav_section_pf">Personal Finance</div>
+  <a href="sassa.html" ><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
+  <a href="tax.html" ><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Tax &amp; SARS</span></a>
+  <a href="uif.html" ><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">UIF Claims</span></a>
+  <a href="budgeting.html" ><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Budgeting</span></a>
+  <a href="credit.html" ><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Credit Score</span></a>
   <a href="business.html" class="active"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Business</span></a>
-  <div class="nav-section">Personal Finance</div>
-  <a href="tax.html"><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Tax &amp; SARS</span></a>
-  <a href="uif.html"><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">UIF Claims</span></a>
-  <a href="budgeting.html"><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Budgeting</span></a>
-  <a href="credit.html"><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Credit Score</span></a>
-  <div class="nav-section">Tools</div>
-  <a href="search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
-  <a href="request-help.html"><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
+  <div class="nav-section" data-t="nav_section_help">Help</div>
+  <a href="search.html" ><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
+  <a href="request-help.html" ><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
 </nav>
 <div class="main-content">
   <header class="top-bar">
@@ -80,7 +83,12 @@
     <div class="top-bar-inner">
       <a href="index.html" class="top-bar-brand"><img src="logo-icon.png" width="40" height="40" alt="Mzansi Money Guide" style="flex-shrink:0;border-radius:50%;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/><span data-t="nav_brand">Mzansi Money Guide</span></a>
       <nav class="top-bar-desktop-nav">
-        <a href="index.html"data-t="nav_home">Home</a><a href="pathways.html" data-t="nav_guides">Guides</a><a href="personal-finance.html" data-t="nav_topics">Topics</a><a href="sassa.html" data-t="nav_sassa">SASSA</a><a href="business.html" class="active" data-t="nav_business">Business</a>
+        <a href="index.html" data-t="nav_home">Home</a>
+        <a href="topics.html" data-t="nav_topics">Topics</a>
+        <a href="tools.html" data-t="nav_tools">Tools</a>
+        <a href="sassa.html" data-t="nav_sassa">SASSA</a>
+        <a href="tax.html" data-t="nav_tax">Tax</a>
+        <a href="business.html" class="active" data-t="nav_business">Business</a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
     </div>
@@ -220,15 +228,33 @@
           <p style="font-size:13px;color:#3d4943;line-height:1.6;margin:0;" data-t="biz_annual_sub">File annual returns with CIPC within 30 business days of your anniversary date. Costs R100–R3,000 depending on turnover. Non-compliance leads to deregistration.</p>
         </div>
       </div>
+
+    <div style="margin-top:32px;background:#f6f4ec;border-radius:20px;padding:22px 24px;">
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#6d7a73;margin-bottom:14px;" data-t="related_tools_heading">Business tools</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;">
+        <a href="cipc-checklist.html" style="background:#fff;border-radius:14px;padding:14px;text-decoration:none;display:flex;gap:10px;align-items:center;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <span class="material-symbols-outlined" style="color:#c43500;font-size:22px;flex-shrink:0;">checklist</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="cipc_title">CIPC Checklist</div><div style="font-size:11px;color:#6d7a73;" data-t="cipc_instr">7-step registration</div></div>
+        </a>
+        <a href="vat-calculator.html" style="background:#fff;border-radius:14px;padding:14px;text-decoration:none;display:flex;gap:10px;align-items:center;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <span class="material-symbols-outlined" style="color:#c43500;font-size:22px;flex-shrink:0;">percent</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_vat_title">VAT Calculator</div><div style="font-size:11px;color:#6d7a73;" data-t="vat_subtitle">Add or remove 15%</div></div>
+        </a>
+        <a href="tax.html" style="background:#fff;border-radius:14px;padding:14px;text-decoration:none;display:flex;gap:10px;align-items:center;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
+          <span class="material-symbols-outlined" style="color:#c43500;font-size:22px;flex-shrink:0;">account_balance</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="nav_tax">Tax &amp; SARS</div><div style="font-size:11px;color:#6d7a73;" data-t="tax_s2">Register &amp; file</div></div>
+        </a>
+      </div>
+    </div>
     </div>
 
   </div>
 </div>
 <nav class="bottom-nav">
-  <a href="index.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">home</span><span data-t="nav_home">Home</span></a>
-  <a href="personal-finance.html"  class="active"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">menu_book</span><span data-t="nav_topics">Topics</span></a>
-  <a href="tools.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">calculate</span><span data-t="nav_tools">Tools</span></a>
-  <a href="request-help.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
+  <a href="index.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">home</span><span data-t="nav_home">Home</span></a>
+  <a href="topics.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">menu_book</span><span data-t="nav_topics">Topics</span></a>
+  <a href="tools.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">calculate</span><span data-t="nav_tools">Tools</span></a>
+  <a href="request-help.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
 </nav>
 <script src="lang.js"></script>
 <script>

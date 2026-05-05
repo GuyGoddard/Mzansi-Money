@@ -784,6 +784,19 @@ const TRANSLATIONS = {
     refund_cta_title: 'Want to see your full PAYE breakdown?',
     refund_cta_sub: 'Enter monthly salary in our Tax Calculator',
     refund_cta_btn: 'Tax Calculator',
+  
+    topics_title: 'All Financial Topics',
+    topics_sub: 'Free step-by-step guides for every South African financial situation — in English, isiZulu, isiXhosa and Afrikaans.',
+    topics_money_heading: 'Budgeting & Money',
+    nav_paydates: 'Pay Dates 2026',
+    nav_section_main: 'Main',
+    nav_section_pf: 'Personal Finance',
+    nav_section_help: 'Help',
+    related_tools_heading: 'Related tools',
+    tools_calc_title: 'Tax Calculator',
+    tools_calc_sub: 'PAYE & take-home',
+    tools_refund_title: 'Refund Estimator',
+    tools_refund_sub: 'Will SARS pay you?',
   },
 
   // isiZulu
@@ -1569,6 +1582,19 @@ const TRANSLATIONS = {
     refund_cta_title: 'Ufuna ukubona ukuphukwa kwakho kwephelele kwe-PAYE?',
     refund_cta_sub: 'Faka iholo lenyanga ku-Isibali Sentela sethu',
     refund_cta_btn: 'Isibali Sentela',
+  
+    topics_title: 'Izihloko Zonke Zezezimali',
+    topics_sub: 'Imihlahlandlela yamahhala yezinyathelo ngazinye yezimo zonke zezezimali zaseNingizimu Afrika.',
+    topics_money_heading: 'Uhlelo Lwezimali Nemali',
+    nav_paydates: 'Izinsuku Zokukhokha 2026',
+    nav_section_main: 'Okuyinhloko',
+    nav_section_pf: 'Imali Yomuntu Ngamunye',
+    nav_section_help: 'Usizo',
+    related_tools_heading: 'Amathuluzi ahlobene',
+    tools_calc_title: 'Isibali Sentela',
+    tools_calc_sub: 'I-PAYE nemali yasekhaya',
+    tools_refund_title: 'Isibali Sokubuyiselwa',
+    tools_refund_sub: 'Ingabe i-SARS izokukhokhela?',
   },
 
   // isiXhosa
@@ -2354,6 +2380,19 @@ const TRANSLATIONS = {
     refund_cta_title: 'Ufuna ukubona ukwahlulwa kwakho okupheleleyo kwe-PAYE?',
     refund_cta_sub: 'Ngenisa umvuzo wenyanga kwi-Isibali yeRhafu yethu',
     refund_cta_btn: 'Isibali yeRhafu',
+  
+    topics_title: 'Izihloko Zonke Zezemali',
+    topics_sub: 'Izikhokelo zasimahla zenyathelo ngenyathelo zeemeko zonke zezemali zaseMzantsi Afrika.',
+    topics_money_heading: 'Ucwangco LwaMali noMali',
+    nav_paydates: 'Iimini Zentlawulo 2026',
+    nav_section_main: 'Eyona Nto Ibalulekileyo',
+    nav_section_pf: 'Imali Yobuqu',
+    nav_section_help: 'Uncedo',
+    related_tools_heading: 'Izixhobo ezihlobene',
+    tools_calc_title: 'Isibali yeRhafu',
+    tools_calc_sub: 'I-PAYE nomvuzo wasekhaya',
+    tools_refund_title: 'Isibali Sokubuyiselwa',
+    tools_refund_sub: 'Ingaba i-SARS iza kuhlawula?',
   },
 
   // Afrikaans
@@ -3139,6 +3178,19 @@ const TRANSLATIONS = {
     refund_cta_title: 'Wil jy jou volledige PAYE-uiteensetting sien?',
     refund_cta_sub: 'Voer maandelikse salaris in ons Belastingsakrekenaar in',
     refund_cta_btn: 'Belastingsakrekenaar',
+  
+    topics_title: 'Alle Finansiële Onderwerpe',
+    topics_sub: 'Gratis stap-vir-stap gidse vir elke Suid-Afrikaanse finansiële situasie.',
+    topics_money_heading: 'Begroting en Geld',
+    nav_paydates: 'Betaaldatums 2026',
+    nav_section_main: 'Hoof',
+    nav_section_pf: 'Persoonlike Finansies',
+    nav_section_help: 'Hulp',
+    related_tools_heading: 'Verwante hulpmiddels',
+    tools_calc_title: 'Belastingsakrekenaar',
+    tools_calc_sub: 'PAYE en tuisloon',
+    tools_refund_title: 'Terugbetalingsskatting',
+    tools_refund_sub: 'Sal SARS jou betaal?',
   },
 };
 
