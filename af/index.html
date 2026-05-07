@@ -43,8 +43,6 @@
 <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
 <link rel="stylesheet" href="../shared.css"/>
 <style>
-  .hero-photo { width:100%;height:220px;object-fit:cover;border-radius:24px;display:block;margin-top:20px; }
-  @media(min-width:768px){ .hero-photo{height:300px;} }
   .search-bar{position:relative;cursor:pointer;}
   .search-bar input{width:100%;height:54px;padding:0 16px 0 48px;background:#e4e2dc;border:none;border-radius:16px;font-size:15px;font-family:'Inter',sans-serif;color:#1b1c18;outline:none;cursor:pointer;transition:all 0.2s;}
   .search-bar input:focus{background:#fff;box-shadow:0 0 0 2px #00694c;}
@@ -70,15 +68,20 @@
     <img src="../logo-icon.png" width="44" height="44" alt="Mzansi Money" style="flex-shrink:0;border-radius:50%;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/>
     <span data-t="nav_brand">Mzansi Geldgids</span>
   </div>
-  <div class="nav-section">Main</div>
+  <div class="nav-section" data-t="nav_section_main">Hoof</div>
   <a href="../index.html" class="active"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Tuis</span></a>
-  <a href="../pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_guides">Gidse</span></a>
-  <a href="../personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Persoonlike Finansies</span></a>
-  <a href="../sassa.html"><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
-  <a href="../business.html"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Besigheid</span></a>
-  <div class="nav-section">Tools</div>
-  <a href="../search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Soek</span></a>
-  <a href="../request-help.html"><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Kry Hulp</span></a>
+  <a href="../topics.html" ><span class="material-symbols-outlined">menu_book</span><span data-t="nav_topics">Onderwerpe</span></a>
+  <a href="../tools.html" ><span class="material-symbols-outlined">calculate</span><span data-t="nav_tools">Hulpmiddels</span></a>
+  <div class="nav-section" data-t="nav_section_pf">Persoonlike Finansies</div>
+  <a href="../sassa.html" ><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
+  <a href="../tax.html" ><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Belasting en SARS</span></a>
+  <a href="../uif.html" ><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">UIF-Eise</span></a>
+  <a href="../budgeting.html" ><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Begroting</span></a>
+  <a href="../credit.html" ><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Kredietpunt</span></a>
+  <a href="../business.html" ><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Besigheid</span></a>
+  <div class="nav-section" data-t="nav_section_help">Hulp</div>
+  <a href="../search.html" ><span class="material-symbols-outlined">search</span><span data-t="nav_search">Soek</span></a>
+  <a href="../request-help.html" ><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Kry Hulp</span></a>
 </nav>
 
 <div class="main-content">
@@ -88,9 +91,10 @@
       <a href="../index.html" class="top-bar-brand"><img src="../logo-icon.png" width="40" height="40" alt="Mzansi Money Guide" style="flex-shrink:0;border-radius:50%;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/><span data-t="nav_brand">Mzansi Geldgids</span></a>
       <nav class="top-bar-desktop-nav">
         <a href="../index.html" class="active" data-t="nav_home">Tuis</a>
-        <a href="../pathways.html" data-t="nav_guides">Gidse</a>
-        <a href="../personal-finance.html" data-t="nav_topics">Onderwerpe</a>
+        <a href="../topics.html" data-t="nav_topics">Onderwerpe</a>
+        <a href="../tools.html" data-t="nav_tools">Hulpmiddels</a>
         <a href="../sassa.html" data-t="nav_sassa">SASSA</a>
+        <a href="../tax.html" data-t="nav_tax">Belasting en SARS</a>
         <a href="../business.html" data-t="nav_business">Besigheid</a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
@@ -98,98 +102,129 @@
   </header>
 
   <div class="page-content">
-    <div class="home-hero-grid" style="margin-bottom:36px;">
-      <div>
-        <h1 class="section-title" style="margin-bottom:20px;" data-t="home_hero">Gratis finansiële hulp vir elke Suid-Afrikaner</h1>
 
-        <div class="lang-bar" style="margin-bottom:20px;" role="group" aria-label="Language selector">
-          <button class="lang-btn bg-primary" data-lang="en" onclick="setLang('en')">English</button>
-          <button class="lang-btn bg-surface-container-high" data-lang="zu" onclick="setLang('zu')">isiZulu</button>
-          <button class="lang-btn bg-surface-container-high" data-lang="xh" onclick="setLang('xh')">isiXhosa</button>
-          <button class="lang-btn bg-surface-container-high" data-lang="af" onclick="setLang('af')">Afrikaans</button>
-        </div>
-
-        <div class="search-bar" onclick="window.location='search.html'" style="margin-bottom:20px;">
-          <span class="material-symbols-outlined si">search</span>
-          <input type="text" data-t="home_search_placeholder" data-t-attr="placeholder" placeholder="Waarmee kan ons jou help?" readonly/>
-        </div>
-
-        <div class="chip-bar">
-          <a href="../sassa.html" class="chip" style="background:#e6f4ef;color:#00694c;">SASSA</a>
-          <a href="../tax.html" class="chip" style="background:#eaf0fb;color:#1960a6;"><span data-t="nav_tax">Belasting en SARS</span></a>
-          <a href="../uif.html" class="chip" style="background:#e6f4ef;color:#00694c;">UIF</a>
-          <a href="../business.html" class="chip" style="background:#fff3e6;color:#855000;"><span data-t="home_path_business">Besigheid</span></a>
-          <a href="../credit.html" class="chip" style="background:#f0eee7;color:#3d4943;"data-t="nav_credit">Kredietpunt</a>
-          <a href="../budgeting.html" class="chip" style="background:#e6f4ef;color:#00694c;"data-t="nav_budgeting">Begroting</a>
-        </div>
-      </div>
-
-      <img class="hero-photo"
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Rh1aaRI6zPvKi9wK9f0HGGPebV4R3xGRXxebv0ZS7HHHDpBnpz4cdE5s7zuLmexo5jNQL9XH1ly11Omf0aTFed2xdfA5IRe1ZGdgxdIUQiALOs6atvUsFiQ81uXLqzbRrSekry3Chvu7vTJSlxcu1gllkrmh9aM1QHultxg7BRj_0LwJqfDpd7dvFno7qir2Llxz7diJU6L-R6hrJikGhH8VCnuOIqE6yJlcKW36qSOcpgx_j2nan1r46-HS3nu71jbPCZWmJDGc"
-        alt="Diverse South Africans working together on personal finance, SASSA grants and tax"/>
+    <!-- Lang bar -->
+    <div class="lang-bar" style="margin-bottom:20px;" role="group" aria-label="Language selector">
+      <button class="lang-btn bg-primary" data-lang="en" onclick="setLang('en')">English</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="zu" onclick="setLang('zu')">isiZulu</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="xh" onclick="setLang('xh')">isiXhosa</button>
+      <button class="lang-btn bg-surface-container-high" data-lang="af" onclick="setLang('af')">Afrikaans</button>
     </div>
 
-    
-    <!-- Quick tools strip -->
-    <div style="margin-bottom:28px;">
+    <!-- Hero -->
+    <div style="background:linear-gradient(135deg,#00694c 0%,#1a7a5e 100%);border-radius:20px;padding:28px 24px 24px;margin-bottom:20px;color:#fff;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:-30px;right:-30px;width:140px;height:140px;background:rgba(255,255,255,0.06);border-radius:50%;"></div>
+      <div style="position:absolute;bottom:-20px;left:40px;width:80px;height:80px;background:rgba(255,255,255,0.04);border-radius:50%;"></div>
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;opacity:0.7;margin-bottom:8px;" data-t="home_badge">Gratis · 4 Tale · Geen Advertensies</div>
+      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(24px,5vw,34px);margin:0 0 10px;line-height:1.2;" data-t="home_hero">Gratis finansiële hulp vir elke Suid-Afrikaner</h1>
+      <p style="font-size:15px;opacity:0.9;max-width:480px;line-height:1.6;margin:0 0 20px;" data-t="home_hero_sub">SASSA-toelaes · Belastingopgawes · WVF-eise · Besigheidsregistrasie — stap vir stap in jou taal.</p>
+      <div class="search-bar" onclick="window.location='search.html'" style="background:rgba(255,255,255,0.15);border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px;cursor:pointer;max-width:420px;border:1px solid rgba(255,255,255,0.25);">
+        <span class="material-symbols-outlined" style="font-size:20px;opacity:0.8;">search</span>
+        <input type="text" data-t="home_search_placeholder" data-t-attr="placeholder" placeholder="Waarmee kan ons jou help?" readonly style="background:transparent;border:none;outline:none;font-size:14px;color:#fff;flex:1;cursor:pointer;"/>
+      </div>
+    </div>
+
+    <!-- Quick topic chips -->
+    <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:20px;-webkit-overflow-scrolling:touch;scrollbar-width:none;">
+      <style>.topic-chip::-webkit-scrollbar{display:none}.topic-chip{flex-shrink:0;padding:8px 14px;border-radius:99px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;}</style>
+      <a href="../sassa.html" class="topic-chip" style="background:#e6f4ef;color:#00694c;" data-t="nav_sassa">SASSA</a>
+      <a href="../tax.html" class="topic-chip" style="background:#eaf0fb;color:#1960a6;" data-t="nav_tax">Belasting en SARS</a>
+      <a href="../uif.html" class="topic-chip" style="background:#f0eaff;color:#6d2fa0;" data-t="nav_uif">UIF-Eise</a>
+      <a href="../business.html" class="topic-chip" style="background:#fff3e6;color:#855000;" data-t="nav_business">Besigheid</a>
+      <a href="../budgeting.html" class="topic-chip" style="background:#f6f4ec;color:#3d4943;" data-t="nav_budgeting">Begroting</a>
+      <a href="../credit.html" class="topic-chip" style="background:#f6f4ec;color:#3d4943;" data-t="nav_credit">Kredietpunt</a>
+    </div>
+
+    <!-- Quick tools -->
+    <div style="margin-bottom:24px;">
       <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#6d7a73;margin-bottom:10px;" data-t="index_quick_tools">Vinnige hulpmiddels</div>
-      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
         <a href="../tax-calculator.html" style="background:#e6f4ef;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
-          <span class="material-symbols-outlined" style="color:#00694c;font-size:20px;">calculate</span>
-          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_tax_title">SARS Belastingsabrekenaar</div><div style="font-size:11px;color:#6d7a73;" data-t="index_tool_paye">PAYE en tuisneemfooi</div></div>
+          <span class="material-symbols-outlined" style="color:#00694c;font-size:22px;flex-shrink:0;">calculate</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_calc_title">Belastingsakrekenaar</div><div style="font-size:11px;color:#6d7a73;" data-t="tools_calc_sub">PAYE en tuisloon</div></div>
         </a>
-        <a href="../sassa-pay-dates.html" style="background:#eaf0fb;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
-          <span class="material-symbols-outlined" style="color:#1960a6;font-size:20px;">calendar_month</span>
-          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_paydates_title">SASSA Betaaldatums 2026</div><div style="font-size:11px;color:#6d7a73;" data-t="index_tool_paydates">2026 betalingskalender</div></div>
+        <a href="../tax-refund.html" style="background:#eaf0fb;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
+          <span class="material-symbols-outlined" style="color:#1960a6;font-size:22px;flex-shrink:0;">savings</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_refund_title">Terugbetalingsskatting</div><div style="font-size:11px;color:#6d7a73;" data-t="tools_refund_sub">Sal SARS jou betaal?</div></div>
         </a>
-        <a href="../uif.html" style="background:#fff8f0;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
-          <span class="material-symbols-outlined" style="color:#855000;font-size:20px;">work_off</span>
-          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_uif_title">UIF-Voordele Skatting</div><div style="font-size:11px;color:#6d7a73;" data-t="index_tool_uif">Hoeveel sal ek kry?</div></div>
+        <a href="../sassa-pay-dates.html" style="background:#fff3e6;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
+          <span class="material-symbols-outlined" style="color:#855000;font-size:22px;flex-shrink:0;">calendar_month</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="nav_paydates">Betaaldatums 2026</div><div style="font-size:11px;color:#6d7a73;" data-t="paydates_calendar_heading">Volledige 2026/27 Betalingskalender</div></div>
         </a>
         <a href="../tools.html" style="background:#f6f4ec;border-radius:14px;padding:14px;text-decoration:none;display:flex;align-items:center;gap:10px;">
-          <span class="material-symbols-outlined" style="color:#6d7a73;font-size:20px;">grid_view</span>
-          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="tools_title">Finansiële Hulpmiddels en Sakrekelaars</div><div style="font-size:11px;color:#6d7a73;" data-t="index_tool_all">Sakrekelaars en kontrolelyste</div></div>
+          <span class="material-symbols-outlined" style="color:#6d7a73;font-size:22px;flex-shrink:0;">grid_view</span>
+          <div><div style="font-weight:700;font-size:13px;color:#1b1c18;" data-t="home_all_tools">Alle Hulpmiddels</div><div style="font-size:11px;color:#6d7a73;" data-t="home_tools_sub">Sakrekenaars en kontrolelyste</div></div>
         </a>
       </div>
     </div>
 
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:18px;color:#1b1c18;"><span data-t="home_choose_path">Kies jou pad</span></h2>
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;margin-bottom:18px;color:#1b1c18;"><span data-t="index_intro_title">Gratis finansiële gidse vir Suid-Afrikaners</span></h2>
-    <p style="font-size:14px;color:#3d4943;line-height:1.7;margin-bottom:24px;"><span data-t="index_intro_body">Mzansi Geldgids gee elke Suid-Afrikaner gratis, duidelike leiding oor SASSA-toelaes, SARS-belastingopgawes, UIF-eise, kredietpunte, besigheidsregistrasie en begroting — in Engels, isiZulu, isiXhosa en Afrikaans.</span></p>
-    <div class="path-cards" style="margin-bottom:36px;">
-      <a href="../personal-finance.html" class="path-card green tap">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-          <div class="pcard-icon" style="background:rgba(0,105,76,0.1);"><span class="material-symbols-outlined text-primary" style="font-size:28px;">account_balance_wallet</span></div>
-          <span class="pcard-steps" style="background:rgba(0,105,76,0.1);color:#00694c;" data-t="home_card_personal_steps">12 stappe</span>
-        </div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:#1b1c18;margin-bottom:4px;" data-t="home_card_personal">Persoonlike Finansies</div>
-        <div style="font-size:13px;color:#3d4943;" data-t="home_card_personal_sub">Belasting, SASSA, UIF, begroting</div>
-        <div class="pcard-arrow"><span class="material-symbols-outlined text-primary">arrow_forward</span></div>
-      </a>
-      <a href="../business.html" class="path-card blue tap">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-          <div class="pcard-icon" style="background:rgba(25,96,166,0.1);"><span class="material-symbols-outlined text-secondary" style="font-size:28px;">rocket_launch</span></div>
-          <span class="pcard-steps" style="background:rgba(25,96,166,0.1);color:#1960a6;" data-t="home_card_start_steps">8 stappe</span>
-        </div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:#1b1c18;margin-bottom:4px;" data-t="home_card_start">Begin </div>
-        <div style="font-size:13px;color:#3d4943;" data-t="home_card_start_sub">Registreer, maak rekening oop, voldoen</div>
-        <div class="pcard-arrow"><span class="material-symbols-outlined text-secondary">arrow_forward</span></div>
-      </a>
-      <a href="../business.html#run" class="path-card amber tap">
-        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-          <div class="pcard-icon" style="background:rgba(133,80,0,0.1);"><span class="material-symbols-outlined text-tertiary" style="font-size:28px;">storefront</span></div>
-          <span class="pcard-steps" style="background:rgba(133,80,0,0.1);color:#855000;" data-t="home_card_run_steps">15 stappe</span>
-        </div>
-        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:18px;color:#1b1c18;margin-bottom:4px;" data-t="home_card_run">Bestuur </div>
-        <div style="font-size:13px;color:#3d4943;" data-t="home_card_run_sub">BTW, salarislyste, belastingaangifte</div>
-        <div class="pcard-arrow"><span class="material-symbols-outlined text-tertiary">arrow_forward</span></div>
-      </a>
+    <!-- Topic cards -->
+    <div style="margin-bottom:24px;">
+      <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#6d7a73;margin-bottom:10px;" data-t="home_explore_topics">Verken onderwerpe</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+
+        <a href="../sassa.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #00694c;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#00694c;font-size:20px;">volunteer_activism</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_sassa">SASSA</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="path_sassa_sub">Aansoek doen, status nagaan, toelae betaaldatums</div>
+        </a>
+
+        <a href="../tax.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #1960a6;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#1960a6;font-size:20px;">account_balance</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_tax">Belasting en SARS</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="home_tax_sub">eFiling, terugbetalings, skale</div>
+        </a>
+
+        <a href="../uif.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #6d2fa0;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#6d2fa0;font-size:20px;">work_off</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_uif">UIF-Eise</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="path_uif_sub">Werkloosheid, moederskap, siekte, sterfteVoordele</div>
+        </a>
+
+        <a href="../business.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #855000;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#855000;font-size:20px;">storefront</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_business">Besigheid</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="home_biz_sub">Registreer, befonds, voldoen</div>
+        </a>
+
+        <a href="../budgeting.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #c47a00;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#c47a00;font-size:20px;">savings</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_budgeting">Begroting</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="path_budget_sub">50/30/20-reël, stokvels, skuld, noodfonds</div>
+        </a>
+
+        <a href="../credit.html" style="background:#fff;border-radius:16px;padding:16px;text-decoration:none;box-shadow:0 2px 8px rgba(27,28,24,0.06);border-top:3px solid #3d4943;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+            <span class="material-symbols-outlined" style="color:#3d4943;font-size:20px;">credit_score</span>
+            <span style="font-weight:800;font-size:14px;color:#1b1c18;" data-t="nav_credit">Kredietpunt</span>
+          </div>
+          <div style="font-size:12px;color:#6d7a73;line-height:1.5;" data-t="path_credit_sub">Gratis kredietverslag, verbeter jou punt, skuldhersiening</div>
+        </a>
+
+      </div>
     </div>
 
+    <!-- Get help CTA -->
+    <a href="../request-help.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:linear-gradient(135deg,#1b1c18 0%,#2d3530 100%);border-radius:16px;padding:18px 20px;text-decoration:none;margin-bottom:24px;">
+      <div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;color:#fff;margin-bottom:3px;" data-t="path_help_title">Persoonlike leiding nodig?</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.7);" data-t="art_need_help_sub">Praat met plaaslike finansiele deskundige — gratis</div>
+      </div>
+      <span class="material-symbols-outlined" style="color:#fff;font-size:28px;flex-shrink:0;">arrow_forward</span>
+    </a>
 
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin:32px 0 12px;color:#1b1c18;"><span data-t="index_why_title">Waarom Mzansi Geldgids gebruik?</span></h2>
-    <p style="font-size:14px;color:#3d4943;line-height:1.7;margin-bottom:20px;" data-t="index_why_body">Ons bied duidelike, stap-vir-stap leiding in 4 tale. Geen jargon, geen fooie, geen vorms om in te vul vir toegang tot inligting nie.</p>
-        <div class="disclaimer" style="margin-bottom:0;">
+    <!-- Disclaimer -->
+    <div class="disclaimer" style="margin-bottom:0;">
       <span class="material-symbols-outlined text-tertiary" style="flex-shrink:0;font-size:20px;">warning</span>
       <p style="margin:0;" data-t="home_disclaimer">Hierdie gids verskaf algemene finansiële inligting, nie amptelike advies nie.</p>
     </div>
@@ -200,18 +235,18 @@
         <div>
           <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;margin-bottom:10px;" data-t="footer_quicklinks">Vinnige Skakels</div>
           <div style="display:flex;flex-direction:column;gap:8px;">
-            <a href="../personal-finance.html" style="color:#3d4943;font-size:14px;text-decoration:none;"><span data-t="home_path_personal">Persoonlike Finansies</span></a>
+            <a href="../topics.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_topics">Onderwerpe</a>
             <a href="../sassa.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_sassa">SASSA</a>
-            <a href="../business.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_business">Besigheid</a>
-            <a href="../tax.html" style="color:#3d4943;font-size:14px;text-decoration:none;">Tax & SARS</a>
+            <a href="../tax.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_tax">Belasting en SARS</a>
             <a href="../uif.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_uif">UIF-Eise</a>
+            <a href="../business.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_business">Besigheid</a>
           </div>
         </div>
         <div>
           <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;margin-bottom:10px;" data-t="footer_support">Ondersteuning</div>
           <div style="display:flex;flex-direction:column;gap:8px;">
             <a href="../request-help.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_gethelp">Kry Hulp</a>
-            <a href="../search.html" style="color:#3d4943;font-size:14px;text-decoration:none;"data-t="nav_search">Soek</a>
+            <a href="../tools.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_tools">Hulpmiddels</a>
             <a href="../credit.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_credit">Kredietpunt</a>
             <a href="../budgeting.html" style="color:#3d4943;font-size:14px;text-decoration:none;" data-t="nav_budgeting">Begroting</a>
           </div>
@@ -220,13 +255,12 @@
       <div style="border-top:1px solid #e4e2dc;padding-top:16px;font-size:12px;color:#6d7a73;" data-t="footer_copyright">© 2026 Mzansi Geldgids. Gratis finansiële leiding vir Suid-Afrika.</div>
     </footer>
   </div>
-</div>
 
 <nav class="bottom-nav">
-  <a href="../index.html"  class="active"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span><span data-t="nav_home">Tuis</span></a>
-  <a href="../personal-finance.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">menu_book</span><span data-t="nav_topics">Onderwerpe</span></a>
-  <a href="../tools.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">calculate</span><span data-t="nav_tools">Hulpmiddels</span></a>
-  <a href="../request-help.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">support_agent</span><span data-t="nav_gethelp">Kry Hulp</span></a>
+  <a href="../index.html" class="active"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">home</span><span data-t="nav_home">Tuis</span></a>
+  <a href="../topics.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">menu_book</span><span data-t="nav_topics">Onderwerpe</span></a>
+  <a href="../tools.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">calculate</span><span data-t="nav_tools">Hulpmiddels</span></a>
+  <a href="../request-help.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">support_agent</span><span data-t="nav_gethelp">Kry Hulp</span></a>
 </nav>
 
 <script src="../lang.js"></script>

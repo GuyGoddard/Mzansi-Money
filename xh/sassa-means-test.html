@@ -63,20 +63,20 @@
     <img src="../logo-icon.png" width="44" height="44" alt="Mzansi Money" style="flex-shrink:0;border-radius:50%;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/>
     <span data-t="nav_brand">Isicwangciso Semali SaseMzantsi</span>
   </div>
-  <div class="nav-section">Main</div>
-  <a href="../index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Ikhaya</span></a>
-  <a href="../pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_guides">Izikhokelo</span></a>
-  <a href="../personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="pf_title">Imali Yobuqu</span></a>
+  <div class="nav-section" data-t="nav_section_main">Eyona Nto Ibalulekileyo</div>
+  <a href="../index.html" ><span class="material-symbols-outlined">home</span><span data-t="nav_home">Ikhaya</span></a>
+  <a href="../topics.html" ><span class="material-symbols-outlined">menu_book</span><span data-t="nav_topics">Izihloko</span></a>
+  <a href="../tools.html" ><span class="material-symbols-outlined">calculate</span><span data-t="nav_tools">Izixhobo</span></a>
+  <div class="nav-section" data-t="nav_section_pf">Imali Yobuqu</div>
   <a href="../sassa.html" class="active"><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
-  <a href="../business.html"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Ishishini</span></a>
-  <div class="nav-section">Personal Finance</div>
-  <a href="../tax.html"><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Irhafu ne-SARS</span></a>
-  <a href="../uif.html"><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">Izicelo ze-UIF</span></a>
-  <a href="../budgeting.html"><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Isicwangciso Semali</span></a>
-  <a href="../credit.html"><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Isi-Score Sekredi</span></a>
-  <div class="nav-section">Tools</div>
-  <a href="../search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Khangela</span></a>
-  <a href="../request-help.html"><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Fumana Uncedo</span></a>
+  <a href="../tax.html" ><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Irhafu ne-SARS</span></a>
+  <a href="../uif.html" ><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">Izicelo ze-UIF</span></a>
+  <a href="../budgeting.html" ><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Isicwangciso Semali</span></a>
+  <a href="../credit.html" ><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Isi-Score Sekredi</span></a>
+  <a href="../business.html" ><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Ishishini</span></a>
+  <div class="nav-section" data-t="nav_section_help">Uncedo</div>
+  <a href="../search.html" ><span class="material-symbols-outlined">search</span><span data-t="nav_search">Khangela</span></a>
+  <a href="../request-help.html" ><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Fumana Uncedo</span></a>
 </nav>
 <div class="main-content">
 <header class="top-bar">
@@ -84,16 +84,25 @@
     <div class="top-bar-inner">
       <a href="../index.html" class="top-bar-brand"><img src="../logo-icon.png" width="40" height="40" alt="Mzansi Money Guide" style="flex-shrink:0;border-radius:50%;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/><span data-t="nav_brand">Isicwangciso Semali SaseMzantsi</span></a>
       <nav class="top-bar-desktop-nav">
-        <a href="../index.html"data-t="nav_home">Ikhaya</a>
-        <a href="../pathways.html"data-t="nav_guides">Izikhokelo</a>
-        <a href="../personal-finance.html" class="active" data-t="nav_topics">Izihloko</a>
-        <a href="../sassa.html"data-t="nav_sassa">SASSA</a>
-        <a href="../business.html"data-t="nav_business">Ishishini</a>
+        <a href="../index.html" data-t="nav_home">Ikhaya</a>
+        <a href="../topics.html" data-t="nav_topics">Izihloko</a>
+        <a href="../tools.html" data-t="nav_tools">Izixhobo</a>
+        <a href="../sassa.html" class="active" data-t="nav_sassa">SASSA</a>
+        <a href="../tax.html" data-t="nav_tax">Irhafu ne-SARS</a>
+        <a href="../business.html" data-t="nav_business">Ishishini</a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
     </div>
   </header>
   <div class="page-content">
+
+    <!-- In-page section nav -->
+    <div class="inpage-nav" style="display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:20px;-webkit-overflow-scrolling:touch;scrollbar-width:none;">
+      <style>.inpage-nav::-webkit-scrollbar{display:none}.inpage-pill{flex-shrink:0;padding:7px 14px;border-radius:99px;background:#f6f4ec;font-size:13px;font-weight:600;color:#3d4943;text-decoration:none;white-space:nowrap;border:1.5px solid transparent;transition:background 0.15s,border-color 0.15s}.inpage-pill:hover{background:#00694c;color:#fff;border-color:#00694c}</style>
+      <a href="#mt-what" class="inpage-pill" data-t="mt_h_what">Okuhlolwa</a>
+        <a href="#mt-limits" class="inpage-pill" data-t="mt_h_limits">Imikhawulo 2026</a>
+        <a href="#mt-bank" class="inpage-pill" data-t="mt_h_bank">Ukuhlolwa Kwasebhange</a>
+    </div>
     <div style="margin-bottom:6px;"><a href="../sassa.html" style="font-size:12px;color:#6d7a73;text-decoration:none;display:inline-flex;align-items:center;gap:4px;"><span class="material-symbols-outlined" style="font-size:14px;">arrow_back</span> SASSA</a></div>
     <div style="display:inline-block;background:#e6f4ef;color:#00694c;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:4px 12px;border-radius:99px;margin-bottom:12px;"><span data-t="art_sassa_badge">Umhlahlo we-SASSA</span></div>
     <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(22px,4vw,32px);margin:0 0 12px;line-height:1.25;color:#1b1c18;">SASSA Means Test 2026 — What It Is and How It Affects Your Grant</h1>
@@ -126,7 +135,7 @@
       </div>
     </div>
 
-    <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin:0 0 14px;color:#1b1c18;" data-t="mt_table_heading">Iimida Zemali Nezinto ze-2026 Ngohlobo Lwesibonelelo</h2>
+    <h2 id="mt-limits" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;margin:0 0 14px;color:#1b1c18;" data-t="mt_table_heading">Iimida Zemali Nezinto ze-2026 Ngohlobo Lwesibonelelo</h2>
     <div style="overflow-x:auto;margin-bottom:24px;">
       <table style="width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 10px rgba(27,28,24,0.06);">
         <thead>
@@ -198,10 +207,10 @@
   </div>
 </div>
 <nav class="bottom-nav">
-  <a href="../index.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">home</span><span data-t="nav_home">Ikhaya</span></a>
-  <a href="../personal-finance.html"  class="active"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">menu_book</span><span data-t="nav_topics">Izihloko</span></a>
-  <a href="../tools.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">calculate</span><span data-t="nav_tools">Izixhobo</span></a>
-  <a href="../request-help.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">support_agent</span><span data-t="nav_gethelp">Fumana Uncedo</span></a>
+  <a href="../index.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">home</span><span data-t="nav_home">Ikhaya</span></a>
+  <a href="../topics.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">menu_book</span><span data-t="nav_topics">Izihloko</span></a>
+  <a href="../tools.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">calculate</span><span data-t="nav_tools">Izixhobo</span></a>
+  <a href="../request-help.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">support_agent</span><span data-t="nav_gethelp">Fumana Uncedo</span></a>
 </nav>
 </div>
 <script src="../lang.js"></script>

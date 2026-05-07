@@ -126,21 +126,24 @@
 <!-- Sidebar nav -->
 <nav class="sidebar-nav">
   <div class="flag-strip"></div>
-  <div class="sidebar-brand"><img src="../logo-icon.png" width="32" height="32" alt="Mzansi Money Guide" style="flex-shrink:0;border-radius:50%;object-fit:cover;"/><span data-t="nav_brand">Umhlahlandlela Wezimali WaseMzansi</span></div>
-  <div class="nav-section">Main</div>
-  <a href="../index.html"><span class="material-symbols-outlined">home</span><span data-t="nav_home">Ikhaya</span></a>
-  <a href="../pathways.html"><span class="material-symbols-outlined">insights</span><span data-t="nav_guides">Imihlahlandlela</span></a>
-  <a href="../personal-finance.html"><span class="material-symbols-outlined">account_balance_wallet</span><span data-t="nav_topics">Izihloko</span></a>
+  <div class="sidebar-brand">
+    <img src="../logo-icon.png" width="44" height="44" alt="Mzansi Money" style="flex-shrink:0;border-radius:50%;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/>
+    <span data-t="nav_brand">Umhlahlandlela Wezimali WaseMzansi</span>
+  </div>
+  <div class="nav-section" data-t="nav_section_main">Okuyinhloko</div>
+  <a href="../index.html" ><span class="material-symbols-outlined">home</span><span data-t="nav_home">Ikhaya</span></a>
+  <a href="../topics.html" ><span class="material-symbols-outlined">menu_book</span><span data-t="nav_topics">Izihloko</span></a>
+  <a href="../tools.html" ><span class="material-symbols-outlined">calculate</span><span data-t="nav_tools">Amathuluzi</span></a>
+  <div class="nav-section" data-t="nav_section_pf">Imali Yomuntu Ngamunye</div>
   <a href="../sassa.html" class="active"><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
-  <a href="../business.html"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Ibhizinisi</span></a>
-  <div class="nav-section">Personal Finance</div>
-  <a href="../tax.html"><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Intela ne-SARS</span></a>
-  <a href="../uif.html"><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">Izimangalo ze-UIF</span></a>
-  <a href="../budgeting.html"><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Isabelomali</span></a>
-  <a href="../credit.html"><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Isilinganiso Sokhrediti</span></a>
-  <div class="nav-section">Tools</div>
-  <a href="../search.html"><span class="material-symbols-outlined">search</span><span data-t="nav_search">Sesha</span></a>
-  <a href="../request-help.html"><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Thola Usizo</span></a>
+  <a href="../tax.html" ><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Intela ne-SARS</span></a>
+  <a href="../uif.html" ><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">Izimangalo ze-UIF</span></a>
+  <a href="../budgeting.html" ><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Isabelomali</span></a>
+  <a href="../credit.html" ><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Isilinganiso Sokhrediti</span></a>
+  <a href="../business.html" ><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Ibhizinisi</span></a>
+  <div class="nav-section" data-t="nav_section_help">Usizo</div>
+  <a href="../search.html" ><span class="material-symbols-outlined">search</span><span data-t="nav_search">Sesha</span></a>
+  <a href="../request-help.html" ><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Thola Usizo</span></a>
 </nav>
 
 <div class="main-content">
@@ -150,9 +153,10 @@
       <a href="../index.html" class="top-bar-brand"><img src="../logo-icon.png" width="40" height="40" alt="Mzansi Money Guide" style="flex-shrink:0;border-radius:50%;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/><span data-t="nav_brand">Umhlahlandlela Wezimali WaseMzansi</span></a>
       <nav class="top-bar-desktop-nav">
         <a href="../index.html" data-t="nav_home">Ikhaya</a>
-        <a href="../pathways.html" data-t="nav_guides">Imihlahlandlela</a>
-        <a href="../personal-finance.html" data-t="nav_topics">Izihloko</a>
+        <a href="../topics.html" data-t="nav_topics">Izihloko</a>
+        <a href="../tools.html" data-t="nav_tools">Amathuluzi</a>
         <a href="../sassa.html" class="active" data-t="nav_sassa">SASSA</a>
+        <a href="../tax.html" data-t="nav_tax">Intela ne-SARS</a>
         <a href="../business.html" data-t="nav_business">Ibhizinisi</a>
       </nav>
       <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
@@ -328,10 +332,10 @@
 
 <!-- Bottom nav -->
 <nav class="bottom-nav">
-  <a href="../index.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">home</span><span data-t="nav_home">Ikhaya</span></a>
-  <a href="../personal-finance.html"  class="active"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">menu_book</span><span data-t="nav_topics">Izihloko</span></a>
-  <a href="../tools.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">calculate</span><span data-t="nav_tools">Amathuluzi</span></a>
-  <a href="../request-help.html"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">support_agent</span><span data-t="nav_gethelp">Thola Usizo</span></a>
+  <a href="../index.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">home</span><span data-t="nav_home">Ikhaya</span></a>
+  <a href="../topics.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">menu_book</span><span data-t="nav_topics">Izihloko</span></a>
+  <a href="../tools.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">calculate</span><span data-t="nav_tools">Amathuluzi</span></a>
+  <a href="../request-help.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">support_agent</span><span data-t="nav_gethelp">Thola Usizo</span></a>
 </nav>
 
 <script src="../lang.js"></script>
