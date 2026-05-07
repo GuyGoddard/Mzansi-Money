@@ -881,4 +881,484 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://mzansi-money.com/sassa-child-support-grant</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-child-support-grant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/sassa-child-support-grant</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-child-support-grant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/sassa-child-support-grant</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-child-support-grant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/sassa-child-support-grant</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-child-support-grant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-child-support-grant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/sassa-old-age-pension</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-old-age-pension"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/sassa-old-age-pension</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-old-age-pension"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/sassa-old-age-pension</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-old-age-pension"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/sassa-old-age-pension</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-old-age-pension"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-old-age-pension"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/sassa-disability-grant</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-disability-grant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/sassa-disability-grant</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-disability-grant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/sassa-disability-grant</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-disability-grant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/sassa-disability-grant</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-disability-grant"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-disability-grant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/sassa-grant-stopped</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-grant-stopped"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/sassa-grant-stopped</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-grant-stopped"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/sassa-grant-stopped</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-grant-stopped"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/sassa-grant-stopped</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/sassa-grant-stopped"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/sassa-grant-stopped"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/uif-fired</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/uif-fired"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/uif-fired</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/uif-fired"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/uif-fired</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/uif-fired"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/uif-fired</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/uif-fired"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/uif-fired"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/uif-maternity</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/uif-maternity"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/uif-maternity</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/uif-maternity"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/uif-maternity</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/uif-maternity"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/uif-maternity</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/uif-maternity"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/uif-maternity"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/domestic-worker-rights</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/domestic-worker-rights"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/domestic-worker-rights</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/domestic-worker-rights"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/domestic-worker-rights</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/domestic-worker-rights"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/domestic-worker-rights</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/domestic-worker-rights"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/domestic-worker-rights"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/ccma-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/ccma-guide"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/ccma-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/ccma-guide"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/ccma-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/ccma-guide"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/ccma-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/ccma-guide"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/ccma-guide"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/payslip-explained</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/payslip-explained"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/payslip-explained</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/payslip-explained"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/payslip-explained</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/payslip-explained"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/payslip-explained</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/payslip-explained"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/payslip-explained"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/debt-help</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/debt-help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/debt-help</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/debt-help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/debt-help</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/debt-help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/debt-help</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/debt-help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/debt-help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/borrowing-safely</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/borrowing-safely"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/borrowing-safely</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/borrowing-safely"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/borrowing-safely</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/borrowing-safely"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/borrowing-safely</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/borrowing-safely"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/borrowing-safely"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/minimum-wage</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/minimum-wage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/zu/minimum-wage</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/minimum-wage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/xh/minimum-wage</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/minimum-wage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mzansi-money.com/af/minimum-wage</loc>
+    <xhtml:link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/minimum-wage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/minimum-wage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

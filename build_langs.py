@@ -53,6 +53,18 @@ PAGES = [
     ('do-i-need-to-file-tax.html', 'do-i-need-to-file-tax'),
     ('tax-refund.html',             'tax-refund'),
     ('topics.html',                'topics'),
+    ('sassa-child-support-grant.html', 'sassa-child-support-grant'),
+    ('sassa-old-age-pension.html',     'sassa-old-age-pension'),
+    ('sassa-disability-grant.html',    'sassa-disability-grant'),
+    ('sassa-grant-stopped.html',       'sassa-grant-stopped'),
+    ('uif-fired.html',                 'uif-fired'),
+    ('uif-maternity.html',             'uif-maternity'),
+    ('domestic-worker-rights.html',    'domestic-worker-rights'),
+    ('ccma-guide.html',                'ccma-guide'),
+    ('payslip-explained.html',         'payslip-explained'),
+    ('debt-help.html',                 'debt-help'),
+    ('borrowing-safely.html',          'borrowing-safely'),
+    ('minimum-wage.html',              'minimum-wage'),
 ]
 
 # Relative paths that need ../ prefix when inside a language subfolder
@@ -68,6 +80,18 @@ RELATIVE_HTML_HREFS = [
     'vat-calculator.html',
     'tax-refund.html',
     'topics.html',
+    'sassa-child-support-grant.html',
+    'sassa-old-age-pension.html',
+    'sassa-disability-grant.html',
+    'sassa-grant-stopped.html',
+    'uif-fired.html',
+    'uif-maternity.html',
+    'domestic-worker-rights.html',
+    'ccma-guide.html',
+    'payslip-explained.html',
+    'debt-help.html',
+    'borrowing-safely.html',
+    'minimum-wage.html',
 ]
 
 RELATIVE_ASSETS = ['favicon.png', 'lang.js', 'logo-icon.png', 'shared.css']
