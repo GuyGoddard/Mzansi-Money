@@ -53,6 +53,16 @@ PAGES = [
     ('do-i-need-to-file-tax.html', 'do-i-need-to-file-tax'),
     ('tax-refund.html',             'tax-refund'),
     ('tax-filing-guide-2026.html',   'tax-filing-guide-2026'),
+    ('sole-proprietor-vs-pty.html',   'sole-proprietor-vs-pty'),
+    ('sole-proprietor-vs-pty.html', 'sole-proprietor-vs-pty'),
+    ('provisional-tax-guide.html',   'provisional-tax-guide'),
+    ('provisional-tax-guide.html', 'provisional-tax-guide'),
+    ('business-bank-account.html',   'business-bank-account'),
+    ('business-bank-account.html', 'business-bank-account'),
+    ('side-income-tax.html',   'side-income-tax'),
+    ('side-income-tax.html', 'side-income-tax'),
+    ('business-expenses-guide.html',   'business-expenses-guide'),
+    ('business-expenses-guide.html', 'business-expenses-guide'),
     ('topics.html',                'topics'),
     ('sassa-child-support-grant.html', 'sassa-child-support-grant'),
     ('sassa-old-age-pension.html',     'sassa-old-age-pension'),
@@ -67,6 +77,11 @@ PAGES = [
     ('debt-help.html',                 'debt-help'),
     ('borrowing-safely.html',          'borrowing-safely'),
     ('minimum-wage.html',              'minimum-wage'),
+    ('sole-proprietor-vs-pty.html',   'sole-proprietor-vs-pty'),
+    ('provisional-tax-guide.html',    'provisional-tax-guide'),
+    ('business-bank-account.html',    'business-bank-account'),
+    ('side-income-tax.html',          'side-income-tax'),
+    ('business-expenses-guide.html',  'business-expenses-guide'),
 ]
 
 # Relative paths that need ../ prefix when inside a language subfolder
@@ -82,6 +97,11 @@ RELATIVE_HTML_HREFS = [
     'vat-calculator.html',
     'tax-refund.html',
     'tax-filing-guide-2026.html',
+    'sole-proprietor-vs-pty.html',
+    'provisional-tax-guide.html',
+    'business-bank-account.html',
+    'side-income-tax.html',
+    'business-expenses-guide.html',
     'topics.html',
     'sassa-child-support-grant.html',
     'sassa-old-age-pension.html',
@@ -96,6 +116,11 @@ RELATIVE_HTML_HREFS = [
     'debt-help.html',
     'borrowing-safely.html',
     'minimum-wage.html',
+    'sole-proprietor-vs-pty.html',
+    'provisional-tax-guide.html',
+    'business-bank-account.html',
+    'side-income-tax.html',
+    'business-expenses-guide.html',
 ]
 
 RELATIVE_ASSETS = ['favicon.png', 'lang.js', 'logo-icon.png', 'shared.css']
