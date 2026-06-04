@@ -1,239 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-  <link rel="manifest" href="/manifest.json"/>
-  <meta name="theme-color" content="#00694c"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VAT Calculator South Africa 2026 | Add or Remove 15% VAT | Mzansi Money</title>
+  <meta name="description" content="Free South African VAT calculator for 2026. Add 15% VAT to a price or remove VAT from a VAT-inclusive amount instantly. Simple, accurate, mobile-friendly." />
+  <meta name="keywords" content="vat calculator, south africa vat calculator, 15% vat calculator, vat inclusive calculator, remove vat south africa, add vat south africa" />
+  <link rel="canonical" href="https://www.mzansi-money.com/vat-calculator" />
+  <meta property="og:title" content="VAT Calculator South Africa 2026 | Mzansi Money" />
+  <meta property="og:description" content="Add or remove 15% VAT instantly. Free South African VAT calculator — no sign-up needed." />
+  <meta property="og:url" content="https://www.mzansi-money.com/vat-calculator" />
+  <meta property="og:type" content="website" />
+  <!-- Hreflang alternates -->
+  <link rel="alternate" hreflang="en" href="https://www.mzansi-money.com/vat-calculator" />
+  <link rel="alternate" hreflang="zu" href="https://www.mzansi-money.com/zu/vat-calculator" />
+  <link rel="alternate" hreflang="xh" href="https://www.mzansi-money.com/xh/vat-calculator" />
+  <link rel="alternate" hreflang="af" href="https://www.mzansi-money.com/af/vat-calculator" />
+  <link rel="alternate" hreflang="x-default" href="https://www.mzansi-money.com/vat-calculator" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  <link rel="apple-touch-icon" href="logo-icon.png"/>
-  <!-- Canonical -->
-  <link rel="canonical" href="https://mzansi-money.com/vat-calculator"/>
-  <link rel="alternate" hreflang="en-ZA" href="https://mzansi-money.com/vat-calculator"/>
-  <link rel="alternate" hreflang="zu" href="https://mzansi-money.com/zu/vat-calculator"/>
-  <link rel="alternate" hreflang="xh" href="https://mzansi-money.com/xh/vat-calculator"/>
-  <link rel="alternate" hreflang="af" href="https://mzansi-money.com/af/vat-calculator"/>
-  <link rel="alternate" hreflang="x-default" href="https://mzansi-money.com/vat-calculator"/>
-  <!-- Open Graph / WhatsApp sharing -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:site_name" content="Mzansi Money Guide"/>
-  <meta property="og:title" content="VAT Calculator South Africa 2026 | Add or Remove 15%"/>
-  <meta property="og:description" content="Free South African VAT calculator. Add or remove 15% VAT from any amount instantly. For invoices, quotes and receipts."/>
-  <meta property="og:url" content="https://mzansi-money.com/vat-calculator"/>
-  <meta property="og:image" content="https://mzansi-money.com/og/home.png"/>
-  <meta property="og:locale" content="en_ZA"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="VAT Calculator South Africa 2026 | Add or Remove 15%"/>
-  <meta name="twitter:description" content="Free South African VAT calculator. Add or remove 15% VAT from any amount instantly. For invoices, quotes and receipts."/>
-  <!-- Google Analytics GA4 — replace G-2MDWNC0LKX -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MDWNC0LKX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2MDWNC0LKX');</script>
-  <!-- Organisation Schema -->
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Mzansi Money Guide","url":"https://mzansi-money.com","description":"Free financial guidance for every South African."}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
   </script>
-  <meta name="description" content="Free South African VAT calculator. Add or remove 15% VAT from any amount instantly. For invoices, quotes and receipts."/>
-<title>VAT Calculator South Africa 2026 | Add or Remove 15% | Mzansi Money</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap"/>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
-<noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;600&family=Material+Symbols+Outlined:wght,FILL@400,0&display=swap" rel="stylesheet"/></noscript>
-<link rel="stylesheet" href="shared.css"/>
 
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #16a34a;
+      --green-dark: #15803d;
+      --green-light: #dcfce7;
+      --green-bg: #f0fdf4;
+      --text: #1a1a1a;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
+      --white: #ffffff;
+      --yellow: #fbbf24;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--text); background: #f9fafb; line-height: 1.6; }
+
+    /* NAV */
+    nav { background: var(--white); border-bottom: 1px solid var(--border); padding: 0 1rem; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--green); text-decoration: none; }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 0.9rem; font-weight: 500; }
+    .nav-links a:hover, .nav-links a.active { color: var(--green); }
+
+    /* HERO */
+    .hero { background: var(--green); color: white; padding: 3rem 1rem 2.5rem; text-align: center; }
+    .hero h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 800; margin-bottom: 0.75rem; }
+    .hero p { font-size: 1.1rem; opacity: 0.9; max-width: 540px; margin: 0 auto; }
+
+    /* MAIN LAYOUT */
+    main { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem 4rem; display: grid; grid-template-columns: 1fr minmax(0, 420px); gap: 2rem; align-items: start; }
+    @media (max-width: 768px) { main { grid-template-columns: 1fr; } }
+
+    /* CALCULATOR CARD */
+    .calc-card { background: var(--white); border-radius: 12px; border: 1px solid var(--border); padding: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .calc-card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text); }
+
+    /* TOGGLE */
+    .toggle-group { display: flex; background: #f3f4f6; border-radius: 8px; padding: 4px; margin-bottom: 1.5rem; }
+    .toggle-btn { flex: 1; padding: 0.6rem; border: none; background: transparent; border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer; color: var(--text-muted); transition: all 0.2s; }
+    .toggle-btn.active { background: var(--green); color: white; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+
+    /* INPUT */
+    .input-group { margin-bottom: 1.25rem; }
+    .input-group label { display: block; font-size: 0.875rem; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; }
+    .input-wrap { position: relative; }
+    .input-wrap span { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-weight: 700; color: var(--green); font-size: 1rem; }
+    .input-wrap input { width: 100%; padding: 0.75rem 0.75rem 0.75rem 2.5rem; font-size: 1.1rem; border: 2px solid var(--border); border-radius: 8px; outline: none; transition: border-color 0.2s; }
+    .input-wrap input:focus { border-color: var(--green); }
+
+    /* RESULTS */
+    .result-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1.5rem 0; }
+    .result-box { background: var(--green-bg); border: 1px solid #bbf7d0; border-radius: 8px; padding: 1rem; text-align: center; }
+    .result-box.highlight { background: var(--green-light); border-color: var(--green); }
+    .result-label { font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+    .result-value { font-size: 1.4rem; font-weight: 800; color: var(--green-dark); }
+    .result-value.large { font-size: 1.75rem; }
+
+    .vat-rate-note { font-size: 0.8rem; color: var(--text-muted); text-align: center; padding: 0.75rem; background: #f9fafb; border-radius: 6px; margin-top: 0.5rem; }
+
+    /* INFO CARDS */
+    .info-section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; }
+    .info-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
+    .info-card h3 { font-size: 1rem; font-weight: 700; color: var(--green-dark); margin-bottom: 0.5rem; }
+    .info-card p, .info-card li { font-size: 0.92rem; color: #374151; line-height: 1.65; }
+    .info-card ul { padding-left: 1.25rem; }
+    .info-card li { margin-bottom: 0.3rem; }
+
+    /* FORMULA BOX */
+    .formula-box { background: #1e293b; color: #e2e8f0; border-radius: 8px; padding: 1rem 1.25rem; font-family: 'Courier New', monospace; font-size: 0.85rem; margin: 0.75rem 0; line-height: 1.8; }
+    .formula-box .comment { color: #64748b; }
+    .formula-box .value { color: #4ade80; font-weight: 700; }
+
+    /* FAQ */
+    .faq-item { border-bottom: 1px solid var(--border); padding: 1rem 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-weight: 600; font-size: 0.95rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-q::after { content: '+'; font-size: 1.2rem; color: var(--green); font-weight: 700; }
+    .faq-q.open::after { content: '−'; }
+    .faq-a { font-size: 0.9rem; color: #374151; line-height: 1.7; padding-top: 0.5rem; display: none; }
+    .faq-a.open { display: block; }
+
+    /* FOOTER */
+    footer { background: #1f2937; color: #9ca3af; padding: 2rem 1rem; text-align: center; font-size: 0.85rem; }
+    footer a { color: #6ee7b7; text-decoration: none; }
+  </style>
+
+  <!-- Structured Data: FAQ -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"VAT Calculator South Africa","url":"https://mzansi-money.com/vat-calculator","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0"}}
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the VAT rate in South Africa in 2026?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The standard VAT rate in South Africa is 15%, which has been in effect since 1 April 2018. Most goods and services are subject to this rate, though some items like basic foodstuffs and exported goods are zero-rated." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add VAT to a price in South Africa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "To add 15% VAT to a price, multiply the amount by 1.15. For example, R100 × 1.15 = R115. The R15 is the VAT component." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I remove VAT from a VAT-inclusive price?",
+        "acceptedAnswer": { "@type": "Answer", "text": "To remove VAT from a price that already includes VAT, divide the amount by 1.15. For example, R115 ÷ 1.15 = R100. The VAT amount is R115 − R100 = R15." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which foods are VAT-exempt in South Africa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Basic foodstuffs are zero-rated for VAT in South Africa, meaning they carry 0% VAT. These include brown bread, dried beans, lentils, maize meal, rice, fresh fruit and vegetables, vegetable and fruit juices, legumes, eggs, milk, and edible vegetable oils." }
+      },
+      {
+        "@type": "Question",
+        "name": "When do businesses need to register for VAT in South Africa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "You must register for VAT with SARS if your taxable turnover exceeds R1 million in any consecutive 12-month period. You may also voluntarily register if your turnover exceeds R50,000." }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to calculate VAT in South Africa",
+    "description": "How to add or remove 15% VAT from a price in South Africa",
+    "step": [
+      { "@type": "HowToStep", "name": "Adding VAT", "text": "Multiply the price by 1.15. Example: R200 × 1.15 = R230 (VAT-inclusive price)." },
+      { "@type": "HowToStep", "name": "Removing VAT", "text": "Divide the VAT-inclusive price by 1.15. Example: R230 ÷ 1.15 = R200 (ex-VAT price)." },
+      { "@type": "HowToStep", "name": "Finding just the VAT amount", "text": "Subtract the ex-VAT price from the VAT-inclusive price. Example: R230 − R200 = R30 VAT." }
+    ]
+  }
   </script>
 </head>
 <body>
-<div class="app-shell">
-<nav class="sidebar-nav">
-  <div class="flag-strip"></div>
-  <div class="sidebar-brand">
-    <img src="logo-icon.png" width="44" height="44" alt="Mzansi Money" style="flex-shrink:0;border-radius:50%;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/>
-    <span data-t="nav_brand">Mzansi Money Guide</span>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">💰 Mzansi Money</a>
+    <ul class="nav-links">
+      <li><a href="/sassa">SASSA</a></li>
+      <li><a href="/tax">Tax</a></li>
+      <li><a href="/vat-calculator" class="active">VAT</a></li>
+      <li><a href="/uif">UIF</a></li>
+      <li><a href="/business">Business</a></li>
+    </ul>
   </div>
-  <div class="nav-section" data-t="nav_section_main">Main</div>
-  <a href="index.html" ><span class="material-symbols-outlined">home</span><span data-t="nav_home">Home</span></a>
-  <a href="topics.html" ><span class="material-symbols-outlined">menu_book</span><span data-t="nav_topics">Topics</span></a>
-  <a href="tools.html" ><span class="material-symbols-outlined">calculate</span><span data-t="nav_tools">Tools</span></a>
-  <div class="nav-section" data-t="nav_section_pf">Personal Finance</div>
-  <a href="sassa.html" ><span class="material-symbols-outlined">volunteer_activism</span><span data-t="nav_sassa">SASSA</span></a>
-  <a href="tax.html" ><span class="material-symbols-outlined">account_balance</span><span data-t="nav_tax">Tax &amp; SARS</span></a>
-  <a href="uif.html" ><span class="material-symbols-outlined">work_off</span><span data-t="nav_uif">UIF Claims</span></a>
-  <a href="budgeting.html" ><span class="material-symbols-outlined">savings</span><span data-t="nav_budgeting">Budgeting</span></a>
-  <a href="credit.html" ><span class="material-symbols-outlined">credit_score</span><span data-t="nav_credit">Credit Score</span></a>
-  <a href="business.html" class="active"><span class="material-symbols-outlined">storefront</span><span data-t="nav_business">Business</span></a>
-  <div class="nav-section" data-t="nav_section_help">Help</div>
-  <a href="search.html" ><span class="material-symbols-outlined">search</span><span data-t="nav_search">Search</span></a>
-  <a href="request-help.html" ><span class="material-symbols-outlined">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
 </nav>
-<div class="main-content">
-<header class="top-bar">
-    <div class="sa-flag-strip"></div>
-    <div class="top-bar-inner">
-      <a href="index.html" class="top-bar-brand"><img src="logo-icon.png" width="40" height="40" alt="Mzansi Money Guide" style="flex-shrink:0;border-radius:50%;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.12);"/><span data-t="nav_brand">Mzansi Money Guide</span></a>
-      <nav class="top-bar-desktop-nav">
-        <a href="index.html" data-t="nav_home">Home</a>
-        <a href="topics.html" data-t="nav_topics">Topics</a>
-        <a href="tools.html" data-t="nav_tools">Tools</a>
-        <a href="sassa.html" data-t="nav_sassa">SASSA</a>
-        <a href="tax.html" data-t="nav_tax">Tax</a>
-        <a href="business.html" class="active" data-t="nav_business">Business</a>
-      </nav>
-      <button onclick="window.location='search.html'" style="background:none;border:none;cursor:pointer;padding:8px;"><span class="material-symbols-outlined text-muted">search</span></button>
-    </div>
-  </header>
-  <div class="page-content">
 
-    <div style="margin-bottom:24px;">
-      <a href="tools.html" style="font-size:12px;color:#6d7a73;text-decoration:none;display:inline-flex;align-items:center;gap:4px;margin-bottom:10px;"><span class="material-symbols-outlined" style="font-size:14px;">arrow_back</span> Tools</a>
-      <div style="display:inline-block;background:#e6f4ef;color:#00694c;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:4px 12px;border-radius:99px;margin-bottom:12px;">Free Tool</div>
-      <h1 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(22px,4vw,30px);margin:0 0 6px;color:#1b1c18;" data-t="tools_vat_title">VAT Calculator</h1>
-      <p style="font-size:14px;color:#3d4943;margin:0;" data-t="vat_subtitle">Add or remove South African VAT (15%) from any amount instantly.</p>
+<div class="hero">
+  <h1>VAT Calculator South Africa 2026</h1>
+  <p>Add or remove 15% VAT instantly. Free, accurate, no sign-up needed.</p>
+</div>
+
+<main>
+  <!-- CALCULATOR -->
+  <div class="calc-card">
+    <h2>Calculate VAT</h2>
+
+    <div class="toggle-group">
+      <button class="toggle-btn active" id="btn-add" onclick="setMode('add')">➕ Add VAT (ex-VAT price)</button>
+      <button class="toggle-btn" id="btn-remove" onclick="setMode('remove')">➖ Remove VAT (incl. price)</button>
     </div>
 
-    <div style="background:#fff;border-radius:20px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(27,28,24,0.07);">
-      
-      <!-- Mode toggle -->
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px;">
-        <button id="btn-add" onclick="setMode('add')" style="background:#00694c;color:#fff;border:none;border-radius:12px;padding:12px;font-weight:700;font-size:14px;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">Add VAT</button>
-        <button id="btn-remove" onclick="setMode('remove')" style="background:#f6f4ec;color:#1b1c18;border:none;border-radius:12px;padding:12px;font-weight:700;font-size:14px;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;">Remove VAT</button>
-      </div>
-
-      <!-- Mode description -->
-      <p id="mode-desc" style="font-size:13px;color:#6d7a73;margin:0 0 16px;background:#f6f4ec;padding:10px 14px;border-radius:10px;">Enter a price <strong style="color:#1b1c18;">excluding VAT</strong> to see the VAT amount and total.</p>
-
-      <!-- Input -->
-      <div style="background:#f6f4ec;border-radius:14px;padding:16px;margin-bottom:20px;">
-        <label style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#6d7a73;display:block;margin-bottom:8px;" id="input-label">Amount excluding VAT (R)</label>
-        <div style="display:flex;align-items:center;gap:8px;">
-          <span style="font-size:24px;font-weight:800;color:#6d7a73;">R</span>
-          <input id="vat-input" type="number" min="0" placeholder="e.g. 1000" oninput="calcVAT()"
-            style="flex:1;background:transparent;border:none;border-bottom:2px solid #bccac1;font-size:24px;font-weight:700;color:#1b1c18;outline:none;padding:4px 0;font-family:'Plus Jakarta Sans',sans-serif;"/>
-        </div>
-      </div>
-
-      <!-- Results -->
-      <div id="vat-results" style="display:none;">
-        <div style="display:grid;gap:10px;margin-bottom:16px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;background:#f6f4ec;border-radius:14px;padding:14px 18px;">
-            <span style="font-size:14px;color:#6d7a73;" id="label-excl">Amount excluding VAT</span>
-            <span id="r-excl" style="font-size:18px;font-weight:700;color:#1b1c18;font-family:'Plus Jakarta Sans',sans-serif;"></span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;background:#faf9f4;border-radius:14px;padding:14px 18px;">
-            <span style="font-size:14px;color:#6d7a73;">VAT (15%)</span>
-            <span id="r-vat" style="font-size:18px;font-weight:700;color:#855000;font-family:'Plus Jakarta Sans',sans-serif;"></span>
-          </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;background:#e6f4ef;border-radius:14px;padding:14px 18px;">
-            <span style="font-size:14px;color:#00694c;font-weight:700;" id="label-incl">Total including VAT</span>
-            <span id="r-incl" style="font-size:22px;font-weight:800;color:#00694c;font-family:'Plus Jakarta Sans',sans-serif;"></span>
-          </div>
-        </div>
-      </div>
-
-      <div id="vat-empty" style="text-align:center;padding:16px;color:#6d7a73;">
-        <span class="material-symbols-outlined" style="font-size:36px;opacity:0.3;">receipt_long</span>
-        <p style="font-size:14px;margin:8px 0 0;">Enter an amount above</p>
+    <div class="input-group">
+      <label id="input-label">Enter price excluding VAT (R)</label>
+      <div class="input-wrap">
+        <span>R</span>
+        <input type="number" id="amount" placeholder="0.00" min="0" step="0.01" oninput="calculate()" />
       </div>
     </div>
 
-    <!-- Quick reference -->
-    <div style="background:#fff;border-radius:16px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(27,28,24,0.05);">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;margin:0 0 14px;color:#1b1c18;" data-t="vat_common_heading">Common VAT amounts</h2>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;" id="quick-table"></div>
-    </div>
-
-    <!-- FAQ -->
-    <div style="background:#f6f4ec;border-radius:14px;padding:16px 20px;margin-bottom:20px;">
-      <h2 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:16px;margin:0 0 12px;color:#1b1c18;" data-t="vat_info_heading">VAT in South Africa</h2>
-      <div style="font-size:14px;color:#3d4943;line-height:1.8;">
-        <strong>Standard rate:</strong> 15% (increased from 14% on 1 April 2018, and to 15.5% from 1 May 2025 — update your invoices!)<br>
-        <strong>Zero-rated items:</strong> Basic food (brown bread, milk, eggs, maize meal), paraffin, petrol, diesel, public transport<br>
-        <strong>Exempt:</strong> Residential rent, financial services, educational services<br>
-        <strong>VAT registration:</strong> Compulsory once your taxable turnover exceeds R1 million per year. Voluntary registration allowed from R50,000.
+    <div class="result-grid">
+      <div class="result-box">
+        <div class="result-label" id="label-exvat">Ex-VAT Amount</div>
+        <div class="result-value" id="val-exvat">R0.00</div>
+      </div>
+      <div class="result-box">
+        <div class="result-label">VAT (15%)</div>
+        <div class="result-value" id="val-vat">R0.00</div>
       </div>
     </div>
-
-    <div style="background:#eaf0fb;border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:10px;margin-bottom:20px;">
-      <span class="material-symbols-outlined" style="color:#1960a6;font-size:18px;">info</span>
-      <p style="font-size:13px;color:#1b1c18;margin:0;">VAT rate: <strong>15%</strong> (15.5% from 1 May 2025). Need help registering for VAT? <a href="business.html" style="color:#1960a6;font-weight:700;">Business Guide →</a></p>
+    <div class="result-box highlight" style="text-align:center; padding: 1.25rem;">
+      <div class="result-label" id="label-total">VAT-Inclusive Total</div>
+      <div class="result-value large" id="val-total">R0.00</div>
     </div>
+
+    <p class="vat-rate-note">📌 South Africa VAT rate: <strong>15%</strong> (standard rate, unchanged since 1 April 2018)</p>
+  </div>
+
+  <!-- INFO CONTENT -->
+  <div class="info-section">
+    <h2>About VAT in South Africa</h2>
+
+    <div class="info-card">
+      <h3>What is VAT?</h3>
+      <p>Value-Added Tax (VAT) is an indirect tax charged on the supply of goods and services in South Africa. The current standard VAT rate is <strong>15%</strong>, collected by VAT-registered businesses on behalf of SARS and remitted monthly or bi-monthly.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>How to calculate VAT manually</h3>
+      <div class="formula-box">
+        <span class="comment">// Adding VAT to a price:</span><br>
+        VAT-inclusive = Price × <span class="value">1.15</span><br>
+        VAT amount = Price × <span class="value">0.15</span><br><br>
+        <span class="comment">// Removing VAT from an inclusive price:</span><br>
+        Ex-VAT price = Inclusive ÷ <span class="value">1.15</span><br>
+        VAT amount = Inclusive − Ex-VAT
+      </div>
+      <p><strong>Example:</strong> A product costs R200 before VAT. VAT = R200 × 15% = R30. Total = R230.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Zero-rated food items (0% VAT)</h3>
+      <p>These basic foods are VAT-free in South Africa:</p>
+      <ul>
+        <li>Brown bread, maize meal, rice</li>
+        <li>Fresh fruit and vegetables</li>
+        <li>Dried beans, lentils, legumes</li>
+        <li>Eggs, milk, edible vegetable oil</li>
+        <li>Vegetable and fruit juices (100%)</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>VAT registration thresholds</h3>
+      <ul>
+        <li><strong>Compulsory:</strong> Taxable turnover exceeds R1 million in 12 months</li>
+        <li><strong>Voluntary:</strong> Turnover exceeds R50,000</li>
+        <li>Register via SARS eFiling or a SARS branch</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What is the VAT rate in South Africa 2026?</div>
+        <div class="faq-a">The standard VAT rate is <strong>15%</strong>, unchanged since 1 April 2018. There is ongoing discussion about changes to the VAT rate, but as of June 2026 it remains 15%.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">How do I add 15% VAT to a price?</div>
+        <div class="faq-a">Multiply the ex-VAT amount by <strong>1.15</strong>. E.g. R500 × 1.15 = <strong>R575</strong>. The R75 is the VAT component.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">How do I remove VAT from a VAT-inclusive price?</div>
+        <div class="faq-a">Divide the inclusive amount by <strong>1.15</strong>. E.g. R575 ÷ 1.15 = <strong>R500</strong> (ex-VAT). The VAT is R575 − R500 = R75.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Is VAT the same as GST?</div>
+        <div class="faq-a">VAT and GST (Goods and Services Tax) are similar consumption taxes. South Africa uses the term VAT. The principles are the same — a percentage added to the price of taxable goods and services.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">When must I submit a VAT return to SARS?</div>
+        <div class="faq-a">Most VAT vendors submit returns every two months (bi-monthly). Large businesses with taxable supplies over R30 million submit monthly. Returns are filed via SARS eFiling by the last business day of the month following the tax period.</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Mzansi Money Guide · <a href="/">Home</a> · <a href="/sassa">SASSA</a> · <a href="/tax">Tax</a> · <a href="/privacy">Privacy</a></p>
+  <p style="margin-top:0.5rem;">Information is for educational purposes only. Always verify with <a href="https://www.sars.gov.za" target="_blank" rel="noopener">SARS.gov.za</a>.</p>
+</footer>
 
 <script>
-let mode = 'add'; // 'add' or 'remove'
-const VAT_RATE = 0.15;
+  let mode = 'add'; // 'add' or 'remove'
+  const VAT_RATE = 0.15;
 
-function setMode(m) {
-  mode = m;
-  document.getElementById('btn-add').style.background = m === 'add' ? '#00694c' : '#f6f4ec';
-  document.getElementById('btn-add').style.color = m === 'add' ? '#fff' : '#1b1c18';
-  document.getElementById('btn-remove').style.background = m === 'remove' ? '#00694c' : '#f6f4ec';
-  document.getElementById('btn-remove').style.color = m === 'remove' ? '#fff' : '#1b1c18';
-  document.getElementById('mode-desc').innerHTML = m === 'add'
-    ? 'Enter a price <strong style="color:#1b1c18;">excluding VAT</strong> to see the VAT amount and total.'
-    : 'Enter a price <strong style="color:#1b1c18;">including VAT</strong> to see the VAT component and pre-VAT amount.';
-  document.getElementById('input-label').textContent = m === 'add' ? 'Amount excluding VAT (R)' : 'Amount including VAT (R)';
-  document.getElementById('label-excl').textContent = m === 'add' ? 'Your amount (excl. VAT)' : 'Amount excluding VAT';
-  document.getElementById('label-incl').textContent = m === 'add' ? 'Total including VAT' : 'Your amount (incl. VAT)';
-  calcVAT();
-}
-
-function fmt(n) { return 'R ' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
-
-function calcVAT() {
-  const input = parseFloat(document.getElementById('vat-input').value) || 0;
-  if (input <= 0) {
-    document.getElementById('vat-results').style.display = 'none';
-    document.getElementById('vat-empty').style.display = 'block';
-    return;
-  }
-  document.getElementById('vat-results').style.display = 'block';
-  document.getElementById('vat-empty').style.display = 'none';
-
-  let excl, vatAmt, incl;
-  if (mode === 'add') {
-    excl = input;
-    vatAmt = input * VAT_RATE;
-    incl = input + vatAmt;
-  } else {
-    incl = input;
-    excl = input / (1 + VAT_RATE);
-    vatAmt = input - excl;
+  function setMode(m) {
+    mode = m;
+    document.getElementById('btn-add').classList.toggle('active', m === 'add');
+    document.getElementById('btn-remove').classList.toggle('active', m === 'remove');
+    document.getElementById('input-label').textContent =
+      m === 'add' ? 'Enter price excluding VAT (R)' : 'Enter VAT-inclusive price (R)';
+    document.getElementById('label-exvat').textContent = m === 'add' ? 'Ex-VAT Amount' : 'Ex-VAT Price';
+    document.getElementById('label-total').textContent = m === 'add' ? 'VAT-Inclusive Total' : 'You entered (incl. VAT)';
+    document.getElementById('amount').value = '';
+    calculate();
   }
 
-  document.getElementById('r-excl').textContent = fmt(excl);
-  document.getElementById('r-vat').textContent = fmt(vatAmt);
-  document.getElementById('r-incl').textContent = fmt(incl);
-  buildQuickTable(mode === 'add' ? excl : incl);
-}
+  function fmt(n) {
+    return 'R' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
 
-function buildQuickTable(base) {
-  const multiples = [0.5, 1, 2, 5, 10, 50];
-  const table = document.getElementById('quick-table');
-  table.innerHTML = multiples.map(m => {
-    const amt = base * m;
-    const excl = mode === 'add' ? amt : amt / 1.15;
-    const incl = mode === 'add' ? amt * 1.15 : amt;
-    return `<div style="background:#f6f4ec;border-radius:10px;padding:10px;text-align:center;">
-      <div style="font-size:11px;color:#6d7a73;margin-bottom:2px;">R${(amt).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</div>
-      <div style="font-size:13px;font-weight:700;color:#00694c;">→ R${(incl).toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</div>
-    </div>`;
-  }).join('');
-}
+  function calculate() {
+    const raw = parseFloat(document.getElementById('amount').value) || 0;
+    let exVat, vatAmt, total;
+
+    if (mode === 'add') {
+      exVat = raw;
+      vatAmt = raw * VAT_RATE;
+      total = raw * (1 + VAT_RATE);
+    } else {
+      total = raw;
+      exVat = raw / (1 + VAT_RATE);
+      vatAmt = raw - exVat;
+    }
+
+    document.getElementById('val-exvat').textContent = fmt(exVat);
+    document.getElementById('val-vat').textContent = fmt(vatAmt);
+    document.getElementById('val-total').textContent = fmt(mode === 'add' ? total : raw);
+  }
+
+  function toggleFaq(el) {
+    el.classList.toggle('open');
+    el.nextElementSibling.classList.toggle('open');
+  }
 </script>
-
-  </div>
-</div>
-<nav class="bottom-nav">
-  <a href="index.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">home</span><span data-t="nav_home">Home</span></a>
-  <a href="topics.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">menu_book</span><span data-t="nav_topics">Topics</span></a>
-  <a href="tools.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">calculate</span><span data-t="nav_tools">Tools</span></a>
-  <a href="request-help.html" ><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0">support_agent</span><span data-t="nav_gethelp">Get Help</span></a>
-</nav>
-</div>
-<script src="lang.js"></script>
 </body>
 </html>
